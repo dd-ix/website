@@ -19,7 +19,7 @@
         </main>
 
         <footer>
-            <span><b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span></span>
+            <span>&copy; {{date}} <b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span></span>
             <nav>
                 <NuxtLink to="/imprint">Imprint</NuxtLink>
             </nav>
@@ -46,7 +46,7 @@ header {
   align-items: flex-end;
 
   img {
-    height: 3rem;
+    height: 2rem;
   }
 }
 
@@ -63,3 +63,7 @@ footer {
   gap: 0.5rem;
 }
 </style>
+
+<script setup lang="ts">
+const date = new Date().getFullYear();
+</script>
