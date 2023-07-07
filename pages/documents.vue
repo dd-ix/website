@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="documents-container">
         <h1>Documents</h1>
         <DocumentCard slug="/documents/satzung.pdf" image="/documents/satzung.jpg" title="Satzung"
                       description="Die Satzung des DD-IX."></DocumentCard>
@@ -11,7 +11,11 @@
 </template>
 
 <style lang="scss" scoped>
-.container {
+h1 {
+  margin: 0;
+}
+
+.documents-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;

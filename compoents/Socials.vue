@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="socials-container">
         <a target="_blank" class="not">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96">
                 <path fill-rule="evenodd"
@@ -22,9 +22,10 @@
 </template>
 
 <style lang="scss" scoped>
-.container {
+.socials-container {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
 
   a {
     display: block;

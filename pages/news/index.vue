@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h2>News</h2>
+        <h1>News</h1>
         <ul>
             <li v-for="{ _path: slug, date, title, description, image } in articles" :key="slug">
                 <ArticleListItem :slug="slug" :title="title" :date="date" :description="description" :image="image"/>

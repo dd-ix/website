@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="default-container">
         <header>
             <NuxtLink to="/" class="not">
                 <img src="../assets/logo.png">
@@ -28,7 +28,7 @@
 </template>
 
 <style lang="scss" scoped>
-.container {
+.default-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;

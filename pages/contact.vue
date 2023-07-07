@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="contact-container">
         <article>
             <ContentDoc/>
         </article>
@@ -11,7 +11,7 @@
 </template>
 
 <style lang="scss" scoped>
-.container {
+.contact-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;

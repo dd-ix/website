@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="index-container">
         <article>
             <ContentDoc/>
         </article>
@@ -25,7 +25,7 @@
   background-image: url("../assets/landingpage.webp");
 }
 
-.container {
+.index-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
