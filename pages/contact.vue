@@ -4,7 +4,8 @@
             <ContentDoc/>
         </article>
         <article>
-            <ContentDoc path="socials"/>
+            <h1>Socials</h1>
+            <Socials/>
         </article>
     </div>
 </template>
@@ -16,3 +17,6 @@
   gap: 1rem;
 }
 </style>
+<script setup lang="ts">
+import Socials from "~/compoents/Socials.vue";
+</script>

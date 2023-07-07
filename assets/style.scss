@@ -1,19 +1,19 @@
 :root {
   color-scheme: light dark;
   --primary: #5a32fe;
-  --text: #f6f6f6;
-  --background: #000;
-  --card: #181818;
-  --card-border: #212121;
+  --text: #000;
+  --background: #eeeeee;
+  --card: #f6f6f6;
+  --card-border: #d2d2d2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #5a32fe;
-    --text: #000;
-    --background: #eeeeee;
-    --card: #f6f6f6;
-    --card-border: #d2d2d2;
+    --text: #f6f6f6;
+    --background: #000;
+    --card: #181818;
+    --card-border: #212121;
   }
 }
 
@@ -24,16 +24,21 @@ $background: var(--background);
 $card: var(--card);
 $card-border: var(--card-border);
 
-:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  a:not(.not) {
-    border-bottom: $primary solid 0.2rem;
-    text-decoration: none;
-    color: $text-color;
-    transition: background-color ease-in-out 150ms;
+a:not(.not) {
+  border-bottom: $primary solid 0.2rem;
+  text-decoration: none;
+  color: $text-color;
+  transition: background-color ease-in-out 150ms;
 
-    &:hover {
-      background-color: $primary;
-    }
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a {
+    border: none !important;
+    background-color: transparent !important;
   }
 }
 

@@ -14,12 +14,17 @@
         </div>
 
         <article>
-            <ContentDoc path="socials"/>
+            <h1>Socials</h1>
+            <Socials/>
         </article>
     </div>
 </template>
 
 <style lang="scss" scoped>
+.image {
+  background-image: url("../assets/landingpage.webp");
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -38,6 +43,7 @@ ul.news-list {
 <script setup lang="ts">
 import {queryContent} from "#imports";
 import ArticleCard from "~/compoents/ArticleCard.vue";
+import Socials from "~/compoents/Socials.vue";
 
 const articles = await queryContent('/news')
     .sort({date: -1}) // show latest articles first
