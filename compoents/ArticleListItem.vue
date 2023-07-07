@@ -24,7 +24,7 @@ const {slug, title, image, description, date}
 <style lang="scss" scoped>
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text);
 
   article {
     display: flex;

@@ -9,6 +9,7 @@
                 <NuxtLink to="/news">News</NuxtLink>
                 <NuxtLink to="/documents">Documents</NuxtLink>
                 <NuxtLink to="/todo">Looking Glas</NuxtLink>
+                <NuxtLink to="/peering-joining-policy">Peering and Joining Policy</NuxtLink>
                 <NuxtLink to="/contact">Contact</NuxtLink>
             </nav>
         </header>
@@ -18,7 +19,10 @@
         </main>
 
         <footer>
-            <b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span>
+            <span><b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span></span>
+            <nav>
+                <NuxtLink to="/imprint">Imprint</NuxtLink>
+            </nav>
         </footer>
     </div>
 </template>
@@ -44,7 +48,9 @@ header {
   img {
     height: 3rem;
   }
+}
 
+header, footer {
   nav {
     display: flex;
     gap: 0.5rem;
@@ -53,7 +59,7 @@ header {
 
 footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 0.5rem;
 }
 </style>
