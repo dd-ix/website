@@ -1,0 +1,59 @@
+<template>
+    <div class="container">
+        <header>
+            <NuxtLink to="/" class="not">
+                <img src="../assets/logo.png">
+            </NuxtLink>
+
+            <nav>
+                <NuxtLink to="/news">News</NuxtLink>
+                <NuxtLink to="/documents">Documents</NuxtLink>
+                <NuxtLink to="/todo">Looking Glas</NuxtLink>
+                <NuxtLink to="/contact">Contact</NuxtLink>
+            </nav>
+        </header>
+
+        <main>
+            <slot/>
+        </main>
+
+        <footer>
+            <b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span>
+        </footer>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  img {
+    height: 3rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+</style>
