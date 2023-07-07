@@ -12,9 +12,9 @@ mkYarnPackage {
     '';
 
     installPhase = ''
-      mkdir -p $out/bin
-      cp -r ./.output/* $out/bin/
+      mkdir -p $out/bun
+      cp -r ./deps/dd-ix-website/dist/ $out/bin/
     '';
 
-    doDist = true;
+    doDist = false;
 }
