@@ -1,4 +1,6 @@
 {
+  "name": "dd-ix-website",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
