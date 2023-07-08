@@ -3,10 +3,12 @@
         <h1>Documents</h1>
         <DocumentCard slug="/documents/satzung.pdf" image="/documents/satzung.jpg" title="Satzung"
                       description="Die Satzung des DD-IX."></DocumentCard>
-        <DocumentCard slug="/documents/satzung.pdf" image="/documents/satzung.jpg" title="Mitgliedsantrag"
-                      description="Der Mitgliedsantrag des DD-IX."></DocumentCard>
         <DocumentCard slug="/documents/satzung.pdf" image="/documents/satzung.jpg" title="Code of Conduct"
                       description="Der Code of Conduct des DD-IX."></DocumentCard>
+        <DocumentCard slug="/documents/satzung.pdf" image="/documents/satzung.jpg" title="Beitragsordnung"
+                      description="Der Beitragsordnung des DD-IX."></DocumentCard>
+        <DocumentCard slug="/documents/satzung.pdf" image="/documents/satzung.jpg" title="Mitgliedsantrag"
+                      description="Der Mitgliedsantrag des DD-IX."></DocumentCard>
     </div>
 </template>
 
