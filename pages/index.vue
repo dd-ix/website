@@ -21,10 +21,6 @@
 </template>
 
 <style lang="scss" scoped>
-.image {
-  background-image: url("../assets/landingpage.webp");
-}
-
 .index-container {
   display: flex;
   flex-direction: column;

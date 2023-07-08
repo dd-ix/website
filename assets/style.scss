@@ -5,6 +5,7 @@
   --background: #eeeeee;
   --card: #f6f6f6;
   --card-border: #d2d2d2;
+  --tud-color: #00305E;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +15,7 @@
     --background: #000;
     --card: #181818;
     --card-border: #212121;
+    --tud-color: var(--text);
   }
 }
 
