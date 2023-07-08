@@ -1,8 +1,11 @@
-import en from './lang/en.json';
-import de from './lang/de.json';
+import {defineI18nConfig} from "#i18n";
 
 export default defineI18nConfig(() => ({
   legacy: false,
   locale: 'de',
-  messages: {en, de}
+  fallbackLocale: 'de',
+  modifiers: {
+    // @ts-ignore
+    snakeCase: (str: string) => str.split(' ').join('-')
+  }
 }))

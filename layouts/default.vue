@@ -1,8 +1,8 @@
 <template>
   <div class="default-container">
     <header>
-      <NuxtLink class="not" :to="localePath('/')">
-        <img src="../assets/logo.png" alt="DD-IX">
+      <NuxtLink :to="localePath('/')" class="not">
+        <img alt="DD-IX" src="../assets/logo.png">
       </NuxtLink>
 
       <nav>
@@ -11,6 +11,7 @@
         <NuxtLink :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
         <NuxtLink :to="localePath('/peering-joining-policy')">{{ $t('header.peeringJoiningPolicy') }}</NuxtLink>
         <NuxtLink :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
+        <LanguageSwitcher></LanguageSwitcher>
       </nav>
     </header>
 
@@ -65,6 +66,7 @@ footer {
 </style>
 
 <script lang="ts" setup>
+
 import LanguageSwitcher from "~/compoents/LanguageSwitcher.vue";
 
 const date = new Date().getFullYear();

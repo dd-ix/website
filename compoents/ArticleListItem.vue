@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="slug" clas="not">
+  <NuxtLink :to="localePath(slug)" clas="not">
     <article>
       <img :src="image">
       <div class="content">
@@ -16,6 +16,7 @@
 
 <script lang="ts" setup>
 import {formatRelativeTime} from "assets/date-format";
+const localePath = useLocalePath()
 
 const {slug, title, image, description, date}
   = defineProps(['slug', 'title', 'image', 'description', 'date']);

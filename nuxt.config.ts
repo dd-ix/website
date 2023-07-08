@@ -17,6 +17,15 @@ export default defineNuxtConfig({
   telemetry: false,
   typescript: {strict: true},
   i18n: {
-    vueI18n: 'i18n.config.ts'
+    vueI18n: 'i18n.config.ts',
+    langDir: 'locales',
+    lazy: true,
+    baseUrl: 'http://localhost:3000',
+    locales: [
+      {code: 'en', iso: 'en-US', file: 'en.json', name: 'English'},
+      {code: 'de', iso: 'de-DE', file: 'de.json', name: 'Deutsch'},
+    ],
+    defaultLocale: 'de',
+    strategy: 'prefix_except_default',
   }
 })
