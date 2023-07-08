@@ -6,15 +6,24 @@
       </NuxtLink>
 
       <nav>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)">
+        <svg class="mobile-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
+             v-if="!menuOpen"
+             @click="menuOpen=true">
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
-        <NuxtLink :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
-        <NuxtLink :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
-        <NuxtLink :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
-        <NuxtLink :to="localePath('/peering-joining-policy')">{{ $t('header.peeringJoiningPolicy') }}</NuxtLink>
-        <NuxtLink :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
-        <LanguageSwitcher></LanguageSwitcher>
+        <svg class="mobile-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
+             v-if="menuOpen"
+             @click="menuOpen=false">
+          <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
+        </svg>
+        <div v-if="!isMobile || menuOpen" class="nav-container">
+          <NuxtLink :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
+          <NuxtLink :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
+          <NuxtLink :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
+          <NuxtLink :to="localePath('/peering-joining-policy')">{{ $t('header.peeringJoiningPolicy') }}</NuxtLink>
+          <NuxtLink :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
+          <LanguageSwitcher></LanguageSwitcher>
+        </div>
       </nav>
     </header>
 
@@ -99,10 +108,35 @@ header {
   img {
     height: 2rem;
   }
+
+  @media (max-width: 850px) {
+    nav {
+      position: relative;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      .nav-container {
+        z-index: 1000;
+        top: 2rem;
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--card);
+        padding: 0.5rem;
+        border: 0.1rem solid var(--card-border);
+        border-radius: 0.4rem;
+        gap: 0.2rem;
+      }
+    }
+  }
 }
 
 header, footer {
-  nav {
+  nav , nav div.nav-container{
     display: flex;
     gap: 0.5rem;
   }
@@ -131,9 +165,11 @@ footer {
 </style>
 
 <script lang="ts" setup>
-
+import { useMediaQuery } from '@vueuse/core'
 import LanguageSwitcher from "~/compoents/LanguageSwitcher.vue";
 
 const date = new Date().getFullYear();
 const localePath = useLocalePath()
+const menuOpen = ref(false);
+const isMobile= useMediaQuery('(max-width: 850px)')
 </script>

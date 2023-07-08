@@ -16,6 +16,7 @@
     "sass": "^1.63.6"
   },
   "dependencies": {
-    "@fontsource/dm-sans": "^5.0.4"
+    "@fontsource/dm-sans": "^5.0.4",
+    "@vueuse/core": "^10.2.1"
   }
 }

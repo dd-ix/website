@@ -70,3 +70,9 @@ article {
   padding: 1rem;
   overflow: hidden;
 }
+
+.mobile-only {
+  @media (min-width: 851px) {
+    display: none;
+  }
+}
