@@ -1,30 +1,30 @@
 <template>
-    <div class="default-container">
-        <header>
-            <NuxtLink to="/" class="not">
-                <img src="../assets/logo.png">
-            </NuxtLink>
+  <div class="default-container">
+    <header>
+      <NuxtLink class="not" to="/">
+        <img src="../assets/logo.png">
+      </NuxtLink>
 
-            <nav>
-                <NuxtLink to="/news">News</NuxtLink>
-                <NuxtLink to="/documents">Documents</NuxtLink>
-                <NuxtLink to="/todo">Looking Glas</NuxtLink>
-                <NuxtLink to="/peering-joining-policy">Peering and Joining Policy</NuxtLink>
-                <NuxtLink to="/contact">Contact</NuxtLink>
-            </nav>
-        </header>
+      <nav>
+        <NuxtLink to="/news">News</NuxtLink>
+        <NuxtLink to="/documents">Documents</NuxtLink>
+        <NuxtLink to="/todo">Looking Glas</NuxtLink>
+        <NuxtLink to="/peering-joining-policy">Peering and Joining Policy</NuxtLink>
+        <NuxtLink to="/contact">Contact</NuxtLink>
+      </nav>
+    </header>
 
-        <main>
-            <slot/>
-        </main>
+    <main>
+      <slot/>
+    </main>
 
-        <footer>
-            <span>&copy; {{date}} <b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span></span>
-            <nav>
-                <NuxtLink to="/imprint">Imprint</NuxtLink>
-            </nav>
-        </footer>
-    </div>
+    <footer>
+      <span>&copy; {{ date }} <b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span></span>
+      <nav>
+        <NuxtLink to="/imprint">Imprint</NuxtLink>
+      </nav>
+    </footer>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -64,6 +64,6 @@ footer {
 }
 </style>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 const date = new Date().getFullYear();
 </script>

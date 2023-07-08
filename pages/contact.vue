@@ -1,13 +1,13 @@
 <template>
-    <div class="contact-container">
-        <article>
-            <ContentDoc/>
-        </article>
-        <article>
-            <h1>Socials</h1>
-            <Socials/>
-        </article>
-    </div>
+  <div class="contact-container">
+    <article>
+      <ContentDoc/>
+    </article>
+    <article>
+      <h1>Socials</h1>
+      <Socials/>
+    </article>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -17,6 +17,6 @@
   gap: 1rem;
 }
 </style>
-<script setup lang="ts">
+<script lang="ts" setup>
 import Socials from "~/compoents/Socials.vue";
 </script>

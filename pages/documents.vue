@@ -1,15 +1,19 @@
 <template>
-    <div class="documents-container">
-        <h1>Documents</h1>
-        <DocumentCard slug="https://github.com/dd-ix/documents" image="/documents/satzung.jpg" title="Satzung"
-                      description="Die Satzung des DD-IX."></DocumentCard>
-        <DocumentCard slug="https://github.com/dd-ix/documents" image="/documents/satzung.jpg" title="Code of Conduct"
-                      description="Der Code of Conduct des DD-IX."></DocumentCard>
-        <DocumentCard slug="https://github.com/dd-ix/documents" image="/documents/satzung.jpg" title="Beitragsordnung"
-                      description="Der Beitragsordnung des DD-IX."></DocumentCard>
-        <DocumentCard slug="https://github.com/dd-ix/documents" image="/documents/satzung.jpg" title="Mitgliedsantrag"
-                      description="Der Mitgliedsantrag des DD-IX."></DocumentCard>
-    </div>
+  <div class="documents-container">
+    <h1>Documents</h1>
+    <DocumentCard description="Die Satzung des DD-IX." image="/documents/satzung.jpg"
+                  slug="https://github.com/dd-ix/documents"
+                  title="Satzung"></DocumentCard>
+    <DocumentCard description="Der Code of Conduct des DD-IX." image="/documents/satzung.jpg"
+                  slug="https://github.com/dd-ix/documents"
+                  title="Code of Conduct"></DocumentCard>
+    <DocumentCard description="Der Beitragsordnung des DD-IX." image="/documents/satzung.jpg"
+                  slug="https://github.com/dd-ix/documents"
+                  title="Beitragsordnung"></DocumentCard>
+    <DocumentCard description="Der Mitgliedsantrag des DD-IX." image="/documents/satzung.jpg"
+                  slug="https://github.com/dd-ix/documents"
+                  title="Mitgliedsantrag"></DocumentCard>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -23,6 +27,6 @@ h1 {
   gap: 1rem;
 }
 </style>
-<script setup lang="ts">
+<script lang="ts" setup>
 import DocumentCard from "~/compoents/DocumentCard.vue";
 </script>

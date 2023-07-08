@@ -1,12 +1,12 @@
 <template>
-    <div class="container">
-        <h1>News</h1>
-        <ul>
-            <li v-for="{ _path: slug, date, title, description, image } in articles" :key="slug">
-                <ArticleListItem :slug="slug" :title="title" :date="date" :description="description" :image="image"/>
-            </li>
-        </ul>
-    </div>
+  <div class="container">
+    <h1>News</h1>
+    <ul>
+      <li v-for="{ _path: slug, date, title, description, image } in articles" :key="slug">
+        <ArticleListItem :date="date" :description="description" :image="image" :slug="slug" :title="title"/>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -19,12 +19,12 @@ ul {
 }
 </style>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import {queryContent} from "#imports";
 import ArticleListItem from "~/compoents/ArticleListItem.vue";
 
 const articles = await queryContent('/news')
-    .sort({date: -1}) // show latest articles first
-    .only(['_path', 'date', 'title', 'description', 'image'])
-    .find();
+  .sort({date: -1}) // show latest articles first
+  .only(['_path', 'date', 'title', 'description', 'image'])
+  .find();
 </script>

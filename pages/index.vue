@@ -1,23 +1,23 @@
 <template>
-    <div class="index-container">
-        <article>
-            <ContentDoc/>
-        </article>
+  <div class="index-container">
+    <article>
+      <ContentDoc/>
+    </article>
 
-        <div>
-            <h2>News</h2>
-            <ul class="news-list">
-                <li v-for="{ _path: slug, date, title, description, image } in articles" :key="slug">
-                    <ArticleCard :slug="slug" :title="title" :date="date" :description="description" :image="image"/>
-                </li>
-            </ul>
-        </div>
-
-        <article>
-            <h1>Socials</h1>
-            <Socials/>
-        </article>
+    <div>
+      <h2>News</h2>
+      <ul class="news-list">
+        <li v-for="{ _path: slug, date, title, description, image } in articles" :key="slug">
+          <ArticleCard :date="date" :description="description" :image="image" :slug="slug" :title="title"/>
+        </li>
+      </ul>
     </div>
+
+    <article>
+      <h1>Socials</h1>
+      <Socials/>
+    </article>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -40,14 +40,14 @@ ul.news-list {
 }
 </style>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import {queryContent} from "#imports";
 import ArticleCard from "~/compoents/ArticleCard.vue";
 import Socials from "~/compoents/Socials.vue";
 
 const articles = await queryContent('/news')
-    .sort({date: -1}) // show latest articles first
-    .limit(3)
-    .only(['_path', 'date', 'title', 'description', 'image'])
-    .find();
+  .sort({date: -1}) // show latest articles first
+  .limit(3)
+  .only(['_path', 'date', 'title', 'description', 'image'])
+  .find();
 </script>
