@@ -1,0 +1,27 @@
+{
+  "branding": {
+    "name": "Dresden Internet Exchange",
+    "slogan": "Keep Local Traffic Local."
+  },
+  "header": {
+    "news": "Neuigkeiten",
+    "documents": "Dokumente",
+    "lookingGlas": "Looking Glas",
+    "peeringJoiningPolicy": "Peering und Beitritts Bestimmungen",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "imprint": "Impressum"
+  },
+  "landingpage": {
+    "news": "Neuigkeiten",
+    "socials": "Socials"
+  },
+  "contact": {
+    "socials": "Socials"
+  },
+  "wip": {
+    "title": "Noch in Arbeit",
+    "subtile": "Diese Seite wird noch erstellt."
+  }
+}

@@ -4,7 +4,7 @@
       <ContentDoc/>
     </article>
     <article>
-      <h1>Socials</h1>
+      <h1>{{ $t('contact.socials') }}</h1>
       <Socials/>
     </article>
   </div>

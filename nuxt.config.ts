@@ -5,9 +5,6 @@ export default defineNuxtConfig({
     head: {
       viewport: 'width=device-width, initial-scale=1',
       charset: 'utf-8',
-      htmlAttrs: {
-        lang: 'en',
-      },
     }
   },
   css: [
@@ -19,4 +16,7 @@ export default defineNuxtConfig({
   ],
   telemetry: false,
   typescript: {strict: true},
+  i18n: {
+    vueI18n: 'i18n.config.ts'
+  }
 })

@@ -1,16 +1,16 @@
 <template>
   <div class="default-container">
     <header>
-      <NuxtLink class="not" to="/">
-        <img src="../assets/logo.png">
+      <NuxtLink class="not" :to="localePath('/')">
+        <img src="../assets/logo.png" alt="DD-IX">
       </NuxtLink>
 
       <nav>
-        <NuxtLink to="/news">News</NuxtLink>
-        <NuxtLink to="/documents">Documents</NuxtLink>
-        <NuxtLink to="/todo">Looking Glas</NuxtLink>
-        <NuxtLink to="/peering-joining-policy">Peering and Joining Policy</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
+        <NuxtLink :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
+        <NuxtLink :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
+        <NuxtLink :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
+        <NuxtLink :to="localePath('/peering-joining-policy')">{{ $t('header.peeringJoiningPolicy') }}</NuxtLink>
+        <NuxtLink :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
       </nav>
     </header>
 
@@ -19,9 +19,9 @@
     </main>
 
     <footer>
-      <span>&copy; {{ date }} <b>Dresden Internet Exchange</b> - <span>Keep Local Traffic Local.</span></span>
+      <span>&copy; {{ date }} <b>{{ $t('branding.name') }}</b> - <span>{{ $t('branding.slogan') }}</span></span>
       <nav>
-        <NuxtLink to="/imprint">Imprint</NuxtLink>
+        <NuxtLink :to="localePath('/imprint')">{{ $t('footer.imprint') }}</NuxtLink>
       </nav>
     </footer>
   </div>
@@ -65,5 +65,8 @@ footer {
 </style>
 
 <script lang="ts" setup>
+import LanguageSwitcher from "~/compoents/LanguageSwitcher.vue";
+
 const date = new Date().getFullYear();
+const localePath = useLocalePath()
 </script>

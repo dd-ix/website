@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1>Work in progress</h1>
-    <p>This page is in progress of being created.</p>
+    <h1>{{ $t('wip.title') }}</h1>
+    <p>{{ $t('wip.subtile') }}</p>
   </article>
 </template>

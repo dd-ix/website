@@ -1,0 +1,27 @@
+{
+  "branding": {
+    "name": "Dresden Internet Exchange",
+    "slogan": "Keep Local Traffic Local."
+  },
+  "header": {
+    "news": "News",
+    "documents": "Documents",
+    "lookingGlas": "Looking Glas",
+    "peeringJoiningPolicy": "Peering and Joining Policy",
+    "contact": "Contact"
+  },
+  "footer": {
+    "imprint": "Imprint"
+  },
+  "landingpage": {
+    "news": "News",
+    "socials": "Socials"
+  },
+  "contact": {
+    "socials": "Socials"
+  },
+  "wip": {
+    "title": "Work in Progress",
+    "subtile": "This page is in progress of being created."
+  }
+}

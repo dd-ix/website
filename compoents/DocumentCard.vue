@@ -1,19 +1,19 @@
 <template>
-    <a :href="slug" target="_blank" class="not">
-        <article>
-            <div class="image" v-bind:style="{ backgroundImage: 'url(' + image + ')' }"></div>
-            <div class="shadow"></div>
-            <div class="content">
-                <h1>{{ title }}</h1>
-                <p>{{ description }}</p>
-            </div>
-        </article>
-    </a>
+  <NuxtLink :to="slug" class="not" target="_blank">
+    <article>
+      <div class="image" v-bind:style="{ backgroundImage: 'url(' + image + ')' }"></div>
+      <div class="shadow"></div>
+      <div class="content">
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+      </div>
+    </article>
+  </NuxtLink>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 const {slug, title, image, description}
-    = defineProps(['slug', 'title', 'image', 'description']);
+  = defineProps(['slug', 'title', 'image', 'description']);
 </script>
 
 <style lang="scss" scoped>

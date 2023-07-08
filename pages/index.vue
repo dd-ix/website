@@ -5,7 +5,7 @@
     </article>
 
     <div>
-      <h2>News</h2>
+      <h2>{{ $t('landingpage.news') }}</h2>
       <ul class="news-list">
         <li v-for="{ _path: slug, date, title, description, image } in articles" :key="slug">
           <ArticleCard :date="date" :description="description" :image="image" :slug="slug" :title="title"/>
@@ -14,7 +14,7 @@
     </div>
 
     <article>
-      <h1>Socials</h1>
+      <h1>{{ $t('landingpage.socials') }}</h1>
       <Socials/>
     </article>
   </div>

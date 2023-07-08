@@ -1,24 +1,24 @@
 <template>
-    <NuxtLink :to="slug" class="not">
-        <article>
-            <div class="image" v-bind:style="{ backgroundImage: 'url(' + image + ')' }"></div>
-            <div class="shadow"></div>
-            <div class="content">
-                <h1>{{ title }}</h1>
-                <p>
-                    <b>{{ formatRelativeTime(date) }}.</b>
-                    {{ description }}
-                </p>
-            </div>
-        </article>
-    </NuxtLink>
+  <NuxtLink :to="slug" class="not">
+    <article>
+      <div class="image" v-bind:style="{ backgroundImage: 'url(' + image + ')' }"></div>
+      <div class="shadow"></div>
+      <div class="content">
+        <h1>{{ title }}</h1>
+        <p>
+          <b>{{ formatRelativeTime(date) }}.</b>
+          {{ description }}
+        </p>
+      </div>
+    </article>
+  </NuxtLink>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import {formatRelativeTime} from "assets/date-format";
 
 const {slug, title, image, description, date}
-    = defineProps(['slug', 'title', 'image', 'description', 'date']);
+  = defineProps(['slug', 'title', 'image', 'description', 'date']);
 </script>
 
 <style lang="scss" scoped>
