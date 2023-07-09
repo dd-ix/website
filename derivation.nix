@@ -1,11 +1,11 @@
-{ pkgs, lib, config, mkYarnPackage, yarn }:
+{ pkgs, lib, config, mkYarnPackage, yarn, domain}:
 mkYarnPackage {
     name = "dd-ix-website";
     src = ./.;
 
     buildInputs = [ yarn ];
     postPatch = ''
-      substituteInPlace nuxt.config.json \
+      substituteInPlace nuxt.config.ts \
         --replace 'http://localhost:3000' 'https://${domain}'
     '';
 
