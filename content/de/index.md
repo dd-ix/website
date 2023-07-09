@@ -1,17 +1,16 @@
-DE DD-ix, Dresden's upcoming Internet Exchange, is a passionate young team embarking on an exciting journey to build a
-thriving digital infrastructure hub in the heart of this vibrant city. As we lay the foundation for DD-ix, we are
-actively seeking sponsors, supporters, and a location to house our cutting-edge infrastructure and hardware. Join us on
-this passionate endeavor and help shape Dresden's digital landscape.
+# Dresdner Internet Exchange
 
-By becoming a sponsor or offering a location for our infrastructure, you become an integral part of DD-ix's success
-story. Your support will help us establish a strong foundation for Dresden's digital transformation and enable us to
-deliver an exceptional Internet Exchange experience. In return, we offer visibility, recognition, and the satisfaction
-of knowing that you are actively shaping Dresden's digital future.
+<img src="/images/dd-skyline.jpg" alt="Foto der Skyline von Dresden" title="Dresden Skyline" style="max-width: 100%">
 
-If you are interested in sponsoring DD-ix, providing a location for our infrastructure, or supporting us in any way, we
-invite you to reach out to our team. Let's work together to turn our passion project into a driving force that propels
-Dresden into the digital age.
+Der DD-IX wird der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen
+Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr zur Verfügung. Nur 20km vom
+geographischen Mittelpunkt Sachsens entfernt bieten die zukünftigen DD-IX Standorte in Dresden die ideale
+Vorraussetzung um sich mit den Teilnehmern in der Region zu vernetzen.
 
-Join us on this remarkable journey and help us build DD-ix, the catalyst for Dresden's digital revolution. Together, we
-can unlock the city's full potential and create endless possibilities for innovation, collaboration, and growth.
+Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. Unsere Mission ist es eine Basis zu
+schaffen um für den Internet-Verkehr in der Region den direkten Austausch zwischen Quelle und Ziel zu ermöglichen.
+Das Internet lebt von einem dezentraler Vermaschung zwischen den Providern welche vor allem durch IXPs effizient
+ermöglicht wird. Durch sie kann der Internet-Verkehr auf dem ökonimisch und ökologisch besten Weg ausgetauscht werden.
 
+Ob als Sponsor oder durch Eintritt in den Verein, begleite uns bei der Entwicklung des DD-IX – dem Katalysator für
+die digitale Zukunft in der Region!
