@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/i18n'],
+  ssr: true,
   app: {
     head: {
       viewport: 'width=device-width, initial-scale=1',
@@ -19,7 +20,7 @@ export default defineNuxtConfig({
   i18n: {
     vueI18n: 'i18n.config.ts',
     langDir: 'locales',
-    lazy: true,
+    lazy: false,
     baseUrl: 'http://localhost:3000',
     locales: [
       {code: 'en', iso: 'en-US', file: 'en.json', name: 'English'},

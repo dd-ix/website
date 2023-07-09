@@ -11,7 +11,7 @@
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
 
-        <div v-if="menuOpen" class="nav-container">
+        <div :class="{hidden: !menuOpen}" class="nav-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
                @click="menuOpen=false">
             <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
