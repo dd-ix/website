@@ -16,13 +16,15 @@
                @click="menuOpen=false">
             <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
           </svg>
-          <NuxtLink :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
-          <NuxtLink :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
-          <NuxtLink :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
-          <NuxtLink :to="localePath('/peering-joining-policy')">{{ $t('header.peeringJoiningPolicy') }}</NuxtLink>
-          <NuxtLink :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
-          <LanguageSwitcher></LanguageSwitcher>
-          <button @click="switchTheme()" class="button">
+          <NuxtLink @click="menuOpen=false" :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
+          <NuxtLink @click="menuOpen=false" :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
+          <NuxtLink @click="menuOpen=false" :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
+          <NuxtLink @click="menuOpen=false" :to="localePath('/peering-joining-policy')">
+            {{ $t('header.peeringJoiningPolicy') }}
+          </NuxtLink>
+          <NuxtLink @click="menuOpen=false" :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
+          <LanguageSwitcher @click="menuOpen=false"></LanguageSwitcher>
+          <button @click="switchTheme(); menuOpen=false" class="button">
             {{ theme ?? isDark ? 'Light' : 'Dark' }} Mode
           </button>
         </div>
