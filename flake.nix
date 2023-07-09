@@ -9,7 +9,7 @@
       (system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-          package-production = pkgs.callPackage ./derivation.nix { 
+          package-production = pkgs.callPackage ./derivation.nix {
             domain = "dd-ix.net";
           };
         in
