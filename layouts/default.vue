@@ -7,22 +7,24 @@
 
       <nav>
         <svg class="mobile-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
-             v-if="!menuOpen"
              @click="menuOpen=true">
           <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
-        <svg class="mobile-only" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
-             v-if="menuOpen"
-             @click="menuOpen=false">
-          <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
-        </svg>
-        <div v-if="!isMobile || menuOpen" class="nav-container">
+
+        <div v-if="menuOpen" class="nav-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
+               @click="menuOpen=false">
+            <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
+          </svg>
           <NuxtLink :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
           <NuxtLink :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
           <NuxtLink :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
           <NuxtLink :to="localePath('/peering-joining-policy')">{{ $t('header.peeringJoiningPolicy') }}</NuxtLink>
           <NuxtLink :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
           <LanguageSwitcher></LanguageSwitcher>
+          <button @click="switchTheme()" class="button">
+            {{ theme ?? isDark ? 'Light' : 'Dark' }} Mode
+          </button>
         </div>
       </nav>
     </header>
@@ -109,34 +111,32 @@ header {
     height: 2rem;
   }
 
-  @media (max-width: 850px) {
-    nav {
-      position: relative;
+  nav {
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
 
-      svg {
-        width: 2rem;
-        height: 2rem;
-      }
-
-      .nav-container {
-        z-index: 1000;
-        top: 2rem;
-        position: absolute;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--card);
-        padding: 0.5rem;
-        border: 0.1rem solid var(--card-border);
-        border-radius: 0.4rem;
-        gap: 0.2rem;
-      }
+    .nav-container {
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      position: fixed;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--card);
+      padding: 1rem;
+      gap: 0.2rem;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
 
 header, footer {
-  nav , nav div.nav-container{
+  nav, nav div.nav-container {
     display: flex;
     gap: 0.5rem;
   }
@@ -162,14 +162,37 @@ footer {
     }
   }
 }
+
+.button {
+  outline: none;
+  border: 0.1rem solid var(--text);
+  border-radius: 0.4rem;
+  color: var(--text);
+  background-color: transparent;
+  cursor: pointer;
+}
 </style>
 
 <script lang="ts" setup>
-import { useMediaQuery } from '@vueuse/core'
+import {useMediaQuery} from '@vueuse/core'
 import LanguageSwitcher from "~/compoents/LanguageSwitcher.vue";
 
 const date = new Date().getFullYear();
 const localePath = useLocalePath()
 const menuOpen = ref(false);
-const isMobile= useMediaQuery('(max-width: 850px)')
+const isDark = useMediaQuery('(prefers-color-scheme: dark)')
+const theme = ref(undefined);
+
+function switchTheme() {
+  if (document.body.classList.contains("light-theme") || !isDark.value) {
+    document.body.classList.remove("light-theme");
+    document.body.classList.add("dark-theme");
+    theme.value = true;
+  } else {
+    document.body.classList.remove("dark-theme");
+    document.body.classList.add("light-theme");
+
+    theme.value = false;
+  }
+}
 </script>

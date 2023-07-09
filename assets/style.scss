@@ -1,4 +1,4 @@
-:root {
+:root, body.light-theme {
   color-scheme: light dark;
   --primary: #5a32fe;
   --text: #000;
@@ -17,6 +17,15 @@
     --card-border: #212121;
     --tud-color: var(--text);
   }
+}
+
+body.dark-theme {
+  --primary: #5a32fe;
+  --text: #f6f6f6;
+  --background: #000;
+  --card: #181818;
+  --card-border: #212121;
+  --tud-color: var(--text);
 }
 
 $primary: var(--primary);
@@ -69,10 +78,4 @@ article {
   border-radius: 0.4rem;
   padding: 1rem;
   overflow: hidden;
-}
-
-.mobile-only {
-  @media (min-width: 851px) {
-    display: none;
-  }
 }
