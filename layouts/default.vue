@@ -12,21 +12,25 @@
         </svg>
 
         <div :class="{hidden: !menuOpen}" class="nav-container">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
-               @click="menuOpen=false">
-            <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
-          </svg>
-          <NuxtLink @click="menuOpen=false" :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
-          <NuxtLink @click="menuOpen=false" :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
-          <NuxtLink @click="menuOpen=false" :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
-          <NuxtLink @click="menuOpen=false" :to="localePath('/peering-joining-policy')">
-            {{ $t('header.peeringJoiningPolicy') }}
-          </NuxtLink>
-          <NuxtLink @click="menuOpen=false" :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
-          <LanguageSwitcher @click="menuOpen=false"></LanguageSwitcher>
-          <button @click="switchTheme(); menuOpen=false" class="button">
-            {{ theme ?? isDark ? 'Light' : 'Dark' }} Mode
-          </button>
+          <div class="nav-content-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill:var(--text)"
+                 @click="menuOpen=false" class="close">
+              <path d="m19 6-1-1-6 6-6-6-1 1 6 6-6 6 1 1 6-6 6 6 1-1-6-6z"/>
+            </svg>
+            <NuxtLink @click="menuOpen=false" :to="localePath('/news')">{{ $t('header.news') }}</NuxtLink>
+            <NuxtLink @click="menuOpen=false" :to="localePath('/documents')">{{ $t('header.documents') }}</NuxtLink>
+            <NuxtLink @click="menuOpen=false" :to="localePath('/todo')">{{ $t('header.lookingGlas') }}</NuxtLink>
+            <NuxtLink @click="menuOpen=false" :to="localePath('/peering-joining-policy')">
+              {{ $t('header.peeringJoiningPolicy') }}
+            </NuxtLink>
+            <NuxtLink @click="menuOpen=false" :to="localePath('/contact')">{{ $t('header.contact') }}</NuxtLink>
+            <div class="buttons">
+              <LanguageSwitcher @click="menuOpen=false"></LanguageSwitcher>
+              <button @click="switchTheme(); menuOpen=false" class="button">
+                {{ theme ?? isDark ? 'Light' : 'Dark' }} Mode
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -120,6 +124,22 @@ header {
     }
 
     .nav-container {
+      div.nav-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .close {
+          align-self: flex-end;
+        }
+
+        .buttons {
+          margin-top: 2rem;
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+
       z-index: 1000;
       top: 0;
       left: 0;
@@ -172,6 +192,8 @@ footer {
   color: var(--text);
   background-color: transparent;
   cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.2rem;
 }
 </style>
 
