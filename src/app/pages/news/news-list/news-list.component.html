@@ -1,0 +1,10 @@
+<ul>
+  <li *ngFor="let post of posts | async">
+    <a [routerLink]="post.slug">
+      <b>{{post.title}}</b>
+      -
+      <i>{{post.published | date}}</i>
+      {{post.description}}
+    </a>
+  </li>
+</ul>

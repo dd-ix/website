@@ -1,0 +1,5 @@
+<article *ngIf="post | async as post">
+  <h1>{{post.title}}</h1>
+  Published: <b>{{post.published | date}}</b> | Modified: <b>{{post.modified | date}}</b> | Authors: <b>{{formatAuthors(post.authors)}}</b>
+  <div [innerHTML]="post.body"></div>
+</article>
