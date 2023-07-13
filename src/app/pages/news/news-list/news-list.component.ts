@@ -1,6 +1,5 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {NewsService} from "../../../api/news.service";
-import {provideRouter} from "@angular/router";
 
 @Component({
   selector: 'app-news-list',
@@ -16,6 +15,4 @@ export class NewsListComponent {
     private readonly newsService: NewsService,
   ) {
   }
-
-  protected readonly provideRouter = provideRouter;
 }

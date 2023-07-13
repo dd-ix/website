@@ -1,1 +1,36 @@
-<router-outlet></router-outlet>
+<aside>
+  <a class="not icon" routerLink="/">
+    <app-icon-logo></app-icon-logo>
+  </a>
+
+  <nav>
+    <ul>
+      <li><a routerLink="/news">News</a></li>
+      <li><a routerLink="/documents">Documents</a></li>
+      <li><a routerLink="/looking-glass">Looking Glass</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <select class="lang">
+    <option value="en">English</option>
+    <option value="de">Deutsch</option>
+  </select>
+</aside>
+
+<main>
+  <div class="container">
+    <div [@routing]="outlet.isActivated ? outlet.activatedRoute : ''">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+    <footer>
+      <span>
+        &copy; {{currentYear()}} <b>DD-IX</b> - Keep Local Traffic Local.
+      </span>
+      <nav>
+        <a routerLink="/privacy-policy">Privacy Policy</a>
+        <a routerLink="/imprint">Imprint</a>
+      </nav>
+    </footer>
+  </div>
+</main>

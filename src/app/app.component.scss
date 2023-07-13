@@ -1,0 +1,58 @@
+@import "vars";
+
+:host {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+aside {
+  height: 100vh;
+  padding: $page-padding-tb 1rem;
+
+  &, .end {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .icon {
+    display: block;
+    width: 8rem;
+  }
+
+  nav {
+    a {
+      border: none;
+    }
+  }
+
+  .lang {
+    margin-top: auto;
+  }
+}
+
+main {
+  max-height: 100vh;
+  overflow-y: auto;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: $page-width;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: $page-padding-tb $page-padding-lr;
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 1rem;
+
+      nav {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

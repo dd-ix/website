@@ -1,0 +1,87 @@
+@import "vars";
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+a:not(.not):not(:has(section)) {
+  border-bottom: 0.15rem solid $primary;
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
+
+  svg {
+    transition: fill 150ms ease-in-out;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $secondary;
+
+    svg {
+      fill: $secondary;
+    }
+  }
+}
+
+section, aside {
+  border: 0.1rem solid $background-lighter;
+  background-color: $background-light;
+}
+
+section {
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+a {
+  section {
+    transition: transform 150ms ease-in-out, border-color 150ms ease-in-out;
+  }
+
+  &:hover section {
+    transform: scale(0.99);
+    border-color: $primary;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, .section {
+  margin: 0 0 1rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 0.5rem;
+  border-left: 0.15rem solid $text;
+}
+
+ol:not(.not) {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+ul, ol {
+  &.not {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+ul:not(.not) {
+  list-style-type: none;
+
+  li::before {
+    content: '-';
+    color: $primary;
+    padding-right: 0.5rem;
+  }
+}

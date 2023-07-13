@@ -14,10 +14,10 @@ export class NewsService {
   }
 
   public getPosts(): Observable<SmallPost[]> {
-    return this.http.get<SmallPost[]>("http://localhost:8080/news");
+    return this.http.get<SmallPost[]>("http://127.0.0.1:8080/news", {});
   }
 
   public getPost(lang: Language, slug: string): Observable<Post> {
-    return this.http.get<Post>(`http://localhost:8080/news/${lang}/${slug}`);
+    return this.http.get<Post>(`http://127.0.0.1:8080/news/${lang}/${slug}`, {});
   }
 }
