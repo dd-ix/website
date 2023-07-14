@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "naersk": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1688534083,
+        "narHash": "sha256-/bI5vsioXscQTsx+Hk9X5HfweeNZz/6kVKsbdqfwW7g=",
+        "owner": "nix-community",
+        "repo": "naersk",
+        "rev": "abca1fb7a6cfdd355231fc220c3d0302dbb4369a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "naersk",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1689209875,
@@ -18,7 +38,9 @@
     },
     "root": {
       "inputs": {
+        "naersk": "naersk",
         "nixpkgs": "nixpkgs",
+        "tlms-rs": "tlms-rs",
         "utils": "utils"
       }
     },
@@ -34,6 +56,26 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tlms-rs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1684699599,
+        "narHash": "sha256-dgGBh23d70GBCsOhW+6sG6PUI79CUy7fI4bCCvjPRI8=",
+        "owner": "tlm-solutions",
+        "repo": "tlms.rs",
+        "rev": "31b1ba0092ed99a36b3c0215dc35d4dcb545eddb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tlm-solutions",
+        "repo": "tlms.rs",
         "type": "github"
       }
     },
