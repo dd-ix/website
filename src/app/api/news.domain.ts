@@ -9,7 +9,7 @@ export interface SmallPost {
   idx: number;
   title: string;
   published: string;
-  modified: string;
+  modified: string | null;
   description: string;
   keywords: string[];
   authors: string[];

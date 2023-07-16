@@ -1,8 +1,12 @@
-<article *ngIf="post | async as post">
-  <h1>{{post.title}}</h1>
-  Published: <b>{{post.published | date}}</b> | Modified: <b>{{post.modified | date}}</b> | Author(s):
-  <b>{{formatAuthors(post.authors)}}</b>
+<section *ngIf="(post | async) as post">
+    <h1>{{post.title}}</h1>
+    Published: <b>{{post.published | date}}</b>
+    <span *ngIf="post.modified"> | Modified: <b>{{post.modified | date}}</b></span>
+    | Author<span *ngIf="post.authors.length > 1">s</span>:
+    <b>{{formatAuthors(post.authors)}}</b>
 
-  <section [innerHtml]="safeHtml(post.body)">
-  </section>
-</article>
+    <br>
+    <br>
+    <div [innerHtml]="safeHtml(post.body)">
+    </div>
+</section>
