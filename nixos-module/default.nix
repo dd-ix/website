@@ -29,8 +29,8 @@ in
           wantedBy = [ "multi-user.target" ];
 
           script = ''
-            cd ${pkgs.presence}
-            exec ${pkgs.nodejs}/bin/node dist/presence/server/main.js&
+            export APP_DIR=${pkgs.presence}
+            exec ${pkgs.nodejs}/bin/node ${pkgs.presence}/server.mjs&
           '';
 
           serviceConfig = {

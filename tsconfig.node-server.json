@@ -4,11 +4,11 @@
   "compilerOptions": {
     "outDir": "./out-tsc/server",
     "types": [
-      "node",
-      "@angular/localize"
-    ]
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true
   },
   "files": [
-    "src/main.server.ts",
+    "server.ts"
   ]
 }

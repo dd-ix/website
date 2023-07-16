@@ -17,12 +17,12 @@ mkYarnPackage {
 
       chmod -R 777 ./deps/presence
       cp -r ./node_modules/* ./deps/presence/node_modules/
-      yarn run build:ssr
+      yarn run build:ci
     '';
 
     installPhase = ''
       mkdir -p $out/dist
-      cp -r ./deps/presence/dist/* $out/dist/
+      cp -r ./deps/presence/dist/* $out/
     '';
 
     doDist = false;

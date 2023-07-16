@@ -4,13 +4,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-path ./dist",
+    "build:ci": "ng build --output-path ./dist/browser --localize && ng run presence:server --output-path ./dist/server --localize && rollup -c rollup.config.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
     "dev:ssr": "ng run presence:serve-ssr",
     "serve:ssr": "node dist/presence/server/main.js",
     "build:ssr": "ng build && ng run presence:server",
-    "prerender": "ng run presence:prerender"
+    "prerender": "ng run presence:prerender",
+    "extract-i18n": "ng extract-i18n --out-file src/locales/en.xlf --format xlif"
   },
   "private": true,
   "dependencies": {
@@ -34,7 +37,12 @@
     "@angular-devkit/build-angular": "^16.1.4",
     "@angular/cli": "~16.1.4",
     "@angular/compiler-cli": "^16.1.5",
+    "@angular/localize": "16.1.5",
     "@nguniversal/builders": "^16.1.1",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~4.3.5",
     "@types/node": "^18.16.19",
@@ -44,6 +52,7 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "rollup": "^3.26.2",
     "typescript": "~5.1.6"
   }
 }
