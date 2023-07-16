@@ -1,28 +1,12 @@
-import 'zone.js/fesm2015/zone-node.js';
 import express from "express";
+import {resolve} from 'path';
 
 async function app(appDir: string, lang: string): Promise<express.Express> {
-  const app = express();
-
-  const serverFolder = `${appDir}/server/${lang}`;
-  const browserFolder = `${appDir}/browser/${lang}`;
+  const serverFolder = resolve(`${appDir}/server/${lang}`);
 
   const {default: module} = await import(`${serverFolder}/main.js`);
 
-  app.engine("html", module.ngExpressEngine({
-    bootstrap: module.AppServerModule
-  }));
-
-  app.set('view engine', 'html');
-  app.set('views', browserFolder);
-
-  app.get('*.*', express.static(browserFolder, {
-    maxAge: '1y'
-  }));
-
-  app.get('*', (req, res) => res.render("index", {req}));
-
-  return app;
+  return module.app(appDir, lang);
 }
 
 async function main() {
