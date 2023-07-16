@@ -20,7 +20,7 @@ export class AppComponent {
         ? {code: Language.ENGLISH, name: "English"}
         : {code: Language.GERMAN, name: "Deutsch"};
 
-      return {href: `/${code}/${this.location.path().substring(4)}`, name};
+      return {href: `/${code}${this.location.path()}`, name};
     })
   );
 

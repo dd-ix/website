@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {DocumentsService} from "../../api/documents.service";
 
 @Component({
   selector: 'app-documents',
@@ -10,4 +11,10 @@ import { CommonModule } from '@angular/common';
 })
 export class DocumentsComponent {
 
+  protected readonly documents = this.documentsService.getDocuments();
+
+  constructor(
+    private readonly documentsService: DocumentsService
+  ) {
+  }
 }

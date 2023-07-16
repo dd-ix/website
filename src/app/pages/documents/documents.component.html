@@ -1,4 +1,11 @@
-<section>
-  <h1>Privacy Policy</h1>
-  <p>Work in progress</p>
-</section>
+<h1>Documents</h1>
+<ul class="not">
+  <li *ngFor="let document of documents | async">
+    <a>
+      <section>
+        <h1>{{document.name}}</h1>
+        <p>{{document.description}}</p>
+      </section>
+    </a>
+  </li>
+</ul>
