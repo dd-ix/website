@@ -12,10 +12,7 @@
     </ul>
   </nav>
 
-  <select class="lang">
-    <option value="en">English</option>
-    <option value="de">Deutsch</option>
-  </select>
+  <a *ngIf="switchLanguage | async as lang" [href]="lang.href" class="lang">{{lang.name}}</a>
 </aside>
 
 <main>

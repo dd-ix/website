@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
 import {Language, Post, SmallPost} from "./news.domain";
@@ -15,6 +15,7 @@ export class NewsService {
 
   constructor(
     private readonly http: HttpClient,
+    @Inject(LOCALE_ID) private readonly lang: Language,
   ) {
   }
 
@@ -25,14 +26,14 @@ export class NewsService {
 
     this.nextUpdate = Date.now() + MAX_AGE;
 
-    return this.http.get<SmallPost[]>("http://127.0.0.1:8080/news")
+    return this.http.get<SmallPost[]>(`http://127.0.0.1:8080/news/${this.lang}`)
       .pipe(
         tap(posts => this.posts.next(posts)),
         switchMap(() => this.posts),
       );
   }
 
-  public getPost(lang: Language, slug: string): Observable<Post> {
-    return this.http.get<Post>(`http://127.0.0.1:8080/news/${lang}/${slug}`);
+  public getPost(slug: string): Observable<Post> {
+    return this.http.get<Post>(`http://127.0.0.1:8080/news/${this.lang}/${slug}`);
   }
 }

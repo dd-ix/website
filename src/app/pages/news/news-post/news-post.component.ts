@@ -14,7 +14,7 @@ import {DomSanitizer, Meta, SafeHtml} from "@angular/platform-browser";
 export class NewsPostComponent {
 
   protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({slug}) => this.newsService.getPost(Language.GERMAN, slug)),
+    switchMap(({slug}) => this.newsService.getPost(slug)),
     tap(post => {
       this.meta.updateTag({name: "description", content: post.description});
       this.meta.updateTag({name: "keywords", content: post.keywords.join(", ")});
