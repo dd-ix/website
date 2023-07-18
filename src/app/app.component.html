@@ -1,16 +1,18 @@
 <aside [class.open]="asideSown | async" (click)="closeAside()">
-  <a class="not icon" routerLink="/">
-    <app-icon-logo></app-icon-logo>
-  </a>
+  <div class="aside-container">
+    <a class="not icon" routerLink="/">
+      <app-icon-logo></app-icon-logo>
+    </a>
 
-  <nav>
-    <ul>
-      <li><a routerLink="/news" i18n>News</a></li>
-      <li><a routerLink="/documents" i18n>Documents</a></li>
-      <li><a routerLink="/looking-glass" i18n>Looking Glass</a></li>
-      <li><a routerLink="/contact" i18n>Contact</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a routerLink="/news" i18n>News</a></li>
+        <li><a routerLink="/documents" i18n>Documents</a></li>
+        <li><a routerLink="/looking-glass" i18n>Looking Glass</a></li>
+        <li><a routerLink="/contact" i18n>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <div class="aside-footer">
     <a *ngIf="switchLanguage | async as lang" [href]="lang.href" class="lang">{{lang.name}}</a>
