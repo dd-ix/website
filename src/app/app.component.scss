@@ -79,6 +79,13 @@
     }
   }
 
+  aside .aside-footer nav {
+    display: none;
+    @media screen and (max-width: $bp-mobile) {
+      display: flex;
+    }
+  }
+
   main {
     max-height: 100svh;
     overflow-y: auto;
