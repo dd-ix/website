@@ -1,4 +1,4 @@
-<aside>
+<aside [class.open]="asideSown | async" (click)="closeAside()">
   <a class="not icon" routerLink="/">
     <app-icon-logo></app-icon-logo>
   </a>
@@ -12,17 +12,27 @@
     </ul>
   </nav>
 
-  <a *ngIf="switchLanguage | async as lang" [href]="lang.href" class="lang">{{lang.name}}</a>
+  <div class="aside-footer">
+    <a *ngIf="switchLanguage | async as lang" [href]="lang.href" class="lang">{{lang.name}}</a>
+    <nav>
+      <a routerLink="/privacy-policy" i18n>Privacy Policy</a>
+      <a routerLink="/imprint" i18n>Imprint</a>
+    </nav>
+  </div>
 </aside>
 
 <main>
   <div class="container">
-    <div [@routing]="outlet.isActivated ? outlet.activatedRoute : ''">
+    <button (click)="toggleAside()" class="menu-btn">
+      <app-icon-menu></app-icon-menu>
+    </button>
+
+    <div [@routing]="outlet.isActivated && (enableAnimation | async) ? outlet.activatedRoute : ''">
       <router-outlet #outlet="outlet"></router-outlet>
     </div>
     <footer>
       <span i18n>
-        &copy; {{currentYear()}} <b>DD - IX</b> - Keep Local Traffic Local.
+        &copy; {{currentYear()}} <b>DD - IX</b> <span class="slogan">- Keep Local Traffic Local.</span>
       </span>
       <nav>
         <a routerLink="/privacy-policy" i18n>Privacy Policy</a>

@@ -1,9 +1,9 @@
-import {ChangeDetectionStrategy, Component, Inject, LOCALE_ID} from '@angular/core';
+import {ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID} from '@angular/core';
 import {routingAnimation} from "./animation/routing.animation";
 import {Language} from "./api/news.domain";
-import {Router} from "@angular/router";
+import {NavigationEnd, Router} from "@angular/router";
 import {Location} from "@angular/common";
-import {map} from "rxjs";
+import {BehaviorSubject, delay, filter, map, take} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -13,6 +13,9 @@ import {map} from "rxjs";
   animations: [routingAnimation],
 })
 export class AppComponent {
+
+  protected asideSown = new BehaviorSubject(false);
+  protected enableAnimation = new BehaviorSubject(false);
 
   protected readonly switchLanguage = this.router.events.pipe(
     map(() => {
@@ -29,9 +32,29 @@ export class AppComponent {
     private readonly location: Location,
     private readonly router: Router,
   ) {
+    this.router.events
+      .pipe(
+        filter(event => event instanceof NavigationEnd),
+        take(1),
+        delay(10)
+      )
+      .subscribe(() => this.enableAnimation.next(true));
+  }
+
+  @HostListener('document:keydown.escape')
+  private onKeyPress(): void {
+    this.asideSown.next(false);
   }
 
   protected currentYear(): number {
     return new Date().getFullYear();
+  }
+
+  protected toggleAside(): void {
+    this.asideSown.next(!this.asideSown.value);
+  }
+
+  public closeAside(): void {
+    this.asideSown.next(false);
   }
 }
