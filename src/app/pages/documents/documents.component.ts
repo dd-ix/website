@@ -19,7 +19,7 @@ export class DocumentsComponent {
   ) {
   }
 
-  getDownloadLink(document: Document): string {
+  protected buildDownloadLink(document: Document): string {
     return `http://127.0.0.1:8080/documents/download/${document.filename}`;
   }
 
