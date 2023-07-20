@@ -5,7 +5,7 @@ mkYarnPackage {
 
     buildInputs = [ yarn ];
     postPatch = ''
-      substituteInPlace src/app/api/news.service.ts \
+      substituteInPlace src/app/api/api.domain.ts \
         --replace 'http://127.0.0.1:8080' 'https://content.${domain}'
     '';
 
