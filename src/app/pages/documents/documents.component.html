@@ -1,7 +1,7 @@
 <h1 i18n>Documents</h1>
 <ul class="not">
   <li *ngFor="let document of documents | async">
-    <a>
+    <a target="_blank" [href]="getDownloadLink(document)">
       <section>
         <h1>{{document.name}}</h1>
         <p>{{document.description}}</p>
