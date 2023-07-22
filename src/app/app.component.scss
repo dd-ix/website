@@ -10,7 +10,7 @@
   }
 
   aside {
-    height: 100svh;
+    height: 100dvh;
     padding: $page-padding-tb $page-padding-lr;
 
     &, .end {
@@ -87,7 +87,7 @@
   }
 
   main {
-    max-height: 100svh;
+    max-height: 100dvh;
     overflow-y: auto;
 
     .container {
@@ -107,7 +107,7 @@
       flex-direction: column;
       max-width: $page-width;
       margin: 0 auto;
-      min-height: 100svh;
+      min-height: 100dvh;
       padding: $page-padding-tb $page-padding-lr;
 
       footer {
