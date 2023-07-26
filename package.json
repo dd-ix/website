@@ -1,6 +1,7 @@
 {
   "name": "presence",
   "version": "0.0.0",
+  "packageManager": "pnpm@8.6.10",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
