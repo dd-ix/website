@@ -1,7 +1,7 @@
 FROM node:18-alpine
 ENV APP_DIR=/app
 
-COPY dist /app
+COPY ./dist /app
 
 EXPOSE 4000
 
