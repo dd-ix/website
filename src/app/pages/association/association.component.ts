@@ -5,13 +5,13 @@ import {Document} from "../../api/documents.domain";
 import {API_DOMAIN} from "../../api/api.domain";
 
 @Component({
-  selector: 'app-documents',
+  selector: 'app-association',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './documents.component.html',
-  styleUrls: ['./documents.component.scss']
+  templateUrl: './association.component.html',
+  styleUrls: ['./association.component.scss']
 })
-export class DocumentsComponent {
+export class AssociationComponent {
 
   protected readonly documents = this.documentsService.getDocuments();
 
@@ -23,5 +23,4 @@ export class DocumentsComponent {
   protected buildDownloadLink(document: Document): string {
     return `${API_DOMAIN}/documents/download/${document.filename}`;
   }
-
 }

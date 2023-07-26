@@ -1,5 +1,11 @@
-ul {
+:host, ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+:host {
+  > h1 {
+    margin: 0;
+  }
 }

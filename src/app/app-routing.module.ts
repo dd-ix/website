@@ -5,8 +5,8 @@ const routes: Routes = [
   {path: '', loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent)},
   {path: 'news', loadChildren: () => import('./pages/news/news.module').then(m => m.NewsModule)},
   {
-    path: 'documents',
-    loadComponent: () => import('./pages/documents/documents.component').then(c => c.DocumentsComponent)
+    path: 'association',
+    loadComponent: () => import('./pages/association/association.component').then(c => c.AssociationComponent)
   },
   {
     path: 'looking-glass',
