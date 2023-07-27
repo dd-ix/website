@@ -2,8 +2,7 @@ import {ChangeDetectionStrategy, Component, SecurityContext} from '@angular/core
 import {NewsService} from "../../../api/news.service";
 import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
-import {Language} from "../../../api/news.domain";
-import {DomSanitizer, Meta, SafeHtml} from "@angular/platform-browser";
+import {DomSanitizer, Meta} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-news-post',
@@ -33,7 +32,7 @@ export class NewsPostComponent {
     return authors.join(', ');
   }
 
-  protected safeHtml(html: string): SafeHtml {
-    return this.sanitizer.bypassSecurityTrustHtml(this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '');
+  protected safeHtml(html: string): string | null {
+    return this.sanitizer.sanitize(SecurityContext.HTML, html);
   }
 }

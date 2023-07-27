@@ -1,28 +1,6 @@
 <h1 i18n>Dresden Internet Exchange</h1>
-<section>
-  <h1 i18n>Keep Local Traffic Local.</h1>
-  <p>
-    DE DD-ix, Dresden's upcoming Internet Exchange, is a passionate young team embarking on an exciting journey to
-    build a thriving digital infrastructure hub in the heart of this vibrant city. As we lay the foundation for DD-ix,
-    we are actively seeking sponsors, supporters, and a location to house our cutting-edge infrastructure and hardware.
-    Join us on this passionate endeavor and help shape Dresden's digital landscape.
-  </p>
-  <p>
-    By becoming a sponsor or offering a location for our infrastructure, you become an integral part of DD-ix's success
-    story. Your support will help us establish a strong foundation for Dresden's digital transformation and enable us to
-    deliver an exceptional Internet Exchange experience. In return, we offer visibility, recognition, and the
-    satisfaction of knowing that you are actively shaping Dresden's digital future.
-  </p>
-  <p>
-    If you are interested in sponsoring DD-ix, providing a location for our infrastructure, or supporting us in any
-    way, we invite you to reach out to our team. Let's work together to turn our passion project into a driving force
-    that propels Dresden into the digital age.
-  </p>
-  <p>
-    Join us on this remarkable journey and help us build DD-ix, the catalyst for Dresden's digital revolution.
-    Together, we can unlock the city's full potential and create endless possibilities for innovation, collaboration,
-    and growth.
-  </p>
+
+<section *ngIf="landingpage | async as landingpage" [innerHTML]="safeHtml(landingpage.body)">
 </section>
 
 <h1 i18n>News</h1>

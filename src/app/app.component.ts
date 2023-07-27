@@ -1,9 +1,9 @@
 import {ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID} from '@angular/core';
 import {routingAnimation} from "./animation/routing.animation";
-import {Language} from "./api/news.domain";
 import {NavigationEnd, Router} from "@angular/router";
 import {Location} from "@angular/common";
 import {BehaviorSubject, delay, filter, map, take} from "rxjs";
+import {Language} from "./api/api.domain";
 
 @Component({
   selector: 'app-root',

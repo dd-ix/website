@@ -1,10 +1,8 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
-import {Language, Post, SmallPost} from "./news.domain";
-import {API_DOMAIN} from "./api.domain";
-
-const MAX_AGE = 1000 * 60 * 60 * 24;
+import {Post, SmallPost} from "./news.domain";
+import {API_DOMAIN, Language, MAX_CACHE_AGE} from "./api.domain";
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +23,7 @@ export class NewsService {
       return this.posts;
     }
 
-    this.nextUpdate = Date.now() + MAX_AGE;
+    this.nextUpdate = Date.now() + MAX_CACHE_AGE;
 
     return this.http.get<SmallPost[]>(`${API_DOMAIN}/news/${this.lang}`)
       .pipe(

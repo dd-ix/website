@@ -1,7 +1,4 @@
-export enum Language {
-  ENGLISH = 'en',
-  GERMAN = 'de',
-}
+import {Language} from "./api.domain";
 
 export interface SmallPost {
   slug: string;
