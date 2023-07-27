@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="841934696444961534" datatype="html">
@@ -32,6 +32,7 @@
       </trans-unit>
       <trans-unit id="3161711202916701013" datatype="html">
         <source>Looking Glass</source>
+        <target state="translated">Looking Glass</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">10</context>
@@ -54,7 +55,7 @@
         <target>Kontakt</target>
       </trans-unit>
       <trans-unit id="429038671194949810" datatype="html">
-        <source> © <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD - IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Keep Local Traffic Local. </source>
+        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD - IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Keep Local Traffic Local. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">24,26</context>
@@ -102,6 +103,7 @@
       </trans-unit>
       <trans-unit id="5744023940242558359" datatype="html">
         <source>Dresden Internet Exchange</source>
+        <target state="translated">Dresden Internet Exchange</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -116,6 +118,7 @@
       </trans-unit>
       <trans-unit id="3670532182581004841" datatype="html">
         <source>Socials</source>
+        <target state="translated">Socials</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">41</context>
@@ -130,12 +133,48 @@
         <target>Nicht gefunden</target>
       </trans-unit>
       <trans-unit id="7353139189504330359" datatype="html">
-        <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;>"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> page?</source>
+        <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Wollen Sie zur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;>"/>Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> zurückspringen?</target>
+        <target>Wollen Sie zur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> zurückspringen?</target>
+      </trans-unit>
+      <trans-unit id="6718726533481404495" datatype="html">
+        <source>Peering</source>
+        <target state="translated">Peering</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4849273003091869009" datatype="html">
+        <source>Association</source>
+        <target state="translated">Verein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3724068243287682962" datatype="html">
+        <source>Team</source>
+        <target state="translated">Team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3810733859785982715" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD - IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD - IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
