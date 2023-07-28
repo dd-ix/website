@@ -7,11 +7,14 @@ import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.com
 import {map} from "rxjs";
 import {TextBlocksService} from "../../api/text-blocks.service";
 import {DomSanitizer} from "@angular/platform-browser";
+import {IconIbhComponent} from "../../icons/icon-ibh/icon-ibh.component";
+import {IconBcixComponent} from "../../icons/icon-bcix/icon-bcix.component";
+import {IconTudComponent} from "../../icons/icon-tud/icon-tud.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent],
+  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
