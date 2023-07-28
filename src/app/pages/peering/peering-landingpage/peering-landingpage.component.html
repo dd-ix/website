@@ -1,0 +1,55 @@
+<h1>Peering</h1>
+
+<section *ngIf="introduction | async as introduction" [innerHTML]="safeHtml(introduction.body)">
+</section>
+
+<a routerLink="policy">
+  <section>
+    <h1>Joining and Peering Policy</h1>
+  </section>
+</a>
+
+<h2 i18n>Services</h2>
+
+<ul class="not services">
+  <li>
+    <a routerLink="services/pni">
+      <section>
+        <h1>Private Network Interconnect</h1>
+      </section>
+    </a>
+  </li>
+  <li>
+    <a routerLink="services/peering">
+      <section>
+        <h1>Peering Port</h1>
+      </section>
+    </a>
+  </li>
+</ul>
+
+<h1>Peers</h1>
+
+<ul class="not peers">
+  <li>
+    <a href="https://www.ibh.de" target="_blank">
+      <section>
+        <h1>IHB IT-Service</h1>
+      </section>
+    </a>
+  </li>
+  <li>
+    <a href="https://cloudandheat.com" target="_blank">
+      <section>
+        <h1>Cloud&Heat</h1>
+      </section>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.dsi.net">
+      <section>
+        <h1>DSI</h1>
+      </section>
+    </a>
+  </li>
+</ul>

@@ -18,6 +18,7 @@ const routes: Routes = [
     loadComponent: () => import('./pages/privacy-policy/privacy-policy.component').then(c => c.PrivacyPolicyComponent)
   },
   {path: 'imprint', loadComponent: () => import('./pages/imprint/imprint.component').then(c => c.ImprintComponent)},
+  { path: 'peering', loadChildren: () => import('./pages/peering/peering.module').then(m => m.PeeringModule) },
   {path: '**', loadComponent: () => import('./pages/not-found/not-found.component').then(c => c.NotFoundComponent)},
 ];
 
