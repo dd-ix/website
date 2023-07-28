@@ -37,6 +37,13 @@ section {
     display: flex;
     justify-content: space-between;
   }
+
+  img {
+    display: block;
+    margin: 2rem auto;
+    width: min(45rem, 100%);
+    border-radius: 0.4rem;
+  }
 }
 
 a {
