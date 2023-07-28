@@ -1,4 +1,2 @@
-<section>
-  <h1 i18n>Contact</h1>
-  <p>Work in progress</p>
+<section *ngIf="contact | async as contact" [innerHTML]="safeHtml(contact.body)">
 </section>
