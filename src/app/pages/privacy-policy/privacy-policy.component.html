@@ -1,4 +1,2 @@
-<section>
-  <h1 i18n>Privacy Policy</h1>
-  <p i18n>Work in progress</p>
+<section *ngIf="privacyPolicy | async as privacyPolicy" [innerHTML]="safeHtml(privacyPolicy.body)">
 </section>
