@@ -176,6 +176,46 @@
           <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1140327701924892323" datatype="html">
+        <source>Quick Links</source>
+        <target state="translated">Lesezeichen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7817983777749417807" datatype="html">
+        <source>IXP Portal</source>
+        <target state="translated">IXP Portal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7143579180750436311" datatype="html">
+        <source>Services</source>
+        <target state="translated">Dienstleistungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5449136821545383423" datatype="html">
+        <source>PeeringDB</source>
+        <target state="translated">PeeringDB</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1237309895055413148" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">46,49</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
