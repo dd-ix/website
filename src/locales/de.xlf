@@ -232,6 +232,46 @@
           <context context-type="linenumber">46,49</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8694717738425750979" datatype="html">
+        <source>IXP Manager</source>
+        <target state="translated">IXP Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7397528405676242070" datatype="html">
+        <source>Joining and Peering Policy</source>
+        <target state="translated">Joining and Peering Policy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8200937627151209663" datatype="html">
+        <source>Private Network Interconnect</source>
+        <target state="translated">Private Network Interconnect</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6163837208280289570" datatype="html">
+        <source>Peering Port</source>
+        <target state="translated">Peering Port</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5898480698220868505" datatype="html">
+        <source>Peers</source>
+        <target state="translated">Peers</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
