@@ -48,22 +48,22 @@ section {
 }
 
 a {
-  section {
-    transition: transform 150ms ease-in-out, border-color 150ms ease-in-out;
-  }
-
-  &:hover section {
-    transform: scale(0.99);
-    border-color: $primary;
-  }
+  //section {
+  //  transition: transform 150ms ease-in-out, border-color 150ms ease-in-out;
+  //}
+  //
+  //&:hover section {
+  //  transform: scale(0.99);
+  //  border-color: $primary;
+  //}
 }
 
 h1, h2, h3, h4, h5, h6, p, .section {
-  margin: 0 0 1rem;
+  //margin: 0 0 1rem;
 
-  &:last-child {
-    margin: 0;
-  }
+  //&:last-child {
+  //  margin: 0;
+  //}
 }
 
 blockquote {

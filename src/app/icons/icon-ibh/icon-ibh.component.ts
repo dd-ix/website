@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-ibh.component.svg',
-  styleUrls: ['./icon-ibh.component.scss']
+  styleUrls: ['../style.scss'],
 })
 export class IconIbhComponent {
 

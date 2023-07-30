@@ -9,11 +9,9 @@
 <h1 i18n>Documents</h1>
 <ul class="not">
   <li *ngFor="let document of documents | async">
-    <a target="_blank" [href]="buildDownloadLink(document)">
-      <section>
-        <h1>{{document.name}}</h1>
-        <p>{{document.description}}</p>
-      </section>
-    </a>
+    <app-card [link]="buildDownloadLink(document)">
+      <h1>{{document.name}}</h1>
+      <p>{{document.description}}</p>
+    </app-card>
   </li>
 </ul>

@@ -3,6 +3,7 @@ import {NewsService} from "../../../api/news.service";
 import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
 import {DomSanitizer, Meta} from "@angular/platform-browser";
+import {API_URL} from "../../../api/api.domain";
 
 @Component({
   selector: 'app-news-post',
@@ -34,5 +35,9 @@ export class NewsPostComponent {
 
   protected safeHtml(html: string): string | null {
     return this.sanitizer.sanitize(SecurityContext.HTML, html);
+  }
+
+  protected buildNewsImageUrl(image: string): string {
+    return `${API_URL}/news/assets/${image}`;
   }
 }

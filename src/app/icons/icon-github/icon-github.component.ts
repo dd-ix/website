@@ -6,7 +6,7 @@ import {CommonModule} from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-github.component.svg',
-  styleUrls: ['./icon-github.component.scss']
+  styleUrls: ['../style.scss'],
 })
 export class IconGithubComponent {
 

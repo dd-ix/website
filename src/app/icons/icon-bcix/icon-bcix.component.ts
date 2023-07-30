@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-bcix.component.svg',
-  styleUrls: ['./icon-bcix.component.scss']
+  styleUrls: ['../style.scss'],
 })
 export class IconBcixComponent {
 

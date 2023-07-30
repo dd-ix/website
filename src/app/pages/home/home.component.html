@@ -7,14 +7,7 @@
 
 <ul class="not news">
   <li *ngFor="let post of posts | async">
-    <a [routerLink]="buildPostLink(post.slug)">
-      <section [style.background-image]="buildNewsImageUrl(post.image)">
-        <div class="background">
-          <h1>{{post.title}}</h1>
-          <b>{{post.published | date}}</b> - {{post.description}}
-        </div>
-      </section>
-    </a>
+    <app-news-card [post]="post"/>
   </li>
 </ul>
 
@@ -22,22 +15,18 @@
 
 <ul class="not socials">
   <li>
-    <a href="https://github.com/dd-ix" target="_blank">
-      <section>
-        <app-icon-github class="icon"></app-icon-github>
-        <h1>GitHub</h1>
-        <p><b>@dd-ix</b></p>
-      </section>
-    </a>
+    <app-card link="https://github.com/dd-ix">
+      <app-icon-github class="icon" style="height: 3.5rem; aspect-ratio: 1/1"></app-icon-github>
+      <h1>GitHub</h1>
+      <p><b>@dd-ix</b></p>
+    </app-card>
   </li>
   <li>
-    <a href="https://dresden.network/@dd-ix" target="_blank">
-      <section>
-        <app-icon-mastodon class="icon"></app-icon-mastodon>
-        <h1>Mastodon</h1>
-        <p><b>@dd-ix@dresden.network</b></p>
-      </section>
-    </a>
+    <app-card link="https://dresden.network/@dd-ix">
+      <app-icon-mastodon class="icon" style="height: 3.5rem; aspect-ratio: 1/1"></app-icon-mastodon>
+      <h1>Mastodon</h1>
+      <p><b>@dd-ix@dresden.network</b></p>
+    </app-card>
   </li>
 </ul>
 
@@ -45,25 +34,22 @@
 
 <ul class="not sponsors">
   <li>
-    <a href="https://www.ibh.de" target="_blank">
-      <section>
-        <app-icon-ibh class="icon"></app-icon-ibh>
-      </section>
-    </a>
+    <app-card [inverseShadow]="true" link="https://www.ibh.de" backgroundImage="/assets/images/sponsors/ibh-bg.webp">
+      <app-icon-ibh class="sponsor-icon"></app-icon-ibh>
+    </app-card>
   </li>
   <li>
-    <a href="https://www.bcix.de/" target="_blank">
-      <section>
-        <app-icon-bcix class="icon"></app-icon-bcix>
-      </section>
-    </a>
+    <app-card [inverseShadow]="true" link="https://www.bcix.de/" backgroundImage="/assets/images/sponsors/bcix-bg.webp">
+      <app-icon-bcix class="sponsor-icon"></app-icon-bcix>
+    </app-card>
   </li>
   <li>
-    <a href="https://tu-dresden.de/ing/informatik/sya/netd/?set_language=en" target="_blank">
-      <section class="netd">
+    <app-card [inverseShadow]="true" link="https://tu-dresden.de/ing/informatik/sya/netd/?set_language=en"
+              backgroundImage="/assets/images/sponsors/netd-bg.webp">
+      <div class="sponsor-icon netd">
         <img src="assets/images/netd.png" alt="NETD-TUD Logo">
-        <app-icon-tud></app-icon-tud>
-      </section>
-    </a>
+        <app-icon-tud class="tud"></app-icon-tud>
+      </div>
+    </app-card>
   </li>
 </ul>

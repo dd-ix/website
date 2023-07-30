@@ -6,7 +6,7 @@ import {CommonModule} from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-mastodon.component.svg',
-  styleUrls: ['./icon-mastodon.component.scss']
+  styleUrls: ['../style.scss'],
 })
 export class IconMastodonComponent {
 

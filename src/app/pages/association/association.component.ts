@@ -5,11 +5,12 @@ import {Document} from "../../api/documents.domain";
 import {API_URL} from "../../api/api.domain";
 import {TextBlocksService} from "../../api/text-blocks.service";
 import {DomSanitizer} from "@angular/platform-browser";
+import {CardComponent} from "../../core/card/card.component";
 
 @Component({
   selector: 'app-association',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CardComponent],
   templateUrl: './association.component.html',
   styleUrls: ['./association.component.scss']
 })

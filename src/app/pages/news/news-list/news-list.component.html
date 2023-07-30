@@ -2,11 +2,6 @@
 
 <ul class="not">
   <li *ngFor="let post of posts | async">
-    <a [routerLink]="post.slug">
-      <section>
-        <h1>{{post.title}}</h1>
-        <b>{{post.published | date}}</b> - {{post.description}}
-      </section>
-    </a>
+    <app-news-card [post]="post"/>
   </li>
 </ul>

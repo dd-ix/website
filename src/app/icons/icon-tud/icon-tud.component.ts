@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-tud.component.svg',
-  styleUrls: ['./icon-tud.component.scss']
+  styleUrls: ['../style.scss'],
 })
 export class IconTudComponent {
 
