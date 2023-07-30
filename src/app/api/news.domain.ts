@@ -10,6 +10,7 @@ export interface SmallPost {
   description: string;
   keywords: string[];
   authors: string[];
+  image: string | null;
 }
 
 export interface Post extends SmallPost {

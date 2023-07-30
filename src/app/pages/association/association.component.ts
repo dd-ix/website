@@ -2,7 +2,7 @@ import {Component, SecurityContext} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {DocumentsService} from "../../api/documents.service";
 import {Document} from "../../api/documents.domain";
-import {API_DOMAIN} from "../../api/api.domain";
+import {API_URL} from "../../api/api.domain";
 import {TextBlocksService} from "../../api/text-blocks.service";
 import {DomSanitizer} from "@angular/platform-browser";
 
@@ -28,7 +28,7 @@ export class AssociationComponent {
   }
 
   protected buildDownloadLink(document: Document): string {
-    return `${API_DOMAIN}/documents/download/${document.filename}`;
+    return `${API_URL}/documents/download/${document.filename}`;
   }
 
   protected safeHtml(html: string): string | null {

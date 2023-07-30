@@ -2,7 +2,7 @@ import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
 import {Post, SmallPost} from "./news.domain";
-import {API_DOMAIN, Language, MAX_CACHE_AGE} from "./api.domain";
+import {API_URL, Language, MAX_CACHE_AGE} from "./api.domain";
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +25,7 @@ export class NewsService {
 
     this.nextUpdate = Date.now() + MAX_CACHE_AGE;
 
-    return this.http.get<SmallPost[]>(`${API_DOMAIN}/news/${this.lang}`)
+    return this.http.get<SmallPost[]>(`${API_URL}/news/${this.lang}`)
       .pipe(
         tap(posts => this.posts.next(posts)),
         switchMap(() => this.posts),
@@ -33,6 +33,6 @@ export class NewsService {
   }
 
   public getPost(slug: string): Observable<Post> {
-    return this.http.get<Post>(`${API_DOMAIN}/news/${this.lang}/${slug}`);
+    return this.http.get<Post>(`${API_URL}/news/${this.lang}/${slug}`);
   }
 }

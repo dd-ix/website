@@ -10,6 +10,7 @@ import {DomSanitizer} from "@angular/platform-browser";
 import {IconIbhComponent} from "../../icons/icon-ibh/icon-ibh.component";
 import {IconBcixComponent} from "../../icons/icon-bcix/icon-bcix.component";
 import {IconTudComponent} from "../../icons/icon-tud/icon-tud.component";
+import {API_URL} from "../../api/api.domain";
 
 @Component({
   selector: 'app-home',
@@ -37,5 +38,13 @@ export class HomeComponent {
 
   protected safeHtml(html: string): string | null {
     return this.sanitizer.sanitize(SecurityContext.HTML, html);
+  }
+
+  protected buildNewsImageUrl(image: string | null): string|null {
+    if(!image ){
+      return  null;
+    }
+
+    return `url('${API_URL}/news/assets/${image}')`;
   }
 }
