@@ -1,9 +1,11 @@
 <section *ngIf="(post | async) as post">
   <h1>{{post.title}}</h1>
+  <span>
   Published: <b>{{post.published | date}}</b>
   <span *ngIf="post.modified"> | Modified: <b>{{post.modified | date}}</b></span>
   | Author<span *ngIf="post.authors.length > 1">s</span>:
   <b>{{formatAuthors(post.authors)}}</b>
+  </span>
 
   <img *ngIf="post.image" [src]="buildNewsImageUrl(post.image)" alt="">
 

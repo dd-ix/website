@@ -1,0 +1,11 @@
+@import "vars";
+
+:host {
+  display: flex;
+
+  svg {
+    max-height: 100%;
+    max-width: 100%;
+    fill: $text;
+  }
+}
