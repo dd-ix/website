@@ -8,9 +8,11 @@
 <ul class="not news">
   <li *ngFor="let post of posts | async">
     <a [routerLink]="buildPostLink(post.slug)">
-      <section>
-        <h1>{{post.title}}</h1>
-        <b>{{post.published | date}}</b> - {{post.description}}
+      <section [style.background-image]="buildNewsImageUrl(post.image)">
+        <div class="background">
+          <h1>{{post.title}}</h1>
+          <b>{{post.published | date}}</b> - {{post.description}}
+        </div>
       </section>
     </a>
   </li>
