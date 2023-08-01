@@ -9,9 +9,16 @@
     }
   }
 
-  ul.services, ul.peers {
+  ul.pages, ul.services {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+  }
+
+  ul.pages {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  ul.services {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -6,13 +6,17 @@ import {PeeringPolicyComponent} from './peering-policy/peering-policy.component'
 import {PeeringServicePniComponent} from './services/peering-service-pni/peering-service-pni.component';
 import {PeeringServicePeeringComponent} from './services/peering-service-peering/peering-service-peering.component';
 import {CardComponent} from "../../core/card/card.component";
+import { PeeringPeersComponent } from './peering-peers/peering-peers.component';
+import { PeeringLocationsComponent } from './peering-locations/peering-locations.component';
 
 @NgModule({
   declarations: [
     PeeringLandingpageComponent,
     PeeringPolicyComponent,
     PeeringServicePniComponent,
-    PeeringServicePeeringComponent
+    PeeringServicePeeringComponent,
+    PeeringPeersComponent,
+    PeeringLocationsComponent
   ],
   imports: [
     CommonModule,

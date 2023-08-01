@@ -3,9 +3,23 @@
 <section *ngIf="introduction | async as introduction" [innerHTML]="safeHtml(introduction.body)">
 </section>
 
-<app-card link="policy">
-  <h1 i18n>Joining and Peering Policy</h1>
-</app-card>
+<ul class="not pages">
+  <li>
+    <app-card link="policy">
+      <h1 i18n>Joining and Peering Policy</h1>
+    </app-card>
+  </li>
+  <li>
+    <app-card link="peers">
+      <h1 i18n>Peers</h1>
+    </app-card>
+  </li>
+  <li>
+    <app-card link="locations">
+      <h1 i18n>Locations</h1>
+    </app-card>
+  </li>
+</ul>
 
 <h2 i18n>Services</h2>
 
@@ -22,25 +36,3 @@
   </li>
 </ul>
 
-<h1 i18n>Peers</h1>
-
-<ul class="not peers">
-  <li>
-    <app-card link="https://www.ibh.de" backgroundImage="/assets/images/peering/ibh-bg.webp">
-      <h1>IHB IT-Service</h1>
-      <p>10G | CityCenter</p>
-    </app-card>
-  </li>
-  <li>
-    <app-card link="https://cloudandheat.com" backgroundImage="/assets/images/peering/cloudandheat-bg.webp">
-      <h1>Cloud&Heat</h1>
-      <p>10G | CityCenter</p>
-    </app-card>
-  </li>
-  <li>
-    <app-card link="https://www.dsi.net" backgroundImage="/assets/images/peering/dsi-bg.webp">
-      <h1>DSI</h1>
-      <p>10G | CityCenter</p>
-    </app-card>
-  </li>
-</ul>
