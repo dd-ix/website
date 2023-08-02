@@ -88,6 +88,12 @@ ul:not(.not) {
 
 
 .typography {
+  h1, h2, h3, h4, h5, h6, h7 {
+    &:not(:first-child) {
+      padding-top: 0.5rem;
+    }
+  }
+
   h1, h2, h3, h4, h5, h6, h7, p, img, ul {
     &:not(:last-child) {
       margin-bottom: 0.5rem;
