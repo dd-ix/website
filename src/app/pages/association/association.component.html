@@ -1,10 +1,12 @@
 <h1 i18n>Association</h1>
 
-<section *ngIf="ourMission | async as ourMission" [innerHTML]="safeHtml(ourMission.body)">
-</section>
+<app-card>
+  <app-text-block slug="association.our-vision"/>
+</app-card>
 
-<section *ngIf="joinTheAssociation | async as joinTheAssociation" [innerHTML]="safeHtml(joinTheAssociation.body)">
-</section>
+<app-card>
+  <app-text-block slug="association.association-work"/>
+</app-card>
 
 <h1 i18n>Documents</h1>
 <ul class="not">

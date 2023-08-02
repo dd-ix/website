@@ -1,46 +1,53 @@
 @import "vars";
 
-a {
-  border: 0.1rem solid $background-lighter;
-  background-color: $background-light;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: 150ms border-color ease-in-out;
+:host {
+  & > {
+    a, div {
+      border: 0.1rem solid $background-lighter;
+      background-color: $background-light;
+      border-radius: 0.5rem;
+      overflow: hidden;
 
-  &:hover {
-    border-color: $primary;
-  }
+      &.shadow {
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-  &.shadow {
-    display: block;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+        div.container {
+          background-color: rgba(0, 0, 0, 0.75);
+        }
 
-    div.container {
-      background-color: rgba(0, 0, 0, 0.75);
+        &.inverse-shadow div.container {
+          background-color: rgba(255, 255, 255, 0.75);
+        }
+      }
+
+      &:not(.shadow), &.shadow div.container {
+        padding: 1rem;
+        display: flex;
+        justify-items: center;
+
+        div.icon:not(:empty) {
+          display: flex;
+          align-items: center;
+          margin-right: 1rem;
+        }
+
+        div.content {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+        }
+      }
     }
 
-    &.inverse-shadow div.container {
-      background-color: rgba(255, 255, 255, 0.75);
-    }
-  }
+    a {
+      transition: 150ms border-color ease-in-out;
 
-  &:not(.shadow), &.shadow div.container {
-    padding: 1rem;
-    display: flex;
-    justify-items: center;
-
-    div.icon:not(:empty) {
-      display: flex;
-      align-items: center;
-      margin-right: 1rem;
-    }
-
-    div.content {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
+      &:hover {
+        border-color: $primary;
+      }
     }
   }
 }

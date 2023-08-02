@@ -1,7 +1,8 @@
 <h1 i18n>Dresden Internet Exchange</h1>
 
-<section *ngIf="landingpage | async as landingpage" [innerHTML]="safeHtml(landingpage.body)">
-</section>
+<app-card>
+  <app-text-block slug="landingpage"/>
+</app-card>
 
 <h1 i18n>News</h1>
 

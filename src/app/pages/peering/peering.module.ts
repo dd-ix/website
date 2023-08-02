@@ -8,6 +8,7 @@ import {PeeringServicePeeringComponent} from './services/peering-service-peering
 import {CardComponent} from "../../core/card/card.component";
 import { PeeringPeersComponent } from './peering-peers/peering-peers.component';
 import { PeeringLocationsComponent } from './peering-locations/peering-locations.component';
+import {TextBlockComponent} from "../../core/text-block/text-block.component";
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { PeeringLocationsComponent } from './peering-locations/peering-locations
     PeeringPeersComponent,
     PeeringLocationsComponent
   ],
-  imports: [
-    CommonModule,
-    PeeringRoutingModule,
-    CardComponent
-  ]
+    imports: [
+        CommonModule,
+        PeeringRoutingModule,
+        CardComponent,
+        TextBlockComponent
+    ]
 })
 export class PeeringModule {
 }

@@ -16,22 +16,31 @@
   </ng-template>
 </ng-template>
 
-<a *ngIf="!isExternal(); else external"
-   [routerLink]="link"
-   [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
-   class="not"
-   [class.shadow]="backgroundImage"
-   [class.inverse-shadow]="inverseShadow">
+<div *ngIf="!link; else withLink"
+     [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
+     [class.shadow]="backgroundImage"
+     [class.inverse-shadow]="inverseShadow">
   <ng-container *ngTemplateOutlet="wrapper"></ng-container>
-</a>
+</div>
 
-<ng-template #external>
-  <a [href]="link"
-     target="_blank"
+<ng-template #withLink>
+  <a *ngIf="!isExternal(); else external"
+     [routerLink]="link"
      [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
      class="not"
      [class.shadow]="backgroundImage"
      [class.inverse-shadow]="inverseShadow">
     <ng-container *ngTemplateOutlet="wrapper"></ng-container>
   </a>
+
+  <ng-template #external>
+    <a [href]="link"
+       target="_blank"
+       [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
+       class="not"
+       [class.shadow]="backgroundImage"
+       [class.inverse-shadow]="inverseShadow">
+      <ng-container *ngTemplateOutlet="wrapper"></ng-container>
+    </a>
+  </ng-template>
 </ng-template>

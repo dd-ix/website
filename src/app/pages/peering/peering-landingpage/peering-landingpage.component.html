@@ -1,7 +1,8 @@
 <h1 i18n>Peering</h1>
 
-<section *ngIf="introduction | async as introduction" [innerHTML]="safeHtml(introduction.body)">
-</section>
+<app-card>
+  <app-text-block slug="peering.introduction"/>
+</app-card>
 
 <ul class="not pages">
   <li>
