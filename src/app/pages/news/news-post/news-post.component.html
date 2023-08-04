@@ -1,4 +1,4 @@
-<div *ngIf="(post | async) as post" class="typography">
+<app-card *ngIf="(post | async) as post" class="typography">
   <h1>{{post.title}}</h1>
 
   <p>
@@ -12,4 +12,4 @@
 
   <div [innerHtml]="safeHtml(post.body)">
   </div>
-</div>
+</app-card>
