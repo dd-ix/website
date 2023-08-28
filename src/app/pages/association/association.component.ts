@@ -25,4 +25,8 @@ export class AssociationComponent {
   protected buildDownloadLink(document: Document): string {
     return `${API_URL}/documents/download/${document.filename}`;
   }
+
+  protected buildBackgroundImage(document: Document):string {
+    return `${API_URL}/documents/download/${document.image}`;
+  }
 }

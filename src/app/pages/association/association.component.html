@@ -11,7 +11,7 @@
 <h1 i18n>Documents</h1>
 <ul class="not">
   <li *ngFor="let document of documents | async">
-    <app-card [link]="buildDownloadLink(document)">
+    <app-card [link]="buildDownloadLink(document)" [backgroundImage]="buildBackgroundImage(document)">
       <h1>{{document.name}}</h1>
       <p>{{document.description}}</p>
     </app-card>
