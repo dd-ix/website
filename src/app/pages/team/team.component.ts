@@ -3,11 +3,15 @@ import {CommonModule} from '@angular/common';
 import {TeamService} from "../../api/team.service";
 import {API_URL} from "../../api/api.domain";
 import {CardComponent} from "../../core/card/card.component";
+import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
+import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
+import {IconGlobeComponent} from "../../icons/icon-globe/icon-globe.component";
+import {IconMailComponent} from "../../icons/icon-mail/icon-mail.component";
 
 @Component({
   selector: 'app-team',
   standalone: true,
-  imports: [CommonModule, CardComponent],
+  imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent],
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })
