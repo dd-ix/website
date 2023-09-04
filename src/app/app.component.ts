@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID} fro
 import {routingAnimation} from "./animation/routing.animation";
 import {NavigationEnd, Router} from "@angular/router";
 import {Location} from "@angular/common";
-import {BehaviorSubject, delay, filter, map, take} from "rxjs";
+import {BehaviorSubject, delay, filter, map, take, tap} from "rxjs";
 import {Language} from "./api/api.domain";
 
 @Component({
@@ -17,18 +17,11 @@ export class AppComponent {
   protected asideSown = new BehaviorSubject(false);
   protected enableAnimation = new BehaviorSubject(false);
 
-  protected readonly switchLanguage = this.router.events.pipe(
-    map(() => {
-      const {code, name} = this.lang === Language.GERMAN
-        ? {code: Language.ENGLISH, name: "English"}
-        : {code: Language.GERMAN, name: "Deutsch"};
-
-      return {href: `/${code}${this.location.path()}`, name};
-    })
+  protected readonly path = this.router.events.pipe(
+    map(() => this.location.path() || '/'),
   );
 
   constructor(
-    @Inject(LOCALE_ID) private readonly lang: Language,
     private readonly location: Location,
     private readonly router: Router,
   ) {

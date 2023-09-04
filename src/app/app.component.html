@@ -15,17 +15,22 @@
 
       <br>
 
-      <b i18n>Quick Links</b>
-      <ul>
-        <li><a href="https://ixp.dd-ix.net" i18n target="_blank">IXP Manager</a></li>
-        <li><a href="https://lg.dd-ix.net" i18n target="_blank">Looking Glass</a></li>
-        <li><a href="https://www.peeringdb.com" i18n target="_blank">PeeringDB</a></li>
-      </ul>
+<!--      <b i18n>Quick Links</b>-->
+<!--      <ul>-->
+<!--        <li><a href="https://ixp.dd-ix.net" i18n target="_blank">IXP Manager</a></li>-->
+<!--        <li><a href="https://lg.dd-ix.net" i18n target="_blank">Looking Glass</a></li>-->
+<!--        <li><a href="https://www.peeringdb.com" i18n target="_blank">PeeringDB</a></li>-->
+<!--      </ul>-->
     </nav>
   </div>
 
   <div class="aside-footer">
-    <a *ngIf="switchLanguage | async as lang" [href]="lang.href" class="lang">{{lang.name}}</a>
+    <span class="lang" *ngIf="path | async as path">
+      <a [href]="'/de' + path">DE</a>
+      |
+      <a [href]="'/en' + path">EN</a>
+    </span>
+
     <nav>
       <a routerLink="/privacy-policy" i18n>Privacy Policy</a>
       <a routerLink="/imprint" i18n>Imprint</a>
