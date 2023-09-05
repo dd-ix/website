@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {TeamService} from "../../api/team.service";
 import {API_URL} from "../../api/api.domain";
 import {CardComponent} from "../../core/card/card.component";
@@ -11,7 +11,7 @@ import {IconMailComponent} from "../../icons/icon-mail/icon-mail.component";
 @Component({
   selector: 'app-team',
   standalone: true,
-  imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent],
+  imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent, NgOptimizedImage],
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })

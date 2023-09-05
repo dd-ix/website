@@ -1,10 +1,10 @@
-<h1>Team</h1>
+<h1 i18n>Team</h1>
 
 <ul class="not">
   <li *ngFor="let member of team | async">
     <app-card>
       <div class="member">
-        <img [src]="buildMemberImage(member.image)">
+        <img [ngSrc]="buildMemberImage(member.image)" width="1" height="1" [alt]="member.nick ?? member.name + '\'s Image'">
         <p>
           <b>{{member.nick ?? member.name}}</b>
           <ng-container *ngIf="member.nick">
@@ -28,8 +28,8 @@
             <span class="handle">{{member.socials.website}}</span>
           </a>
           <a *ngIf="member.socials.mastodon" [href]="buildMastodonLink(member.socials.mastodon)">
-            <span class="icon"> <app-icon-mastodon/></span>
-            <span class="handle"> {{member.socials.mastodon}}</span>
+            <span class="icon"><app-icon-mastodon/></span>
+            <span class="handle">{{member.socials.mastodon}}</span>
           </a>
         </div>
       </div>
