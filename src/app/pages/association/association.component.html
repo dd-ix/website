@@ -1,4 +1,6 @@
-<h1 i18n>Association</h1>
+<div class="typography">
+  <h1 i18n>Association</h1>
+</div>
 
 <app-card>
   <app-text-block slug="association.our-vision"/>
@@ -8,7 +10,9 @@
   <app-text-block slug="association.association-work"/>
 </app-card>
 
+<div class="typography">
 <h1 i18n>Documents</h1>
+</div>
 <ul class="not">
   <li *ngFor="let document of documents | async">
     <app-card [link]="buildDownloadLink(document)" [backgroundImage]="buildBackgroundImage(document)">

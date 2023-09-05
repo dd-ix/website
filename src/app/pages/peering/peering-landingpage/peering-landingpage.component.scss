@@ -1,7 +1,20 @@
+@import "vars";
+
 :host {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+
+  .block {
+    display: flex;
+
+    .icon {
+      height: auto;
+      width: 30rem;
+      padding: 0 5rem;
+      --color-text: #{$primary-dark};
+    }
+  }
 
   > {
     h1, h2 {

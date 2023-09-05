@@ -1,13 +1,9 @@
 
 ul {
-  display: flex;
+  display: grid;
   margin-top: 1rem;
   gap: 1rem;
-  flex-wrap: wrap;
-
-  li {
-    flex: calc(25% - 3 * 1rem);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
 
 .member {
@@ -19,6 +15,7 @@ ul {
 
   img {
     width: 100%;
+    height: auto;
     aspect-ratio: 1/1;
     border-radius: 0.5rem;
   }

@@ -9,6 +9,11 @@ import {CardComponent} from "../../core/card/card.component";
 import { PeeringPeersComponent } from './peering-peers/peering-peers.component';
 import { PeeringLocationsComponent } from './peering-locations/peering-locations.component';
 import {TextBlockComponent} from "../../core/text-block/text-block.component";
+import {IconSwitchComponent} from "../../icons/icon-switch/icon-switch.component";
+import {IconAntennaComponent} from "../../icons/icon-antenna/icon-antenna.component";
+import {IconRatingComponent} from "../../icons/icon-rating/icon-rating.component";
+import {IconDirectionsComponent} from "../../icons/icon-directions/icon-directions.component";
+import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
 
 @NgModule({
   declarations: [
@@ -19,12 +24,17 @@ import {TextBlockComponent} from "../../core/text-block/text-block.component";
     PeeringPeersComponent,
     PeeringLocationsComponent
   ],
-    imports: [
-        CommonModule,
-        PeeringRoutingModule,
-        CardComponent,
-        TextBlockComponent
-    ]
+  imports: [
+    CommonModule,
+    PeeringRoutingModule,
+    CardComponent,
+    TextBlockComponent,
+    IconSwitchComponent,
+    IconAntennaComponent,
+    IconRatingComponent,
+    IconDirectionsComponent,
+    IconMoneyComponent
+  ]
 })
 export class PeeringModule {
 }

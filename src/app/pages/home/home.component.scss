@@ -3,10 +3,26 @@
 :host {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
 
   > h1 {
     margin: 0;
+  }
+
+  .block {
+    display: flex;
+
+    .icon {
+      height: auto;
+      width: 30rem;
+      padding: 0 5rem;
+      --color-text: #{$primary-dark};
+    }
   }
 
   .news, .socials, .sponsors {
@@ -36,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 8rem;
+    height: 5rem;
 
     &.netd {
       display: flex;

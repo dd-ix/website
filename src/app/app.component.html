@@ -4,23 +4,34 @@
       <app-icon-logo></app-icon-logo>
     </a>
 
-    <nav>
-      <ul>
-        <li><a routerLink="/news" i18n>News</a></li>
-        <li><a routerLink="/peering" i18n>Peering</a></li>
-        <li><a routerLink="/association" i18n>Association</a></li>
-        <li><a routerLink="/team" i18n>Team</a></li>
-        <li><a routerLink="/contact" i18n>Contact</a></li>
-      </ul>
+    <nav class="nav">
+      <a routerLink="/news" class="not">
+        <app-icon-news class="nav-icon"/>
+        <span class="label" i18n>News</span>
+      </a>
+      <a routerLink="/peering" class="not">
+        <app-icon-hub class="nav-icon"/>
+        <span class="label" i18n>Peering</span>
+      </a>
+      <a routerLink="/association" class="not">
+        <app-icon-group class="nav-icon"/>
+        <span class="label" i18n>Association</span>
+      </a>
+      <a routerLink="/team" class="not">
+        <app-icon-face class="nav-icon"/>
+        <span class="label" i18n>Team</span>
+      </a>
+      <a routerLink="/contact" class="not">
+        <app-icon-phone class="nav-icon"/>
+        <span class="label" i18n>Contact</span>
+      </a>
 
-      <br>
-
-<!--      <b i18n>Quick Links</b>-->
-<!--      <ul>-->
-<!--        <li><a href="https://ixp.dd-ix.net" i18n target="_blank">IXP Manager</a></li>-->
-<!--        <li><a href="https://lg.dd-ix.net" i18n target="_blank">Looking Glass</a></li>-->
-<!--        <li><a href="https://www.peeringdb.com" i18n target="_blank">PeeringDB</a></li>-->
-<!--      </ul>-->
+      <!--      <b i18n>Quick Links</b>-->
+      <!--      <ul>-->
+      <!--        <li><a href="https://ixp.dd-ix.net" i18n target="_blank">IXP Manager</a></li>-->
+      <!--        <li><a href="https://lg.dd-ix.net" i18n target="_blank">Looking Glass</a></li>-->
+      <!--        <li><a href="https://www.peeringdb.com" i18n target="_blank">PeeringDB</a></li>-->
+      <!--      </ul>-->
     </nav>
   </div>
 
@@ -47,6 +58,7 @@
     <div [@routing]="outlet.isActivated && (enableAnimation | async) ? outlet.activatedRoute : ''">
       <router-outlet #outlet="outlet"></router-outlet>
     </div>
+
     <footer>
       <span i18n>
         &copy; {{currentYear()}} <b>DD-IX</b> <span class="slogan"> | Keep Local Traffic Local</span>

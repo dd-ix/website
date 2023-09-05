@@ -1,10 +1,13 @@
-<h1 i18n>Team</h1>
+<div class="typography">
+  <h1 i18n>Team</h1>
+</div>
 
 <ul class="not">
   <li *ngFor="let member of team | async">
     <app-card>
       <div class="member">
-        <img [ngSrc]="buildMemberImage(member.image)" width="1" height="1" [alt]="member.nick ?? member.name + '\'s Image'">
+        <img [ngSrc]="buildMemberImage(member.image)" width="1" height="1"
+             [alt]="member.nick ?? member.name + '\'s Image'">
         <p>
           <b>{{member.nick ?? member.name}}</b>
           <ng-container *ngIf="member.nick">

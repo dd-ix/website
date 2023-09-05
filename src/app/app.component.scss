@@ -25,6 +25,35 @@
       margin-bottom: 1rem;
     }
 
+    nav.nav {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        transition: 150ms background-color ease-in-out, 150ms color ease-in-out;
+        border-radius: 0.5rem;
+
+        .nav-icon {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+
+        .label {
+
+        }
+
+        &:hover {
+          background-color: $primary;
+          color: $secondary;
+          --color-text: $secondary;
+        }
+      }
+    }
+
     nav {
       ul li a, .lang a {
         border: none;
@@ -69,6 +98,13 @@
       a, a::before {
         font-size: 1.2rem;
       }
+    }
+
+    .lang {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
     }
   }
 

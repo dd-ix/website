@@ -1,18 +1,71 @@
-<h1 i18n>Dresden Internet Exchange</h1>
+<div class="typography">
+  <h1 i18n>Dresden Internet Exchange</h1>
+  <p i18n>Keep Local Traffic Local.</p>
+</div>
 
-<app-card>
-  <app-text-block slug="landingpage"/>
-</app-card>
+<img ngSrc="/assets/images/dresden.webp" alt="Dresden's Skyline" height="3191" width="5672" class="hero-image">
 
-<h1 i18n>News</h1>
+<div class="block">
+  <app-card>
+    <div class="typography">
+      <h1 i18n>Internet Exchange</h1>
+      <p i18n>
+        The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform
+        we are open to all organizations and providers for the multilateral exchange of Internet traffic.
+        Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal
+        prerequisites to peer with participants in the region.
+      </p>
+    </div>
+  </app-card>
 
+  <app-icon-frauenkirche class="icon"/>
+</div>
+
+<div class="block">
+  <app-icon-internet class="icon"/>
+  <app-card>
+    <div class="typography">
+      <h1 i18n>Association</h1>
+      <p i18n>
+        The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a
+        registered
+        association under German law. Our mission is to create a basis for the direct exchange of internet traffic
+        within the region. The Internet is based on decentralized networking between providers which is efficiently
+        enabled
+        by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in
+        a
+        economically and ecologically optimal way.
+      </p>
+    </div>
+  </app-card>
+</div>
+
+<div class="block">
+  <app-card>
+    <div class="typography">
+      <h1 i18n>Support</h1>
+      <p i18n>
+        Accompany us in the development of the DD-IX - the catalyst for the digital future in the region,
+        whether as a sponsor or by joining the association!
+      </p>
+    </div>
+  </app-card>
+
+  <app-icon-social class="icon"/>
+</div>
+
+<div class="typography">
+  <h1 i18n>News</h1>
+</div>
 <ul class="not news">
   <li *ngFor="let post of posts | async">
     <app-news-card [post]="post"/>
   </li>
 </ul>
 
-<h1 i18n>Socials</h1>
+<div class="typography">
+  <h1 i18n>Socials</h1>
+</div>
 
 <ul class="not socials">
   <li>
@@ -31,7 +84,9 @@
   </li>
 </ul>
 
-<h1 i18n>Sponsors</h1>
+<div class="typography">
+  <h1 i18n>Sponsors</h1>
+</div>
 
 <ul class="not sponsors">
   <li>
@@ -40,7 +95,8 @@
     </app-card>
   </li>
   <li>
-    <app-card [inverseShadow]="true" link="https://www.bcix.de/" backgroundImage="/assets/images/sponsors/bcix-bg.webp">
+    <app-card [inverseShadow]="true" link="https://www.bcix.de/"
+              backgroundImage="/assets/images/sponsors/bcix-bg.webp">
       <app-icon-bcix class="sponsor-icon"></app-icon-bcix>
     </app-card>
   </li>

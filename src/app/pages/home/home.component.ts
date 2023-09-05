@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {NewsService} from "../../api/news.service";
 import {RouterLink} from "@angular/router";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
@@ -11,11 +11,14 @@ import {IconTudComponent} from "../../icons/icon-tud/icon-tud.component";
 import {CardComponent} from "../../core/card/card.component";
 import {NewsCardComponent} from "../../core/news-card/news-card.component";
 import {TextBlockComponent} from "../../core/text-block/text-block.component";
+import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
+import {IconInternetComponent} from "../../icons/icon-internet/icon-internet.component";
+import {IconSocialComponent} from "../../icons/icon-social/icon-social.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent],
+  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
