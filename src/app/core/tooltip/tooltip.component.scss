@@ -1,0 +1,23 @@
+@import "vars";
+
+.tooltip {
+  position: fixed;
+  background-color: $background-light;
+  border: 0.1rem solid $background-dark;
+  border-radius: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  margin-top: 0.5rem;
+  transform: translateX(-50%);
+
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid $background-light;
+    position: absolute;
+    left: calc(50% - 0.5rem);
+    top: -0.4rem;
+  }
+}
