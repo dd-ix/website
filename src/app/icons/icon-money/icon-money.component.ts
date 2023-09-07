@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-icon-money',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './icon-money.component.html',
+  templateUrl: './icon-money.component.svg',
   styleUrls: ['../style.scss']
 })
 export class IconMoneyComponent {

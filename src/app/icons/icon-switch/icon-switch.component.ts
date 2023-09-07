@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-icon-switch',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './icon-switch.component.html',
+  templateUrl: './icon-switch.component.svg',
   styleUrls: ['../style.scss']
 })
 export class IconSwitchComponent {

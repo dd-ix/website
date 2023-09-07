@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-icon-directions',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './icon-directions.component.html',
+  templateUrl: './icon-directions.component.svg',
   styleUrls: ['../style.scss']
 })
 export class IconDirectionsComponent {
