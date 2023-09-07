@@ -1,5 +1,4 @@
 import {
-  ApplicationRef,
   ComponentRef,
   Directive,
   ElementRef,
@@ -24,7 +23,6 @@ export class TooltipDirective implements OnDestroy {
 
   constructor(
     private elementRef: ElementRef,
-    private appRef: ApplicationRef,
     private viewContainerRef: ViewContainerRef,
     private injector: Injector
   ) {
@@ -34,7 +32,6 @@ export class TooltipDirective implements OnDestroy {
   onMouseEnter(): void {
     if (this.componentRef === null) {
       this.componentRef = this.viewContainerRef.createComponent(TooltipComponent, {injector: this.injector});
-      this.appRef.attachView(this.componentRef.hostView);
       const domElem =
         (this.componentRef.hostView as EmbeddedViewRef<any>)
           .rootNodes[0] as HTMLElement;
@@ -64,7 +61,6 @@ export class TooltipDirective implements OnDestroy {
 
   destroy(): void {
     if (this.componentRef !== null) {
-      this.appRef.detachView(this.componentRef.hostView);
       this.componentRef.destroy();
       this.componentRef = null;
     }

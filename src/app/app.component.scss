@@ -28,6 +28,7 @@
     nav.nav {
       display: flex;
       flex-direction: column;
+      gap: 0.2rem;
 
       a {
         display: flex;
@@ -42,14 +43,10 @@
           height: 1.6rem;
         }
 
-        .label {
-
-        }
-
-        &:hover {
+        &:hover, &.selected {
           background-color: $primary;
-          color: $secondary;
-          --color-text: $secondary;
+          //color: $secondary;
+          //--color-text: $secondary;
         }
       }
     }
