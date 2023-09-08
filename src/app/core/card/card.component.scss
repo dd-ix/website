@@ -51,4 +51,12 @@
       }
     }
   }
+
+  &.light-shadow > {
+    a, div {
+      &.shadow div.container {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
 }

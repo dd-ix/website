@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, HostBinding, HostListener, Input} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterLink} from "@angular/router";
 
@@ -19,6 +19,10 @@ export class CardComponent {
 
   @Input()
   public inverseShadow: boolean = false;
+
+  @Input()
+  @HostBinding("class.light-shadow")
+  public lightShadow: boolean = false;
 
   protected isExternal(): boolean {
     if (!this.link) {

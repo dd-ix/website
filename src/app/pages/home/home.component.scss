@@ -5,9 +5,21 @@
   flex-direction: column;
   gap: 2rem;
 
-  .hero-image {
-    width: 100%;
-    height: auto;
+  .dd-ix {
+    color: $primary;
+  }
+
+  .slogan {
+    color: $primary-light;
+  }
+
+  //.hero-image {
+  //  width: 100%;
+  //  height: auto;
+  //}
+
+  .hero {
+    padding: 2rem 0;
   }
 
   > h1 {
