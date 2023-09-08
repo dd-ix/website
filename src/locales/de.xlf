@@ -401,6 +401,214 @@
           <context context-type="linenumber">23,32</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8510289285271281479" datatype="html">
+        <source>Keep Local Traffic Local</source>
+        <target state="translated">Keep Local Traffic Local</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5578823162355992891" datatype="html">
+        <source>Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages.</source>
+        <target state="translated">Peering ist ein Begriff aus der Netztechnik. Es ermöglicht ISPs (Internet Service Providers) oder Netzbetreibern einen einfachen Datenaustausch untereinander. Dieser Datentransfer zwischen Peering-Partnern ist kostenlos und bietet zahlreiche Vorteile.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">12,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8043843054156476312" datatype="html">
+        <source>An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</source>
+        <target state="translated">Ein IXP ermöglicht auch eine bessere Ausfallsicherheit, da der Datenverkehr auch dann übertragen werden kann, wenn eine Verbindung zu einem bestimmten Netz ausfällt, solange es Routen über alternative Peering-Partner gibt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">52,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7207718169933375210" datatype="html">
+        <source>The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all organizations and providers for the multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal prerequisites to peer with participants in the region.</source>
+        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr offen. Nur 20&amp;nbsp;km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region zu vernetzen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5783384091590571612" datatype="html">
+        <source>The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is to create a basis for the direct exchange of internet traffic within the region. The Internet is based on decentralized networking between providers, which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in an economically and ecologically optimal way.</source>
+        <target state="translated">Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. i.G. Unsere Mission ist es, eine Basis für den direkten Austausch des Internet-Verkehrs zwischen Quelle und Ziel zu schaffen. Das Internet lebt von einer dezentralen Vermaschung zwischen den Providern, die vor allem durch IXPs effizient ermöglicht wird. Neben der Erhöhung der Widerstandsfähigkeit des Internets findet durch sie der Netzwerkverkehr auf dem ökonomisch und ökologisch optimalen Weg statt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">30,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4407640932304119141" datatype="html">
+        <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
+        <target state="translated">Das Peering über einen IXP wie den DD-IX reduziert den Bedarf an teuren Internet-Transitdiensten. Denn es wird nur die Verbindung bezahlt und nicht das genutzte Datenvolumen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">64,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2761952393360315538" datatype="html">
+        <source>The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</source>
+        <target state="translated">Ziel des Peering ist es, den Verkehr zwischen den beteiligten Netzen effizienter zu leiten und Engpässe zu vermeiden. Durch die von DD-IX bereitgestellten Peering-Verbindungen ermöglichen wir allen Teilnehmern, Netzwerkpakete untereinander kürzer und schneller zu leiten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">26,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6980756795925581247" datatype="html">
+        <source>Networking and Sharing Experiences</source>
+        <target state="translated">Vernetzung und Erfahrungsaustausch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8633396480562620693" datatype="html">
+        <source>Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</source>
+        <target state="translated">Neben dem Peering LAN und unseren Route Server für den Kernbetrieb des IXP betreiben wir auch die weitere Technik für den Verein zu großen Teilen selbst.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="813505822962920168" datatype="html">
+        <source>Association Work</source>
+        <target state="translated">Vereinsarbeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5950592880769644231" datatype="html">
+        <source>The work in the association is organized in different boards and working groups:</source>
+        <target state="translated">Die Arbeit im Verein ist in verschiedenen Gremien und Arbeitskreise organisiert:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2112076602684121737" datatype="html">
+        <source>Technical Operation &amp; Advisory Board</source>
+        <target state="translated">Technischer Betrieb</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="576533027619297585" datatype="html">
+        <source>Public Relations</source>
+        <target state="translated">Öffentlichkeitsarbeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7896457190687769786" datatype="html">
+        <source>Participation &amp; Joining</source>
+        <target state="translated">Mitarbeit &amp; Beitritt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4723636160472220804" datatype="html">
+        <source>Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other.</source>
+        <target state="translated">Die optimale Weiterleitung von Netzpaketen ist ein wichtiger Aspekt beim Aufbau eines robusten und effizienten Internets. Peering mit einem IXP ermöglicht den Zugang zu Inhalten und Diensten, die von anderen Netzbetreibern oder Internet-Diensteanbietern bereitgestellt werden, ohne dass viele direkte Peerings untereinander eingerichtet werden müssen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">39,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1631914994548716663" datatype="html">
+        <source>Our Vision</source>
+        <target state="translated">Unsere Vision</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7538019399997716423" datatype="html">
+        <source>We want to promote Saxony as an attractive IT location with a focus on Dresden. Our main focus is the further expansion of the internet communication network. We committ as non-profit organisation for:</source>
+        <target state="translated">Wir wollen die Region Sachsen mit dem Schwerpunkt Dresden als attraktiven IT-Standort weiter voranbringen. Unser Hauptaugenmerk liegt in der Weiterentwicklung des Kommunikationsnetzes Internet. Um dieses Ziel zu erreichen, fokussieren wir uns gemeinnützig auf:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="430521554627581445" datatype="html">
+        <source>We are available as an objective point of contact for organizations, science, business and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.</source>
+        <target state="translated">Wir stehen als objektiver Ansprechpartner für Organisationen, Wissenschaft, Wirtschaft und Öffentlichkeit bei Fragen zum Internet zur Verfügung. Neben dem Erfahrungsaustausch im Verein und mit außenstehenden Dritten führen wir Informations- und Schulungsveranstaltungen durch. Des Weiteren nehmen wir an Konferenzen der Community teil.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">23,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="330938586604953979" datatype="html">
+        <source>Operation of the DD-IX</source>
+        <target state="translated">Betrieb des DD-IX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6593726833795406993" datatype="html">
+        <source>In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden. DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the region of Saxony.</source>
+        <target state="translated">Neben der Unterstützung der Community betreiben wir den Internet-Exchange DD-IX an Standorten Dresden. Der DD-IX versteht sich als offene, nicht gewinnorientierte Plattform für alle Internetteilnehmer mit einem eigenen AS in der Region Sachsen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8215917582351912302" datatype="html">
+        <source>The association is made up of committed members who work voluntarily for the achievement of the goals. Even though the association seems to be technical through IXP operations we are also involved in non-technical areas.</source>
+        <target state="translated">Das Rückgrat des Vereins sind seine engagierten Mitglieder, die sich ehrenamtlich für das Erreichen der Ziele einsetzen. Auch wenn der Verein durch den IXP-Betrieb scheinbar technisch geprägt ist, engagieren wir uns auch in nicht-technischen Bereichen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">54,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8228555951052221659" datatype="html">
+        <source>Management Board</source>
+        <target state="translated">Vorstand</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8732813670909755210" datatype="html">
+        <source>Event Management</source>
+        <target state="translated">Veranstaltungsmanagement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3274025550183860205" datatype="html">
+        <source>Customer &amp; Sponsorship Acquisition</source>
+        <target state="translated">Kunden &amp; Sponsoring Akquise</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4914878788954605145" datatype="html">
+        <source>Are you interested in working for the association? We are looking forward to you!</source>
+        <target state="translated">Du interessierst dich für die Arbeit im Verein? Wir freuen uns auf dich!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="765262536264103542" datatype="html">
+        <source>You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page.</source>
+        <target state="translated">Für das Mitwirken im Verein musst du nicht zwingend Vereinsmitglied werden. Als ordentliches Mitglied besitzt du jedoch ein eigenes Stimmrecht in den entsprechenden Gremien des Vereins. Alle verbindlichen Dokumente des Vereins findest du am Ende dieser Seite verlinkt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">105,109</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
