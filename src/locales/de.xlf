@@ -401,6 +401,62 @@
           <context context-type="linenumber">23,32</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8510289285271281479" datatype="html">
+        <source>Keep Local Traffic Local</source>
+        <target state="translated">Keep Local Traffic Local</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5578823162355992891" datatype="html">
+        <source>Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages.</source>
+        <target state="translated">Peering ist ein Begriff aus der Netztechnik. Es ermöglicht ISPs (Internet Service Providers) oder Netzbetreibern einen einfachen Datenaustausch untereinander. Dieser Datentransfer zwischen Peering-Partnern ist kostenlos und bietet zahlreiche Vorteile.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">12,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8043843054156476312" datatype="html">
+        <source>An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</source>
+        <target state="translated">Ein IXP ermöglicht auch eine bessere Ausfallsicherheit, da der Datenverkehr auch dann übertragen werden kann, wenn eine Verbindung zu einem bestimmten Netz ausfällt, solange es Routen über alternative Peering-Partner gibt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">52,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7207718169933375210" datatype="html">
+        <source>The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all organizations and providers for the multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal prerequisites to peer with participants in the region.</source>
+        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr offen. Nur 20&amp;nbsp;km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region zu vernetzen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5783384091590571612" datatype="html">
+        <source>The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is to create a basis for the direct exchange of internet traffic within the region. The Internet is based on decentralized networking between providers, which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in an economically and ecologically optimal way.</source>
+        <target state="translated">Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. i.G. Unsere Mission ist es, eine Basis für den direkten Austausch des Internet-Verkehrs zwischen Quelle und Ziel zu schaffen. Das Internet lebt von einer dezentralen Vermaschung zwischen den Providern, die vor allem durch IXPs effizient ermöglicht wird. Neben der Erhöhung der Widerstandsfähigkeit des Internets findet durch sie der Netzwerkverkehr auf dem ökonomisch und ökologisch optimalen Weg statt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">30,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4407640932304119141" datatype="html">
+        <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
+        <target state="translated">Das Peering über einen IXP wie den DD-IX reduziert den Bedarf an teuren Internet-Transitdiensten. Denn es wird nur die Verbindung bezahlt und nicht das genutzte Datenvolumen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">64,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2761952393360315538" datatype="html">
+        <source>The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</source>
+        <target state="translated">Ziel des Peering ist es, den Verkehr zwischen den beteiligten Netzen effizienter zu leiten und Engpässe zu vermeiden. Durch die von DD-IX bereitgestellten Peering-Verbindungen ermöglichen wir allen Teilnehmern, Netzwerkpakete untereinander kürzer und schneller zu leiten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">26,30</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
