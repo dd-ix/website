@@ -94,42 +94,42 @@
         <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">5</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8953033926734869941" datatype="html">
         <source>Name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1597606772917016203" datatype="html">
         <source>A name is required. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">8,10</context>
+          <context context-type="linenumber">6,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8115083664628466958" datatype="html">
         <source>E-Mail</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6856821060067506866" datatype="html">
         <source>A valid e-mail is required! </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">13,16</context>
+          <context context-type="linenumber">11,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="935187492052582731" datatype="html">
         <source>Submit</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1631914994548716663" datatype="html">
