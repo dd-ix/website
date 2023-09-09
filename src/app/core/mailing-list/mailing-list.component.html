@@ -1,0 +1,14 @@
+<app-card>
+  <form [formGroup]="form" (submit)="$event.preventDefault();submit()">
+    <label>
+      Name:
+      <input formControlName="name" type="text">
+    </label>
+    <label>
+      Email:
+      <input formControlName="email" type="email">
+    </label>
+
+    <input type="submit" class="btn btn-primary" [disabled]="!form.valid" value="Submit">
+  </form>
+</app-card>
