@@ -74,7 +74,7 @@
 
     @media screen and (max-width: $bp-mobile) {
       position: absolute;
-      background-color: $c-card;
+      background-color: color-mix(in srgb, $c-card 70%, transparent);
       backdrop-filter: blur(1rem);
       width: 100%;
       transition: 150ms opacity ease-in-out;
@@ -105,7 +105,10 @@
       display: flex;
       justify-content: center;
       gap: 0.5rem;
-      width: 100%;
+
+      @media screen and (min-width: $bp-mobile) {
+        width: 100%;
+      }
     }
   }
 
