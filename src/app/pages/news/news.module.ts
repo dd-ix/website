@@ -5,6 +5,8 @@ import {NewsListComponent} from './news-list/news-list.component';
 import {NewsPostComponent} from './news-post/news-post.component';
 import {NewsCardComponent} from "../../core/news-card/news-card.component";
 import {CardComponent} from "../../core/card/card.component";
+import {MailingListComponent} from "../../core/mailing-list/mailing-list.component";
+import {IconNewsComponent} from "../../icons/icon-news/icon-news.component";
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import {CardComponent} from "../../core/card/card.component";
   exports: [
     NewsPostComponent
   ],
-    imports: [
-        CommonModule,
-        NewsRoutingModule,
-        NewsCardComponent,
-        CardComponent,
-    ]
+  imports: [
+    CommonModule,
+    NewsRoutingModule,
+    NewsCardComponent,
+    CardComponent,
+    MailingListComponent,
+    IconNewsComponent,
+  ]
 })
 export class NewsModule {
 }

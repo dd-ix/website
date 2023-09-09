@@ -3,6 +3,8 @@ import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/
 import {CardComponent} from "../card/card.component";
 import {CommonModule} from "@angular/common";
 import {MailingListService} from "../../api/mailing-list.service";
+import {ButtonComponent, FormErrorComponent, TextFieldComponent} from "@feel/form";
+import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
 
 @Component({
   selector: 'app-mailing-list',
@@ -11,7 +13,11 @@ import {MailingListService} from "../../api/mailing-list.service";
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    CardComponent
+    CardComponent,
+    TextFieldComponent,
+    ButtonComponent,
+    FormErrorComponent,
+    IconSendComponent,
   ],
   standalone: true
 })
@@ -23,7 +29,10 @@ export class MailingListComponent {
   });
 
   @Input()
-  public mailingList: number | null = null;
+  public listName: string | null = null;
+
+  @Input()
+  public listId: number | null = null;
 
   constructor(
     private mailingListService: MailingListService,
@@ -31,7 +40,7 @@ export class MailingListComponent {
   }
 
   protected submit(): void {
-    if (!Number.isFinite(this.mailingList)) {
+    if (!Number.isFinite(this.listId)) {
       throw new Error("Mailing list not defined");
     }
 
@@ -41,7 +50,7 @@ export class MailingListComponent {
 
     const value = this.form.value;
 
-    this.mailingListService.subscribe(this.mailingList!, value.name!, value.email!)
+    this.mailingListService.subscribe(this.listId!, value.name!, value.email!)
       .subscribe();
   }
 }

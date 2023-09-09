@@ -1,0 +1,7 @@
+@import "vars";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.5 * $s-padding);
+}
