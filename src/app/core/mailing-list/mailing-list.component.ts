@@ -5,6 +5,7 @@ import {CommonModule} from "@angular/common";
 import {MailingListService} from "../../api/mailing-list.service";
 import {ButtonComponent, FormErrorComponent, TextFieldComponent} from "@feel/form";
 import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
+import {IconNewsComponent} from "../../icons/icon-news/icon-news.component";
 
 @Component({
   selector: 'app-mailing-list',
@@ -18,6 +19,7 @@ import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
     ButtonComponent,
     FormErrorComponent,
     IconSendComponent,
+    IconNewsComponent,
   ],
   standalone: true
 })
