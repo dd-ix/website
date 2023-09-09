@@ -1,4 +1,5 @@
 @import "vars";
+@import "bp";
 
 :host {
   display: grid;
@@ -11,7 +12,7 @@
 
   aside {
     height: 100dvh;
-    padding: $page-padding-tb $page-padding-lr;
+    padding: $s-padding;
 
     &, .end {
       display: flex;
@@ -44,9 +45,9 @@
         }
 
         &:hover, &.selected {
-          background-color: $primary;
+          background-color: $c-primary;
           //color: $secondary;
-          //--color-text: $secondary;
+          //--f-color: $secondary;
         }
       }
     }
@@ -70,8 +71,9 @@
 
     @media screen and (max-width: $bp-mobile) {
       position: absolute;
-      background-color: $background-aside;
+      background-color: $c-card;
       backdrop-filter: blur(1rem);
+      //border-right: 0.1rem solid $c-card-secondary;
       width: 100%;
       transition: 150ms opacity ease-in-out;
 
@@ -138,10 +140,10 @@
 
       display: flex;
       flex-direction: column;
-      max-width: $page-width;
+      max-width: $s-content;
       margin: 0 auto;
       min-height: 100dvh;
-      padding: $page-padding-tb $page-padding-lr;
+      padding: $s-padding;
 
       footer {
         display: flex;

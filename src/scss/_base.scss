@@ -7,7 +7,7 @@ a {
 }
 
 a:not(.not):not(:has(section)) {
-  border-bottom: 0.15rem solid $primary;
+  border-bottom: 0.15rem solid $c-primary;
   transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 
   svg {
@@ -15,7 +15,7 @@ a:not(.not):not(:has(section)) {
   }
 
   &:hover {
-    background-color: $primary;
+    background-color: $c-primary;
     color: $secondary;
 
     svg {
@@ -46,7 +46,7 @@ a {
   //
   //&:hover section {
   //  transform: scale(0.99);
-  //  border-color: $primary;
+  //  border-color: $c-primary;
   //}
 }
 
@@ -81,7 +81,7 @@ ul:not(.not) {
 
   li::before {
     content: '-';
-    color: $primary;
+    color: $c-primary;
     padding-right: 0.5rem;
   }
 }
@@ -111,7 +111,7 @@ ul:not(.not) {
 
   h1, h2, h3, h4, h5, h6 {
     //background-color: $primary-dark;
-    color: $primary;    //border-bottom: 0.2rem solid $primary;
+    color: $c-primary;    //border-bottom: 0.2rem solid $c-primary;
     //margin-bottom: 0.5rem;
   }
 }

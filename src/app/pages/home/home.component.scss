@@ -1,4 +1,5 @@
 @import "vars";
+@import "bp";
 
 :host {
   display: flex;
@@ -6,11 +7,11 @@
   gap: 2rem;
 
   .dd-ix {
-    color: $primary;
+    color: $c-primary;
   }
 
   .slogan {
-    color: $primary-light;
+    color: $c-primary-l;
   }
 
   //.hero-image {
@@ -53,13 +54,14 @@
       max-height: 5rem;
       min-width: #{5rem + 2 * $padding};
       padding: 0 $padding;
-      --color-text: #{$primary};
+      --f-color: #{$c-primary};
     }
   }
 
   .news, .socials, .sponsors {
     display: grid;
     gap: 1rem;
+    list-style-type: none;
   }
 
   .news, .sponsors {

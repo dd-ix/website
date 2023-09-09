@@ -2,10 +2,10 @@
   <h1 i18n>Team</h1>
 </div>
 
-<ul class="not">
+<ul class="not team">
   <li *ngFor="let member of team | async">
     <app-card>
-      <div class="member">
+      <div class="member typography">
         <img [ngSrc]="buildMemberImage(member.image)" width="1" height="1"
              [alt]="member.nick ?? member.name + '\'s Image'">
         <p>

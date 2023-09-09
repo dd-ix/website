@@ -115,7 +115,7 @@
 <div class="typography">
   <h1 i18n>Documents</h1>
 </div>
-<ul class="not">
+<ul class="not documents">
   <li *ngFor="let document of documents | async">
     <app-card [link]="buildDownloadLink(document)" [backgroundImage]="buildBackgroundImage(document)">
       <h1>{{document.name}}</h1>

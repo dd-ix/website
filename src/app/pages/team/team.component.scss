@@ -3,9 +3,11 @@ ul {
   display: grid;
   margin-top: 1rem;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
-
+.team {
+  list-style-type: none;
+}
 .member {
   text-align: center;
   display: flex;

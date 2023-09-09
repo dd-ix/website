@@ -3,8 +3,8 @@
 :host {
   & > {
     a, div {
-      border: 0.1rem solid $background-lighter;
-      background-color: $background-light;
+      border: 0.1rem solid $c-card-secondary;
+      background-color: $c-card;
       border-radius: 0.5rem;
       overflow: hidden;
 
@@ -46,7 +46,7 @@
       transition: 150ms border-color ease-in-out;
 
       &:hover {
-        border-color: $primary;
+        border-color: $c-primary;
       }
     }
   }

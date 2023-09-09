@@ -2,13 +2,13 @@
 
 .tooltip {
   position: fixed;
-  background-color: $background-light;
-  border: 0.1rem solid $background-dark;
+  background-color: $c-card;
+  border: 0.1rem solid $c-card-secondary;
   border-radius: 0.4rem;
   padding: 0.2rem 0.4rem;
   margin-top: 0.5rem;
   transform: translateX(-50%);
-  font-size: $font-size-small;
+  font-size: $f-size-small;
 
   &::before {
     content: '';
@@ -16,7 +16,7 @@
     height: 0;
     border-left: 0.5rem solid transparent;
     border-right: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid $background-light;
+    border-bottom: 0.5rem solid $c-card-secondary;
     position: absolute;
     left: calc(50% - 0.5rem);
     top: -0.4rem;

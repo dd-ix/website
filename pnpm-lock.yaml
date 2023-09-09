@@ -32,6 +32,9 @@ dependencies:
   '@angular/router':
     specifier: ^16.2.0
     version: 16.2.0(@angular/common@16.2.0)(@angular/core@16.2.0)(@angular/platform-browser@16.2.0)(rxjs@7.8.1)
+  '@feel/style':
+    specifier: ^0.0.2
+    version: 0.0.2(@angular/common@16.2.0)(@angular/core@16.2.0)
   '@fontsource/dm-sans':
     specifier: ^5.0.5
     version: 5.0.5
@@ -1957,6 +1960,17 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@feel/style@0.0.2(@angular/common@16.2.0)(@angular/core@16.2.0):
+    resolution: {integrity: sha512-ivdVWOuI5nbG643L2xbiQrxv5FV21C8mGdT/j/E7ypqVINS04d3Uri43FCY0/0KuWOgd/XoMXyJkqr6GBc6rog==, tarball: https://git.offsetting.dev/api/packages/offsetting/npm/%40feel%2Fstyle/-/0.0.2/style-0.0.2.tgz}
+    peerDependencies:
+      '@angular/common': ^16.0.0
+      '@angular/core': ^16.0.0
+    dependencies:
+      '@angular/common': 16.2.0(@angular/core@16.2.0)(rxjs@7.8.1)
+      '@angular/core': 16.2.0(rxjs@7.8.1)(zone.js@0.13.1)
+      tslib: 2.6.1
+    dev: false
 
   /@fontsource/dm-sans@5.0.5:
     resolution: {integrity: sha512-KpqtEz6ySGJK4JjFcFI0HxD+9NHRRHa1uAcTGZUugHoKXspRJlHZK/U+IF1EegkV4Xp0Yn41njAmwYYX7DfwWw==}

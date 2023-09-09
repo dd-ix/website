@@ -36,13 +36,13 @@
   </div>
 
   <div class="aside-footer">
-    <span class="lang" *ngIf="path | async as path">
+    <span class="lang typography" *ngIf="path | async as path">
       <a [href]="'/de' + path">DE</a>
       |
       <a [href]="'/en' + path">EN</a>
     </span>
 
-    <nav>
+    <nav class="typography">
       <a routerLink="/privacy-policy" i18n>Privacy Policy</a>
       <a routerLink="/imprint" i18n>Imprint</a>
     </nav>
@@ -63,7 +63,7 @@
       <span i18n>
         &copy; {{currentYear()}} <b>DD-IX</b> <span class="slogan"> | Keep Local Traffic Local</span>
       </span>
-      <nav>
+      <nav class="typography">
         <a routerLink="/privacy-policy" i18n>Privacy Policy</a>
         <a routerLink="/imprint" i18n>Imprint</a>
       </nav>
