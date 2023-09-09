@@ -1,13 +1,12 @@
 import {TestBed} from '@angular/core/testing';
+import {MailingListService} from './mailing-list.service';
 
-import {SubscribeButtonService} from './subscribe-button.service';
-
-describe('NewsService', () => {
-  let service: SubscribeButtonService;
+describe('MailingListService', () => {
+  let service: MailingListService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SubscribeButtonService);
+    service = TestBed.inject(MailingListService);
   });
 
   it('should be created', () => {
