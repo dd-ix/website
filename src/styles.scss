@@ -23,12 +23,13 @@ html {
 //}
 
 @import "theme";
+@import "vars";
+
 @include theme(
   $c-primary: #209680,
   $c-primary-l: #cf0,
+  $s-padding: calc(1.5 * $s-unit),
 );
-
-@import "vars";
 
 .typography {
   h1, h2, h3, h4, h5, h6 {

@@ -69,11 +69,13 @@
       width: 100%;
     }
 
+    background-color: $c-card;
+    border-right: 0.1rem solid $c-card-secondary;
+
     @media screen and (max-width: $bp-mobile) {
       position: absolute;
       background-color: $c-card;
       backdrop-filter: blur(1rem);
-      //border-right: 0.1rem solid $c-card-secondary;
       width: 100%;
       transition: 150ms opacity ease-in-out;
 
