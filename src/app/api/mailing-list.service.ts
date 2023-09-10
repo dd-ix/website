@@ -13,8 +13,8 @@ export class MailingListService {
   ) {
   }
 
-  public subscribe(listId: number, name: string, email: string): Observable<void> {
-    return this.http.post(`${API_URL}/mailing_lists/${listId}`, {name, email})
+  public subscribe(listId: number, email: string): Observable<void> {
+    return this.http.post(`${API_URL}/mailing_lists/${listId}`, {email})
       .pipe(map(() => void 0));
   }
 }

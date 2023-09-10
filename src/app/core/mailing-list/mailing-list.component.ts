@@ -26,7 +26,6 @@ import {IconNewsComponent} from "../../icons/icon-news/icon-news.component";
 export class MailingListComponent {
 
   protected form = new FormGroup({
-    name: new FormControl(null, [Validators.required]),
     email: new FormControl(null, [Validators.required, Validators.email]),
   });
 
@@ -52,7 +51,7 @@ export class MailingListComponent {
 
     const value = this.form.value;
 
-    this.mailingListService.subscribe(this.listId!, value.name!, value.email!)
+    this.mailingListService.subscribe(this.listId!, value.email!)
       .subscribe();
   }
 }
