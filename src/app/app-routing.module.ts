@@ -16,6 +16,7 @@ const routes: Routes = [
   {path: 'team', loadComponent: () => import('./pages/team/team.component').then(c => c.TeamComponent)},
   {path: 'imprint', loadComponent: () => import('./pages/imprint/imprint.component').then(c => c.ImprintComponent)},
   {path: 'peering', loadChildren: () => import('./pages/peering/peering.module').then(m => m.PeeringModule)},
+  {path: 'subscribe', loadChildren: () => import('./pages/subscribe-page/subscribe-page.module').then(m => m.SubscribePageModule)},
   {path: '**', loadComponent: () => import('./pages/not-found/not-found.component').then(c => c.NotFoundComponent)},
 ];
 
