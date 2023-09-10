@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="841934696444961534" datatype="html">
         <source>News</source>
-        <target>Neuigkeiten</target>
+        <target state="translated">Neuigkeiten</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">8</context>
@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit id="4733307402565258070" datatype="html">
         <source>Documents</source>
-        <target>Dokumente</target>
+        <target state="translated">Dokumente</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">9</context>
@@ -52,7 +52,7 @@
           <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Kontakt</target>
+        <target state="translated">Kontakt</target>
       </trans-unit>
       <trans-unit id="429038671194949810" datatype="html">
         <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Keep Local Traffic Local. </source>
@@ -63,7 +63,7 @@
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
         <source>Privacy Policy</source>
-        <target>Datenschutzerklärung</target>
+        <target state="translated">Datenschutzerklärung</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">28</context>
@@ -83,7 +83,7 @@
           <context context-type="sourcefile">src/app/pages/imprint/imprint.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Impressum</target>
+        <target state="translated">Impressum</target>
       </trans-unit>
       <trans-unit id="5156047489151158244" datatype="html">
         <source>Work in progress</source>
@@ -131,7 +131,7 @@
           <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <target>Nicht gefunden</target>
+        <target state="translated">Nicht gefunden</target>
       </trans-unit>
       <trans-unit id="7353139189504330359" datatype="html">
         <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</source>
@@ -139,7 +139,7 @@
           <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
-        <target>Wollen Sie zur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> zurückspringen?</target>
+        <target state="translated">Wollen Sie zur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> zurückspringen?</target>
       </trans-unit>
       <trans-unit id="6718726533481404495" datatype="html">
         <source>Peering</source>
@@ -655,6 +655,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
           <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5697018006704416176" datatype="html">
+        <source>The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all organizations and providers for the multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal prerequisites to peer with participants in the region.</source>
+        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region zu vernetzen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">15,20</context>
         </context-group>
       </trans-unit>
     </body>
