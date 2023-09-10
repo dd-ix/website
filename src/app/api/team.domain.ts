@@ -3,12 +3,14 @@ export interface TeamMember {
   name: string;
   description: string;
   image: string;
+  ripe_handle: string | null;
   socials: Socials;
 }
 
 export interface Socials {
-  github: string;
-  email: string;
-  mastodon: string;
-  website: string;
+  github: string | null;
+  email: string | null;
+  mastodon: string | null;
+  website: string | null;
+  linkedin: string | null;
 }

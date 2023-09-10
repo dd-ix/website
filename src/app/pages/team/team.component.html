@@ -30,9 +30,20 @@
             <span class="icon"><app-icon-globe/></span>
             <span class="handle">{{member.socials.website}}</span>
           </a>
-          <a *ngIf="member.socials.mastodon" [href]="buildMastodonLink(member.socials.mastodon)">
+          <a *ngIf="member.socials.mastodon" [href]="buildMastodonLink(member.socials.mastodon)" target="_blank">
             <span class="icon"><app-icon-mastodon/></span>
             <span class="handle">{{member.socials.mastodon}}</span>
+          </a>
+          <a *ngIf="member.socials.linkedin" [href]="'https://www.linkedin.com/in/'+member.socials.linkedin"
+             target="_blank">
+            <span class="icon"><app-icon-linkedin/></span>
+            <span class="handle" i18n>Linkedin</span>
+          </a>
+          <a *ngIf="member.ripe_handle"
+             target="_blank"
+             [href]="'https://apps.db.ripe.net/db-web-ui/query?bflag=false&dflag=false&rflag=true&source=RIPE&searchtext='+member.ripe_handle">
+            <span class="icon"><app-icon-ripe/></span>
+            <span class="handle">{{member.ripe_handle}}</span>
           </a>
         </div>
       </div>
