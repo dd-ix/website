@@ -7,11 +7,13 @@ import {NewsCardComponent} from "../../core/news-card/news-card.component";
 import {CardComponent} from "../../core/card/card.component";
 import {MailingListComponent} from "../../core/mailing-list/mailing-list.component";
 import {IconNewsComponent} from "../../icons/icon-news/icon-news.component";
+import { NewsSubscribeComponent } from './news-subscribe/news-subscribe.component';
 
 @NgModule({
   declarations: [
     NewsListComponent,
-    NewsPostComponent
+    NewsPostComponent,
+    NewsSubscribeComponent
   ],
   exports: [
     NewsPostComponent
