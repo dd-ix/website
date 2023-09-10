@@ -7,11 +7,13 @@ import {IconGithubComponent} from "../../icons/icon-github/icon-github.component
 import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
 import {IconGlobeComponent} from "../../icons/icon-globe/icon-globe.component";
 import {IconMailComponent} from "../../icons/icon-mail/icon-mail.component";
+import {IconLinkedinComponent} from "../../icons/icon-linkedin/icon-linkedin.component";
+import {IconRipeComponent} from "../../icons/icon-ripe/icon-ripe.component";
 
 @Component({
   selector: 'app-team',
   standalone: true,
-  imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent, NgOptimizedImage],
+  imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent, NgOptimizedImage, IconLinkedinComponent, IconRipeComponent],
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.scss']
 })
