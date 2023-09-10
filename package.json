@@ -14,7 +14,7 @@
     "serve:ssr": "node dist/presence/server/main.js",
     "build:ssr": "ng build && ng run presence:server",
     "prerender": "ng run presence:prerender",
-    "extract-i18n": "ng extract-i18n --out-file src/locales/dev.xlf --format xlif"
+    "extract-i18n": "ng extract-i18n --out-file src/locales/en_devel.xlf --format xlif"
   },
   "private": true,
   "dependencies": {
