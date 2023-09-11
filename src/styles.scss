@@ -28,7 +28,9 @@ html {
 @include theme(
   $c-primary: #209680,
   $c-primary-l: #cf0,
-  $c-test: #ae0,
+  $c-accent: #ad0,
+  $c-accent-l: #cf0,
+  $c-accent-d: #6a0,
   $c-primary-d: #16705f,
   $c-gray: #696969,
   $s-padding: calc(1.5 * $s-unit),
