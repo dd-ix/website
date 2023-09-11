@@ -30,18 +30,6 @@
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3161711202916701013" datatype="html">
-        <source>Looking Glass</source>
-        <target state="translated">Looking Glass</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/looking-glass/looking-glass.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
@@ -53,13 +41,6 @@
           <context context-type="linenumber">2</context>
         </context-group>
         <target state="translated">Kontakt</target>
-      </trans-unit>
-      <trans-unit id="429038671194949810" datatype="html">
-        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> - Keep Local Traffic Local. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">24,26</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
         <source>Privacy Policy</source>
@@ -85,36 +66,12 @@
         </context-group>
         <target state="translated">Impressum</target>
       </trans-unit>
-      <trans-unit id="5156047489151158244" datatype="html">
-        <source>Work in progress</source>
-        <target>In Arbeit</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/imprint/imprint.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/looking-glass/looking-glass.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/privacy-policy/privacy-policy.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="5744023940242558359" datatype="html">
         <source>Dresden Internet Exchange</source>
         <target state="translated">Dresden Internet Exchange</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5913446743299683135" datatype="html">
-        <source>Keep Local Traffic Local.</source>
-        <target state="translated">Keep Local Traffic Local.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3670532182581004841" datatype="html">
@@ -169,54 +126,6 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3810733859785982715" datatype="html">
-        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">37,40</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1140327701924892323" datatype="html">
-        <source>Quick Links</source>
-        <target state="translated">Lesezeichen</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7817983777749417807" datatype="html">
-        <source>IXP Portal</source>
-        <target state="translated">IXP Portal</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7143579180750436311" datatype="html">
-        <source>Services</source>
-        <target state="translated">Dienstleistungen</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5449136821545383423" datatype="html">
-        <source>PeeringDB</source>
-        <target state="translated">PeeringDB</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1237309895055413148" datatype="html">
-        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/>- Keep Local Traffic Local.<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">46,49</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8436144186639366635" datatype="html">
         <source>Sponsors</source>
         <target state="translated">Sponsoren</target>
@@ -231,38 +140,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">46,49</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8694717738425750979" datatype="html">
-        <source>IXP Manager</source>
-        <target state="translated">IXP Manager</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7397528405676242070" datatype="html">
-        <source>Joining and Peering Policy</source>
-        <target state="translated">Joining and Peering Policy</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8200937627151209663" datatype="html">
-        <source>Private Network Interconnect</source>
-        <target state="translated">Private Network Interconnect</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6163837208280289570" datatype="html">
-        <source>Peering Port</source>
-        <target state="translated">Peering Port</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5898480698220868505" datatype="html">
@@ -305,46 +182,6 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8106678092983350924" datatype="html">
-        <source>Your benefits of peering using DD-IX as an Internet Exchange Point:</source>
-        <target state="translated">Ihre Vorteile des Peering über den DD-IX als Internet Exchange Point:</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">40</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3257961541592942665" datatype="html">
-        <source>An IXP offers the improved performance already mentioned, since the data exchange between peering partners is exchanged directly. This reduces latency and transmission speeds can be improved.</source>
-        <target state="translated">Ein IXP bietet die schon angesprochene verbesserte Leistung, da der Datenaustausch zwischen Peering-Partnern direkt ausgetauscht wird. So wird die Latenz reduziert, und die Übertragungsgeschwindigkeiten können verbessert werden.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">41,44</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1111562118089135597" datatype="html">
-        <source>It also enables better resilience, as traffic can be transmitted even if a connection to a particular network is down, as long as there are alternative peering partners.</source>
-        <target state="translated">Zudem ermöglicht es eine bessere Ausfallsicherheit, da der Datenverkehr auch dann übermittelt werden kann, wenn eine Verbindung zu einem bestimmten Netzwerk unterbrochen ist, solange es alternative Peering-Partner gibt.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">54,57</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3620605617044729081" datatype="html">
-        <source>Peering through an IXP (Internet Exchange Point) such as the DD-IX reduces the need for expensive Internet transit services because traffic can be routed directly through the IXP.</source>
-        <target state="translated">Das Peering über einen IXP (Internet Exchange Point) wie den DD-IX reduziert den Bedarf an teuren Internettransitdiensten, da der Datenverkehr direkt über den IXP geleitet werden kann.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">65,68</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4030011499746585767" datatype="html">
-        <source>In addition, peering increases network reach and allows access to content and services hosted by other networks and ISPs.</source>
-        <target state="translated">Außerdem erhöht Peering die Reichweite der Netzwerke und ermöglicht den Zugriff auf Inhalte und Dienste, die von anderen Netzwerken und ISPs gehostet werden.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">69,72</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="558795374232821675" datatype="html">
         <source>Peering Policy</source>
         <target state="translated">Peering Policy</target>
@@ -361,44 +198,12 @@
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2973807237658397655" datatype="html">
-        <source>The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform we are open to all organizations and providers for the multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal prerequisites to peer with participants in the region.</source>
-        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region zu vernetzen.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">12,17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7364359645076388510" datatype="html">
-        <source>The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is to create a basis for the direct exchange of internet traffic within the region. The Internet is based on decentralized networking between providers which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in a economically and ecologically optimal way.</source>
-        <target state="translated">Betrieben wird der IXP von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. i.G. Unsere Mission ist es, eine Basis für den direkten Austausch des Internet-Verkehrs zwischen Quelle und Ziel zu schaffen. Das Internet lebt von einer dezentralen Vermaschung zwischen den Providern, die vor allem durch IXPs effizient ermöglicht wird. Neben der Erhöhung der Widerstandsfähigkeit des Internets findet durch sie der Netzwerkverkehr auf dem ökonomisch und ökologisch optimalen Weg statt.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">29,38</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6872741733367206968" datatype="html">
-        <source>Peering is a term from network technology. It provides for an association of ISPs (Internet Service Providers) or networks to enable data exchange between them. This data transfer between peering partners is free of charge and offers numerous advantages.</source>
-        <target state="translated">Peering ist ein Begriff aus der Netzwerktechnologie. Es sorgt für einen Zusammenschluss von ISPs (Internet Service Provider) oder Netzwerken um den Datenaustausch zwischen ihnen zu ermöglichen. Dieser Datentransfer zwischen Peering-Partnern gestaltet sich so kostenfrei und bietet zahlreiche Vorteile.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">8,12</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2185195021427384331" datatype="html">
         <source>Why should I peer?</source>
         <target state="translated">Warum sollte ich peeren?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4299929249487748810" datatype="html">
-        <source>The goal of peering is to route traffic between participating networks more efficiently and avoid bottlenecks. Direct peering connections provided by the DD-IX allow network packets to take shorter and faster routes. This leads to improved network performance, which can result in a reduction in latency. Optimal routing of network packets is an important aspect of building a robust and efficient Internet, as it forms the basis for exchanging traffic between different regions and countries. Peering enables access to content and services hosted by other networks or ISPs without having to route all traffic over the public Internet.</source>
-        <target state="translated">Das Ziel des Peering ist, den Verkehr zwischen beteiligten Netzwerken effizienter zu leiten und Engpässe zu vermeiden. Durch direkte Peering-Verbindungen, die durch den DD-IX bereitgestellt werden, können Netzwerkpakete kürzere und schnellere Routen nehmen. Dies führt zu einer verbesserten Netzwerkleistung, was in einer Verringerung von Latenzzeiten resultieren kann. Ein optimales Leiten der Netzwerkpakete ist ein wichtiger Aspekt beim Aufbau eines robusten und effizienten Internets, da es die Grundlage für den Austausch von Datenverkehr zwischen verschiedenen Regionen und Ländern bildet. Mithilfe des Peering wird der Zugriff auf Inhalte und Dienste, die von anderen Netzwerken oder ISPs gehostet werden, ermöglicht, ohne dass der gesamte Datenverkehr über das öffentliche Internet geroutet werden muss.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">23,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8510289285271281479" datatype="html">
@@ -423,14 +228,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">52,55</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7207718169933375210" datatype="html">
-        <source>The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all organizations and providers for the multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal prerequisites to peer with participants in the region.</source>
-        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Organisationen und Providern zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region zu vernetzen.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">15,20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5783384091590571612" datatype="html">
@@ -617,22 +414,6 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8953033926734869941" datatype="html">
-        <source>Name</source>
-        <target state="translated">Name</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1597606772917016203" datatype="html">
-        <source>A name is required.</source>
-        <target state="translated">Ein Name ist erforderlich.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">8,10</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8115083664628466958" datatype="html">
         <source>E-Mail</source>
         <target state="translated">E-Mail</target>
@@ -663,6 +444,30 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">15,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3909398260718721910" datatype="html">
+        <source>Linkedin</source>
+        <target state="translated">Linkedin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4786405675269305220" datatype="html">
+        <source>Always stay updated by subscribing to our news mailing-list.</source>
+        <target state="translated">Bleibe immer auf dem Laufenden, indem du sich in unsere Mailing-Liste einträgst.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/news/news-subscribe/news-subscribe.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9158112486914865946" datatype="html">
+        <source>Mailing List</source>
+        <target state="translated">Mailingliste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/news/news-subscribe/news-subscribe.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
     </body>

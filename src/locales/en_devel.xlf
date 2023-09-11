@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="841934696444961534" datatype="html">
+        <source>News</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/news/news-list/news-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6718726533481404495" datatype="html">
+        <source>Peering</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4849273003091869009" datatype="html">
+        <source>Association</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3724068243287682962" datatype="html">
+        <source>Team</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8439955599488894226" datatype="html">
+        <source>Privacy Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5891707175321515013" datatype="html">
+        <source>Imprint</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2258712179708928522" datatype="html">
+        <source> © <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">63,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9078603423157869293" datatype="html">
+        <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8115083664628466958" datatype="html">
+        <source>E-Mail</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6856821060067506866" datatype="html">
+        <source>A valid e-mail is required! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="935187492052582731" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1631914994548716663" datatype="html">
+        <source>Our Vision</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7538019399997716423" datatype="html">
+        <source> We want to promote Saxony as an attractive IT location with a focus on Dresden. Our main focus is the further expansion of the internet communication network. We committ as non-profit organisation for: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">10,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6980756795925581247" datatype="html">
+        <source>Networking and Sharing Experiences</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="430521554627581445" datatype="html">
+        <source> We are available as an objective point of contact for organizations, science, business and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">23,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="330938586604953979" datatype="html">
+        <source>Operation of the DD-IX</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6593726833795406993" datatype="html">
+        <source> In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden. DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the region of Saxony. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8633396480562620693" datatype="html">
+        <source> Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="813505822962920168" datatype="html">
+        <source>Association Work</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8215917582351912302" datatype="html">
+        <source> The association is made up of committed members who work voluntarily for the achievement of the goals. Even though the association seems to be technical through IXP operations we are also involved in non-technical areas. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">54,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5950592880769644231" datatype="html">
+        <source> The work in the association is organized in different boards and working groups: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8228555951052221659" datatype="html">
+        <source>Management Board</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2112076602684121737" datatype="html">
+        <source>Technical Operation &amp; Advisory Board</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="576533027619297585" datatype="html">
+        <source>Public Relations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8732813670909755210" datatype="html">
+        <source>Event Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3274025550183860205" datatype="html">
+        <source>Customer &amp; Sponsorship Acquisition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7896457190687769786" datatype="html">
+        <source>Participation &amp; Joining</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4914878788954605145" datatype="html">
+        <source>Are you interested in working for the association? We are looking forward to you!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="765262536264103542" datatype="html">
+        <source> You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">105,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4733307402565258070" datatype="html">
+        <source>Documents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5744023940242558359" datatype="html">
+        <source>Dresden Internet Exchange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8510289285271281479" datatype="html">
+        <source>Keep Local Traffic Local</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9049737860962344543" datatype="html">
+        <source>Internet Exchange</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5697018006704416176" datatype="html">
+        <source> The DD-IX is an internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all organizations and providers for the multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the ideal prerequisites to peer with participants in the region. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5783384091590571612" datatype="html">
+        <source> The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is to create a basis for the direct exchange of internet traffic within the region. The Internet is based on decentralized networking between providers, which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in an economically and ecologically optimal way. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">30,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2288513108450439427" datatype="html">
+        <source>Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2038097982979547311" datatype="html">
+        <source> Accompany us in the development of the DD-IX - the catalyst for the digital future in the region, whether as a sponsor or by joining the association! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">46,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3670532182581004841" datatype="html">
+        <source>Socials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8436144186639366635" datatype="html">
+        <source>Sponsors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9158112486914865946" datatype="html">
+        <source>Mailing List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/news/news-subscribe/news-subscribe.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4786405675269305220" datatype="html">
+        <source> Always stay updated by subscribing to our news mailing-list. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/news/news-subscribe/news-subscribe.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2649252321173430744" datatype="html">
+        <source>Not Found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7353139189504330359" datatype="html">
+        <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2880910185905378639" datatype="html">
+        <source>What is peering?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5578823162355992891" datatype="html">
+        <source> Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">12,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2185195021427384331" datatype="html">
+        <source>Why should I peer?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2761952393360315538" datatype="html">
+        <source> The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">26,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4723636160472220804" datatype="html">
+        <source> Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">39,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8043843054156476312" datatype="html">
+        <source> An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">52,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4407640932304119141" datatype="html">
+        <source> Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">64,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="558795374232821675" datatype="html">
+        <source>Peering Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4022066031214545422" datatype="html">
+        <source>Locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-locations/peering-locations.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5898480698220868505" datatype="html">
+        <source>Peers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-peers/peering-peers.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3909398260718721910" datatype="html">
+        <source>Linkedin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
