@@ -14,11 +14,13 @@ import {TextBlockComponent} from "../../core/text-block/text-block.component";
 import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {IconInternetComponent} from "../../icons/icon-internet/icon-internet.component";
 import {IconSocialComponent} from "../../icons/icon-social/icon-social.component";
+import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
+import {ButtonComponent} from "@feel/form";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent],
+  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

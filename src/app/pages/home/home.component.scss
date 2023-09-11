@@ -79,6 +79,13 @@
       grid-template-columns: 1fr;
     }
   }
+
+  .section-button {
+    width: 30%;
+    --c-primary:  #{$c-primary-l};
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
 }
 
 .sponsors {
@@ -103,3 +110,4 @@
     }
   }
 }
+
