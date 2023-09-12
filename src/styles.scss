@@ -36,6 +36,10 @@ html {
   $s-padding: calc(1.5 * $s-unit),
 );
 
+feel-button[flavor=accent] {
+  --f-color-inverted: #{$c-secondary};
+}
+
 .typography {
   h1, h2, h3, h4, h5, h6 {
     color: $c-primary;
