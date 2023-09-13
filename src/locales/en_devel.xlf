@@ -290,24 +290,6 @@
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1385157071913109993" datatype="html">
-        <source><x id="START_TAG_APP_ICON_SEND" ctype="x-app_icon_send" equiv-text="p-icon-send/&gt;"/><x id="CLOSE_TAG_APP_ICON_SEND" ctype="x-app_icon_send" equiv-text="d&gt;
-  &lt;/div&gt;
-
-  &lt;di"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">22,27</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">39,44</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">53,59</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="5783384091590571612" datatype="html">
         <source> The IXP is operated by passionately committed people within the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is to create a basis for the direct exchange of internet traffic within the region. The Internet is based on decentralized networking between providers, which is efficiently enabled by IXPs. In addition to increasing the resilience of the Internet, they enable network traffic to take place in an economically and ecologically optimal way. </source>
         <context-group purpose="location">
