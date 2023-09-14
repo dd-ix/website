@@ -166,14 +166,6 @@
           <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2038097982979547311" datatype="html">
-        <source>Join us for an exciting journey. As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</source>
-        <target state="translated">Ob als Peer, Sponsor oder durch Eintritt in den Verein, begleite uns bei der Entwicklung des DD-IX – dem Katalysator für die digitale Zukunft in Sachsen!</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">47,50</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2880910185905378639" datatype="html">
         <source>What is peering?</source>
         <target state="translated">Was ist Peering?</target>
@@ -228,14 +220,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">52,55</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5783384091590571612" datatype="html">
-        <source>The DD-IX is operated by committed people of the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP). </source>
-        <target state="translated">Betrieben wird der DD-IX von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. i.G. Unsere Mission ist der ökonomische, ökologische und robuste Austausch von Daten über das Internet. Um die Daten möglichst direkt von der Quelle zum Ziel zu transportieren, nutzen wir die Vorteile eines Internet Exchange Points (IXP).</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">30,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4407640932304119141" datatype="html">
@@ -334,14 +318,6 @@
           <context context-type="linenumber">10,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="430521554627581445" datatype="html">
-        <source>We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.</source>
-        <target state="translated">Wir stehen als verlässlicher Ansprechpartner für Organisationen, Wissenschaft, Wirtschaft und Öffentlichkeit bei Fragen zum Internet zur Verfügung. Neben dem Erfahrungsaustausch im Verein und mit außenstehenden Dritten führen wir Informations- und Schulungsveranstaltungen durch. Des Weiteren nehmen wir an Konferenzen der Community teil.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">23,28</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="330938586604953979" datatype="html">
         <source>Operation of the DD-IX</source>
         <target state="translated">Betrieb des DD-IX</target>
@@ -352,7 +328,7 @@
       </trans-unit>
       <trans-unit id="6593726833795406993" datatype="html">
         <source>In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden. DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the region of Saxony.</source>
-        <target state="translated">Neben der Unterstützung der Community betreiben wir den Internet-Exchange DD-IX an Standorten Dresden. Der DD-IX versteht sich als offene, nicht gewinnorientierte Plattform für alle Internetteilnehmer mit einem eigenen AS in der Region Sachsen.</target>
+        <target state="translated">Neben der Unterstützung der Community betreiben wir den Internet-Exchange DD-IX am Standort Dresden. Der DD-IX versteht sich als offene, nicht gewinnorientierte Plattform für alle Internetteilnehmer mit einem eigenen AS in der Region Sachsen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">38,41</context>
@@ -438,14 +414,6 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5697018006704416176" datatype="html">
-        <source>The DD-IX is an Internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</source>
-        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Interessierten zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region Sachsen auf kurzen Wegen zu vernetzen.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">15,20</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="3909398260718721910" datatype="html">
         <source>Linkedin</source>
         <target state="translated">Linkedin</target>
@@ -488,6 +456,38 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2479873501594590040" datatype="html">
+        <source>We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.</source>
+        <target state="translated">Wir stehen als verlässlicher Ansprechpartner für Organisationen, Wissenschaft, Wirtschaft und Öffentlichkeit bei Fragen zum Internet zur Verfügung. Neben dem Erfahrungsaustausch im Verein und mit außenstehenden Dritten führen wir Informations- und Schulungsveranstaltungen durch. Des Weiteren nehmen wir an Konferenzen der Community teil.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">23,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7998502735917753353" datatype="html">
+        <source>The DD-IX is an Internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</source>
+        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Interessierten zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region Sachsen auf kurzen Wegen zu vernetzen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">15,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7346438967010788279" datatype="html">
+        <source>The DD-IX is operated by committed people of the DD-IX e.V. i.G. The DD-IX e.V. i.G. will be a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</source>
+        <target state="translated">Betrieben wird der DD-IX von leidenschaftlich Engagierten im Rahmen des DD-IX e.V. i.G. Unsere Mission ist der ökonomische, ökologische und robuste Austausch von Daten über das Internet. Um die Daten möglichst direkt von der Quelle zum Ziel zu transportieren, nutzen wir die Vorteile eines Internet Exchange Points (IXP).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">33,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6204250090696732874" datatype="html">
+        <source>Join us for an exciting journey. As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</source>
+        <target state="translated">Ob als Peer, Sponsor oder durch Eintritt in den Verein, begleite uns bei der Entwicklung des DD-IX – dem Katalysator für die digitale Zukunft in Sachsen!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">51,54</context>
         </context-group>
       </trans-unit>
     </body>
