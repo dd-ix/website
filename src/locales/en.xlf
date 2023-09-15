@@ -67,8 +67,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="2761952393360315538" datatype="html">
-        <source>The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</source>
-        <target state="translated">The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</target>
+        <source>The aim of peering is direct routing between the participating. Direct routing is cheaper, reduces delays, and improves robustness. The DD-IX peering infrastructure is the base to enable this.</source>
+        <target state="translated">The aim of peering is direct routing between the participating. Direct routing is cheaper, reduces delays, and improves robustness. The DD-IX peering infrastructure is the base to enable this.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">26,30</context>
@@ -363,8 +363,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5578823162355992891" datatype="html">
-        <source>Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages.</source>
-        <target state="translated">Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages.</target>
+        <source>Peering is a term from network technology. It enables large and small network operators to easily exchange data with each other. This type of data transfer offers numerous advantages.</source>
+        <target state="translated">Peering is a term from network technology. It enables large and small network operators to easily exchange data with each other. This type of data transfer offers numerous advantages</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">12,16</context>
@@ -379,16 +379,16 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4723636160472220804" datatype="html">
-        <source>Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other.</source>
-        <target state="translated">Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other.</target>
+        <source>Fast packet delivery is key for almost all Internet services and applications. Peering at an IXP reduces detours between those who consume content and services and those who offer them.</source>
+        <target state="translated">Fast packet delivery is key for almost all Internet services and applications. Peering at an IXP reduces detours between those who consume content and services and those who offer them.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">39,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8043843054156476312" datatype="html">
-        <source>An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</source>
-        <target state="translated">An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</target>
+        <source>An IXP enables better resilience since it increases the level of Internet connectivity. IXPs are a platform to meet other networks and directly connect to them.</source>
+        <target state="translated">An IXP enables better resilience since it increases the level of Internet connectivity. IXPs are a platform to meet other networks and directly connect to them.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">52,55</context>
@@ -404,7 +404,7 @@
       </trans-unit>
       <trans-unit id="4407640932304119141" datatype="html">
         <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
-        <target state="translated">Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</target>
+        <target state="translated">Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Only the connections are paid and not the data volume used. Using a centeral peering point also helps to reduce maintaining peering sessions. Instead of running multiple BGP sessions, a single sesssion is needed to reach networks on site</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">64,67</context>

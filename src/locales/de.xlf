@@ -208,7 +208,7 @@
       </trans-unit>
       <trans-unit id="5578823162355992891" datatype="html">
         <source>Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages.</source>
-        <target state="translated">Peering ist ein Begriff aus der Netztechnik. Es ermöglicht ISPs (Internet Service Providers) oder Netzbetreibern einen einfachen Datenaustausch untereinander. Dieser Datentransfer zwischen Peering-Partnern ist kostenlos und bietet zahlreiche Vorteile.</target>
+        <target state="translated">Peering ist ein Begriff aus der Netztechnik. Es ermöglicht großen und kleinen Netzbetreibern untereinander einen einfachen Datenaustausch. Der Datentransfer zwischen Peering-Partnern bietet zahlreiche Vorteile.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">12,16</context>
@@ -216,7 +216,7 @@
       </trans-unit>
       <trans-unit id="8043843054156476312" datatype="html">
         <source>An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</source>
-        <target state="translated">Ein IXP ermöglicht auch eine bessere Ausfallsicherheit, da der Datenverkehr auch dann übertragen werden kann, wenn eine Verbindung zu einem bestimmten Netz ausfällt, solange es Routen über alternative Peering-Partner gibt.</target>
+        <target state="translated">IXPs verbessern auch die Ausfallsicherheit, da sie die Vermaschung im Internet erhöhen. IXPs sind eine Plattform, um viele andere Netzwerke zu treffen und sich direkt mit ihnen zu verbinden.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">52,55</context>
@@ -224,7 +224,7 @@
       </trans-unit>
       <trans-unit id="4407640932304119141" datatype="html">
         <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
-        <target state="translated">Das Peering über einen IXP wie den DD-IX reduziert den Bedarf an teuren Internet-Transitdiensten. Denn es wird nur die Verbindung bezahlt und nicht das genutzte Datenvolumen.</target>
+        <target state="translated">Das Peering über einen IXP wie dem DD-IX reduziert den Bedarf an teuren Internet-Transitdiensten, denn es wird nur der Anschluss bezahlt und nicht das genutzte Datenvolumen. Über eine zentrale Peering-Stelle wird ausserdem der Betriebsaufwand reduziert. Statt Peering-Verbindungen mit vielen Netzwerken aufzubauen, wird genau eine benötigt, um die Netze vor Ort zu erreichen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">64,67</context>
@@ -232,7 +232,7 @@
       </trans-unit>
       <trans-unit id="2761952393360315538" datatype="html">
         <source>The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</source>
-        <target state="translated">Ziel des Peering ist es, den Verkehr zwischen den beteiligten Netzen effizienter zu leiten und Engpässe zu vermeiden. Durch die von DD-IX bereitgestellten Peering-Verbindungen ermöglichen wir allen Teilnehmern, Netzwerkpakete untereinander kürzer und schneller zu leiten.</target>
+        <target state="translated">Das Ziel von Peering ist es, den Internet-Verkehr zwischen den beteiligten Netzen möglichst direkt zu verteilen. Das ist kostengünstiger, reduziert Verzögerungen und erhöht die Robustheit. Die von DD-IX bereitgestellte Peering-Infrastruktur stellt hierfür das Rückgrat dar.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">26,30</context>
@@ -296,7 +296,7 @@
       </trans-unit>
       <trans-unit id="4723636160472220804" datatype="html">
         <source>Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other.</source>
-        <target state="translated">Die optimale Weiterleitung von Netzpaketen ist ein wichtiger Aspekt beim Aufbau eines robusten und effizienten Internets. Peering mit einem IXP ermöglicht den Zugang zu Inhalten und Diensten, die von anderen Netzbetreibern oder Internet-Diensteanbietern bereitgestellt werden, ohne dass viele direkte Peerings untereinander eingerichtet werden müssen.</target>
+        <target state="translated">Die schnelle Weiterleitung von Daten ist ein wichtiger Erfolgsfaktor für viele Dienste und Anwendungen im Internet. Peering an einem IXP reduziert die Umwege zwischen denen, die Inhalte und Dienste nutzen, und denen, die sie anbieten.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">39,43</context>
