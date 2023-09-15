@@ -1,3 +1,4 @@
+@import "bp";
 //* {
 //  box-sizing: border-box;
 //  margin: 0;
@@ -10,6 +11,12 @@
 
 html {
   font-size: 20px;
+}
+
+@media screen and (max-width: $bp-mobile) {
+  * {
+    hyphens: auto;
+  }
 }
 
 //body {
