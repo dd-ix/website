@@ -1,4 +1,4 @@
-import {Component, HostBinding, HostListener, Input} from '@angular/core';
+import {Component, HostBinding, Input} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterLink} from "@angular/router";
 

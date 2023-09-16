@@ -47,7 +47,12 @@
 .groups {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: 1fr;
   gap: 1rem;
+
+  .card ::ng-deep > div {
+    height: 100%;
+  }
 }
 
 .group {
@@ -65,6 +70,6 @@
   }
 }
 
-.documents{
+.documents {
   list-style-type: none;
 }
