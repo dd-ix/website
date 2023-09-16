@@ -1,16 +1,13 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
+import {HttpClient, HttpParams} from "@angular/common/http";
+import {Observable} from "rxjs";
 import {Post, SmallPost} from "./news.domain";
-import {API_URL, Language, MAX_CACHE_AGE} from "./api.domain";
+import {API_URL, Language} from "./api.domain";
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
-
-  private readonly posts = new BehaviorSubject<SmallPost[]>([]);
-  private nextUpdate = 0;
 
   constructor(
     private readonly http: HttpClient,
@@ -18,21 +15,20 @@ export class NewsService {
   ) {
   }
 
-  public getPosts(): Observable<SmallPost[]> {
-    if (this.nextUpdate > Date.now()) {
-      return this.posts;
+  public getPosts(keywords?: string[]): Observable<SmallPost[]> {
+    let params = new HttpParams()
+    if (keywords?.length) {
+      params = params.set("keywords", keywords.join(","));
     }
 
-    this.nextUpdate = Date.now() + MAX_CACHE_AGE;
-
-    return this.http.get<SmallPost[]>(`${API_URL}/news/${this.lang}`)
-      .pipe(
-        tap(posts => this.posts.next(posts)),
-        switchMap(() => this.posts),
-      );
+    return this.http.get<SmallPost[]>(`${API_URL}/news/${this.lang}`, {params});
   }
 
   public getPost(slug: string): Observable<Post> {
     return this.http.get<Post>(`${API_URL}/news/${this.lang}/${slug}`);
+  }
+
+  public getKeywords(): Observable<string[]> {
+    return this.http.get<string[]>(`${API_URL}/news/keywords`);
   }
 }

@@ -1,5 +1,8 @@
 <div class="typography">
   <h1 i18n>News</h1>
+  <div *ngIf="(keywords | async) as keywords" class="keywords">
+    <button class="keyword" [class.selected]="isSelected(keyword) | async" *ngFor="let keyword of keywords" (click)="toggleKeyword(keyword)">{{keyword}}</button>
+  </div>
 </div>
 
 <ul class="not news">

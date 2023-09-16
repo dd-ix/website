@@ -1,3 +1,4 @@
+@import "vars";
 
 ul {
   display: flex;
@@ -12,4 +13,23 @@ ul {
 
 .mailing-list {
   max-width: 36rem;
+}
+
+.keywords {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  .keyword {
+    background-color: $c-card;
+    border: 0.1rem solid $c-card-secondary;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    outline: none;
+
+    &.selected {
+      background-color: $c-primary;
+    }
+  }
 }
