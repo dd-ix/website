@@ -216,7 +216,7 @@
       </trans-unit>
       <trans-unit id="8043843054156476312" datatype="html">
         <source>An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</source>
-        <target state="translated">IXPs verbessern auch die Ausfallsicherheit, da sie die Vermaschung im Internet erhöhen. IXPs sind eine Plattform, um viele andere Netzwerke zu treffen und sich direkt mit ihnen zu verbinden.</target>
+        <target state="translated">Internet Exchange Points verbessern auch die Ausfallsicherheit, da sie die Vermaschung im Internet erhöhen. IXPs sind eine Plattform, um viele andere Netzwerke miteinander zu verbinden. Hierbei sind Internet Exchange Points vor allem für Content Delivery Networks (CDN) und Internet Service Provider (ISP) interessant.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">52,55</context>
@@ -224,7 +224,7 @@
       </trans-unit>
       <trans-unit id="4407640932304119141" datatype="html">
         <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
-        <target state="translated">Das Peering über einen IXP wie dem DD-IX reduziert den Bedarf an teuren Internet-Transitdiensten, denn es wird nur der Anschluss bezahlt und nicht das genutzte Datenvolumen. Über eine zentrale Peering-Stelle wird ausserdem der Betriebsaufwand reduziert. Statt Peering-Verbindungen mit vielen Netzwerken aufzubauen, wird genau eine benötigt, um die Netze vor Ort zu erreichen.</target>
+        <target state="translated">Das Peering über einen IXP wie dem DD-IX reduziert den Bedarf an teuren Internet-Transitdiensten, denn es wird nur der Anschluss bezahlt und nicht das genutzte Datenvolumen. Über eine zentrale Peering-Stelle wird außerdem der Betriebsaufwand reduziert. Statt Peering-Verbindungen mit vielen Netzwerken aufzubauen, wird genau eine benötigt, um die Netze vor Ort zu erreichen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">64,67</context>
@@ -248,7 +248,7 @@
       </trans-unit>
       <trans-unit id="8633396480562620693" datatype="html">
         <source>Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</source>
-        <target state="translated">Neben dem Peering LAN und unseren Route Server für den Kernbetrieb des IXP betreiben wir auch die weitere Technik für den Verein zu großen Teilen selbst.</target>
+        <target state="translated">Neben dem Peering LAN und unserem Route Server für den Kernbetrieb des IXPs betreiben wir auch die weitere Technik für den Verein selbst.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">42,45</context>
@@ -264,7 +264,7 @@
       </trans-unit>
       <trans-unit id="5950592880769644231" datatype="html">
         <source>The work in the association is organized in different boards and working groups:</source>
-        <target state="translated">Die Arbeit im Verein ist in verschiedenen Gremien und Arbeitskreise organisiert:</target>
+        <target state="translated">Die Arbeit im Verein ist in verschiedenen Arbeitskreisen organisiert:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">59,61</context>
@@ -288,7 +288,7 @@
       </trans-unit>
       <trans-unit id="7896457190687769786" datatype="html">
         <source>Participation &amp; Joining</source>
-        <target state="translated">Mitarbeit &amp; Beitritt</target>
+        <target state="translated">Teilnahme &amp; Beitritt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">103</context>
@@ -296,7 +296,7 @@
       </trans-unit>
       <trans-unit id="4723636160472220804" datatype="html">
         <source>Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other.</source>
-        <target state="translated">Die schnelle Weiterleitung von Daten ist ein wichtiger Erfolgsfaktor für viele Dienste und Anwendungen im Internet. Peering an einem IXP reduziert die Umwege zwischen denen, die Inhalte und Dienste nutzen, und denen, die sie anbieten.</target>
+        <target state="translated">Der schnelle Transfer von Daten ist ein wichtiger Erfolgsfaktor für viele Dienste und Anwendungen im Internet. Peering an einem IXP reduziert die lokalen Umwege zwischen denen, die Inhalte und Dienste nutzen, und denen, die sie anbieten.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">39,43</context>
@@ -312,7 +312,7 @@
       </trans-unit>
       <trans-unit id="7538019399997716423" datatype="html">
         <source>We want to promote Saxony as an attractive IT location with a focus on Dresden. Our main focus is the further expansion of the internet communication network. We committ as non-profit organisation for:</source>
-        <target state="translated">Wir wollen die Region Sachsen mit dem Schwerpunkt Dresden als attraktiven IT-Standort weiter voranbringen. Unser Hauptaugenmerk liegt in der Weiterentwicklung des Kommunikationsnetzes Internet. Um dieses Ziel zu erreichen, fokussieren wir uns gemeinnützig auf:</target>
+        <target state="translated">Wir wollen die Region Sachsen mit dem Schwerpunkt Dresden als attraktiven IT-Standort weiter voranbringen. Unser Hauptaugenmerk liegt in der Weiterentwicklung des Kommunikationsnetzes Internet. Um dieses Ziel zu erreichen, fokussieren wir uns auf:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">10,13</context>
@@ -328,7 +328,7 @@
       </trans-unit>
       <trans-unit id="6593726833795406993" datatype="html">
         <source>In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden. DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the region of Saxony.</source>
-        <target state="translated">Neben der Unterstützung der Community betreiben wir den Internet-Exchange DD-IX am Standort Dresden. Der DD-IX versteht sich als offene, nicht gewinnorientierte Plattform für alle Internetteilnehmer mit einem eigenen AS in der Region Sachsen.</target>
+        <target state="translated">Neben der Unterstützung der Community betreiben wir den Dresden Internet Exchange. Der DD-IX versteht sich als offene, nicht gewinnorientierte Plattform für alle Internetteilnehmer mit einem eigenen AS in der Region Sachsen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">38,41</context>
@@ -376,7 +376,7 @@
       </trans-unit>
       <trans-unit id="765262536264103542" datatype="html">
         <source>You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page.</source>
-        <target state="translated">Für das Mitwirken im Verein musst du nicht zwingend Vereinsmitglied werden. Als ordentliches Mitglied besitzt du jedoch ein eigenes Stimmrecht in den entsprechenden Gremien des Vereins. Alle verbindlichen Dokumente des Vereins findest du am Ende dieser Seite verlinkt.</target>
+        <target state="needs-translation">Werde ein Teil von DD-IX! Du als natürliche Person kannst als ordentliches Mitglied aktiv am IX-Alltag teilnehmen und mitbestimmen. Unternehmen und juristische Personen können Fördermitglieder werden, unsere Mission monatlich unterstützen, sich bei Events präsentieren und regelmäßige Updates erhalten. Sponsoren, sei es als Organisation, Firma oder Einzelperson, können uns mit einmaligen Spenden unterstützen und erhalten dafür Sichtbarkeit auf unserer Webseite im Sponsoren Tab. Mach jetzt mit und unterstütze unser Vorhaben!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">105,109</context>
@@ -452,7 +452,7 @@
       </trans-unit>
       <trans-unit id="8656531455531669663" datatype="html">
         <source>Join Us!</source>
-        <target state="translated">Helfen Sie Uns!</target>
+        <target state="translated">Mitmachen!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">53</context>
@@ -460,7 +460,7 @@
       </trans-unit>
       <trans-unit id="2479873501594590040" datatype="html">
         <source>We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.</source>
-        <target state="translated">Wir stehen als verlässlicher Ansprechpartner für Organisationen, Wissenschaft, Wirtschaft und Öffentlichkeit bei Fragen zum Internet zur Verfügung. Neben dem Erfahrungsaustausch im Verein und mit außenstehenden Dritten führen wir Informations- und Schulungsveranstaltungen durch. Des Weiteren nehmen wir an Konferenzen der Community teil.</target>
+        <target state="translated">Wir stehen als verlässlicher Ansprechpartner für Organisationen, Wissenschaft, Wirtschaft und Öffentlichkeit bei Fragen zum Internet zur Verfügung. Neben dem Erfahrungsaustausch im Verein und mit außenstehenden Dritten, führen wir Informations- und Schulungsveranstaltungen durch. Des Weiteren nehmen wir an Konferenzen der Community teil.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">23,27</context>
@@ -468,7 +468,7 @@
       </trans-unit>
       <trans-unit id="7998502735917753353" datatype="html">
         <source>The DD-IX is an Internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</source>
-        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden und ganz Sachsen. Als nicht-kommerzielle Plattform stehen wir allen Interessierten zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bieten die DD-IX Standorte in Dresden die ideale Voraussetzung, um sich mit den Teilnehmern in der Region Sachsen auf kurzen Wegen zu vernetzen.</target>
+        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden. Als nicht-kommerzielle Plattform stehen wir allen Interessierten zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bietet der DD-IX Standort in Dresden die idealen Voraussetzungen, um sich mit den Teilnehmern in der Region Sachsen auf kurzen Wegen zu vernetzen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">15,20</context>
