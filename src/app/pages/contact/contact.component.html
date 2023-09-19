@@ -1,3 +1,70 @@
-<app-card>
-  <app-text-block slug="contact"/>
-</app-card>
+<div class="body">
+  <div class="typography">
+    <h1 i18n>Contact</h1>
+  </div>
+
+  <div class="row">
+    <app-card>
+      <div class="typography">
+        <h1 i18n>General</h1>
+        <a href="mailto:contact@dd-ix.net">
+          <app-icon-mail class="icon"/>
+          contact@dd-ix.net
+        </a>
+        <a href="tel:+49 351 41898230">
+          <app-icon-phone class="icon"/>
+          +49 351 41898230
+        </a>
+      </div>
+    </app-card>
+
+    <app-card>
+      <div class="typography">
+        <h1 i18n>Peering</h1>
+        <a href="mailto:peering@dd-ix.net">
+          <app-icon-mail class="icon"/>
+          peering@dd-ix.net
+        </a>
+        <a href="tel:+49 351 41898230">
+          <app-icon-phone class="icon"/>
+          +49 351 41898230
+        </a>
+      </div>
+    </app-card>
+
+    <app-card>
+      <div class="typography">
+        <h1 i18n>Press</h1>
+        <a href="mailto:press@dd-ix.net">
+          <app-icon-mail class="icon"/>
+          press@dd-ix.net
+        </a>
+        <a href="tel:+49 351 41898230">
+          <app-icon-phone class="icon"/>
+          +49 351 41898230
+        </a>
+      </div>
+    </app-card>
+  </div>
+
+  <app-card>
+    <div class="typography address">
+      <h1 i18n>Address</h1>
+      <p>
+        DD-IX e.V. i.G.<br/>
+        Tübinger Str. 10 (RoboLAB)<br/>
+        01189 Dresden<br/>
+        <br/>
+        <a href="https://www.openstreetmap.org/way/498034035" target="_blank">
+          <img
+            ngSrc="assets/images/osm-office.webp"
+            alt="OpenStreetMap"
+            i18n-alt
+            width="1980"
+            height="1320"
+          >
+        </a>
+      </p>
+    </div>
+  </app-card>
+</div>
