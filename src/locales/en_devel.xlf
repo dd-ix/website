@@ -132,39 +132,39 @@
           <context context-type="linenumber">10,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6980756795925581247" datatype="html">
-        <source>Networking and Sharing Experiences</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2479873501594590040" datatype="html">
-        <source> We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">23,27</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="330938586604953979" datatype="html">
         <source>Operation of the DD-IX</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6593726833795406993" datatype="html">
         <source> In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden. DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the region of Saxony. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">23,26</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8633396480562620693" datatype="html">
         <source> Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">41,44</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6980756795925581247" datatype="html">
+        <source>Networking and Sharing Experiences</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2479873501594590040" datatype="html">
+        <source> We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">40,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="813505822962920168" datatype="html">
@@ -188,67 +188,88 @@
           <context context-type="linenumber">58,60</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8228555951052221659" datatype="html">
-        <source>Management Board</source>
+      <trans-unit id="8359441997292951163" datatype="html">
+        <source>Technical</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2112076602684121737" datatype="html">
-        <source>Technical Operation &amp; Advisory Board</source>
+      <trans-unit id="7457179823984196306" datatype="html">
+        <source>Operations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="251888304112963480" datatype="html">
+        <source>IX</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7607104788059971606" datatype="html">
+        <source>DevOps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">74</context>
         </context-group>
       </trans-unit>
       <trans-unit id="576533027619297585" datatype="html">
         <source>Public Relations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8732813670909755210" datatype="html">
-        <source>Event Management</source>
+      <trans-unit id="2242216542139696336" datatype="html">
+        <source>Finance &amp; Legal</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3274025550183860205" datatype="html">
-        <source>Customer &amp; Sponsorship Acquisition</source>
+      <trans-unit id="1153569197500858167" datatype="html">
+        <source>Clients &amp; Sponsors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5729418620241283277" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7896457190687769786" datatype="html">
         <source>Participation &amp; Joining</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4914878788954605145" datatype="html">
         <source>Are you interested in working for the association? We are looking forward to you!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="765262536264103542" datatype="html">
         <source> You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">104,108</context>
+          <context context-type="linenumber">111,115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4733307402565258070" datatype="html">
         <source>Documents</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5744023940242558359" datatype="html">

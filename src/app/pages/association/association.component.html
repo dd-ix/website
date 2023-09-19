@@ -16,20 +16,6 @@
   </div>
 
   <div class="block">
-    <app-icon-talking class="icon"/>
-    <app-card>
-      <div class="typography">
-        <h2 i18n>Networking and Sharing Experiences</h2>
-        <p i18n>
-          We are a reliable point of contact for organizations, science, business, and the public on issues relating to
-          the internet. In addition to the exchange of experiences within the association and with external third
-          parties, we conduct information and training events. Furthermore, we participate in community events.
-        </p>
-      </div>
-    </app-card>
-  </div>
-
-  <div class="block">
     <app-icon-switch class="icon"/>
     <app-card>
       <div class="typography">
@@ -41,6 +27,20 @@
         <p i18n>
           Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of
           the association ourselves.
+        </p>
+      </div>
+    </app-card>
+  </div>
+
+  <div class="block">
+    <app-icon-talking class="icon"/>
+    <app-card>
+      <div class="typography">
+        <h2 i18n>Networking and Sharing Experiences</h2>
+        <p i18n>
+          We are a reliable point of contact for organizations, science, business, and the public on issues relating to
+          the internet. In addition to the exchange of experiences within the association and with external third
+          parties, we conduct information and training events. Furthermore, we participate in community events.
         </p>
       </div>
     </app-card>
@@ -63,16 +63,17 @@
   </div>
 
   <div class="groups">
-    <app-card class="card">
+    <app-card class="card technic">
       <div class="group">
-        <app-icon-group class="group-icon"/>
-        <h3 i18n>Management Board</h3>
-      </div>
-    </app-card>
-    <app-card class="card">
-      <div class="group">
-        <app-icon-hub class="group-icon"/>
-        <h3 i18n>Technical Operation & Advisory Board</h3>
+        <app-icon-switch class="group-icon"/>
+        <h3 i18n>Technical</h3>
+        <div class="typography">
+          <ul>
+            <li i18n>Operations</li>
+            <li i18n>IX</li>
+            <li i18n>DevOps</li>
+          </ul>
+        </div>
       </div>
     </app-card>
     <app-card class="card">
@@ -83,14 +84,20 @@
     </app-card>
     <app-card class="card">
       <div class="group">
-        <app-icon-frauenkirche class="group-icon"/>
-        <h3 i18n>Event Management</h3>
+        <app-icon-money class="group-icon"/>
+        <h3 i18n>Finance & Legal</h3>
       </div>
     </app-card>
     <app-card class="card">
       <div class="group">
-        <app-icon-globe class="group-icon"/>
-        <h3 i18n>Customer & Sponsorship Acquisition</h3>
+        <app-icon-hub class="group-icon"/>
+        <h3 i18n>Clients & Sponsors</h3>
+      </div>
+    </app-card>
+    <app-card class="card">
+      <div class="group">
+        <app-icon-frauenkirche class="group-icon"/>
+        <h3 i18n>Events</h3>
       </div>
     </app-card>
   </div>

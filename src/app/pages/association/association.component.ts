@@ -12,11 +12,12 @@ import {IconHubComponent} from "../../icons/icon-hub/icon-hub.component";
 import {IconGlobeComponent} from "../../icons/icon-globe/icon-globe.component";
 import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {IconGroupComponent} from "../../icons/icon-group/icon-group.component";
+import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
 
 @Component({
   selector: 'app-association',
   standalone: true,
-  imports: [CommonModule, CardComponent, TextBlockComponent, IconTalkingComponent, IconSwitchComponent, IconSocialComponent, IconHubComponent, IconGlobeComponent, IconFrauenkircheComponent, IconGroupComponent],
+  imports: [CommonModule, CardComponent, TextBlockComponent, IconTalkingComponent, IconSwitchComponent, IconSocialComponent, IconHubComponent, IconGlobeComponent, IconFrauenkircheComponent, IconGroupComponent, IconMoneyComponent],
   templateUrl: './association.component.html',
   styleUrls: ['./association.component.scss']
 })
