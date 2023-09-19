@@ -34,6 +34,8 @@ export class NewsPostComponent {
   }
 
   protected safeHtml(html: string): string | null {
+    html = html.replaceAll(/src="([^"]+)"/g, `src="${this.buildNewsImageUrl("$1")}"`);
+
     return this.sanitizer.sanitize(SecurityContext.HTML, html);
   }
 
