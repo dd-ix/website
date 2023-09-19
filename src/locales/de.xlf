@@ -270,14 +270,6 @@
           <context context-type="linenumber">59,61</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2112076602684121737" datatype="html">
-        <source>Technical Operation &amp; Advisory Board</source>
-        <target state="translated">Technischer Betrieb</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="576533027619297585" datatype="html">
         <source>Public Relations</source>
         <target state="translated">Öffentlichkeitsarbeit</target>
@@ -340,30 +332,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">54,58</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8228555951052221659" datatype="html">
-        <source>Management Board</source>
-        <target state="translated">Vorstand</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">70</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8732813670909755210" datatype="html">
-        <source>Event Management</source>
-        <target state="translated">Veranstaltungsmanagement</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3274025550183860205" datatype="html">
-        <source>Customer &amp; Sponsorship Acquisition</source>
-        <target state="translated">Kunden &amp; Sponsoring Akquise</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4914878788954605145" datatype="html">
@@ -488,6 +456,62 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">51,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8359441997292951163" datatype="html">
+        <source>Technical</source>
+        <target state="translated">Technik</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7457179823984196306" datatype="html">
+        <source>Operations</source>
+        <target state="translated">Operations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="251888304112963480" datatype="html">
+        <source>IX</source>
+        <target state="translated">IX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7607104788059971606" datatype="html">
+        <source>DevOps</source>
+        <target state="translated">DevOps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2242216542139696336" datatype="html">
+        <source>Finance &amp; Legal</source>
+        <target state="translated">Finanzen &amp; Recht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1153569197500858167" datatype="html">
+        <source>Clients &amp; Sponsors</source>
+        <target state="translated">Kunden &amp; Sponsoren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5729418620241283277" datatype="html">
+        <source>Events</source>
+        <target state="translated">Events</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">100</context>
         </context-group>
       </trans-unit>
     </body>

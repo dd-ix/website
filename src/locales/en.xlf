@@ -82,22 +82,6 @@
           <context context-type="linenumber">59,61</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8228555951052221659" datatype="html">
-        <source>Management Board</source>
-        <target state="translated">Management Board</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">70</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2112076602684121737" datatype="html">
-        <source>Technical Operation &amp; Advisory Board</source>
-        <target state="translated">Technical Operation &amp; Advisory Board</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="576533027619297585" datatype="html">
         <source>Public Relations</source>
         <target state="translated">Public Relations</target>
@@ -212,7 +196,7 @@
       </trans-unit>
       <trans-unit id="8633396480562620693" datatype="html">
         <source>Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</source>
-        <target state="needs-translation">Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</target>
+        <target state="translated">Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">42,45</context>
@@ -256,14 +240,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
           <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3274025550183860205" datatype="html">
-        <source>Customer &amp; Sponsorship Acquisition</source>
-        <target state="translated">Customer &amp; Sponsorship Acquisition</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4733307402565258070" datatype="html">
@@ -394,14 +370,6 @@
           <context context-type="linenumber">52,55</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8732813670909755210" datatype="html">
-        <source>Event Management</source>
-        <target state="translated">Event Management</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="4407640932304119141" datatype="html">
         <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
         <target state="translated">Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Only the connections are paid and not the data volume used. Using a central peering point also helps to reduce maintaining peering sessions. Instead of running multiple BGP sessions, a single session is needed to reach networks on site.</target>
@@ -492,6 +460,62 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">51,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8359441997292951163" datatype="html">
+        <source>Technical</source>
+        <target state="translated">Technical</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7457179823984196306" datatype="html">
+        <source>Operations</source>
+        <target state="translated">Operations</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="251888304112963480" datatype="html">
+        <source>IX</source>
+        <target state="translated">IX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7607104788059971606" datatype="html">
+        <source>DevOps</source>
+        <target state="translated">DevOps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2242216542139696336" datatype="html">
+        <source>Finance &amp; Legal</source>
+        <target state="translated">Finance &amp; Legal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1153569197500858167" datatype="html">
+        <source>Clients &amp; Sponsors</source>
+        <target state="translated">Clients &amp; Sponsors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5729418620241283277" datatype="html">
+        <source>Events</source>
+        <target state="translated">Events</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">100</context>
         </context-group>
       </trans-unit>
     </body>
