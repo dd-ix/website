@@ -25,6 +25,6 @@ export class NewsCardComponent {
       return null;
     }
 
-    return `${API_URL}/news/assets/${image}`;
+    return new URL(`${API_URL}/news/assets/${image}`).toString();
   }
 }

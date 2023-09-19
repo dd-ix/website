@@ -27,7 +27,7 @@ export class TeamComponent {
   }
 
   protected buildMemberImage(image: string): string {
-    return `${API_URL}/team/assets/${image}`;
+    return new URL(`${API_URL}/team/assets/${image}`).toString();
   }
 
   protected buildMastodonLink(mastodon: string): string {

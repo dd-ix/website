@@ -38,6 +38,6 @@ export class NewsPostComponent {
   }
 
   protected buildNewsImageUrl(image: string): string {
-    return `${API_URL}/news/assets/${image}`;
+    return new URL(`${API_URL}/news/assets/${image}`).toString();
   }
 }

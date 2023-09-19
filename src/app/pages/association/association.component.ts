@@ -31,10 +31,10 @@ export class AssociationComponent {
   }
 
   protected buildDownloadLink(document: Document): string {
-    return `${API_URL}/documents/download/${document.filename}`;
+    return new URL(`${API_URL}/documents/download/${document.filename}`).toString();
   }
 
-  protected buildBackgroundImage(document: Document):string {
-    return `${API_URL}/documents/download/${document.image}`;
+  protected buildBackgroundImage(document: Document): string {
+    return new URL(`${API_URL}/documents/download/${document.image}`).toString();
   }
 }
