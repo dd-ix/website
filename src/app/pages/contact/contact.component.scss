@@ -16,14 +16,12 @@
   }
 }
 
-.address {
-  a {
-    border: none;
-    background-color: transparent !important;
-  }
+a.imglink {
+  border: none;
+  background-color: transparent !important;
 }
 
-a {
+a:not(.abcd) {
   display: flex;
   gap: 0.25rem;
 }
@@ -36,6 +34,7 @@ a {
 img {
   max-height: 20rem;
   height: auto;
+  margin-bottom: 0.5rem;
 }
 
 .body {
