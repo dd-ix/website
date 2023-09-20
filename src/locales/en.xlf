@@ -446,14 +446,6 @@
           <context context-type="linenumber">15,20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7346438967010788279" datatype="html">
-        <source>The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. i.G. The DD-IX Dresden Internet Exchange e.V. i.G. will be a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</source>
-        <target state="translated">The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. i.G. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">33,38</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6204250090696732874" datatype="html">
         <source>Join us for an exciting journey. As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</source>
         <target state="translated">As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</target>
@@ -572,6 +564,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/news/news-post/news-post.component.html</context>
           <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1504960875051364490" datatype="html">
+        <source>The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. i.G. The DD-IX Dresden Internet Exchange e.V. i.G. will be a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</source>
+        <target state="translated">The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. i.G. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">33,38</context>
         </context-group>
       </trans-unit>
     </body>
