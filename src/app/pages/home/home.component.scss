@@ -77,7 +77,13 @@
   }
 
   .socials {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    .card ::ng-deep > a {
+      height: 100%;
+      align-items: center;
+    }
 
     @media screen and (max-width: 750px) {
       display: flex;
