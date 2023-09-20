@@ -43,7 +43,7 @@ html {
   $s-padding: calc(1.5 * $s-unit),
   $c-secondary: #060f11,
   $c-secondary-l: #0e1618,
-$c-secondary-ll: #1a2225,
+  $c-secondary-ll: #1a2225,
 );
 
 feel-button[flavor=accent] {
@@ -63,6 +63,14 @@ feel-button[flavor=accent] {
     //max-height: 50vh;
     width: 100%;
     border-radius: 0.4rem;
+  }
+
+  a {
+    border-color: $c-accent;
+
+    &:hover {
+      background-color: $c-accent;
+    }
   }
 }
 
