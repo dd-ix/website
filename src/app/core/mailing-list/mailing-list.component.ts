@@ -35,6 +35,10 @@ export class MailingListComponent {
   @Input()
   public listId: number | null = null;
 
+  protected working = false;
+  protected success = false;
+  protected error = false;
+
   constructor(
     private mailingListService: MailingListService,
   ) {
@@ -45,13 +49,25 @@ export class MailingListComponent {
       throw new Error("Mailing list not defined");
     }
 
-    if (!this.form.valid) {
+    if (this.working || !this.form.valid) {
       return;
     }
 
     const value = this.form.value;
 
+    this.working = true;
     this.mailingListService.subscribe(this.listId!, value.email!)
-      .subscribe();
+      .subscribe({
+        next: () => {
+          this.error = false;
+          this.success = true;
+        },
+        error: err => {
+          console.error(err);
+          this.success = false;
+          this.error = true;
+        },
+        complete: () => this.working = false,
+      });
   }
 }

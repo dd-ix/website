@@ -8,4 +8,12 @@
   .button {
     align-self: center;
   }
+
+  .error {
+    color: $c-danger;
+  }
+
+  .success {
+    color: $c-good;
+  }
 }
