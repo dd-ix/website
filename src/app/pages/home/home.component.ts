@@ -4,6 +4,7 @@ import {NewsService} from "../../api/news.service";
 import {RouterLink} from "@angular/router";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
 import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
+import {IconLinkedinComponent} from "../../icons/icon-mastodon/icon-linkedin.component";
 import {map} from "rxjs";
 import {IconIbhComponent} from "../../icons/icon-ibh/icon-ibh.component";
 import {IconBcixComponent} from "../../icons/icon-bcix/icon-bcix.component";
@@ -20,7 +21,7 @@ import {ButtonComponent} from "@feel/form";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent],
+  imports: [CommonModule, RouterLink, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
