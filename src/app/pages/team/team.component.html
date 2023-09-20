@@ -28,7 +28,7 @@
           </a>
           <a *ngIf="member.socials.website" [href]="member.socials.website" target="_blank">
             <span class="icon"><app-icon-globe/></span>
-            <span class="handle">{{member.socials.website}}</span>
+            <span class="handle">{{domain(member.socials.website)}}</span>
           </a>
           <a *ngIf="member.socials.mastodon" [href]="buildMastodonLink(member.socials.mastodon)" target="_blank">
             <span class="icon"><app-icon-mastodon/></span>

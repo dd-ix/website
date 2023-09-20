@@ -39,4 +39,8 @@ export class TeamComponent {
 
     return `https://${match[2]}/${match[1]}`;
   }
+
+  protected domain(website: string): string {
+    return new URL(website).hostname;
+  }
 }
