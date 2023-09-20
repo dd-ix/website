@@ -4,7 +4,7 @@ import {NewsService} from "../../api/news.service";
 import {RouterLink} from "@angular/router";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
 import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
-import {IconLinkedinComponent} from "../../icons/icon-mastodon/icon-linkedin.component";
+import {IconLinkedinComponent} from "../../icons/icon-linkedin/icon-linkedin.component";
 import {map} from "rxjs";
 import {IconIbhComponent} from "../../icons/icon-ibh/icon-ibh.component";
 import {IconBcixComponent} from "../../icons/icon-bcix/icon-bcix.component";
