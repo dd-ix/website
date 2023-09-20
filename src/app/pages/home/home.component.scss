@@ -72,6 +72,15 @@
     }
   }
 
+  .news {
+    .card ::ng-deep a {
+      &, div {
+        justify-content: center;
+        height: 100%;
+      }
+    }
+  }
+
   .socials {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
