@@ -1507,6 +1507,13 @@
   dependencies:
     tslib "^2.3.0"
 
+"@feel/notification@^0.0.3":
+  version "0.0.3"
+  resolved "https://git.offsetting.dev/api/packages/offsetting/npm/%40feel%2Fnotification/-/0.0.3/notification-0.0.3.tgz#842f36437a8634f4389665214d70aea9946af78e"
+  integrity sha512-xY9MYHJIdvoHHfwyl756s0+YXplYoOmYpkzZ7dNZgJRwCc4YbS8k8QqEP8wEuyzflGn4FFfgpwF3NUBZt9ZFUQ==
+  dependencies:
+    tslib "^2.3.0"
+
 "@feel/style@^0.0.3":
   version "0.0.3"
   resolved "https://git.offsetting.dev/api/packages/offsetting/npm/%40feel%2Fstyle/-/0.0.3/style-0.0.3.tgz#1edcd0afcdafaa8af0186d3f99ed725c0502d129"
