@@ -134,14 +134,6 @@
           <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2258712179708928522" datatype="html">
-        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">46,49</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="5898480698220868505" datatype="html">
         <source>Peers</source>
         <target state="translated">Peers</target>
@@ -568,6 +560,30 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">33,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1023220296878873092" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V. i.G.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V. i.G.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">63,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5632099839746836994" datatype="html">
+        <source>Successfully subscribed to mailing list.</source>
+        <target state="translated">Du hast dich erfolgreich in die Mailingliste eingetragen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6451157462027879592" datatype="html">
+        <source>Failed to subscribe to mailing list.</source>
+        <target state="translated">Die Anmeldung zur Mailingliste ist fehlgeschlagen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
     </body>
