@@ -11,24 +11,26 @@ import {IconNewsComponent} from "./icons/icon-news/icon-news.component";
 import {IconGroupComponent} from "./icons/icon-group/icon-group.component";
 import {IconPhoneComponent} from "./icons/icon-phone/icon-phone.component";
 import {IconFaceComponent} from "./icons/icon-face/icon-face.component";
+import {NotificationListComponent} from "@feel/notification";
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    IconLogoComponent,
-    IconMenuComponent,
-    IconHubComponent,
-    IconNewsComponent,
-    IconGroupComponent,
-    IconPhoneComponent,
-    IconFaceComponent,
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        IconLogoComponent,
+        IconMenuComponent,
+        IconHubComponent,
+        IconNewsComponent,
+        IconGroupComponent,
+        IconPhoneComponent,
+        IconFaceComponent,
+        NotificationListComponent,
+    ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent]
 })

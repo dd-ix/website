@@ -6,6 +6,7 @@ import {MailingListService} from "../../api/mailing-list.service";
 import {ButtonComponent, FormErrorComponent, TextFieldComponent} from "@feel/form";
 import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
 import {IconNewsComponent} from "../../icons/icon-news/icon-news.component";
+import {NotificationService} from "@feel/notification";
 
 @Component({
   selector: 'app-mailing-list',
@@ -36,11 +37,10 @@ export class MailingListComponent {
   public listId: number | null = null;
 
   protected working = false;
-  protected success = false;
-  protected error = false;
 
   constructor(
-    private mailingListService: MailingListService,
+    private readonly mailingListService: MailingListService,
+    private readonly notificationService: NotificationService,
   ) {
   }
 
@@ -59,13 +59,11 @@ export class MailingListComponent {
     this.mailingListService.subscribe(this.listId!, value.email!)
       .subscribe({
         next: () => {
-          this.error = false;
-          this.success = true;
+          this.notificationService.success($localize`Successfully subscribed to mailing list.`);
         },
         error: err => {
           console.error(err);
-          this.success = false;
-          this.error = true;
+          this.notificationService.error($localize`Failed to subscribe to mailing list.`);
         },
         complete: () => this.working = false,
       });

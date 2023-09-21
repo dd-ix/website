@@ -29,6 +29,7 @@
     "@angular/platform-server": "^16.2.4",
     "@angular/router": "^16.2.4",
     "@feel/form": "^0.0.3",
+    "@feel/notification": "^0.0.3",
     "@feel/style": "^0.0.3",
     "@fontsource/dm-sans": "^5.0.11",
     "@nguniversal/express-engine": "^16.2.0",
