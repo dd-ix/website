@@ -16,8 +16,19 @@ export class NewsPostComponent {
   protected readonly post = this.activatedRoute.params.pipe(
     switchMap(({slug}) => this.newsService.getPost(slug)),
     tap(post => {
+      console.log(this.activatedRoute.snapshot.url);
+      this.meta.updateTag({property: 'og:title', content: post.title});
+      this.meta.updateTag({property: 'og:type', content: 'article'});
       this.meta.updateTag({name: "description", content: post.description});
+      this.meta.updateTag({property: "og:description", content: post.description});
+      this.meta.updateTag({property: "twitter:description", content: post.description});
       this.meta.updateTag({name: "keywords", content: post.keywords.join(", ")});
+
+      if (post.image) {
+        const image = this.buildNewsImageUrl(post.image);
+        this.meta.updateTag({property: 'og:image', content: image});
+        this.meta.updateTag({name: 'twitter:image', content: image});
+      }
     }),
   );
 

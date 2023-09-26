@@ -9,7 +9,7 @@ import {PeeringLocationsComponent} from "./peering-locations/peering-locations.c
 
 const routes: Routes = [
   {path: '', component: PeeringLandingpageComponent},
-  {path: 'policy', component: PeeringPolicyComponent},
+  {path: 'policy', data: {title: $localize`Peering Policy`}, component: PeeringPolicyComponent},
   {path: 'services/pni', component: PeeringServicePniComponent},
   {path: 'services/peering', component: PeeringServicePeeringComponent},
   {path: 'peers', component: PeeringPeersComponent},
