@@ -1,9 +1,10 @@
-import {ChangeDetectionStrategy, Component, HostListener} from '@angular/core';
+import {ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID} from '@angular/core';
 import {routingAnimation} from "./animation/routing.animation";
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {Location, PlatformLocation} from "@angular/common";
+import {DOCUMENT, Location, PlatformLocation} from "@angular/common";
 import {BehaviorSubject, delay, filter, map, take} from "rxjs";
 import {Meta, Title} from "@angular/platform-browser";
+import {Language} from "./api/api.domain";
 
 @Component({
   selector: 'app-root',
@@ -28,6 +29,8 @@ export class AppComponent {
     private readonly route: ActivatedRoute,
     private readonly meta: Meta,
     private readonly platformLocation: PlatformLocation,
+    @Inject(DOCUMENT) private readonly dom: Document,
+    @Inject(LOCALE_ID) private readonly locale: Language,
   ) {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
@@ -37,6 +40,8 @@ export class AppComponent {
 
         this.meta.updateTag({property: 'og:url', content: url.toString()});
         this.meta.updateTag({name: 'twitter:url', content: url.toString()});
+        this.updateCanonicalUrl(url.toString());
+        this.updateAlternativeUrl(url.toString());
 
         const title = this.route.firstChild?.snapshot?.data?.['title'] || this.route.root.firstChild?.snapshot?.data?.['title'];
         if (title) {
@@ -74,5 +79,39 @@ export class AppComponent {
 
   public closeAside(): void {
     this.asideSown.next(false);
+  }
+
+  private updateCanonicalUrl(url: string): void {
+    const head = this.dom.getElementsByTagName('head')[0];
+    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='canonical']`) || null
+    if (element == null) {
+      element = this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
+    }
+    element.setAttribute('rel', 'canonical')
+    element.setAttribute('href', url);
+  }
+
+  private updateAlternativeUrl(url: string): void {
+    const oldLang = this.locale;
+    let newLang ;
+    switch (this.locale) {
+      case Language.ENGLISH:
+        newLang = Language.GERMAN;
+        break;
+      case Language.GERMAN:
+        newLang = Language.ENGLISH;
+        break;
+    }
+
+    const head = this.dom.getElementsByTagName('head')[0];
+    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate']`) || null
+    if (element == null) {
+      element = this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
+    }
+    element.setAttribute('rel', 'alternate')
+    element.setAttribute('hreflang', newLang);
+    element.setAttribute('href', url.replace(`/${oldLang}/`, `/${newLang}/`));
   }
 }
