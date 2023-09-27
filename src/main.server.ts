@@ -3,6 +3,7 @@ import {ngExpressEngine} from '@nguniversal/express-engine';
 import {AppServerModule} from './app/app.server.module';
 import * as express from "express";
 import {resolve} from "path";
+import {LOCALE_ID} from "@angular/core";
 
 export async function app(appDir: string, lang: string): Promise<express.Express> {
   const app = express();
@@ -10,7 +11,8 @@ export async function app(appDir: string, lang: string): Promise<express.Express
   const browserFolder = resolve(`${appDir}/browser/${lang}`);
 
   app.engine("html", ngExpressEngine({
-    bootstrap: AppServerModule
+    bootstrap: AppServerModule,
+    providers: [{provide: LOCALE_ID, useValue: lang}],
   }));
 
   app.set('view engine', 'html');
