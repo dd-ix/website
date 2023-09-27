@@ -36,6 +36,7 @@ export class AppComponent {
         url.search = '';
 
         this.meta.updateTag({property: 'og:url', content: url.toString()});
+        this.meta.updateTag({name: 'twitter:url', content: url.toString()});
 
         const title = this.route.firstChild?.snapshot?.data?.['title'] || this.route.root.firstChild?.snapshot?.data?.['title'];
         if (title) {
