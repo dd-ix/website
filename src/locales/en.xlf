@@ -590,6 +590,22 @@
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6750491512886369381" datatype="html">
+        <source><x id="PH" equiv-text="title"/> | Dresden Internet Exchange</source>
+        <target state="translated"><x id="PH" equiv-text="title"/> | Dresden Internet Exchange</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
