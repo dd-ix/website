@@ -42,6 +42,7 @@ export class AppComponent {
         this.meta.updateTag({name: 'twitter:url', content: url.toString()});
         this.updateCanonicalUrl(url.toString());
         this.updateAlternativeUrl(url.toString());
+        this.updateXDefaultAlternativeUrl(url.toString());
 
         const title = this.route.firstChild?.snapshot?.data?.['title'] || this.route.root.firstChild?.snapshot?.data?.['title'];
         if (title) {
@@ -113,5 +114,17 @@ export class AppComponent {
     element.setAttribute('rel', 'alternate')
     element.setAttribute('hreflang', newLang);
     element.setAttribute('href', url.replace(`/${oldLang}/`, `/${newLang}/`));
+  }
+
+  private updateXDefaultAlternativeUrl(url: string): void {
+    const head = this.dom.getElementsByTagName('head')[0];
+    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate']`) || null
+    if (element == null) {
+      element = this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
+    }
+    element.setAttribute('rel', 'alternate')
+    element.setAttribute('hreflang', 'x-default');
+    element.setAttribute('href', url.replace(`/${(this.locale)}/`, `/${(Language.ENGLISH)}/`));
   }
 }
