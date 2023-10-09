@@ -28,7 +28,7 @@ import {ButtonComponent} from "@feel/form";
 export class HomeComponent {
 
   protected readonly posts = this.newsService.getPosts()
-    .pipe(map(posts => posts.filter((_, idx, all) => (all.length - idx) < 4)));
+    .pipe(map(posts => posts.slice(0, 3)));
 
   constructor(
     private readonly newsService: NewsService,
