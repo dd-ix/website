@@ -15,11 +15,11 @@ export function workingGroupLink(working_group: WorkingGroup) : string {
     case WorkingGroup.Tech:
       return "/association/tech"
     case WorkingGroup.Network:
-      return "/association/technical"
+      return "/association/tech"
     case WorkingGroup.Services:
-      return "/association/technical"
+      return "/association/tech"
     case WorkingGroup.DevOps:
-      return "/association/technical"
+      return "/association/tech"
     case WorkingGroup.Events:
       return "/association/events"
     case WorkingGroup.FinanceAndLegal:

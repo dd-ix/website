@@ -1,15 +1,18 @@
 <div class="typography">
   <h1 i18n>Team</h1>
+  <h1 i18n>Association Board</h1>
 </div>
 
-<h1 i18n>Association Board</h1>
 <ul class="not team">
   <li *ngFor="let member of filter(team | async, true)">
     <app-team-member [member]="member"/>
   </li>
 </ul>
 
-<h1 i18n>Core Team Members</h1>
+<div class="typography" style="margin-top: 1rem">
+  <h1 i18n>Core Team Members</h1>
+</div>
+
 <ul class="not team">
   <li *ngFor="let member of filter(team | async, false)">
     <app-team-member [member]="member"/>

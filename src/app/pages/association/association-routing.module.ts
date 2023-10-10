@@ -5,7 +5,7 @@ import {AssociationComponent} from "./association.component";
 const routes: Routes = [
   {path: '', component: AssociationComponent},
   {
-    path: 'technical',
+    path: 'tech',
     data: {title: $localize`Technical Workinggroup`},
     loadChildren: () => import('./workinggroup/technical/technical.module').then(m => m.TechnicalModule)
   },
