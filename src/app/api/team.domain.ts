@@ -1,4 +1,3 @@
-
 export enum WorkingGroup {
   Tech = "Tech",
   Network = "Network",
@@ -10,7 +9,7 @@ export enum WorkingGroup {
   PublicRelations = "PublicRelations"
 }
 
-export function workingGroupLink(working_group: WorkingGroup) : string {
+export function workingGroupLink(working_group: WorkingGroup): string {
   switch (working_group) {
     case WorkingGroup.Tech:
       return "/association/tech"
@@ -31,24 +30,24 @@ export function workingGroupLink(working_group: WorkingGroup) : string {
   }
 }
 
-export function workingGroupDisplayName(working_group: WorkingGroup) : string {
+export function workingGroupDisplayName(working_group: WorkingGroup): string {
   switch (working_group) {
     case WorkingGroup.Tech:
-      return "Tech"
+      return $localize`Tech`
     case WorkingGroup.Network:
-      return "Network"
+      return $localize`Network`
     case WorkingGroup.Services:
-      return "Services"
+      return $localize`Services`
     case WorkingGroup.DevOps:
-      return "DevOps"
+      return $localize`DevOps`
     case WorkingGroup.Events:
-      return "Events"
+      return $localize`Events`
     case WorkingGroup.FinanceAndLegal:
-      return "Finance and Legal"
+      return $localize`Finance and Legal`
     case WorkingGroup.ClientsAndSponsors:
-      return "Clients and Sponsors"
+      return $localize`Clients and Sponsors`
     case WorkingGroup.PublicRelations:
-      return "Public Relations"
+      return $localize`Public Relations`
   }
 }
 
