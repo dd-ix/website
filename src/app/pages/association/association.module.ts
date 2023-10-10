@@ -1,8 +1,6 @@
-import {Component} from '@angular/core';
+import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {DocumentsService} from "../../api/documents.service";
-import {Document} from "../../api/documents.domain";
-import {API_URL} from "../../api/api.domain";
+import {AssociationComponent} from "./association.component";
 import {CardComponent} from "../../core/card/card.component";
 import {TextBlockComponent} from "../../core/text-block/text-block.component";
 import {IconTalkingComponent} from "../../icons/icon-talking/icon-talking.component";
@@ -13,26 +11,16 @@ import {IconGlobeComponent} from "../../icons/icon-globe/icon-globe.component";
 import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {IconGroupComponent} from "../../icons/icon-group/icon-group.component";
 import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
+import {AssociationRoutingModule} from "./association-routing.module";
+import { ClientsAndSponsorsComponent } from './workinggroup/clients-and-sponsors/clients-and-sponsors.component';
 
-@Component({
-  selector: 'app-association',
-  templateUrl: './association.component.html',
-  styleUrls: ['./association.component.scss']
+@NgModule({
+  declarations: [
+    AssociationComponent,
+    ClientsAndSponsorsComponent
+  ],
+
+  imports: [CommonModule, CardComponent, TextBlockComponent, IconTalkingComponent, IconSwitchComponent, IconSocialComponent, IconHubComponent, IconGlobeComponent, IconFrauenkircheComponent, IconGroupComponent, IconMoneyComponent, AssociationRoutingModule],
 })
-export class AssociationComponent {
-
-  protected readonly documents = this.documentsService.getDocuments();
-
-  constructor(
-    private readonly documentsService: DocumentsService,
-  ) {
-  }
-
-  protected buildDownloadLink(document: Document): string {
-    return new URL(`${API_URL}/documents/download/${document.filename}`).toString();
-  }
-
-  protected buildBackgroundImage(document: Document): string {
-    return new URL(`${API_URL}/documents/download/${document.image}`).toString();
-  }
+export class AssociationModule {
 }

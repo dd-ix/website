@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'association',
     data: {title: $localize`Association`},
-    loadComponent: () => import('./pages/association/association.component').then(c => c.AssociationComponent)
+    loadChildren: () => import('./pages/association/association.module').then(c => c.AssociationModule)
   },
   {
     path: 'contact',
