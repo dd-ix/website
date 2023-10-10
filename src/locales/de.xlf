@@ -602,6 +602,106 @@
           <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3397601893497394889" datatype="html">
+        <source>Technical Workinggroup</source>
+        <target state="translated">Arbeitsgruppe Technik</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8346691245138938788" datatype="html">
+        <source>Public Relations Workinggroup</source>
+        <target state="translated">Arbeitsgruppe Öffentlichkeitsarbeit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5390398393295642975" datatype="html">
+        <source>Finance and Legal Workinggroup</source>
+        <target state="translated">Arbeitsgruppe Finanzen und Recht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8179235462848400383" datatype="html">
+        <source>Our Task</source>
+        <target state="translated">Unsere Aufgabe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/clients-and-sponsors/clients-and-sponsors.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/events/events.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/finance-and-legal/finance-and-legal.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/public-relations/public-relations.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1061540398514258404" datatype="html">
+        <source>Tech</source>
+        <target state="translated">Tech</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/team.domain.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1415060111017347427" datatype="html">
+        <source>Network</source>
+        <target state="translated">Netzwerk</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/team.domain.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7143579180750436311" datatype="html">
+        <source>Services</source>
+        <target state="translated">Dienste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/team.domain.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="76537845515412840" datatype="html">
+        <source>Finance and Legal</source>
+        <target state="translated">Finanzen und Rechtliches</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/team.domain.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2617987075541559782" datatype="html">
+        <source>Clients and Sponsors</source>
+        <target state="translated">Kunden und Sponsoren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/team.domain.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9020669458543958643" datatype="html">
+        <source>Clients and Sponsors Workinggroup</source>
+        <target state="translated">Arbeitsgruppe Kunden und Sponsoren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
