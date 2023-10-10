@@ -18,6 +18,16 @@ const routes: Routes = [
     path: 'client-and-sponsors',
     data: {title: $localize`Client and Sponsors Workinggroup`},
     loadComponent: () => import('./workinggroup/clients-and-sponsors/clients-and-sponsors.component').then(m => m.ClientsAndSponsorsComponent),
+  },
+  {
+    path: 'finance-and-legal',
+    data: {title: $localize`Finance and Legal Workinggroup`},
+    loadComponent: () => import('./workinggroup/finance-and-legal/finance-and-legal.component').then(m => m.FinanceAndLegalComponent),
+  },
+  {
+    path: 'events',
+    data: {title: $localize`Events`},
+    loadComponent: () => import('./workinggroup/events/events.component').then(m => m.EventsComponent),
   }
 ];
 
