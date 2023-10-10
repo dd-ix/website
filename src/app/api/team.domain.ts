@@ -5,6 +5,7 @@ export interface TeamMember {
   image: string;
   ripe_handle: string | null;
   socials: Socials;
+  vorstand: boolean;
 }
 
 export interface Socials {

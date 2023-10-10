@@ -2,51 +2,16 @@
   <h1 i18n>Team</h1>
 </div>
 
+<h1 i18n>Association Board</h1>
 <ul class="not team">
-  <li *ngFor="let member of team | async">
-    <app-card class="card">
-      <div class="member typography">
-        <img [ngSrc]="buildMemberImage(member.image)" width="1" height="1"
-             [alt]="member.nick ?? member.name + '\'s Image'">
-        <p>
-          <b>{{member.nick ?? member.name}}</b>
-          <ng-container *ngIf="member.nick">
-            <br>
-            {{member.name}}
-          </ng-container>
-          <br>
-          {{member.description}}
-        </p>
-        <div class="socials">
-          <a *ngIf="member.socials.email" [href]="'mailto:' + member.socials.email" target="_blank">
-            <span class="icon"><app-icon-mail/></span>
-            <span class="handle">{{member.socials.email}}</span>
-          </a>
-          <a *ngIf="member.socials.github" [href]="'https://github.com/'+member.socials.github" target="_blank">
-            <span class="icon"><app-icon-github/></span>
-            <span class="handle">{{member.socials.github}}</span>
-          </a>
-          <a *ngIf="member.socials.website" [href]="member.socials.website" target="_blank">
-            <span class="icon"><app-icon-globe/></span>
-            <span class="handle">{{domain(member.socials.website)}}</span>
-          </a>
-          <a *ngIf="member.socials.mastodon" [href]="buildMastodonLink(member.socials.mastodon)" target="_blank">
-            <span class="icon"><app-icon-mastodon/></span>
-            <span class="handle">{{member.socials.mastodon}}</span>
-          </a>
-          <a *ngIf="member.socials.linkedin" [href]="'https://www.linkedin.com/in/'+member.socials.linkedin"
-             target="_blank">
-            <span class="icon"><app-icon-linkedin/></span>
-            <span class="handle" i18n>Linkedin</span>
-          </a>
-          <a *ngIf="member.ripe_handle"
-             target="_blank"
-             [href]="'https://apps.db.ripe.net/db-web-ui/query?bflag=false&dflag=false&rflag=true&source=RIPE&searchtext='+member.ripe_handle">
-            <span class="icon"><app-icon-ripe/></span>
-            <span class="handle">{{member.ripe_handle}}</span>
-          </a>
-        </div>
-      </div>
-    </app-card>
+  <li *ngFor="let member of filter(team | async, true)">
+    <app-team-member [member]="member"/>
+  </li>
+</ul>
+
+<h1 i18n>Core Team Members</h1>
+<ul class="not team">
+  <li *ngFor="let member of filter(team | async, false)">
+    <app-team-member [member]="member"/>
   </li>
 </ul>
