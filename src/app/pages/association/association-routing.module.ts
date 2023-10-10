@@ -15,8 +15,8 @@ const routes: Routes = [
     loadComponent: () => import('./workinggroup/public-relations/public-relations.component').then(m => m.PublicRelationsComponent)
   },
   {
-    path: 'client-and-sponsors',
-    data: {title: $localize`Client and Sponsors Workinggroup`},
+    path: 'clients-and-sponsors',
+    data: {title: $localize`Clients and Sponsors Workinggroup`},
     loadComponent: () => import('./workinggroup/clients-and-sponsors/clients-and-sponsors.component').then(m => m.ClientsAndSponsorsComponent),
   },
   {
