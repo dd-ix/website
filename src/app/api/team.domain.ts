@@ -10,7 +10,7 @@ export enum WorkingGroup {
   PublicRelations = "PublicRelations"
 }
 
-function workingGroupPage(working_group: WorkingGroup) : string {
+export function workingGroupLink(working_group: WorkingGroup) : string {
   switch (working_group) {
     case WorkingGroup.Tech:
       return "/association/tech"
@@ -31,7 +31,7 @@ function workingGroupPage(working_group: WorkingGroup) : string {
   }
 }
 
-function displayName(working_group: WorkingGroup) : string {
+export function workingGroupDisplayName(working_group: WorkingGroup) : string {
   switch (working_group) {
     case WorkingGroup.Tech:
       return "Tech"
@@ -61,7 +61,7 @@ export interface TeamMember {
   ripe_handle: string | null;
   socials: Socials;
   vorstand: boolean;
-  teams: WorkingGroup[]
+  working_groups: WorkingGroup[]
 }
 
 export interface Socials {
