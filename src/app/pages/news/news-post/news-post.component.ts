@@ -22,7 +22,10 @@ export class NewsPostComponent {
       this.meta.updateTag({name: "description", content: post.description});
       this.meta.updateTag({property: "og:description", content: post.description});
       this.meta.updateTag({name: "twitter:description", content: post.description});
-      this.meta.updateTag({name: "keywords", content: post.keywords.join(", ")});
+      this.meta.updateTag({
+        name: "keywords",
+        content: 'Dresden Internet Exchange, Dresden, Internet Exchange, DD-IX, ddix, DD-IX Dresden Internet Exchange e.V., ' + post.keywords.join(", ")
+      });
 
       if (post.image) {
         const image = this.buildNewsImageUrl(post.image);
