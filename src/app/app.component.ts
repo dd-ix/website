@@ -42,6 +42,7 @@ export class AppComponent {
         this.meta.updateTag({name: 'twitter:url', content: url.toString()});
         this.updateCanonicalUrl(url.toString());
         this.updateAlternativeUrl(url.toString());
+        this.updateCurrentAlternativeUrl(url.toString());
         this.updateXDefaultAlternativeUrl(url.toString());
 
         const title = this.route.firstChild?.snapshot?.data?.['title'] || this.route.root.firstChild?.snapshot?.data?.['title'];
@@ -95,7 +96,7 @@ export class AppComponent {
 
   private updateAlternativeUrl(url: string): void {
     const oldLang = this.locale;
-    let newLang ;
+    let newLang;
     switch (this.locale) {
       case Language.ENGLISH:
         newLang = Language.GERMAN;
@@ -106,7 +107,7 @@ export class AppComponent {
     }
 
     const head = this.dom.getElementsByTagName('head')[0];
-    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate']`) || null
+    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate'][hreflang='${newLang}']`) || null
     if (element == null) {
       element = this.dom.createElement('link') as HTMLLinkElement;
       head.appendChild(element);
@@ -116,9 +117,21 @@ export class AppComponent {
     element.setAttribute('href', url.replace(`/${oldLang}/`, `/${newLang}/`));
   }
 
+  private updateCurrentAlternativeUrl(url: string): void {
+    const head = this.dom.getElementsByTagName('head')[0];
+    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate'][hreflang='${this.locale}']`) || null
+    if (element == null) {
+      element = this.dom.createElement('link') as HTMLLinkElement;
+      head.appendChild(element);
+    }
+    element.setAttribute('rel', 'alternate')
+    element.setAttribute('hreflang', this.locale);
+    element.setAttribute('href', url);
+  }
+
   private updateXDefaultAlternativeUrl(url: string): void {
     const head = this.dom.getElementsByTagName('head')[0];
-    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate']`) || null
+    let element: HTMLLinkElement | null = this.dom.querySelector(`link[rel='alternate'][hreflang='x-default']`) || null
     if (element == null) {
       element = this.dom.createElement('link') as HTMLLinkElement;
       head.appendChild(element);
