@@ -36,6 +36,7 @@ export class AppComponent {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         const url = new URL(this.platformLocation.href);
+        url.protocol = 'https:';
         url.search = '';
 
         this.meta.updateTag({property: 'og:url', content: url.toString()});
