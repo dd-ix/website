@@ -1,29 +1,20 @@
-{ pkgs, lib, config, domain, mkYarnPackage, yarn }:
-mkYarnPackage {
-    name = "presence";
+{ domain, mkPnpmPackage }:
+
+mkPnpmPackage {
     src = ./.;
 
-    buildInputs = [ yarn ];
+    installInPlace = true;
+
     postPatch = ''
       substituteInPlace src/app/api/api.domain.ts \
         --replace 'http://127.0.0.1:8080' 'https://content.${domain}'
     '';
 
-    buildPhase = ''
-      FILE=$(readlink ./deps/presence/node_modules)
-      rm ./deps/presence/node_modules
-      mkdir ./deps/presence/node_modules
-      cp -r $FILE/ ./deps/presence/
-
-      chmod -R 777 ./deps/presence
-      cp -r ./node_modules/* ./deps/presence/node_modules/
-      yarn run build:ci
-    '';
+    script = "build:ci";
 
     installPhase = ''
-      mkdir -p $out/dist
-      cp -r ./deps/presence/dist/* $out/
+      mkdir -p $out
+      mkdir -p $out
+      cp -r ./dist/* $out/
     '';
-
-    doDist = false;
 }

@@ -2,28 +2,24 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
 
-    naersk = {
-      url = "github:nix-community/naersk";
+    pnpm2nix = {
+      url = "github:nzbr/pnpm2nix-nzbr";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
     };
 
-    utils = {
-      url = "github:numtide/flake-utils";
-    };
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = inputs@{ self, nixpkgs, naersk, utils, ... }:
-    utils.lib.eachDefaultSystem
+  outputs = { self, nixpkgs, pnpm2nix, flake-utils, ... }:
+    flake-utils.lib.eachDefaultSystem
       (system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-
           package = pkgs.callPackage ./derivation.nix {
             domain = "dd-ix.net";
+            mkPnpmPackage = pnpm2nix.packages."${system}".mkPnpmPackage;
           };
-
-          test-vm-pkg = self.nixosConfigurations.presence-mctest.config.system.build.vm;
-
         in
         rec {
           checks = packages;
@@ -51,6 +47,5 @@
         default = presence;
         presence = import ./nixos-module;
       };
-
     };
 }
