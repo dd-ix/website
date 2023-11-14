@@ -1,19 +1,19 @@
 import 'zone.js/node';
-import {ngExpressEngine} from '@nguniversal/express-engine';
 import {AppServerModule} from './app/app.server.module';
-import * as express from "express";
-import {resolve} from "path";
+
+import {APP_BASE_HREF} from '@angular/common';
+import {CommonEngine} from '@angular/ssr';
+import * as express from 'express';
+import {join, resolve} from 'node:path';
 import {LOCALE_ID} from "@angular/core";
 
-export async function app(appDir: string, lang: string): Promise<express.Express> {
+export function app(appDir: string, lang: string): express.Express {
   const app = express();
 
   const browserFolder = resolve(`${appDir}/browser/${lang}`);
+  const indexHtml =    join(browserFolder, 'index.html');
 
-  app.engine("html", ngExpressEngine({
-    bootstrap: AppServerModule,
-    providers: [{provide: LOCALE_ID, useValue: lang}],
-  }));
+  const commonEngine = new CommonEngine();
 
   app.set('view engine', 'html');
   app.set('views', browserFolder);
@@ -22,10 +22,22 @@ export async function app(appDir: string, lang: string): Promise<express.Express
     maxAge: '1y'
   }));
 
-  app.get('*', (req, res) => {
-    res.render("index", {req});
-  });
+  // All regular routes use the Angular engine
+  app.get('*', (req, res, next) =>
+    commonEngine
+      .render({
+        bootstrap: AppServerModule,
+        documentFilePath: indexHtml,
+        url: `${req.protocol}://${req.headers.host}${req.originalUrl}`,
+        publicPath: browserFolder,
+        providers: [
+          {provide: APP_BASE_HREF, useValue: req.baseUrl},
+          {provide: LOCALE_ID, useValue: lang}
+        ],
+      })
+      .then((html) => res.send(html))
+      .catch((err) => next(err))
+  );
 
   return app;
 }
-
