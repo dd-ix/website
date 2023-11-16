@@ -68,4 +68,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+
+  @media screen and (max-width: #{$bp-mobile - 1}) {
+    grid-template-columns: 1fr;
+  }
 }
