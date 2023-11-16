@@ -1,4 +1,3 @@
-<script src="../../home/home.component.spec.ts"></script>
 <div class="typography">
   <h1 i18n>Peering</h1>
 </div>
@@ -52,24 +51,81 @@
       </div>
     </app-card>
   </div>
+  <div class="cc-block">
+    <app-card>
+      <div class="typography">
+        <h2 i18n id="pricing_10g">Pricing 10G</h2>
+        <p i18n>
+          We currently only offer 10G peering ports.
+        </p>
+        <ul>
+          <li i18n>a single peering port costs <b>150€</b></li>
+        </ul>
+      </div>
+    </app-card>
+    <app-card>
+      <div class="typography">
+        <h2 i18n>Reduced Pricing 10G</h2>
+        <p i18n>
+          Depending on whether you are a supporting member of the association, there is a reduced price.
+        </p>
+        <ul>
+          <li i18n>if you support the association with an amount of at least 200€ per month, a peering port costs <b>100€</b>
+          </li>
+        </ul>
+      </div>
+    </app-card>
+  </div>
+  <div class="cc-block">
+    <app-card>
+      <div class="typography">
+        <h2 i18n>Point of Presence</h2>
+        <p i18n>
+          Our current and only point of presence is:
+        </p>
+        <h4 i18n>CityCenter</h4>
+        <p i18n>
+          SachsenGigaBit GmbH<br/>
+          Friedrich-List-Platz 2<br/>
+          01069 Dresden
+        </p>
+      </div>
+    </app-card>
+    <app-card>
+      <div class="typography">
+        <a href="https://www.openstreetmap.org/way/10368038" target="_blank" class="imglink">
+          <img
+            alt="OpenStreetMap"
+            i18n-alt
+            ngSrc="assets/images/osm-cc.webp"
+            height="823" width="1087">
+        </a>
+        <span>
+          &copy;
+          <a href="https://www.openstreetmap.org/copyright" target="_blank" class="abcd">OpenStreetMap</a>
+          contributors.
+        </span>
+      </div>
+    </app-card>
+  </div>
 </div>
 
 <!--<ul class="not pages">-->
 <!--  <li>-->
-    <app-card link="policy" backgroundImage="/assets/images/peering-policy.webp" [lightShadow]="true">
-      <h1 i18n>Peering Policy</h1>
-    </app-card>
+<app-card link="policy" backgroundImage="/assets/images/peering-policy.webp" [lightShadow]="true">
+  <h1 i18n>Peering Policy</h1>
+</app-card>
 <!--  </li>-->
-  <!--  <li>-->
-  <!--    <app-card link="peers">-->
-  <!--      <h1 i18n>Peers</h1>-->
-  <!--    </app-card>-->
-  <!--  </li>-->
-  <!--  <li>-->
-  <!--    <app-card link="locations">-->
-  <!--      <h1 i18n>Locations</h1>-->
-  <!--    </app-card>-->
-  <!--  </li>-->
+<!--  <li>-->
+<!--    <app-card link="peers">-->
+<!--      <h1 i18n>Peers</h1>-->
+<!--    </app-card>-->
+<!--  </li>-->
+<!--  <li>-->
+<!--    <app-card link="locations">-->
+<!--      <h1 i18n>Locations</h1>-->
+<!--    </app-card>-->
+<!--  </li>-->
 <!--</ul>-->
 
 <!--<h2 i18n>Services</h2>-->

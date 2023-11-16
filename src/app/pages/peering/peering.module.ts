@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {PeeringRoutingModule} from './peering-routing.module';
 import {PeeringLandingpageComponent} from './peering-landingpage/peering-landingpage.component';
 import {PeeringPolicyComponent} from './peering-policy/peering-policy.component';
@@ -24,17 +24,18 @@ import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
     PeeringPeersComponent,
     PeeringLocationsComponent
   ],
-  imports: [
-    CommonModule,
-    PeeringRoutingModule,
-    CardComponent,
-    TextBlockComponent,
-    IconSwitchComponent,
-    IconAntennaComponent,
-    IconRatingComponent,
-    IconDirectionsComponent,
-    IconMoneyComponent
-  ]
+    imports: [
+        CommonModule,
+        PeeringRoutingModule,
+        CardComponent,
+        TextBlockComponent,
+        IconSwitchComponent,
+        IconAntennaComponent,
+        IconRatingComponent,
+        IconDirectionsComponent,
+        IconMoneyComponent,
+        NgOptimizedImage
+    ]
 })
 export class PeeringModule {
 }
