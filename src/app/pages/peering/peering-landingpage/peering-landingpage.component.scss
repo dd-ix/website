@@ -57,3 +57,30 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+img {
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.cc-block {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media screen and (max-width: #{$bp-mobile - 1}) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cc2-block {
+  display: flex;
+  flex-direction: column;
+}
