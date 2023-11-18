@@ -702,6 +702,150 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="653233766607926428" datatype="html">
+        <source>SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
+        <target state="translated">SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">77,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5429420089825511537" datatype="html">
+        <source>Pricing 10G</source>
+        <target state="translated">Preise 10G</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1198612196411655642" datatype="html">
+        <source>We offer 10G peering ports.</source>
+        <target state="translated">Wir bieten 10G Peering-Ports an.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5123210769642170648" datatype="html">
+        <source>A single peering port costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="translated">Ein einzelner Peering Port kostet <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4748883817310330671" datatype="html">
+        <source>Reduced Pricing 10G</source>
+        <target state="translated">Ermäßigter Preis 10G</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3937882644199668489" datatype="html">
+        <source>If you support us, we give something back.</source>
+        <target state="translated">Wenn du uns unterstützt, geben wir etwas zurück.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3436992079252084896" datatype="html">
+        <source>A peering port for supporting members* costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="translated">Ein Peering Port für Fördermitglieder* kostet <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3347830048871951695" datatype="html">
+        <source>* for members that support us with at least 200€ per month</source>
+        <target state="translated">* für Mitglieder, die uns mit mindestens 200€ pro Monat unterstützen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4805311007517365169" datatype="html">
+        <source>We are present at the following location:</source>
+        <target state="translated">Wir sind an dem folgenden Standort vertreten:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="430033625834671529" datatype="html">
+        <source>CityCenter</source>
+        <target state="needs-translation">CityCenter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="116660999206941586" datatype="html">
+        <source>Core Team Members</source>
+        <target state="translated">Mitglieder des Kernteams</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="710554618948317947" datatype="html">
+        <source>This working groups task is to recruit potential new customers.</source>
+        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, potenzielle neue Kunden anzuwerben.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/clients-and-sponsors/clients-and-sponsors.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5673524557355837421" datatype="html">
+        <source>This working groups task is to handle accounting and legal matters.</source>
+        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, Buchhaltungs- und Rechtsfragen zu behandeln.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/finance-and-legal/finance-and-legal.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4284784970653065076" datatype="html">
+        <source>This working groups task is to organize events and strengthen the communication inside the community.</source>
+        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, Veranstaltungen zu organisieren und die Kommunikation innerhalb der Gemeinschaft zu stärken.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/events/events.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3769872760985726233" datatype="html">
+        <source>This working groups task is to connect with the general public and advertise teh association.</source>
+        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, mit der Öffentlichkeit in Kontakt zu treten und für den Verein zu werben.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/public-relations/public-relations.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7658569236107395025" datatype="html">
+        <source>This working groups purpose is to run the IX and develop technologies that help with the operations.</source>
+        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, den IX zu betreiben und Technologien zu entwickeln, die den Betrieb unterstützen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1218117410111627434" datatype="html">
+        <source>Point of Presence</source>
+        <target state="translated">Point of Presence</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6706020286781041076" datatype="html">
+        <source>Association Board</source>
+        <target state="translated">Vereinsvorstand</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
