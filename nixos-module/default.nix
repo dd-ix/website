@@ -42,6 +42,8 @@ in
       };
     };
 
+    users.groups."${cfg.group}" = {};
+
     # user accounts for systemd units
     users.users."${cfg.user}" = {
       name = "${cfg.user}";
