@@ -4,7 +4,7 @@
 
 <div class="blocks">
   <div class="block">
-    <app-icon-switch class="icon"/>
+    <app-icon-switch class="icon" />
     <app-card>
       <div class="typography">
         <h2 i18n>What is peering?</h2>
@@ -18,7 +18,7 @@
   </div>
 
   <div class="block">
-    <app-icon-antenna class="icon"/>
+    <app-icon-antenna class="icon" />
     <app-card>
       <div class="typography">
         <h2 i18n>Why should I peer?</h2>
@@ -37,7 +37,7 @@
   </div>
 
   <div class="block">
-    <app-icon-directions class="icon"/>
+    <app-icon-directions class="icon" />
     <app-card>
       <div class="typography">
         <p i18n>
@@ -66,18 +66,14 @@
           <p i18n>If you support us, we give something back.</p>
           <p i18n>A peering port for supporting members* costs <b>100€</b></p>
           <small i18n>* for members that support us with at least 200€ per month</small>
-          <br/>
+          <br />
         </div>
       </app-card>
     </div>
     <app-card class="map">
       <div class="typography">
         <a href="https://www.openstreetmap.org/way/10368038" target="_blank" class="imglink">
-          <img
-            alt="OpenStreetMap"
-            i18n-alt
-            ngSrc="assets/images/osm-cc.webp"
-            height="823" width="1087">
+          <img alt="OpenStreetMap" i18n-alt ngSrc="assets/images/osm-cc.webp" height="823" width="1087">
         </a>
         <span>
           &copy;
@@ -92,12 +88,24 @@
       <div class="typography">
         <h2 i18n>Point of Presence</h2>
         <p i18n>We are present at the following location:</p>
-        <h4 i18n>CityCenter</h4>
-        <p i18n>
-          SachsenGigaBit GmbH<br/>
-          Friedrich-List-Platz 2<br/>
-          01069 Dresden
-        </p>
+        <ul class="locations-list">
+          <li>
+            <h4 i18n>CityCenter</h4>
+            <p i18n>
+              SachsenGigaBit GmbH<br />
+              Friedrich-List-Platz 2<br />
+              01069 Dresden
+            </p>
+          </li>
+          <li>
+            <h4 i18n>IBH IT-Service GmbH</h4>
+            <p i18n>
+              IBH IT-Service GmbH<br />
+              Heilbronner Str. 20<br />
+              01189 Dresden
+            </p>
+          </li>
+        </ul>
       </div>
     </app-card>
   </div>
@@ -135,4 +143,3 @@
 <!--    </app-card>-->
 <!--  </li>-->
 <!--</ul>-->
-

@@ -38,12 +38,15 @@
   }
 
   > {
-    h1, h2 {
+
+    h1,
+    h2 {
       margin: 0;
     }
   }
 
-  ul.pages, ul.services {
+  ul.pages,
+  ul.services {
     display: grid;
     gap: 1rem;
   }
@@ -83,4 +86,13 @@ img {
 .cc2-block {
   display: flex;
   flex-direction: column;
+}
+
+.locations-list {
+  display: flex;
+  gap: 1rem;
+
+  @media screen and (max-width: #{$bp-mobile - 1}) {
+    flex-direction: column;
+  }
 }
