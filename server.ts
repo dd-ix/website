@@ -4,9 +4,9 @@ import {resolve} from 'path';
 async function app(appDir: string, lang: string): Promise<express.Express> {
   const serverFolder = resolve(`${appDir}/server/${lang}`);
 
-  const {default: module} = await import(`${serverFolder}/main.js`);
+  const {app}: { app: (appDir: string, lang: string) => express.Express } = await import(`${serverFolder}/server.mjs`);
 
-  return module.app(appDir, lang);
+  return app(appDir, lang);
 }
 
 async function main() {

@@ -1,10 +1,13 @@
 import {ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID} from '@angular/core';
 import {routingAnimation} from "./animation/routing.animation";
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {DOCUMENT, Location, PlatformLocation} from "@angular/common";
+import {ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+import {AsyncPipe, DOCUMENT, Location, NgIf, PlatformLocation} from "@angular/common";
 import {BehaviorSubject, delay, filter, map, take} from "rxjs";
 import {Meta, Title} from "@angular/platform-browser";
 import {Language} from "./api/api.domain";
+import {IconLogoComponent} from "./icons/icon-logo/icon-logo.component";
+import {IconMenuComponent} from "./icons/icon-menu/icon-menu.component";
+import {NotificationListComponent} from "@feel/notification";
 
 @Component({
   selector: 'app-root',
@@ -12,6 +15,17 @@ import {Language} from "./api/api.domain";
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [routingAnimation],
+  standalone: true,
+  imports: [
+    AsyncPipe,
+    RouterLink,
+    IconLogoComponent,
+    RouterLinkActive,
+    IconMenuComponent,
+    RouterOutlet,
+    NotificationListComponent,
+    NgIf
+  ]
 })
 export class AppComponent {
 

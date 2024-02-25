@@ -27,11 +27,11 @@
       },
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/presence/browser",
+            "outputPath": "dist/presence",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -55,7 +55,12 @@
                 "node_modules/@feel/style/global",
                 "src/scss/global"
               ]
-            }
+            },
+            "server": "src/main.server.ts",
+            "ssr": {
+              "entry": "src/main.ssr.ts"
+            },
+            "prerender": false
           },
           "configurations": {
             "production": {
@@ -74,12 +79,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -131,67 +133,6 @@
               ]
             }
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/presence/server",
-            "main": "src/main.server.ts",
-            "tsConfig": "tsconfig.server.json",
-            "inlineStyleLanguage": "scss",
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "node_modules/@feel/style/global",
-                "src/scss/global"
-              ]
-            }
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "sourceMap": true,
-              "extractLicenses": false,
-              "vendorChunk": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@angular-devkit/build-angular:ssr-dev-server",
-          "configurations": {
-            "development": {
-              "browserTarget": "presence:build:development",
-              "serverTarget": "presence:server:development"
-            },
-            "production": {
-              "browserTarget": "presence:build:production",
-              "serverTarget": "presence:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "prerender": {
-          "builder": "@angular-devkit/build-angular:prerender",
-          "options": {
-            "routes": [
-              "/"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "presence:build:production",
-              "serverTarget": "presence:server:production"
-            },
-            "development": {
-              "browserTarget": "presence:build:development",
-              "serverTarget": "presence:server:development"
-            }
-          },
-          "defaultConfiguration": "production"
         }
       }
     }

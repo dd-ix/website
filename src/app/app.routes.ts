@@ -1,7 +1,6 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { Routes } from '@angular/router';
 
-const routes: Routes = [
+export const routes: Routes = [
   {path: '', loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent)},
   {
     path: 'news',
@@ -44,12 +43,3 @@ const routes: Routes = [
     loadComponent: () => import('./pages/not-found/not-found.component').then(c => c.NotFoundComponent)
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabledBlocking'
-  })],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {
-}

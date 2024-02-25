@@ -27,15 +27,6 @@
             presence = package;
             default = package;
           };
-
-          devShells.default = pkgs.mkShell {
-            nativeBuildInputs = (with packages.default; nativeBuildInputs ++ buildInputs) ++ [
-              # python for running test scripts
-              (pkgs.python3.withPackages (p: with p; [
-                requests
-              ]))
-            ];
-          };
         }
       ) // {
       overlays.default = final: prev: {
