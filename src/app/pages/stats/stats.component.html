@@ -1,0 +1,36 @@
+<div class="typography">
+  <h1 i18n>Statistics</h1>
+</div>
+
+<ng-container *ngIf="stats | async as stats">
+  <app-card>
+    <div class="typography">
+      <h2 i18n>Traffic over the last two days</h2>
+      <app-chart
+        [series]="wrapStats(stats.two_days)"
+        [xMin]="stats.two_days.start"
+        [xMax]="stats.two_days.end"
+      />
+    </div>
+  </app-card>
+  <app-card>
+    <div class="typography">
+      <h2 i18n>Traffic over the last seven days</h2>
+      <app-chart
+        [series]="wrapStats(stats.seven_days)"
+        [xMin]="stats.seven_days.start"
+        [xMax]="stats.seven_days.end"
+      />
+    </div>
+  </app-card>
+  <app-card>
+    <div class="typography">
+      <h2 i18n>Traffic over the last 30 days</h2>
+      <app-chart
+        [series]="wrapStats(stats.month)"
+        [xMin]="stats.month.start"
+        [xMax]="stats.month.end"
+      />
+    </div>
+  </app-card>
+</ng-container>

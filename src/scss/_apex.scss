@@ -1,0 +1,10 @@
+.apexcharts-tooltip .apexcharts-tooltip-title {
+  display: none;
+}
+
+.apexcharts-tooltip, .apexcharts-xaxistooltip, .apexcharts-yaxistooltip {
+  background-color: $c-card !important;
+  border: 0.1rem solid $c-card-secondary !important;
+  box-shadow: 0 0 0.1rem $f-color-inverted !important;
+  color: $f-color !important;
+}

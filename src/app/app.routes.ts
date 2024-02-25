@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
 
 export const routes: Routes = [
   {path: '', loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent)},
@@ -36,6 +36,10 @@ export const routes: Routes = [
     path: 'peering',
     data: {title: $localize`Peering`},
     loadChildren: () => import('./pages/peering/peering.module').then(m => m.PeeringModule)
+  },
+  {
+    path: 'stats',
+    loadChildren: () => import('./pages/stats/stats.routes').then(c => c.routes)
   },
   {
     path: '**',

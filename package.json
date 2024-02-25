@@ -30,6 +30,7 @@
     "@feel/style": "^0.0.14",
     "@fontsource/dm-sans": "^5.0.18",
     "express": "^4.18.2",
+    "ng-apexcharts-lazy": "^1.9.0",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.14.4"
