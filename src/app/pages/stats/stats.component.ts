@@ -30,7 +30,7 @@ export class StatsComponent {
 
   protected wrapStats(series: Series): ApexAxisChartSeries {
     return [{
-      name: "Traffic",
+      name: $localize`Traffic`,
       data: series.data.map(([time, value]) => [time * 1000, value]),
       color: '#209680'
     }]
