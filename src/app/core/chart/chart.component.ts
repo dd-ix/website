@@ -5,6 +5,7 @@ import {
   ApexDataLabels,
   ApexGrid,
   ApexLegend,
+  ApexLocale,
   ApexStroke,
   ApexXAxis,
   ApexYAxis,
@@ -12,6 +13,44 @@ import {
 } from "ng-apexcharts-lazy";
 import {Language} from "../../api/api.domain";
 import {NgIf} from "@angular/common";
+
+const ENGLISH_TRANSLATIONS: ApexLocale = {
+  name: Language.ENGLISH,
+  options: {
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    shortMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    shortDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    toolbar: {
+      download: 'Download SVG',
+      selection: 'Selection',
+      selectionZoom: 'Selection Zoom',
+      zoomIn: 'Zoom In',
+      zoomOut: 'Zoom Out',
+      pan: 'Panning',
+      reset: 'Reset Zoom',
+    }
+  }
+};
+
+const GERMAN_TRANSLATION: ApexLocale = {
+  name: Language.GERMAN,
+  options: {
+    months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+    shortMonths: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+    days: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+    shortDays: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+    toolbar: {
+      download: 'SVG herunterladen',
+      selection: 'Auswahl',
+      selectionZoom: 'Auswahl Zoom',
+      zoomIn: 'Hineinzoomen',
+      zoomOut: 'Herauszoomen',
+      pan: 'Verschieben',
+      reset: 'Zoom zurücksetzen',
+    }
+  }
+};
 
 @Component({
   selector: 'app-chart',
@@ -36,6 +75,7 @@ export class ChartComponent {
     type: "area",
     height: 350,
     defaultLocale: this.locale,
+    locales: this.locale === Language.GERMAN ? [GERMAN_TRANSLATION] : [ENGLISH_TRANSLATIONS],
     zoom: {enabled: false,},
     toolbar: {show: false},
     animations: {enabled: false},
