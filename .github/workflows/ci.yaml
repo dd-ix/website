@@ -68,7 +68,7 @@ jobs:
           password: ${{ github.token }}
 
       - name: Build
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           file: Dockerfile.github-actions
           context: .
