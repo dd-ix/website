@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="841934696444961534" datatype="html">
+      <trans-unit id="841934696444961534" datatype="html" xml:space="preserve">
         <source>News</source>
         <target state="translated">News</target>
         <context-group purpose="location">
@@ -18,7 +18,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7896457190687769786" datatype="html">
+      <trans-unit id="7896457190687769786" datatype="html" xml:space="preserve">
         <source>Participation &amp; Joining</source>
         <target state="translated">Participation &amp; Joining</target>
         <context-group purpose="location">
@@ -26,7 +26,7 @@
           <context context-type="linenumber">103</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4914878788954605145" datatype="html">
+      <trans-unit id="4914878788954605145" datatype="html" xml:space="preserve">
         <source>Are you interested in working for the association? We are looking forward to you!</source>
         <target state="translated">Are you interested in working for the association? We are looking forward to you!</target>
         <context-group purpose="location">
@@ -34,7 +34,7 @@
           <context context-type="linenumber">104</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="765262536264103542" datatype="html">
+      <trans-unit id="765262536264103542" datatype="html" xml:space="preserve">
         <source>You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page.</source>
         <target state="needs-translation">Become a part of DD-IX! You as a natural person can actively participate and have a say in the daily life of IX as a regular member. Companies and legal entities can become supporting members, support our mission on a monthly basis, can present themselves at events and receive regular updates. Sponsors, be it as an organization, company or individual, can support us with one-time donations and receive visibility on our website in the sponsors tab. Join now and support our mission!</target>
         <context-group purpose="location">
@@ -42,7 +42,7 @@
           <context context-type="linenumber">105,109</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="813505822962920168" datatype="html">
+      <trans-unit id="813505822962920168" datatype="html" xml:space="preserve">
         <source>Association Work</source>
         <target state="translated">Association Work</target>
         <context-group purpose="location">
@@ -50,7 +50,7 @@
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8215917582351912302" datatype="html">
+      <trans-unit id="8215917582351912302" datatype="html" xml:space="preserve">
         <source>The association is made up of committed members who work voluntarily for the achievement of the goals. Even though the association seems to be technical through IXP operations we are also involved in non-technical areas.</source>
         <target state="translated">The association is made up of committed members who work voluntarily for the achievement of the association's goals. Even though the association seems to be technical through IXP operations, we are also involved in non-technical areas.</target>
         <context-group purpose="location">
@@ -58,7 +58,7 @@
           <context context-type="linenumber">54,58</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2761952393360315538" datatype="html">
+      <trans-unit id="2761952393360315538" datatype="html" xml:space="preserve">
         <source>The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</source>
         <target state="translated">The goal of peering is to distribute Internet traffic between the participating networks as directly as possible. Direct routing is cheaper, reduces latency, and improves robustness. The DD-IX peering infrastructure is the base to enable this.</target>
         <context-group purpose="location">
@@ -66,7 +66,7 @@
           <context context-type="linenumber">26,30</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5950592880769644231" datatype="html">
+      <trans-unit id="5950592880769644231" datatype="html" xml:space="preserve">
         <source>The work in the association is organized in different boards and working groups:</source>
         <target state="translated">The work in the association is organized in different boards and working groups:</target>
         <context-group purpose="location">
@@ -74,7 +74,7 @@
           <context context-type="linenumber">59,61</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="576533027619297585" datatype="html">
+      <trans-unit id="576533027619297585" datatype="html" xml:space="preserve">
         <source>Public Relations</source>
         <target state="translated">Public Relations</target>
         <context-group purpose="location">
@@ -82,7 +82,7 @@
           <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7922989125096435449" datatype="html">
+      <trans-unit id="7922989125096435449" datatype="html" xml:space="preserve">
         <source>Contact</source>
         <target state="translated">Contact</target>
         <context-group purpose="location">
@@ -90,7 +90,7 @@
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8439955599488894226" datatype="html">
+      <trans-unit id="8439955599488894226" datatype="html" xml:space="preserve">
         <source>Privacy Policy</source>
         <target state="translated">Privacy Policy</target>
         <context-group purpose="location">
@@ -102,7 +102,7 @@
           <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5891707175321515013" datatype="html">
+      <trans-unit id="5891707175321515013" datatype="html" xml:space="preserve">
         <source>Imprint</source>
         <target state="translated">Imprint</target>
         <context-group purpose="location">
@@ -114,7 +114,7 @@
           <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9078603423157869293" datatype="html">
+      <trans-unit id="9078603423157869293" datatype="html" xml:space="preserve">
         <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</source>
         <target state="translated">Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</target>
         <context-group purpose="location">
@@ -122,7 +122,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8115083664628466958" datatype="html">
+      <trans-unit id="8115083664628466958" datatype="html" xml:space="preserve">
         <source>E-Mail</source>
         <target state="translated">E-Mail</target>
         <context-group purpose="location">
@@ -130,7 +130,7 @@
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6856821060067506866" datatype="html">
+      <trans-unit id="6856821060067506866" datatype="html" xml:space="preserve">
         <source>A valid e-mail is required!</source>
         <target state="translated">A valid e-mail is required!</target>
         <context-group purpose="location">
@@ -138,7 +138,7 @@
           <context context-type="linenumber">5,8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="935187492052582731" datatype="html">
+      <trans-unit id="935187492052582731" datatype="html" xml:space="preserve">
         <source>Submit</source>
         <target state="translated">Submit</target>
         <context-group purpose="location">
@@ -146,7 +146,7 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1631914994548716663" datatype="html">
+      <trans-unit id="1631914994548716663" datatype="html" xml:space="preserve">
         <source>Our Vision</source>
         <target state="translated">Our Vision</target>
         <context-group purpose="location">
@@ -154,7 +154,7 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7538019399997716423" datatype="html">
+      <trans-unit id="7538019399997716423" datatype="html" xml:space="preserve">
         <source>We want to promote Saxony as an attractive IT location with a focus on Dresden. Our main focus is the further expansion of the internet communication network. We committ as non-profit organisation for:</source>
         <target state="translated">We want to further promote the region of Saxony, with a focus on Dresden, as an attractive IT location. Our main focus is on the further expansion of the Internet. To achieve this goal, we focus on:</target>
         <context-group purpose="location">
@@ -162,7 +162,7 @@
           <context context-type="linenumber">10,13</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6980756795925581247" datatype="html">
+      <trans-unit id="6980756795925581247" datatype="html" xml:space="preserve">
         <source>Networking and Sharing Experiences</source>
         <target state="translated">Networking and Sharing Experiences</target>
         <context-group purpose="location">
@@ -170,7 +170,7 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="330938586604953979" datatype="html">
+      <trans-unit id="330938586604953979" datatype="html" xml:space="preserve">
         <source>Operation of the DD-IX</source>
         <target state="translated">Operation of the DD-IX</target>
         <context-group purpose="location">
@@ -178,7 +178,7 @@
           <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6593726833795406993" datatype="html">
+      <trans-unit id="6593726833795406993" datatype="html" xml:space="preserve">
         <source>In addition to supporting the community, we run the internet exchange DD-IX at locations in Dresden. DD-IX sees itself as an open, non-profit platform for all internet participants with a AS in the region of Saxony.</source>
         <target state="translated">In addition to supporting the community, we run the Dresden Internet Exchange. The DD-IX sees itself as an open, non-profit platform for all Internet participants with their own AS in the Saxony region.</target>
         <context-group purpose="location">
@@ -186,7 +186,7 @@
           <context context-type="linenumber">38,41</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8633396480562620693" datatype="html">
+      <trans-unit id="8633396480562620693" datatype="html" xml:space="preserve">
         <source>Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</source>
         <target state="translated">Besides the peering LAN and our route servers for the core operation of the IXP, we run most of the systems of the association ourselves.</target>
         <context-group purpose="location">
@@ -194,7 +194,7 @@
           <context context-type="linenumber">42,45</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6718726533481404495" datatype="html">
+      <trans-unit id="6718726533481404495" datatype="html" xml:space="preserve">
         <source>Peering</source>
         <target state="translated">Peering</target>
         <context-group purpose="location">
@@ -206,7 +206,7 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4849273003091869009" datatype="html">
+      <trans-unit id="4849273003091869009" datatype="html" xml:space="preserve">
         <source>Association</source>
         <target state="translated">Association</target>
         <context-group purpose="location">
@@ -222,7 +222,7 @@
           <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3724068243287682962" datatype="html">
+      <trans-unit id="3724068243287682962" datatype="html" xml:space="preserve">
         <source>Team</source>
         <target state="translated">Team</target>
         <context-group purpose="location">
@@ -234,7 +234,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4733307402565258070" datatype="html">
+      <trans-unit id="4733307402565258070" datatype="html" xml:space="preserve">
         <source>Documents</source>
         <target state="translated">Documents</target>
         <context-group purpose="location">
@@ -242,7 +242,7 @@
           <context context-type="linenumber">116</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5744023940242558359" datatype="html">
+      <trans-unit id="5744023940242558359" datatype="html" xml:space="preserve">
         <source>Dresden Internet Exchange</source>
         <target state="translated">Dresden Internet Exchange</target>
         <context-group purpose="location">
@@ -250,7 +250,7 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8510289285271281479" datatype="html">
+      <trans-unit id="8510289285271281479" datatype="html" xml:space="preserve">
         <source>Keep Local Traffic Local</source>
         <target state="translated">Keep Local Traffic Local</target>
         <context-group purpose="location">
@@ -258,7 +258,7 @@
           <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9049737860962344543" datatype="html">
+      <trans-unit id="9049737860962344543" datatype="html" xml:space="preserve">
         <source>Internet Exchange</source>
         <target state="translated">Internet Exchange</target>
         <context-group purpose="location">
@@ -266,7 +266,7 @@
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2288513108450439427" datatype="html">
+      <trans-unit id="2288513108450439427" datatype="html" xml:space="preserve">
         <source>Support</source>
         <target state="translated">Support</target>
         <context-group purpose="location">
@@ -274,7 +274,7 @@
           <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3670532182581004841" datatype="html">
+      <trans-unit id="3670532182581004841" datatype="html" xml:space="preserve">
         <source>Socials</source>
         <target state="translated">Socials</target>
         <context-group purpose="location">
@@ -282,7 +282,7 @@
           <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8436144186639366635" datatype="html">
+      <trans-unit id="8436144186639366635" datatype="html" xml:space="preserve">
         <source>Sponsors</source>
         <target state="translated">Sponsors</target>
         <context-group purpose="location">
@@ -290,7 +290,7 @@
           <context context-type="linenumber">86</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9158112486914865946" datatype="html">
+      <trans-unit id="9158112486914865946" datatype="html" xml:space="preserve">
         <source>Mailing List</source>
         <target state="translated">Mailing List</target>
         <context-group purpose="location">
@@ -298,7 +298,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4786405675269305220" datatype="html">
+      <trans-unit id="4786405675269305220" datatype="html" xml:space="preserve">
         <source>Always stay updated by subscribing to our news mailing-list.</source>
         <target state="translated">Always stay updated by subscribing to our news mailing-list.</target>
         <context-group purpose="location">
@@ -306,7 +306,7 @@
           <context context-type="linenumber">3,5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2649252321173430744" datatype="html">
+      <trans-unit id="2649252321173430744" datatype="html" xml:space="preserve">
         <source>Not Found</source>
         <target state="translated">Not Found</target>
         <context-group purpose="location">
@@ -314,7 +314,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7353139189504330359" datatype="html">
+      <trans-unit id="7353139189504330359" datatype="html" xml:space="preserve">
         <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</source>
         <target state="translated">How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</target>
         <context-group purpose="location">
@@ -322,7 +322,7 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2880910185905378639" datatype="html">
+      <trans-unit id="2880910185905378639" datatype="html" xml:space="preserve">
         <source>What is peering?</source>
         <target state="translated">What is peering?</target>
         <context-group purpose="location">
@@ -330,7 +330,7 @@
           <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5578823162355992891" datatype="html">
+      <trans-unit id="5578823162355992891" datatype="html" xml:space="preserve">
         <source>Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages.</source>
         <target state="translated">Peering is a term from network technology. It enables large and small network operators to easily exchange data with each other. This type of data transfer offers numerous advantages.</target>
         <context-group purpose="location">
@@ -338,7 +338,7 @@
           <context context-type="linenumber">12,16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2185195021427384331" datatype="html">
+      <trans-unit id="2185195021427384331" datatype="html" xml:space="preserve">
         <source>Why should I peer?</source>
         <target state="translated">Why should I peer?</target>
         <context-group purpose="location">
@@ -346,7 +346,7 @@
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4723636160472220804" datatype="html">
+      <trans-unit id="4723636160472220804" datatype="html" xml:space="preserve">
         <source>Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other.</source>
         <target state="translated">Fast packet delivery is key for almost all Internet services and applications. Peering at an IXP reduces detours between those who consume content and services and those who offer them.</target>
         <context-group purpose="location">
@@ -354,7 +354,7 @@
           <context context-type="linenumber">39,43</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8043843054156476312" datatype="html">
+      <trans-unit id="8043843054156476312" datatype="html" xml:space="preserve">
         <source>An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners.</source>
         <target state="translated">An Internet Exchange Point enables better resilience since it increases the level of Internet connectivity. IXPs are a platform to meet other networks and directly connect to them. Internet Exchange Points are particularly interesting for Content Delivery Networks (CDN) and Internet Service Providers (ISP).</target>
         <context-group purpose="location">
@@ -362,7 +362,7 @@
           <context context-type="linenumber">52,55</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4407640932304119141" datatype="html">
+      <trans-unit id="4407640932304119141" datatype="html" xml:space="preserve">
         <source>Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used.</source>
         <target state="translated">Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Only the connections are paid and not the data volume used. Using a central peering point also helps to reduce maintaining peering sessions. Instead of running multiple BGP sessions, a single session is needed to reach networks on site.</target>
         <context-group purpose="location">
@@ -370,7 +370,7 @@
           <context context-type="linenumber">64,67</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="558795374232821675" datatype="html">
+      <trans-unit id="558795374232821675" datatype="html" xml:space="preserve">
         <source>Peering Policy</source>
         <target state="translated">Peering Policy</target>
         <context-group purpose="location">
@@ -378,7 +378,7 @@
           <context context-type="linenumber">76</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4022066031214545422" datatype="html">
+      <trans-unit id="4022066031214545422" datatype="html" xml:space="preserve">
         <source>Locations</source>
         <target state="translated">Locations</target>
         <context-group purpose="location">
@@ -386,7 +386,7 @@
           <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5898480698220868505" datatype="html">
+      <trans-unit id="5898480698220868505" datatype="html" xml:space="preserve">
         <source>Peers</source>
         <target state="translated">Peers</target>
         <context-group purpose="location">
@@ -394,7 +394,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3909398260718721910" datatype="html">
+      <trans-unit id="3909398260718721910" datatype="html" xml:space="preserve">
         <source>Linkedin</source>
         <target state="translated">Linkedin</target>
         <context-group purpose="location">
@@ -402,7 +402,7 @@
           <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="927015953957235009" datatype="html">
+      <trans-unit id="927015953957235009" datatype="html" xml:space="preserve">
         <source>More Information</source>
         <target state="translated">More Information</target>
         <context-group purpose="location">
@@ -414,7 +414,7 @@
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8656531455531669663" datatype="html">
+      <trans-unit id="8656531455531669663" datatype="html" xml:space="preserve">
         <source>Join Us!</source>
         <target state="translated">Join Us!</target>
         <context-group purpose="location">
@@ -422,7 +422,7 @@
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2479873501594590040" datatype="html">
+      <trans-unit id="2479873501594590040" datatype="html" xml:space="preserve">
         <source>We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.</source>
         <target state="translated">We are a reliable point of contact for organizations, science, business, and the public on issues relating to the internet. In addition to the exchange of experiences within the association and with external third parties, we conduct information and training events. Furthermore, we participate in community events.</target>
         <context-group purpose="location">
@@ -430,7 +430,7 @@
           <context context-type="linenumber">23,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7998502735917753353" datatype="html">
+      <trans-unit id="7998502735917753353" datatype="html" xml:space="preserve">
         <source>The DD-IX is an Internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</source>
         <target state="translated">The DD-IX is an Internet exchange for Dresden. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX location in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</target>
         <context-group purpose="location">
@@ -438,7 +438,7 @@
           <context context-type="linenumber">15,20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6204250090696732874" datatype="html">
+      <trans-unit id="6204250090696732874" datatype="html" xml:space="preserve">
         <source>Join us for an exciting journey. As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</source>
         <target state="translated">As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</target>
         <context-group purpose="location">
@@ -446,7 +446,7 @@
           <context context-type="linenumber">51,54</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8359441997292951163" datatype="html">
+      <trans-unit id="8359441997292951163" datatype="html" xml:space="preserve">
         <source>Technical</source>
         <target state="translated">Technical</target>
         <context-group purpose="location">
@@ -454,7 +454,7 @@
           <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7457179823984196306" datatype="html">
+      <trans-unit id="7457179823984196306" datatype="html" xml:space="preserve">
         <source>Operations</source>
         <target state="translated">Operations</target>
         <context-group purpose="location">
@@ -462,7 +462,7 @@
           <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="251888304112963480" datatype="html">
+      <trans-unit id="251888304112963480" datatype="html" xml:space="preserve">
         <source>IX</source>
         <target state="translated">IX</target>
         <context-group purpose="location">
@@ -470,7 +470,7 @@
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7607104788059971606" datatype="html">
+      <trans-unit id="7607104788059971606" datatype="html" xml:space="preserve">
         <source>DevOps</source>
         <target state="translated">DevOps</target>
         <context-group purpose="location">
@@ -478,7 +478,7 @@
           <context context-type="linenumber">74</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2242216542139696336" datatype="html">
+      <trans-unit id="2242216542139696336" datatype="html" xml:space="preserve">
         <source>Finance &amp; Legal</source>
         <target state="translated">Finance &amp; Legal</target>
         <context-group purpose="location">
@@ -486,7 +486,7 @@
           <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1153569197500858167" datatype="html">
+      <trans-unit id="1153569197500858167" datatype="html" xml:space="preserve">
         <source>Clients &amp; Sponsors</source>
         <target state="translated">Clients &amp; Sponsors</target>
         <context-group purpose="location">
@@ -494,7 +494,7 @@
           <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5729418620241283277" datatype="html">
+      <trans-unit id="5729418620241283277" datatype="html" xml:space="preserve">
         <source>Events</source>
         <target state="translated">Events</target>
         <context-group purpose="location">
@@ -502,7 +502,7 @@
           <context context-type="linenumber">100</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6439365426343089851" datatype="html">
+      <trans-unit id="6439365426343089851" datatype="html" xml:space="preserve">
         <source>General</source>
         <target state="translated">General</target>
         <context-group purpose="location">
@@ -510,7 +510,7 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7710800292924165419" datatype="html">
+      <trans-unit id="7710800292924165419" datatype="html" xml:space="preserve">
         <source>Press</source>
         <target state="translated">Press</target>
         <context-group purpose="location">
@@ -518,7 +518,7 @@
           <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6304432362546770951" datatype="html">
+      <trans-unit id="6304432362546770951" datatype="html" xml:space="preserve">
         <source>Address</source>
         <target state="translated">Address</target>
         <context-group purpose="location">
@@ -526,7 +526,7 @@
           <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="113099127945736504" datatype="html">
+      <trans-unit id="113099127945736504" datatype="html" xml:space="preserve">
         <source>OpenStreetMap</source>
         <target state="translated">OpenStreetMap</target>
         <context-group purpose="location">
@@ -534,7 +534,7 @@
           <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4058575476871566236" datatype="html">
+      <trans-unit id="4058575476871566236" datatype="html" xml:space="preserve">
         <source>Published</source>
         <target state="translated">Published</target>
         <context-group purpose="location">
@@ -542,7 +542,7 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3553216189604488439" datatype="html">
+      <trans-unit id="3553216189604488439" datatype="html" xml:space="preserve">
         <source>Modified</source>
         <target state="translated">Modified</target>
         <context-group purpose="location">
@@ -550,7 +550,7 @@
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3825834505798896859" datatype="html">
+      <trans-unit id="3825834505798896859" datatype="html" xml:space="preserve">
         <source>Author<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;post.authors.length &gt; 1&quot;&gt;"/>s<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <target state="translated">Author<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;post.authors.length &gt; 1&quot;&gt;"/>s<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
@@ -558,7 +558,7 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4437840582457353541" datatype="html">
+      <trans-unit id="4437840582457353541" datatype="html" xml:space="preserve">
         <source>The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden Internet Exchange e.V. is a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</source>
         <target state="translated">The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</target>
         <context-group purpose="location">
@@ -566,7 +566,7 @@
           <context context-type="linenumber">33,38</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7468240890677477871" datatype="html">
+      <trans-unit id="7468240890677477871" datatype="html" xml:space="preserve">
         <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
@@ -574,7 +574,7 @@
           <context context-type="linenumber">63,66</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5632099839746836994" datatype="html">
+      <trans-unit id="5632099839746836994" datatype="html" xml:space="preserve">
         <source>Successfully subscribed to mailing list.</source>
         <target state="translated">Successfully subscribed to mailing list.</target>
         <context-group purpose="location">
@@ -582,7 +582,7 @@
           <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6451157462027879592" datatype="html">
+      <trans-unit id="6451157462027879592" datatype="html" xml:space="preserve">
         <source>Failed to subscribe to mailing list.</source>
         <target state="translated">Failed to subscribe to mailing list.</target>
         <context-group purpose="location">
@@ -590,7 +590,7 @@
           <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6750491512886369381" datatype="html">
+      <trans-unit id="6750491512886369381" datatype="html" xml:space="preserve">
         <source><x id="PH" equiv-text="title"/> | Dresden Internet Exchange</source>
         <target state="translated"><x id="PH" equiv-text="title"/> | Dresden Internet Exchange</target>
         <context-group purpose="location">
@@ -606,7 +606,7 @@
           <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3397601893497394889" datatype="html">
+      <trans-unit id="3397601893497394889" datatype="html" xml:space="preserve">
         <source>Technical Workinggroup</source>
         <target state="translated">Tech Workinggroup</target>
         <context-group purpose="location">
@@ -618,7 +618,7 @@
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8346691245138938788" datatype="html">
+      <trans-unit id="8346691245138938788" datatype="html" xml:space="preserve">
         <source>Public Relations Workinggroup</source>
         <target state="needs-translation">Public Relations Workinggroup</target>
         <context-group purpose="location">
@@ -626,7 +626,7 @@
           <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5390398393295642975" datatype="html">
+      <trans-unit id="5390398393295642975" datatype="html" xml:space="preserve">
         <source>Finance and Legal Workinggroup</source>
         <target state="needs-translation">Finance and Legal Workinggroup</target>
         <context-group purpose="location">
@@ -634,7 +634,7 @@
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1061540398514258404" datatype="html">
+      <trans-unit id="1061540398514258404" datatype="html" xml:space="preserve">
         <source>Tech</source>
         <target state="translated">Tech</target>
         <context-group purpose="location">
@@ -642,7 +642,7 @@
           <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1415060111017347427" datatype="html">
+      <trans-unit id="1415060111017347427" datatype="html" xml:space="preserve">
         <source>Network</source>
         <target state="translated">Network</target>
         <context-group purpose="location">
@@ -650,7 +650,7 @@
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7143579180750436311" datatype="html">
+      <trans-unit id="7143579180750436311" datatype="html" xml:space="preserve">
         <source>Services</source>
         <target state="needs-translation">Services</target>
         <context-group purpose="location">
@@ -658,7 +658,7 @@
           <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="76537845515412840" datatype="html">
+      <trans-unit id="76537845515412840" datatype="html" xml:space="preserve">
         <source>Finance and Legal</source>
         <target state="needs-translation">Finance and Legal</target>
         <context-group purpose="location">
@@ -666,7 +666,7 @@
           <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2617987075541559782" datatype="html">
+      <trans-unit id="2617987075541559782" datatype="html" xml:space="preserve">
         <source>Clients and Sponsors</source>
         <target state="needs-translation">Clients and Sponsors</target>
         <context-group purpose="location">
@@ -674,7 +674,7 @@
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9020669458543958643" datatype="html">
+      <trans-unit id="9020669458543958643" datatype="html" xml:space="preserve">
         <source>Clients and Sponsors Workinggroup</source>
         <target state="needs-translation">Clients and Sponsors Workinggroup</target>
         <context-group purpose="location">
@@ -682,7 +682,7 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8179235462848400383" datatype="html">
+      <trans-unit id="8179235462848400383" datatype="html" xml:space="preserve">
         <source>Our Task</source>
         <target state="needs-translation">Our Task</target>
         <context-group purpose="location">
