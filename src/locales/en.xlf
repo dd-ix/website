@@ -36,7 +36,7 @@
       </trans-unit>
       <trans-unit id="765262536264103542" datatype="html" xml:space="preserve">
         <source>You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page.</source>
-        <target state="needs-translation">Become a part of DD-IX! You as a natural person can actively participate and have a say in the daily life of IX as a regular member. Companies and legal entities can become supporting members, support our mission on a monthly basis, can present themselves at events and receive regular updates. Sponsors, be it as an organization, company or individual, can support us with one-time donations and receive visibility on our website in the sponsors tab. Join now and support our mission!</target>
+        <target state="needs-translation">Become a part of DD-IX! You as a natural person can actively participate and have a say in the daily life of IX as a regular member. Companies and legal entities can become supporting members, support our mission on a monthly basis, can present themselves at events and receive regular updates. Sponsors, such as an organisation, company or individual, can support us with one-time donations and receive visibility on our website in the sponsors tab. Join now and support our mission!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">105,109</context>
@@ -620,7 +620,7 @@
       </trans-unit>
       <trans-unit id="8346691245138938788" datatype="html" xml:space="preserve">
         <source>Public Relations Workinggroup</source>
-        <target state="needs-translation">Public Relations Workinggroup</target>
+        <target state="translated">Public Relations working group</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
           <context context-type="linenumber">14</context>
@@ -628,7 +628,7 @@
       </trans-unit>
       <trans-unit id="5390398393295642975" datatype="html" xml:space="preserve">
         <source>Finance and Legal Workinggroup</source>
-        <target state="needs-translation">Finance and Legal Workinggroup</target>
+        <target state="translated">Finance and Legal working group</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
           <context context-type="linenumber">24</context>
@@ -652,7 +652,7 @@
       </trans-unit>
       <trans-unit id="7143579180750436311" datatype="html" xml:space="preserve">
         <source>Services</source>
-        <target state="needs-translation">Services</target>
+        <target state="translated">Services</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/api/team.domain.ts</context>
           <context context-type="linenumber">40</context>
@@ -660,7 +660,7 @@
       </trans-unit>
       <trans-unit id="76537845515412840" datatype="html" xml:space="preserve">
         <source>Finance and Legal</source>
-        <target state="needs-translation">Finance and Legal</target>
+        <target state="translated">Finance and Legal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/api/team.domain.ts</context>
           <context context-type="linenumber">46</context>
@@ -668,7 +668,7 @@
       </trans-unit>
       <trans-unit id="2617987075541559782" datatype="html" xml:space="preserve">
         <source>Clients and Sponsors</source>
-        <target state="needs-translation">Clients and Sponsors</target>
+        <target state="translated">Clients and Sponsors</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/api/team.domain.ts</context>
           <context context-type="linenumber">48</context>
@@ -676,7 +676,7 @@
       </trans-unit>
       <trans-unit id="9020669458543958643" datatype="html" xml:space="preserve">
         <source>Clients and Sponsors Workinggroup</source>
-        <target state="needs-translation">Clients and Sponsors Workinggroup</target>
+        <target state="translated">Clients and Sponsors working group</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
           <context context-type="linenumber">19</context>
@@ -704,6 +704,238 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
           <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7658569236107395025" datatype="html" xml:space="preserve">
+        <source>This working groups purpose is to run the IX and develop technologies that help with the operations.</source>
+        <target state="translated">This working groups purpose is to run the IX and develop technologies that help with the operations.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1069523139277190436" datatype="html" xml:space="preserve">
+        <source>Statistics</source>
+        <target state="translated">Statistics</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.routes.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4284784970653065076" datatype="html" xml:space="preserve">
+        <source>This working groups task is to organize events and strengthen the communication inside the community.</source>
+        <target state="translated">This working groups task is to organize events and strengthen the communication inside the community.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/events/events.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5123210769642170648" datatype="html" xml:space="preserve">
+        <source>A single peering port costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="translated">A single peering port costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3937882644199668489" datatype="html" xml:space="preserve">
+        <source>If you support us, we give something back.</source>
+        <target state="translated">If you support us, we give something back.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3436992079252084896" datatype="html" xml:space="preserve">
+        <source>A peering port for supporting members* costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="translated">A peering port for supporting members* costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="430033625834671529" datatype="html" xml:space="preserve">
+        <source>CityCenter</source>
+        <target state="translated">CityCenter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="653233766607926428" datatype="html" xml:space="preserve">
+        <source>SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </source>
+        <target state="translated">SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">95,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8694717738425750979" datatype="html" xml:space="preserve">
+        <source>IXP Manager</source>
+        <target state="translated">IXP Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="710554618948317947" datatype="html" xml:space="preserve">
+        <source>This working groups task is to recruit potential new customers.</source>
+        <target state="translated">This working groups task is to recruit potential new customers.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/clients-and-sponsors/clients-and-sponsors.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3161711202916701013" datatype="html" xml:space="preserve">
+        <source>Looking Glass</source>
+        <target state="translated">Looking Glass</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5429420089825511537" datatype="html" xml:space="preserve">
+        <source>Pricing 10G</source>
+        <target state="translated">Pricing 10G</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1198612196411655642" datatype="html" xml:space="preserve">
+        <source>We offer 10G peering ports.</source>
+        <target state="translated">We offer 10G peering ports.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4748883817310330671" datatype="html" xml:space="preserve">
+        <source>Reduced Pricing 10G</source>
+        <target state="translated">Reduced Pricing 10G</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3347830048871951695" datatype="html" xml:space="preserve">
+        <source>* for members that support us with at least 200€ per month</source>
+        <target state="translated">* for members that support us with at least 200€ per month</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1218117410111627434" datatype="html" xml:space="preserve">
+        <source>Point of Presence</source>
+        <target state="translated">Point of Presence</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">89,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4805311007517365169" datatype="html" xml:space="preserve">
+        <source>We are present at the following location:</source>
+        <target state="translated">We are present at the following location:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5673524557355837421" datatype="html" xml:space="preserve">
+        <source>This working groups task is to handle accounting and legal matters.</source>
+        <target state="translated">This working groups task is to handle accounting and legal matters.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/finance-and-legal/finance-and-legal.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3769872760985726233" datatype="html" xml:space="preserve">
+        <source>This working groups task is to connect with the general public and advertise teh association.</source>
+        <target state="translated">This working groups task is to connect with the general public and advertise the association.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/workinggroup/public-relations/public-relations.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7821232108445276080" datatype="html" xml:space="preserve">
+        <source>Coschütz 2</source>
+        <target state="translated">Coschütz 2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4014413284740153649" datatype="html" xml:space="preserve">
+        <source>IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </source>
+        <target state="translated">IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">103,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3194475020281589259" datatype="html" xml:space="preserve">
+        <source>Traffic over the last two days</source>
+        <target state="translated">Traffic over the last two days</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5807227020049171274" datatype="html" xml:space="preserve">
+        <source>Traffic over the last seven days</source>
+        <target state="translated">Traffic over the last seven days</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5221997905867887062" datatype="html" xml:space="preserve">
+        <source>Traffic over the last 30 days</source>
+        <target state="translated">Traffic over the last 30 days</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="369679454877964077" datatype="html" xml:space="preserve">
+        <source>Traffic</source>
+        <target state="translated">Traffic</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6554512525540716587" datatype="html" xml:space="preserve">
+        <source>AS112 Statistics</source>
+        <target state="translated">AS112 Statistics</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.routes.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6706020286781041076" datatype="html" xml:space="preserve">
+        <source>Association Board</source>
+        <target state="translated">Association Board</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="116660999206941586" datatype="html" xml:space="preserve">
+        <source>Core Team Members</source>
+        <target state="translated">Core Team Members</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
     </body>
