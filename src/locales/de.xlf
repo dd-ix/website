@@ -934,6 +934,48 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
+          <trans-unit id="7068389893779844908" datatype="html">
+              <source>Aktuell gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Die Tabelle enthält weitere Informationen.</source>
+              <context-group purpose="location">
+                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+                <context context-type="linenumber">3,6</context>
+              </context-group>
+            </trans-unit>
+            <trans-unit id="6297950127540572260" datatype="html">
+              <source>Mitglied</source>
+              <context-group purpose="location">
+                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+                <context context-type="linenumber">10,11</context>
+              </context-group>
+            </trans-unit>
+            <trans-unit id="8953033926734869941" datatype="html">
+              <source>Name</source>
+              <context-group purpose="location">
+                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+                <context context-type="linenumber">11,12</context>
+              </context-group>
+            </trans-unit>
+            <trans-unit id="7517688192215738656" datatype="html">
+              <source>ASN</source>
+              <context-group purpose="location">
+                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+                <context context-type="linenumber">13</context>
+              </context-group>
+            </trans-unit>
+            <trans-unit id="2557623954339695776" datatype="html">
+              <source>Verbindungen</source>
+              <context-group purpose="location">
+                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+                <context context-type="linenumber">13,14</context>
+              </context-group>
+            </trans-unit>
+            <trans-unit id="1376548049509364710" datatype="html">
+              <source>IPv6</source>
+              <context-group purpose="location">
+                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+                <context context-type="linenumber">14,15</context>
+              </context-group>
+            </trans-unit>
     </body>
   </file>
 </xliff>

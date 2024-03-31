@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconTalkingComponent } from './icon-talking.component';
+import {IconTalkingComponent} from './icon-talking.component';
 
 describe('IconTalkingComponent', () => {
   let component: IconTalkingComponent;

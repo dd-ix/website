@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PublicRelationsComponent } from './public-relations.component';
+import {PublicRelationsComponent} from './public-relations.component';
 
 describe('PublicRelationsComponent', () => {
   let component: PublicRelationsComponent;

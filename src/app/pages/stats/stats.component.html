@@ -8,8 +8,8 @@
       <h2 i18n>Traffic over the last two days</h2>
       <app-chart
         [series]="wrapStats(stats.two_days)"
-        [xMin]="stats.two_days.start"
         [xMax]="stats.two_days.end"
+        [xMin]="stats.two_days.start"
       />
     </div>
   </app-card>
@@ -18,8 +18,8 @@
       <h2 i18n>Traffic over the last seven days</h2>
       <app-chart
         [series]="wrapStats(stats.seven_days)"
-        [xMin]="stats.seven_days.start"
         [xMax]="stats.seven_days.end"
+        [xMin]="stats.seven_days.start"
       />
     </div>
   </app-card>
@@ -28,8 +28,8 @@
       <h2 i18n>Traffic over the last 30 days</h2>
       <app-chart
         [series]="wrapStats(stats.month)"
-        [xMin]="stats.month.start"
         [xMax]="stats.month.end"
+        [xMin]="stats.month.start"
       />
     </div>
   </app-card>

@@ -26,16 +26,13 @@ import {NotificationService} from "@feel/notification";
 })
 export class MailingListComponent {
 
+  @Input()
+  public listName: string | null = null;
+  @Input()
+  public listId: number | null = null;
   protected form = new FormGroup({
     email: new FormControl(null, [Validators.required, Validators.email]),
   });
-
-  @Input()
-  public listName: string | null = null;
-
-  @Input()
-  public listId: number | null = null;
-
   protected working = false;
 
   constructor(

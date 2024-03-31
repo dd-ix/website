@@ -4,7 +4,7 @@
 
 <div class="blocks">
   <div class="block">
-    <app-icon-switch class="icon" />
+    <app-icon-switch class="icon"/>
     <app-card>
       <div class="typography">
         <h2 i18n>What is peering?</h2>
@@ -18,7 +18,7 @@
   </div>
 
   <div class="block">
-    <app-icon-antenna class="icon" />
+    <app-icon-antenna class="icon"/>
     <app-card>
       <div class="typography">
         <h2 i18n>Why should I peer?</h2>
@@ -37,7 +37,7 @@
   </div>
 
   <div class="block">
-    <app-icon-directions class="icon" />
+    <app-icon-directions class="icon"/>
     <app-card>
       <div class="typography">
         <p i18n>
@@ -66,18 +66,18 @@
           <p i18n>If you support us, we give something back.</p>
           <p i18n>A peering port for supporting members* costs <b>100€</b></p>
           <small i18n>* for members that support us with at least 200€ per month</small>
-          <br />
+          <br/>
         </div>
       </app-card>
     </div>
     <app-card class="map">
       <div class="typography">
-        <a href="https://www.openstreetmap.org/way/10368038" target="_blank" class="imglink">
-          <img alt="OpenStreetMap" i18n-alt ngSrc="assets/images/osm-cc.webp" height="823" width="1087">
+        <a class="imglink" href="https://www.openstreetmap.org/way/10368038" target="_blank">
+          <img alt="OpenStreetMap" height="823" i18n-alt ngSrc="assets/images/osm-cc.webp" width="1087">
         </a>
         <span>
           &copy;
-          <a href="https://www.openstreetmap.org/copyright" target="_blank" class="abcd">OpenStreetMap</a>
+          <a class="abcd" href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>
           contributors.
         </span>
       </div>
@@ -92,16 +92,16 @@
           <div>
             <h4 i18n>CityCenter</h4>
             <p i18n>
-              SachsenGigaBit GmbH<br />
-              Friedrich-List-Platz 2<br />
+              SachsenGigaBit GmbH<br/>
+              Friedrich-List-Platz 2<br/>
               01069 Dresden
             </p>
           </div>
           <div>
             <h4 i18n>Coschütz 2</h4>
             <p i18n>
-              IBH IT-Service GmbH<br />
-              Heilbronner Str. 20<br />
+              IBH IT-Service GmbH<br/>
+              Heilbronner Str. 20<br/>
               01189 Dresden
             </p>
           </div>
@@ -113,7 +113,7 @@
 
 <!--<ul class="not pages">-->
 <!--  <li>-->
-<app-card link="policy" backgroundImage="/assets/images/peering-policy.webp" [lightShadow]="true">
+<app-card [lightShadow]="true" backgroundImage="/assets/images/peering-policy.webp" link="policy">
   <h1 i18n>Peering Policy</h1>
 </app-card>
 <!--  </li>-->

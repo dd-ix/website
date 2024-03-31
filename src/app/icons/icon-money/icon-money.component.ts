@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {Component} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {TooltipDirective} from "../../core/tooltip/tooltip.directive";
 
 @Component({

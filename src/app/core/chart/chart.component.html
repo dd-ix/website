@@ -1,11 +1,11 @@
 <apx-chart
   *ngIf="series && xMin && xMax"
-  [series]="series"
   [chart]="chart"
-  [xaxis]="wrapXAxis(xMin, xMax)"
-  [stroke]="stroke"
   [dataLabels]="dataLabels"
-  [yaxis]="yaxis"
-  [legend]="legend"
   [grid]="grid"
+  [legend]="legend"
+  [series]="series"
+  [stroke]="stroke"
+  [xaxis]="wrapXAxis(xMin, xMax)"
+  [yaxis]="yaxis"
 />

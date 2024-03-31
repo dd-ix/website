@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconNewsComponent } from './icon-news.component';
+import {IconNewsComponent} from './icon-news.component';
 
 describe('IconNewsComponent', () => {
   let component: IconNewsComponent;

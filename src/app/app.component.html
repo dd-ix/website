@@ -1,32 +1,35 @@
-<aside [class.open]="asideSown | async" (click)="closeAside()">
+<aside (click)="closeAside()" [class.open]="asideSown | async">
   <div class="aside-container">
     <a class="not icon" routerLink="/">
       <app-icon-logo></app-icon-logo>
     </a>
 
     <nav class="nav">
-      <a routerLink="/news" routerLinkActive="selected" class="not">
-<!--        <app-icon-news class="nav-icon"/>-->
+      <a class="not" routerLink="/news" routerLinkActive="selected">
+        <!--        <app-icon-news class="nav-icon"/>-->
         <span class="label" i18n>News</span>
       </a>
-      <a routerLink="/peering" routerLinkActive="selected" class="not">
-<!--        <app-icon-hub class="nav-icon"/>-->
+      <a class="not" routerLink="/peering" routerLinkActive="selected">
+        <!--        <app-icon-hub class="nav-icon"/>-->
         <span class="label" i18n>Peering</span>
       </a>
-      <a routerLink="/association" routerLinkActive="selected" class="not">
-<!--        <app-icon-group class="nav-icon"/>-->
+      <a class="not" routerLink="/association" routerLinkActive="selected">
+        <!--        <app-icon-group class="nav-icon"/>-->
         <span class="label" i18n>Association</span>
       </a>
-      <a routerLink="/team" routerLinkActive="selected" class="not">
-<!--        <app-icon-face class="nav-icon"/>-->
+      <a class="not" routerLink="/team" routerLinkActive="selected">
+        <!--        <app-icon-face class="nav-icon"/>-->
         <span class="label" i18n>Team</span>
       </a>
-      <a routerLink="/contact" routerLinkActive="selected" class="not">
-<!--        <app-icon-phone class="nav-icon"/>-->
+      <a class="not" routerLink="/contact" routerLinkActive="selected">
+        <!--        <app-icon-phone class="nav-icon"/>-->
         <span class="label" i18n>Contact</span>
       </a>
-      <a routerLink="/stats" routerLinkActive="selected" class="not">
+      <a class="not" routerLink="/stats" routerLinkActive="selected">
         <span class="label" i18n>Statistics</span>
+      </a>
+      <a class="not" routerLink="/network" routerLinkActive="selected">
+        <span class="label" i18n>Network</span>
       </a>
 
       <!--      <b i18n>Quick Links</b>-->
@@ -37,25 +40,25 @@
       <!--      </ul>-->
     </nav>
     <nav class="nav">
-      <a href="https://lg.dd-ix.net" target="_blank" class="not">
+      <a class="not" href="https://lg.dd-ix.net" target="_blank">
         <span class="label" i18n>Looking Glass</span>
       </a>
-      <a href="https://portal.dd-ix.net" target="_blank" class="not">
+      <a class="not" href="https://portal.dd-ix.net" target="_blank">
         <span class="label" i18n>IXP Manager</span>
       </a>
     </nav>
   </div>
 
   <div class="aside-footer">
-    <span class="lang typography" *ngIf="path | async as path">
+    <span *ngIf="path | async as path" class="lang typography">
       <a [href]="'/de' + path">DE</a>
       |
       <a [href]="'/en' + path">EN</a>
     </span>
 
     <nav class="typography">
-      <a routerLink="/privacy-policy" i18n>Privacy Policy</a>
-      <a routerLink="/imprint" i18n>Imprint</a>
+      <a i18n routerLink="/privacy-policy">Privacy Policy</a>
+      <a i18n routerLink="/imprint">Imprint</a>
     </nav>
   </div>
 </aside>
@@ -72,11 +75,11 @@
 
     <footer>
       <span i18n style="text-align: center">
-        &copy; {{currentYear()}} <b>DD-IX Dresden Internet Exchange e.V.</b> <span class="slogan"> | Keep Local Traffic Local</span>
+        &copy; {{ currentYear() }} <b>DD-IX Dresden Internet Exchange e.V.</b> <span class="slogan"> | Keep Local Traffic Local</span>
       </span>
       <nav class="typography">
-        <a routerLink="/privacy-policy" i18n>Privacy Policy</a>
-        <a routerLink="/imprint" i18n>Imprint</a>
+        <a i18n routerLink="/privacy-policy">Privacy Policy</a>
+        <a i18n routerLink="/imprint">Imprint</a>
       </nav>
     </footer>
   </div>

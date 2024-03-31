@@ -42,6 +42,10 @@ export const routes: Routes = [
     loadChildren: () => import('./pages/stats/stats.routes').then(c => c.routes)
   },
   {
+    path: 'network',
+    loadComponent: () => import("./pages/network/network.component").then(c => c.NetworkComponent),
+  },
+  {
     path: '**',
     data: {title: $localize`Not Found`},
     loadComponent: () => import('./pages/not-found/not-found.component').then(c => c.NotFoundComponent)

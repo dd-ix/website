@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { TextBlocksService } from './text-blocks.service';
+import {TextBlocksService} from './text-blocks.service';
 
 describe('TextBlocksService', () => {
   let service: TextBlocksService;

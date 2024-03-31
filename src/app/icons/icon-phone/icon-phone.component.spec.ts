@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconPhoneComponent } from './icon-phone.component';
+import {IconPhoneComponent} from './icon-phone.component';
 
 describe('IconPhoneComponent', () => {
   let component: IconPhoneComponent;

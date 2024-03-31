@@ -15,6 +15,14 @@
           <context context-type="sourcefile">src/app/api/team.domain.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="7143579180750436311" datatype="html">
         <source>Services</source>
@@ -94,7 +102,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">65,66</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/news/news-list/news-list.component.html</context>
@@ -188,25 +196,25 @@
         <source>Looking Glass</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">41,42</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8694717738425750979" datatype="html">
         <source>IXP Manager</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">47,48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
         <source>Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">57,58</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">78,79</context>
+          <context context-type="linenumber">81,82</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
@@ -217,11 +225,11 @@
         <source>Imprint</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">58,59</context>
+          <context context-type="linenumber">61,62</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">79,80</context>
+          <context context-type="linenumber">82,83</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
@@ -229,10 +237,10 @@
         </context-group>
       </trans-unit>
       <trans-unit id="7468240890677477871" datatype="html">
-        <source> © <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <source> © <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">75,77</context>
+          <context context-type="linenumber">78,80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6750491512886369381" datatype="html">
@@ -273,7 +281,7 @@
         <source>Not Found</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.routes.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
@@ -281,7 +289,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="9078603423157869293" datatype="html">
-        <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</source>
+        <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{ listName }}"/> mailing list</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
           <context context-type="linenumber">2,3</context>
@@ -305,21 +313,21 @@
         <source>Submit</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5632099839746836994" datatype="html">
         <source>Successfully subscribed to mailing list.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6451157462027879592" datatype="html">
         <source>Failed to subscribe to mailing list.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3397601893497394889" datatype="html">
@@ -578,7 +586,7 @@
         <source>OpenStreetMap</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
-          <context context-type="linenumber">61,62</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
@@ -614,49 +622,105 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4437840582457353541" datatype="html">
         <source> The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden Internet Exchange e.V. is a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP). </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">34,37</context>
+          <context context-type="linenumber">34,38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2288513108450439427" datatype="html">
         <source>Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6204250090696732874" datatype="html">
         <source> Join us for an exciting journey. As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony! </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">52,53</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8656531455531669663" datatype="html">
         <source>Join Us!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3670532182581004841" datatype="html">
         <source>Socials</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">73,74</context>
+          <context context-type="linenumber">74,75</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8436144186639366635" datatype="html">
         <source>Sponsors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">100,101</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5654260572566435634" datatype="html">
+        <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6381343511686072064" datatype="html">
+        <source>Peer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6297950127540572260" datatype="html">
+        <source>Member</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7517688192215738656" datatype="html">
+        <source>ASN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2557623954339695776" datatype="html">
+        <source>Connections</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="336742410002797330" datatype="html">
+        <source>IPv4</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1376548049509364710" datatype="html">
+        <source>IPv6</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4058575476871566236" datatype="html">
@@ -677,7 +741,7 @@
         <source>Author<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;post.authors.length &gt; 1&quot;&gt;"/>s<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/news/news-post/news-post.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9158112486914865946" datatype="html">
@@ -821,7 +885,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="653233766607926428" datatype="html">
-        <source> SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </source>
+        <source> SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">95,98</context>
@@ -835,7 +899,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4014413284740153649" datatype="html">
-        <source> IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </source>
+        <source> IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01189 Dresden </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">103,106</context>
@@ -905,7 +969,7 @@
         <source>Linkedin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/team/team-member/team-member.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6706020286781041076" datatype="html">

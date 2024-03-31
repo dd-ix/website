@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AssociationComponent } from './association.component';
+import {AssociationComponent} from './association.component';
 
 describe('DocumentsComponent', () => {
   let component: AssociationComponent;

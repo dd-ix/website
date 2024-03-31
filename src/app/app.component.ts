@@ -81,8 +81,7 @@ export class AppComponent {
       .subscribe(() => this.enableAnimation.next(true));
   }
 
-  @HostListener('document:keydown.escape')
-  private onKeyPress(): void {
+  public closeAside(): void {
     this.asideSown.next(false);
   }
 
@@ -94,7 +93,8 @@ export class AppComponent {
     this.asideSown.next(!this.asideSown.value);
   }
 
-  public closeAside(): void {
+  @HostListener('document:keydown.escape')
+  private onKeyPress(): void {
     this.asideSown.next(false);
   }
 

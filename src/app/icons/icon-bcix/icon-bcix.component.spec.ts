@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconBcixComponent } from './icon-bcix.component';
+import {IconBcixComponent} from './icon-bcix.component';
 
 describe('IconBcixComponent', () => {
   let component: IconBcixComponent;

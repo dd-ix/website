@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PeeringServicePniComponent } from './peering-service-pni.component';
+import {PeeringServicePniComponent} from './peering-service-pni.component';
 
 describe('PeeringServicePniComponent', () => {
   let component: PeeringServicePniComponent;

@@ -1,7 +1,7 @@
-<app-card backgroundImage="/assets/images/dresden.webp" [lightShadow]="true">
+<app-card [lightShadow]="true" backgroundImage="/assets/images/dresden.webp">
   <div class="hero">
-    <h1 i18n class="dd-ix">Dresden Internet Exchange</h1>
-    <h3 i18n class="slogan">Keep Local Traffic Local</h3>
+    <h1 class="dd-ix" i18n>Dresden Internet Exchange</h1>
+    <h3 class="slogan" i18n>Keep Local Traffic Local</h3>
   </div>
 </app-card>
 
@@ -19,7 +19,7 @@
           participants in the Saxony region over short distances.
         </p>
       </div>
-      <feel-button link="/peering" class="section-button" flavor="accent" label="More Information" i18n-label>
+      <feel-button class="section-button" flavor="accent" i18n-label label="More Information" link="/peering">
         <app-icon-send/>
       </feel-button>
     </app-card>
@@ -31,13 +31,14 @@
       <div class="typography">
         <h1 i18n>Association</h1>
         <p i18n>
-          The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden Internet Exchange e.V. is a registered
+          The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden
+          Internet Exchange e.V. is a registered
           association under German law. Our mission is the economical, ecological, and robust exchange of data over the
           Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of
           an Internet Exchage Point (IXP).
         </p>
       </div>
-      <feel-button link="/association" class="section-button" flavor="accent" label="More Information" i18n-label>
+      <feel-button class="section-button" flavor="accent" i18n-label label="More Information" link="/association">
         <app-icon-send/>
       </feel-button>
     </app-card>
@@ -53,7 +54,7 @@
           development of the DD-IX - the catalyst for the digital future in Saxony!
         </p>
       </div>
-      <feel-button link="/association" class="section-button" flavor="accent" label="Join Us!" i18n-label>
+      <feel-button class="section-button" flavor="accent" i18n-label label="Join Us!" link="/association">
         <app-icon-send/>
       </feel-button>
     </app-card>
@@ -102,21 +103,21 @@
 
 <ul class="not sponsors">
   <li>
-    <app-card [inverseShadow]="true" link="https://www.ibh.de" backgroundImage="/assets/images/sponsors/ibh-bg.webp">
+    <app-card [inverseShadow]="true" backgroundImage="/assets/images/sponsors/ibh-bg.webp" link="https://www.ibh.de">
       <app-icon-ibh class="sponsor-icon"></app-icon-ibh>
     </app-card>
   </li>
   <li>
-    <app-card [inverseShadow]="true" link="https://www.bcix.de/"
-              backgroundImage="/assets/images/sponsors/bcix-bg.webp">
+    <app-card [inverseShadow]="true" backgroundImage="/assets/images/sponsors/bcix-bg.webp"
+              link="https://www.bcix.de/">
       <app-icon-bcix class="sponsor-icon"></app-icon-bcix>
     </app-card>
   </li>
   <li>
-    <app-card [inverseShadow]="true" link="https://tu-dresden.de/ing/informatik/sya/netd/?set_language=en"
-              backgroundImage="/assets/images/sponsors/netd-bg.webp">
+    <app-card [inverseShadow]="true" backgroundImage="/assets/images/sponsors/netd-bg.webp"
+              link="https://tu-dresden.de/ing/informatik/sya/netd/?set_language=en">
       <div class="sponsor-icon netd">
-        <img src="assets/images/netd.webp" alt="NETD-TUD Logo">
+        <img alt="NETD-TUD Logo" src="assets/images/netd.webp">
         <app-icon-tud class="tud"></app-icon-tud>
       </div>
     </app-card>

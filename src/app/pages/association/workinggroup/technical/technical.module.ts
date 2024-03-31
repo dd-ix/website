@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { TechnicalRoutingModule } from './technical-routing.module';
-import { TechnicalComponent } from './technical.component';
+import {TechnicalRoutingModule} from './technical-routing.module';
+import {TechnicalComponent} from './technical.component';
 import {CardComponent} from "../../../../core/card/card.component";
 import {IconFrauenkircheComponent} from "../../../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {IconHubComponent} from "../../../../icons/icon-hub/icon-hub.component";
@@ -16,16 +16,17 @@ import {IconTalkingComponent} from "../../../../icons/icon-talking/icon-talking.
   declarations: [
     TechnicalComponent
   ],
-    imports: [
-        CommonModule,
-        TechnicalRoutingModule,
-        CardComponent,
-        IconFrauenkircheComponent,
-        IconHubComponent,
-        IconMoneyComponent,
-        IconSocialComponent,
-        IconSwitchComponent,
-        IconTalkingComponent
-    ]
+  imports: [
+    CommonModule,
+    TechnicalRoutingModule,
+    CardComponent,
+    IconFrauenkircheComponent,
+    IconHubComponent,
+    IconMoneyComponent,
+    IconSocialComponent,
+    IconSwitchComponent,
+    IconTalkingComponent
+  ]
 })
-export class TechnicalModule { }
+export class TechnicalModule {
+}

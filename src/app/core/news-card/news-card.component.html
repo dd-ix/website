@@ -1,6 +1,6 @@
-<app-card [link]="buildPostLink(post.slug)"
-          *ngIf="post"
-          [backgroundImage]="buildNewsImageUrl(post.image)">
-  <h1>{{post.title}}</h1>
-  <span><b>{{post.published | date}}</b> - {{post.description}}</span>
+<app-card *ngIf="post"
+          [backgroundImage]="buildNewsImageUrl(post.image)"
+          [link]="buildPostLink(post.slug)">
+  <h1>{{ post.title }}</h1>
+  <span><b>{{ post.published | date }}</b> - {{ post.description }}</span>
 </app-card>

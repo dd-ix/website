@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ChartComponent } from './chart.component';
+import {ChartComponent} from './chart.component';
 
 describe('ChartComponent', () => {
   let component: ChartComponent;
@@ -10,8 +10,8 @@ describe('ChartComponent', () => {
     await TestBed.configureTestingModule({
       imports: [ChartComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(ChartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

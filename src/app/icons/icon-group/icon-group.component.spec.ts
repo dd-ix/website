@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconGroupComponent } from './icon-group.component';
+import {IconGroupComponent} from './icon-group.component';
 
 describe('IconGroupComponent', () => {
   let component: IconGroupComponent;

@@ -123,9 +123,10 @@
 </div>
 <ul class="not documents">
   <li *ngFor="let document of documents | async">
-    <app-card [link]="buildDownloadLink(document)" [backgroundImage]="buildBackgroundImage(document)" [lightShadow]="true">
-      <h1>{{document.name}}</h1>
-      <p>{{document.description}}</p>
+    <app-card [backgroundImage]="buildBackgroundImage(document)" [lightShadow]="true"
+              [link]="buildDownloadLink(document)">
+      <h1>{{ document.name }}</h1>
+      <p>{{ document.description }}</p>
     </app-card>
   </li>
 </ul>

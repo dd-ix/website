@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PeeringPolicyComponent } from './peering-policy.component';
+import {PeeringPolicyComponent} from './peering-policy.component';
 
 describe('PeeringPolicyComponent', () => {
   let component: PeeringPolicyComponent;

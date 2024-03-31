@@ -12,7 +12,7 @@ import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frau
 import {IconGroupComponent} from "../../icons/icon-group/icon-group.component";
 import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
 import {AssociationRoutingModule} from "./association-routing.module";
-import { ClientsAndSponsorsComponent } from './workinggroup/clients-and-sponsors/clients-and-sponsors.component';
+import {ClientsAndSponsorsComponent} from './workinggroup/clients-and-sponsors/clients-and-sponsors.component';
 
 @NgModule({
   declarations: [

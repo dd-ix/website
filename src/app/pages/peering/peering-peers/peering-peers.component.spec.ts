@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PeeringPeersComponent } from './peering-peers.component';
+import {PeeringPeersComponent} from './peering-peers.component';
 
 describe('PeeringPeerListComponent', () => {
   let component: PeeringPeersComponent;

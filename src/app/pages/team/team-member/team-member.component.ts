@@ -40,11 +40,11 @@ export class TeamMemberComponent {
     return new URL(website).hostname;
   }
 
-  protected getWorkingGroupName(working_group: WorkingGroup) : string {
+  protected getWorkingGroupName(working_group: WorkingGroup): string {
     return workingGroupDisplayName(working_group);
   }
 
-  protected getWorkingGroupLink(working_group: WorkingGroup) : string {
+  protected getWorkingGroupLink(working_group: WorkingGroup): string {
     return workingGroupLink(working_group);
   }
 }

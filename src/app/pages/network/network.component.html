@@ -1,0 +1,44 @@
+<div *ngIf="(peers | async) as peers" class="typography">
+  <h1 i18n>Network</h1>
+  <p i18n>Currently there are <b>{{ peers.length }} participants</b>. Have a look at the list below for more
+    information.</p>
+
+  <app-card>
+    <table>
+      <thead>
+      <tr>
+        <th i18n>Member</th>
+        <th i18n class="name">Name</th>
+        <th i18n>ASN</th>
+        <th i18n>Connections</th>
+        <th i18n>RSv4</th>
+        <th i18n>RSv6</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let peer of peers">
+        <td>
+          <div class="icon">
+            <app-icon-checkmark *ngIf="peer.supporter"/>
+          </div>
+        </td>
+        <td class="name"><a [href]="peer.url" target="_blank">{{ peer.name }}</a></td>
+        <td><a [href]="'https://bgp.tools/as/' + peer.asn" target="_blank">{{ peer.asn }}</a></td>
+        <td>{{ speed(peer.speed) }}</td>
+        <td>
+          <div class="icon" [class.bad]="!peer.rs_v4" *ngIf="peer.rs_v4 || peer.rs_v6">
+            <app-icon-checkmark *ngIf="peer.rs_v4"/>
+            <app-icon-close *ngIf="!peer.rs_v4"/>
+          </div>
+        </td>
+        <td>
+          <div class="icon" [class.bad]="!peer.rs_v6" *ngIf="peer.rs_v4 || peer.rs_v6">
+            <app-icon-checkmark *ngIf="peer.rs_v6"/>
+            <app-icon-close *ngIf="!peer.rs_v6"/>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </app-card>
+</div>

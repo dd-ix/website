@@ -6,8 +6,8 @@ import {PeeringPolicyComponent} from './peering-policy/peering-policy.component'
 import {PeeringServicePniComponent} from './services/peering-service-pni/peering-service-pni.component';
 import {PeeringServicePeeringComponent} from './services/peering-service-peering/peering-service-peering.component';
 import {CardComponent} from "../../core/card/card.component";
-import { PeeringPeersComponent } from './peering-peers/peering-peers.component';
-import { PeeringLocationsComponent } from './peering-locations/peering-locations.component';
+import {PeeringPeersComponent} from './peering-peers/peering-peers.component';
+import {PeeringLocationsComponent} from './peering-locations/peering-locations.component';
 import {TextBlockComponent} from "../../core/text-block/text-block.component";
 import {IconSwitchComponent} from "../../icons/icon-switch/icon-switch.component";
 import {IconAntennaComponent} from "../../icons/icon-antenna/icon-antenna.component";
@@ -24,18 +24,18 @@ import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
     PeeringPeersComponent,
     PeeringLocationsComponent
   ],
-    imports: [
-        CommonModule,
-        PeeringRoutingModule,
-        CardComponent,
-        TextBlockComponent,
-        IconSwitchComponent,
-        IconAntennaComponent,
-        IconRatingComponent,
-        IconDirectionsComponent,
-        IconMoneyComponent,
-        NgOptimizedImage
-    ]
+  imports: [
+    CommonModule,
+    PeeringRoutingModule,
+    CardComponent,
+    TextBlockComponent,
+    IconSwitchComponent,
+    IconAntennaComponent,
+    IconRatingComponent,
+    IconDirectionsComponent,
+    IconMoneyComponent,
+    NgOptimizedImage
+  ]
 })
 export class PeeringModule {
 }

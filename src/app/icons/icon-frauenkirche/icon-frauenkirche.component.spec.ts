@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconFrauenkircheComponent } from './icon-frauenkirche.component';
+import {IconFrauenkircheComponent} from './icon-frauenkirche.component';
 
 describe('IconFrauenkircheComponent', () => {
   let component: IconFrauenkircheComponent;

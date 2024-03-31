@@ -1,12 +1,13 @@
 <div class="wrapper">
   <div class="post">
     <app-card *ngIf="(post | async) as post" class="typography">
-      <h1>{{post.title}}</h1>
+      <h1>{{ post.title }}</h1>
 
       <p>
-        <span i18n>Published</span>: <b>{{post.published | date}}</b>
-        <span *ngIf="post.modified"> | <span i18n>Modified</span>: <b>{{post.modified | date}}</b></span>
-        | <span i18n>Author<span *ngIf="post.authors.length > 1">s</span></span>: <b>{{formatAuthors(post.authors)}}</b>
+        <span i18n>Published</span>: <b>{{ post.published | date }}</b>
+        <span *ngIf="post.modified"> | <span i18n>Modified</span>: <b>{{ post.modified | date }}</b></span>
+        | <span i18n>Author<span *ngIf="post.authors.length > 1">s</span></span>:
+        <b>{{ formatAuthors(post.authors) }}</b>
       </p>
 
       <img *ngIf="post.image" [src]="buildNewsImageUrl(post.image)" alt="">

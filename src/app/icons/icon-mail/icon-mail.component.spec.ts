@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconMailComponent } from './icon-mail.component';
+import {IconMailComponent} from './icon-mail.component';
 
 describe('IconMailComponent', () => {
   let component: IconMailComponent;

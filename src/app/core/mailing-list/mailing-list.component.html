@@ -1,14 +1,14 @@
 <div class="typography">
-  <h2 i18n>Subscribe to the {{listName}} mailing list</h2>
-  <form [formGroup]="form" (submit)="$event.preventDefault();submit()" class="form">
-    <feel-text-field i18n-label label="E-Mail" type="text" formControlName="email">
-      <feel-form-error i18n *ngIf="form.controls?.['email']?.touched && !form.controls?.['email']?.valid">A valid
+  <h2 i18n>Subscribe to the {{ listName }} mailing list</h2>
+  <form (submit)="$event.preventDefault();submit()" [formGroup]="form" class="form">
+    <feel-text-field formControlName="email" i18n-label label="E-Mail" type="text">
+      <feel-form-error *ngIf="form.controls?.['email']?.touched && !form.controls?.['email']?.valid" i18n>A valid
         e-mail
         is required!
       </feel-form-error>
     </feel-text-field>
 
-    <feel-button i18n-label label="Submit" [disabled]="working || !form.valid" class="button">
+    <feel-button [disabled]="working || !form.valid" class="button" i18n-label label="Submit">
       <app-icon-send/>
     </feel-button>
   </form>

@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { PeeringLandingpageComponent } from './peering-landingpage.component';
+import {PeeringLandingpageComponent} from './peering-landingpage.component';
 
 describe('PeeringLandingpageComponent', () => {
   let component: PeeringLandingpageComponent;

@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconSwitchComponent } from './icon-switch.component';
+import {IconSwitchComponent} from './icon-switch.component';
 
 describe('IconSwitchComponent', () => {
   let component: IconSwitchComponent;

@@ -1,6 +1,5 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
-import {Document} from "./documents.domain";
 import {HttpClient} from "@angular/common/http";
 import {API_URL, Language} from "./api.domain";
 import {TeamMember} from "./team.domain";

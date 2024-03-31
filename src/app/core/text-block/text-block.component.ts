@@ -20,15 +20,15 @@ export class TextBlockComponent {
     switchMap(slug => this.textBlocksService.getTextBlock(slug!))
   );
 
-  @Input()
-  set slug(value: string) {
-    this.slug$.next(value);
-  }
-
   constructor(
     private readonly textBlocksService: TextBlocksService,
     private readonly sanitizer: DomSanitizer,
   ) {
+  }
+
+  @Input()
+  set slug(value: string) {
+    this.slug$.next(value);
   }
 
   protected safeHtml(html: string | undefined): SafeHtml {

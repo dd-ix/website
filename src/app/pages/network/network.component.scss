@@ -1,0 +1,20 @@
+@import "vars";
+
+table {
+  width: 100%;
+  text-align: center;
+
+  .icon {
+    display: grid;
+    place-items: center;
+    --f-color: #{$c-primary};
+
+    &.bad {
+      --f-color: #{$c-danger};
+    }
+  }
+
+  .name {
+    text-align: left;
+  }
+}

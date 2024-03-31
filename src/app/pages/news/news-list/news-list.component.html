@@ -1,7 +1,10 @@
 <div class="typography">
   <h1 i18n>News</h1>
   <div *ngIf="(keywords | async) as keywords" class="keywords">
-    <button class="keyword" [class.selected]="isSelected(keyword) | async" *ngFor="let keyword of keywords" (click)="toggleKeyword(keyword)">{{keyword}}</button>
+    <button (click)="toggleKeyword(keyword)" *ngFor="let keyword of keywords"
+            [class.selected]="isSelected(keyword) | async"
+            class="keyword">{{ keyword }}
+    </button>
   </div>
 </div>
 
@@ -13,6 +16,6 @@
 
 <app-card>
   <div class="mailing-list">
-    <app-mailing-list [listName]="'News'" [listId]="3"/>
+    <app-mailing-list [listId]="3" [listName]="'News'"/>
   </div>
 </app-card>

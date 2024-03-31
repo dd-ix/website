@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { IconDirectionsComponent } from './icon-directions.component';
+import {IconDirectionsComponent} from './icon-directions.component';
 
 describe('IconDirectionsComponent', () => {
   let component: IconDirectionsComponent;
