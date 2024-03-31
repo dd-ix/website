@@ -17,7 +17,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">29,30</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
@@ -181,7 +181,7 @@
         <source>Statistics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
@@ -863,8 +863,8 @@
           <context context-type="linenumber">89,90</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4805311007517365169" datatype="html">
-        <source>We are present at the following location:</source>
+      <trans-unit id="4780105976579156644" datatype="html">
+        <source>We are present at the following locations:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">90,91</context>

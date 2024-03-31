@@ -842,9 +842,9 @@
           <context context-type="linenumber">89,90</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4805311007517365169" datatype="html" xml:space="preserve">
-        <source>We are present at the following location:</source>
-        <target state="translated">We are present at the following location:</target>
+      <trans-unit id="4780105976579156644" datatype="html" xml:space="preserve">
+        <source>We are present at the following locations:</source>
+        <target state="translated">We are present at the following locations:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">90,91</context>
