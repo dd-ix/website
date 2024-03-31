@@ -674,53 +674,46 @@
           <context context-type="linenumber">3,6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6381343511686072064" datatype="html">
-        <source>Peer</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-          <context context-type="linenumber">10,11</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6297950127540572260" datatype="html">
         <source>Member</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8953033926734869941" datatype="html">
         <source>Name</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-          <context context-type="linenumber">12,13</context>
+          <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7517688192215738656" datatype="html">
         <source>ASN</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2557623954339695776" datatype="html">
         <source>Connections</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8258321097743974401" datatype="html">
+        <source>RSv4</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">14,15</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="336742410002797330" datatype="html">
-        <source>IPv4</source>
+      <trans-unit id="3205200595930244834" datatype="html">
+        <source>RSv6</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">15,16</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1376548049509364710" datatype="html">
-        <source>IPv6</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-          <context context-type="linenumber">16,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4058575476871566236" datatype="html">
