@@ -934,34 +934,34 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
-          <trans-unit id="5654260572566435634" datatype="html">
-              <target state="translated">Aktuell gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Die Tabelle enthält weitere Informationen.</source>
-              <context-group purpose="location">
-                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-                <context context-type="linenumber">3,6</context>
-              </context-group>
-            </trans-unit>
-            <trans-unit id="6297950127540572260" datatype="html">
-              <target state="translated">Mitglied</source>
-              <context-group purpose="location">
-                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-                <context context-type="linenumber">10,11</context>
-              </context-group>
-            </trans-unit>
-            <trans-unit id="8953033926734869941" datatype="html">
-              <target state="translated">Name</source>
-              <context-group purpose="location">
-                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-                <context context-type="linenumber">11,12</context>
-              </context-group>
-            </trans-unit>
-            <trans-unit id="2557623954339695776" datatype="html">
-              <target state="translated">Verbindungen</source>
-              <context-group purpose="location">
-                <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-                <context context-type="linenumber">13,14</context>
-              </context-group>
-            </trans-unit>
+      <trans-unit id="5654260572566435634" datatype="html">
+          <target state="translated">Aktuell gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Die Tabelle enthält weitere Informationen.</target>
+          <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+            <context context-type="linenumber">3,6</context>
+          </context-group>
+        </trans-unit>
+        <trans-unit id="6297950127540572260" datatype="html">
+          <target state="translated">Mitglied</target>
+          <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+            <context context-type="linenumber">10,11</context>
+          </context-group>
+        </trans-unit>
+        <trans-unit id="8953033926734869941" datatype="html">
+          <target state="translated">Name</target>
+          <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+            <context context-type="linenumber">11,12</context>
+          </context-group>
+        </trans-unit>
+        <trans-unit id="2557623954339695776" datatype="html">
+          <target state="translated">Verbindungen</target>
+          <context-group purpose="location">
+            <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+            <context context-type="linenumber">13,14</context>
+          </context-group>
+        </trans-unit>
     </body>
   </file>
 </xliff>
