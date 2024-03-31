@@ -94,6 +94,7 @@
       backdrop-filter: blur(1rem);
       width: 100%;
       transition: 150ms opacity ease-in-out;
+      z-index: 1000;
 
       .aside-container {
         display: flex;
