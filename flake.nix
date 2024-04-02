@@ -24,19 +24,19 @@
         rec {
           checks = packages;
           packages = {
-            presence = package;
+            website = package;
             default = package;
           };
         }
       ) // {
       overlays.default = final: prev: {
         inherit (self.packages.${prev.system})
-          presence;
+          website;
       };
 
       nixosModules = rec {
-        default = presence;
-        presence = import ./nixos-module;
+        default = website;
+        website = import ./nixos-module;
       };
     };
 }
