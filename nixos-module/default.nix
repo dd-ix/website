@@ -1,22 +1,22 @@
 { pkgs, config, lib, ... }:
 let
-  cfg = config.dd-ix.presence;
+  cfg = config.dd-ix.website;
 in
 {
-  options.dd-ix.presence = with lib; {
+  options.dd-ix.website = with lib; {
     enable = mkOption {
       type = types.bool;
       default = false;
-      description = ''Wether to enable presence service'';
+      description = ''Wether to enable website service'';
     };
     user = mkOption {
       type = types.str;
-      default = "presence";
+      default = "website";
       description = ''systemd user'';
     };
     group = mkOption {
       type = types.str;
-      default = "presence";
+      default = "website";
       description = ''group of systemd user'';
     };
   };
@@ -24,13 +24,13 @@ in
   config = lib.mkIf cfg.enable {
     systemd = {
       services = {
-        "presence" = {
+        "website" = {
           enable = true;
           wantedBy = [ "multi-user.target" ];
 
           script = ''
-            export APP_DIR=${pkgs.presence}
-            exec ${pkgs.nodejs}/bin/node ${pkgs.presence}/server.mjs&
+            export APP_DIR=${pkgs.website}
+            exec ${pkgs.nodejs}/bin/node ${pkgs.website}/server.mjs&
           '';
 
           serviceConfig = {
@@ -47,7 +47,7 @@ in
     # user accounts for systemd units
     users.users."${cfg.user}" = {
       name = "${cfg.user}";
-      description = "This guy runs presence";
+      description = "This guy runs website";
       isNormalUser = false;
       isSystemUser = true;
       group = cfg.group;
