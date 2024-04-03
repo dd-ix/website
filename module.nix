@@ -7,7 +7,7 @@ in
   options.dd-ix.website = {
     enable = lib.mkEnableOption "webiste";
 
-    package = lib.mkPackageOption pkgs "website";
+    package = lib.mkPackageOption pkgs "website" {};
 
     domain = lib.mkOption {
       type = lib.types.str;
