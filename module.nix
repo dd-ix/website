@@ -5,7 +5,7 @@ let
 in
 {
   options.dd-ix.website = {
-    enable = lib.mkEnableOption "webiste";
+    enable = lib.mkEnableOption "website";
 
     package = lib.mkPackageOption pkgs "website" {};
 

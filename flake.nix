@@ -28,7 +28,7 @@
         }
       ) // {
       overlays.default = _: prev: {
-        webiste = self.packages."${prev.system}".website;
+        website = self.packages."${prev.system}".website;
       };
 
       nixosModules = rec {
