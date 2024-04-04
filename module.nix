@@ -37,7 +37,9 @@ in
       virtualHosts."${cfg.domain}".locations = {
         "/" = {
           root = "${cfg.package}/browser";
-          tryFiles = "$uri $uri/ @website";
+          # just something that does not exists
+          index = "X6XewZMsmreGIxx1lCdp0Yo1X4qHTivW";
+          tryFiles = "$uri @website";
           extraConfig = ''
             expires max;
             access_log off;
@@ -45,7 +47,7 @@ in
         };
         "@website" = {
           recommendedProxySettings = true;
-          proxyPass = "http://127.0.0.1:4000/";
+          proxyPass = "http://127.0.0.1:4000";
         };
       };
     };
