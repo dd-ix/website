@@ -7,7 +7,7 @@ in
   options.dd-ix.website = {
     enable = lib.mkEnableOption "website";
 
-    package = lib.mkPackageOption pkgs "website" {};
+    package = lib.mkPackageOption pkgs "website" { };
 
     domain = lib.mkOption {
       type = lib.types.str;
@@ -20,9 +20,9 @@ in
       enable = true;
       wantedBy = [ "multi-user.target" ];
 
-      environment = [
-        "APP_DIR=${pkgs.website}"
-      ];
+      environment = {
+        APP_DIR = "${pkgs.website}";
+      };
 
       serviceConfig = {
         ExecStart = "${pkgs.nodejs}/bin/node ${cfg.package}/server.mjs";
