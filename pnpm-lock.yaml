@@ -36,14 +36,14 @@ dependencies:
     specifier: ^17.3.0
     version: 17.3.0(@angular/common@17.3.0)(@angular/core@17.3.0)
   '@feel/form':
-    specifier: ^0.0.14
-    version: 0.0.14(@angular/cdk@17.3.0)(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.14)
+    specifier: ^0.0.24
+    version: 0.0.24(@angular/cdk@17.3.0)(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.24)
   '@feel/notification':
-    specifier: ^0.0.14
-    version: 0.0.14(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.14)
+    specifier: ^0.0.24
+    version: 0.0.24(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.24)
   '@feel/style':
-    specifier: ^0.0.14
-    version: 0.0.14(@angular/common@17.3.0)(@angular/core@17.3.0)
+    specifier: ^0.0.24
+    version: 0.0.24(@angular/common@17.3.0)(@angular/core@17.3.0)
   '@fontsource/dm-sans':
     specifier: ^5.0.19
     version: 5.0.19
@@ -2244,36 +2244,36 @@ packages:
     dev: true
     optional: true
 
-  /@feel/form@0.0.14(@angular/cdk@17.3.0)(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.14):
-    resolution: {integrity: sha512-MWzaSoy10Gl/mL8tvMdnQa05obc5VpgjpN5okW9MoUMxzUlEG1Y40OHaRykddUSSzikIXEpKj930j06yZN3RhQ==, tarball: https://git.offsetting.dev/api/packages/offsetting/npm/%40feel%2Fform/-/0.0.14/form-0.0.14.tgz}
+  /@feel/form@0.0.24(@angular/cdk@17.3.0)(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.24):
+    resolution: {integrity: sha512-8CoaIKXCULkZCDk/936j/xsBOyFuOhkVrkVjOOroZpXKV5Rz/3njtGYcB1+Z/7wRHKVS0dBiC7U0jYeTDa3TFQ==, tarball: https://codeberg.org/api/packages/m4rc3l/npm/%40feel%2Fform/-/0.0.24/form-0.0.24.tgz}
     peerDependencies:
       '@angular/cdk': ^17.0.0
       '@angular/common': ^17.0.0
       '@angular/core': ^17.0.0
-      '@feel/style': 0.0.14
+      '@feel/style': 0.0.24
     dependencies:
       '@angular/cdk': 17.3.0(@angular/common@17.3.0)(@angular/core@17.3.0)(rxjs@7.8.1)
       '@angular/common': 17.3.0(@angular/core@17.3.0)(rxjs@7.8.1)
       '@angular/core': 17.3.0(rxjs@7.8.1)(zone.js@0.14.4)
-      '@feel/style': 0.0.14(@angular/common@17.3.0)(@angular/core@17.3.0)
+      '@feel/style': 0.0.24(@angular/common@17.3.0)(@angular/core@17.3.0)
       tslib: 2.6.2
     dev: false
 
-  /@feel/notification@0.0.14(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.14):
-    resolution: {integrity: sha512-X29gNi38cAhxwoBeG+3akw66bYx43NtBo+k0SR3PrZx9kcO2bb3PmgcC0OMWWtYMxAV5iRcwdFnMSVwnj+HXcA==, tarball: https://git.offsetting.dev/api/packages/offsetting/npm/%40feel%2Fnotification/-/0.0.14/notification-0.0.14.tgz}
+  /@feel/notification@0.0.24(@angular/common@17.3.0)(@angular/core@17.3.0)(@feel/style@0.0.24):
+    resolution: {integrity: sha512-R4mDgOZ9dzRjsT6l1kOsIiFEihv/lmGThG7bNplXZggYXRqVNfahaVRLhc+crG/1THfcHwgYrMHuHH781rki/A==, tarball: https://codeberg.org/api/packages/m4rc3l/npm/%40feel%2Fnotification/-/0.0.24/notification-0.0.24.tgz}
     peerDependencies:
       '@angular/common': ^17.0.0
       '@angular/core': ^17.0.0
-      '@feel/style': 0.0.14
+      '@feel/style': 0.0.24
     dependencies:
       '@angular/common': 17.3.0(@angular/core@17.3.0)(rxjs@7.8.1)
       '@angular/core': 17.3.0(rxjs@7.8.1)(zone.js@0.14.4)
-      '@feel/style': 0.0.14(@angular/common@17.3.0)(@angular/core@17.3.0)
+      '@feel/style': 0.0.24(@angular/common@17.3.0)(@angular/core@17.3.0)
       tslib: 2.6.2
     dev: false
 
-  /@feel/style@0.0.14(@angular/common@17.3.0)(@angular/core@17.3.0):
-    resolution: {integrity: sha512-IsXUGYS8U3+YEo8ogaNwIFXyiWL5Puz+NB+04beqD7p9u89AtYoQn4NsAlPrWq2dzUZ1wB1zMqHGLWik4EfNPw==, tarball: https://git.offsetting.dev/api/packages/offsetting/npm/%40feel%2Fstyle/-/0.0.14/style-0.0.14.tgz}
+  /@feel/style@0.0.24(@angular/common@17.3.0)(@angular/core@17.3.0):
+    resolution: {integrity: sha512-KAe6VcYBo4qL7o1D9MwwVa1PmL2cMLq9USY3XpqU1bAle7Xty22XDjRCnuKZUfNO+06qsdDXhHi0jcB4BuoPQg==, tarball: https://codeberg.org/api/packages/m4rc3l/npm/%40feel%2Fstyle/-/0.0.24/style-0.0.24.tgz}
     peerDependencies:
       '@angular/common': ^17.0.0
       '@angular/core': ^17.0.0
@@ -5246,8 +5246,6 @@ packages:
       webpack: '*'
     peerDependenciesMeta:
       webpack:
-        optional: true
-      webpack-sources:
         optional: true
     dependencies:
       webpack: 5.90.3(esbuild@0.20.1)

@@ -14,6 +14,9 @@ import {IconAntennaComponent} from "../../icons/icon-antenna/icon-antenna.compon
 import {IconRatingComponent} from "../../icons/icon-rating/icon-rating.component";
 import {IconDirectionsComponent} from "../../icons/icon-directions/icon-directions.component";
 import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
+import {ButtonComponent} from "@feel/form";
+import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
+import {IconPopMapComponent} from "../../icons/icon-pop-map/icon-pop-map.component";
 
 @NgModule({
   declarations: [
@@ -24,18 +27,21 @@ import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
     PeeringPeersComponent,
     PeeringLocationsComponent
   ],
-  imports: [
-    CommonModule,
-    PeeringRoutingModule,
-    CardComponent,
-    TextBlockComponent,
-    IconSwitchComponent,
-    IconAntennaComponent,
-    IconRatingComponent,
-    IconDirectionsComponent,
-    IconMoneyComponent,
-    NgOptimizedImage
-  ]
+    imports: [
+        CommonModule,
+        PeeringRoutingModule,
+        CardComponent,
+        TextBlockComponent,
+        IconSwitchComponent,
+        IconAntennaComponent,
+        IconRatingComponent,
+        IconDirectionsComponent,
+        IconMoneyComponent,
+        NgOptimizedImage,
+        ButtonComponent,
+        IconSendComponent,
+        IconPopMapComponent
+    ]
 })
 export class PeeringModule {
 }

@@ -3,6 +3,62 @@
 </div>
 
 <div class="blocks">
+
+  <div class="cc-block">
+    <app-card>
+      <div class="typography">
+        <h2 i18n id="pricing_10g">Pricing</h2>
+        <ul>
+          <li i18n>We offer <b>10G</b> ports for <b>150€</b> a month.</li>
+        </ul>
+        <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!" link="mailto:peering@dd-ix.net">
+          <app-icon-send/>
+        </feel-button>
+      </div>
+    </app-card>
+    <app-card>
+      <div class="typography">
+        <h2 i18n id="pricing_10g_support">Prices for Supporting Members</h2>
+        <ul>
+          <li i18n>If you support us with more than <b>200€</b> a month, we reduce the <b>10G</b> Peering-Port price to <b>100€</b> per month.</li>
+        </ul>
+        <feel-button class="section-button" flavor="accent" i18n-label label="Become Supporting Member!" link="https://content.dd-ix.net/documents/download/DD-IX%20Foerdermitgliedsantrag.pdf">
+          <app-icon-send/>
+        </feel-button>
+      </div>
+    </app-card>
+    <app-card class="map">
+      <a class="imglink" href="https://www.openstreetmap.org/way/10368038" target="_blank">
+        <app-icon-pop-map class="pop-map"/>
+      </a>
+    </app-card>
+  </div>
+  <div class="cc2-block">
+    <app-card>
+      <div class="typography">
+        <h2 i18n>Point of Presence</h2>
+        <p i18n>We are present at the following locations:</p>
+        <div class="locations-list">
+          <div>
+            <h4 i18n>CityCenter</h4>
+            <p i18n>
+              SachsenGigaBit GmbH<br/>
+              Friedrich-List-Platz 2<br/>
+              01069 Dresden
+            </p>
+          </div>
+          <div>
+            <h4 i18n>Coschütz 2</h4>
+            <p i18n>
+              IBH IT-Service GmbH<br/>
+              Heilbronner Str. 20<br/>
+              01189 Dresden
+            </p>
+          </div>
+        </div>
+      </div>
+    </app-card>
+  </div>
   <div class="block">
     <app-icon-switch class="icon"/>
     <app-card>
@@ -48,64 +104,6 @@
           Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only
           the connection are paid for and not the data volume used.
         </p>
-      </div>
-    </app-card>
-  </div>
-  <div class="cc-block">
-    <div>
-      <app-card>
-        <div class="typography">
-          <h2 i18n id="pricing_10g">Pricing 10G</h2>
-          <p i18n>We offer 10G peering ports.</p>
-          <p i18n>A single peering port costs <b>150€</b></p>
-        </div>
-      </app-card>
-      <app-card>
-        <div class="typography">
-          <h2 i18n>Reduced Pricing 10G</h2>
-          <p i18n>If you support us, we give something back.</p>
-          <p i18n>A peering port for supporting members* costs <b>100€</b></p>
-          <small i18n>* for members that support us with at least 200€ per month</small>
-          <br/>
-        </div>
-      </app-card>
-    </div>
-    <app-card class="map">
-      <div class="typography">
-        <a class="imglink" href="https://www.openstreetmap.org/way/10368038" target="_blank">
-          <img alt="OpenStreetMap" height="823" i18n-alt ngSrc="assets/images/osm-cc.webp" width="1087">
-        </a>
-        <span>
-          &copy;
-          <a class="abcd" href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>
-          contributors.
-        </span>
-      </div>
-    </app-card>
-  </div>
-  <div class="cc2-block">
-    <app-card>
-      <div class="typography">
-        <h2 i18n>Point of Presence</h2>
-        <p i18n>We are present at the following locations:</p>
-        <div class="locations-list">
-          <div>
-            <h4 i18n>CityCenter</h4>
-            <p i18n>
-              SachsenGigaBit GmbH<br/>
-              Friedrich-List-Platz 2<br/>
-              01069 Dresden
-            </p>
-          </div>
-          <div>
-            <h4 i18n>Coschütz 2</h4>
-            <p i18n>
-              IBH IT-Service GmbH<br/>
-              Heilbronner Str. 20<br/>
-              01189 Dresden
-            </p>
-          </div>
-        </div>
       </div>
     </app-card>
   </div>
