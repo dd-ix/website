@@ -72,6 +72,18 @@ feel-button[flavor=accent] {
       background-color: $c-accent;
     }
   }
+
+  table {
+    border-collapse: collapse;
+
+    th, td {
+      padding: 0.2rem 0.8rem;
+    }
+
+    td {
+      border-top: 0.05rem solid $c-primary;
+    }
+  }
 }
 
 a {

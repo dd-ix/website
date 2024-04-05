@@ -43,7 +43,7 @@ export const routes: Routes = [
   },
   {
     path: 'network',
-    loadComponent: () => import("./pages/network/network.component").then(c => c.NetworkComponent),
+    loadChildren: () => import("./pages/network/network.routes").then(r => r.routes),
   },
   {
     path: '**',
