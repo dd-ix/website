@@ -115,8 +115,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="9078603423157869293" datatype="html" xml:space="preserve">
-        <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</source>
-        <target state="translated">Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</target>
+        <source>Subscribe to the <x id="INTERPOLATION" equiv-text="{{ listName }}"/> mailing list</source>
+        <target state="needs-translation">Subscribe to the <x id="INTERPOLATION" equiv-text="{{listName}}"/> mailing list</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
           <context context-type="linenumber">2</context>
@@ -567,8 +567,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="7468240890677477871" datatype="html" xml:space="preserve">
-        <source>© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="needs-translation">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">63,66</context>
@@ -738,30 +738,6 @@
           <context context-type="linenumber">11,12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5123210769642170648" datatype="html" xml:space="preserve">
-        <source>A single peering port costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
-        <target state="translated">A single peering port costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">60,61</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3937882644199668489" datatype="html" xml:space="preserve">
-        <source>If you support us, we give something back.</source>
-        <target state="translated">If you support us, we give something back.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">66,67</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3436992079252084896" datatype="html" xml:space="preserve">
-        <source>A peering port for supporting members* costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
-        <target state="translated">A peering port for supporting members* costs <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">67,68</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="430033625834671529" datatype="html" xml:space="preserve">
         <source>CityCenter</source>
         <target state="translated">CityCenter</target>
@@ -771,8 +747,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="653233766607926428" datatype="html" xml:space="preserve">
-        <source>SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </source>
-        <target state="translated">SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </target>
+        <source>SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
+        <target state="needs-translation">SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">95,98</context>
@@ -800,38 +776,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">41,42</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5429420089825511537" datatype="html" xml:space="preserve">
-        <source>Pricing 10G</source>
-        <target state="translated">Pricing 10G</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">58,59</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1198612196411655642" datatype="html" xml:space="preserve">
-        <source>We offer 10G peering ports.</source>
-        <target state="translated">We offer 10G peering ports.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">59,60</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4748883817310330671" datatype="html" xml:space="preserve">
-        <source>Reduced Pricing 10G</source>
-        <target state="translated">Reduced Pricing 10G</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">65,66</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3347830048871951695" datatype="html" xml:space="preserve">
-        <source>* for members that support us with at least 200€ per month</source>
-        <target state="translated">* for members that support us with at least 200€ per month</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">68,69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1218117410111627434" datatype="html" xml:space="preserve">
@@ -875,8 +819,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4014413284740153649" datatype="html" xml:space="preserve">
-        <source>IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </source>
-        <target state="translated">IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </target>
+        <source>IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01189 Dresden </source>
+        <target state="needs-translation">IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">103,106</context>
