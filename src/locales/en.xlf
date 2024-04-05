@@ -882,6 +882,14 @@
           <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8186890443927526673" datatype="html" xml:space="preserve">
+        <source>Become Supporting Member!</source>
+        <target state="translated">Become a Supporting Member!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
