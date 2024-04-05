@@ -73,7 +73,7 @@ feel-button[flavor=accent] {
     }
   }
 
-  table {
+  table:not(.not) {
     border-collapse: collapse;
 
     th, td {
