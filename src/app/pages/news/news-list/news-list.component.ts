@@ -1,12 +1,25 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
 import {NewsService} from "../../../api/news.service";
 import {BehaviorSubject, map, Observable, switchMap} from "rxjs";
+import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
+import {NewsCardComponent} from "../../../core/news-card/news-card.component";
+import {CardComponent} from "../../../core/card/card.component";
+import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
 
 @Component({
   selector: 'app-news-list',
   templateUrl: './news-list.component.html',
   styleUrls: ['./news-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [
+    AsyncPipe,
+    NgIf,
+    NgForOf,
+    NewsCardComponent,
+    CardComponent,
+    MailingListComponent
+  ]
 })
 export class NewsListComponent {
 

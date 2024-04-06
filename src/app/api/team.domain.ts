@@ -9,27 +9,6 @@ export enum WorkingGroup {
   PublicRelations = "PublicRelations"
 }
 
-export function workingGroupLink(working_group: WorkingGroup): string {
-  switch (working_group) {
-    case WorkingGroup.Tech:
-      return "/association/tech"
-    case WorkingGroup.Network:
-      return "/association/tech"
-    case WorkingGroup.Services:
-      return "/association/tech"
-    case WorkingGroup.DevOps:
-      return "/association/tech"
-    case WorkingGroup.Events:
-      return "/association/events"
-    case WorkingGroup.FinanceAndLegal:
-      return "/association/finance-and-legal"
-    case WorkingGroup.ClientsAndSponsors:
-      return "/association/clients-and-sponsors"
-    case WorkingGroup.PublicRelations:
-      return "/association/public-relations"
-  }
-}
-
 export function workingGroupDisplayName(working_group: WorkingGroup): string {
   switch (working_group) {
     case WorkingGroup.Tech:

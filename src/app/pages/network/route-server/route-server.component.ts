@@ -4,16 +4,16 @@ import {AsyncPipe} from "@angular/common";
 import {CardComponent} from "../../../core/card/card.component";
 
 @Component({
-  selector: 'app-bird',
+  selector: 'app-route-server',
   standalone: true,
   imports: [
     AsyncPipe,
     CardComponent
   ],
-  templateUrl: './bird.component.html',
-  styleUrl: './bird.component.scss'
+  templateUrl: './route-server.component.html',
+  styleUrl: './route-server.component.scss'
 })
-export class BirdComponent {
+export class RouteServerComponent {
 
   protected readonly bird = this.birdService.getBird();
 

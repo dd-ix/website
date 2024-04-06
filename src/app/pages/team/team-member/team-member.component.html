@@ -12,8 +12,7 @@
       {{ member.description }}
       <br>
       <span *ngFor="let working_group of member.working_groups; index as i">
-        <span *ngIf="i>0">, </span><a
-        [routerLink]="getWorkingGroupLink(working_group)">{{ getWorkingGroupName(working_group) }}</a>
+        <span *ngIf="i>0">, </span>{{ getWorkingGroupName(working_group) }}
       </span>
     </p>
     <div class="socials">

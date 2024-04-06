@@ -7,7 +7,7 @@ import {IconLinkedinComponent} from "../../../icons/icon-linkedin/icon-linkedin.
 import {IconMailComponent} from "../../../icons/icon-mail/icon-mail.component";
 import {IconMastodonComponent} from "../../../icons/icon-mastodon/icon-mastodon.component";
 import {IconRipeComponent} from "../../../icons/icon-ripe/icon-ripe.component";
-import {TeamMember, WorkingGroup, workingGroupDisplayName, workingGroupLink} from "../../../api/team.domain";
+import {TeamMember, WorkingGroup, workingGroupDisplayName} from "../../../api/team.domain";
 import {API_URL} from "../../../api/api.domain";
 import {RouterLink} from "@angular/router";
 
@@ -42,9 +42,5 @@ export class TeamMemberComponent {
 
   protected getWorkingGroupName(working_group: WorkingGroup): string {
     return workingGroupDisplayName(working_group);
-  }
-
-  protected getWorkingGroupLink(working_group: WorkingGroup): string {
-    return workingGroupLink(working_group);
   }
 }

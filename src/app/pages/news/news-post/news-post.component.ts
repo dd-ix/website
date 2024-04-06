@@ -4,12 +4,21 @@ import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
 import {DomSanitizer, Meta} from "@angular/platform-browser";
 import {API_URL} from "../../../api/api.domain";
+import {CardComponent} from "../../../core/card/card.component";
+import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-news-post',
   templateUrl: './news-post.component.html',
   styleUrls: ['./news-post.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
+  imports: [
+    CardComponent,
+    AsyncPipe,
+    NgIf,
+    DatePipe
+  ]
 })
 export class NewsPostComponent {
 
