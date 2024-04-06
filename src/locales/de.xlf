@@ -850,14 +850,6 @@
           <context context-type="linenumber">21,22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8186890443927526673" datatype="html" xml:space="preserve">
-        <source>Become Supporting Member!</source>
-        <target state="translated">Werde Fördermitglied!</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">25</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="28467023014692598" datatype="html" xml:space="preserve">
         <source>Joining DD-IX</source>
         <target state="translated">DD-IX Beitreten</target>
@@ -866,9 +858,17 @@
           <context context-type="linenumber">2,3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7654319854552024216" datatype="html" xml:space="preserve">
-        <source>Joining?</source>
-        <target state="translated">Beitreten?</target>
+      <trans-unit id="8586899462233958188" datatype="html" xml:space="preserve">
+        <source>If you support us with more than <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month, we reduce the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Peering-Port price to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> per month. </source>
+        <target state="translated">Fördermitglieder, welche uns mit mehr als <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> pro Monat unterstützen, bekommen reduzierte <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Portpreise von <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> pro Monat. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6942243642081030170" datatype="html" xml:space="preserve">
+        <source>Join DD-IX!</source>
+        <target state="translated">Werde ein Teil von DD-IX!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">55,56</context>
@@ -878,9 +878,9 @@
           <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="510138936078408482" datatype="html" xml:space="preserve">
-        <source>Want to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>become<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>member<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> of DD-IX too or information about our <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>points of presences<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>?</source>
-        <target state="translated">Möchten Sie auch ein <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Mitglied<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> von DD-IX <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>werden<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> oder Informationen über unsere <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Präsenzpunkte<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> erhalten?</target>
+      <trans-unit id="2094247726783334639" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Become<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>member<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> or <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>customer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> of DD-IX! See port prices and PoP locations here:</source>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Werden Sie<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ein <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Mitglied<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> oder <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Kunde<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> von DD-IX! Siehe Port preise und PoP Standorte hier:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">56,57</context>
@@ -890,12 +890,12 @@
           <context context-type="linenumber">66,67</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8586899462233958188" datatype="html" xml:space="preserve">
-        <source>If you support us with more than <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month, we reduce the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Peering-Port price to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> per month. </source>
-        <target state="translated">Fördermitglieder, welche uns mit mehr als <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> pro Monat unterstützen, bekommen reduzierte <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Portpreise von <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> pro Monat. </target>
+      <trans-unit id="3850005299600696147" datatype="html" xml:space="preserve">
+        <source>Become a Supporting Member!</source>
+        <target state="translated">Werden ein Fördermitglied!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">23,26</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
       </trans-unit>
     </body>
