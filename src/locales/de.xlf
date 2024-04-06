@@ -134,14 +134,6 @@
           <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5898480698220868505" datatype="html" xml:space="preserve">
-        <source>Peers</source>
-        <target state="translated">Peers</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">25</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="9049737860962344543" datatype="html" xml:space="preserve">
         <source>Internet Exchange</source>
         <target state="translated">Internet-Knoten</target>
@@ -172,14 +164,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">81</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4022066031214545422" datatype="html" xml:space="preserve">
-        <source>Locations</source>
-        <target state="translated">Standorte</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-locations/peering-locations.component.html</context>
-          <context context-type="linenumber">1</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2185195021427384331" datatype="html" xml:space="preserve">
@@ -602,58 +586,6 @@
           <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3397601893497394889" datatype="html" xml:space="preserve">
-        <source>Technical Workinggroup</source>
-        <target state="translated">Arbeitsgruppe Technik</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8346691245138938788" datatype="html" xml:space="preserve">
-        <source>Public Relations Workinggroup</source>
-        <target state="translated">Arbeitsgruppe Öffentlichkeitsarbeit</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5390398393295642975" datatype="html" xml:space="preserve">
-        <source>Finance and Legal Workinggroup</source>
-        <target state="translated">Arbeitsgruppe Finanzen und Recht</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8179235462848400383" datatype="html" xml:space="preserve">
-        <source>Our Task</source>
-        <target state="translated">Unsere Aufgabe</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/clients-and-sponsors/clients-and-sponsors.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/events/events.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/finance-and-legal/finance-and-legal.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/public-relations/public-relations.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
-          <context context-type="linenumber">9</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="1061540398514258404" datatype="html" xml:space="preserve">
         <source>Tech</source>
         <target state="translated">Tech</target>
@@ -694,16 +626,8 @@
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9020669458543958643" datatype="html" xml:space="preserve">
-        <source>Clients and Sponsors Workinggroup</source>
-        <target state="translated">Arbeitsgruppe Kunden und Sponsoren</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association-routing.module.ts</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="653233766607926428" datatype="html" xml:space="preserve">
-        <source>SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </source>
+        <source>SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
         <target state="needs-translation">SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
@@ -732,46 +656,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
           <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="710554618948317947" datatype="html" xml:space="preserve">
-        <source>This working groups task is to recruit potential new customers.</source>
-        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, potenzielle neue Kunden anzuwerben.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/clients-and-sponsors/clients-and-sponsors.component.html</context>
-          <context context-type="linenumber">10,12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5673524557355837421" datatype="html" xml:space="preserve">
-        <source>This working groups task is to handle accounting and legal matters.</source>
-        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, Buchhaltungs- und Rechtsfragen zu behandeln.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/finance-and-legal/finance-and-legal.component.html</context>
-          <context context-type="linenumber">10,12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4284784970653065076" datatype="html" xml:space="preserve">
-        <source>This working groups task is to organize events and strengthen the communication inside the community.</source>
-        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, Veranstaltungen zu organisieren und die Kommunikation innerhalb der Gemeinschaft zu stärken.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/events/events.component.html</context>
-          <context context-type="linenumber">10,12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3769872760985726233" datatype="html" xml:space="preserve">
-        <source>This working groups task is to connect with the general public and advertise teh association.</source>
-        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, mit der Öffentlichkeit in Kontakt zu treten und für den Verein zu werben.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/public-relations/public-relations.component.html</context>
-          <context context-type="linenumber">10,12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7658569236107395025" datatype="html" xml:space="preserve">
-        <source>This working groups purpose is to run the IX and develop technologies that help with the operations.</source>
-        <target state="translated">Diese Arbeitsgruppe hat die Aufgabe, den IX zu betreiben und Technologien zu entwickeln, die den Betrieb unterstützen.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/workinggroup/technical/technical.component.html</context>
-          <context context-type="linenumber">10,12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1218117410111627434" datatype="html" xml:space="preserve">
