@@ -518,6 +518,14 @@
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">41</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="4437840582457353541" datatype="html">
         <source> The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden Internet Exchange e.V. is a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP). </source>
@@ -610,6 +618,130 @@
           <context context-type="linenumber">15,16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7654319854552024216" datatype="html">
+        <source>Joining?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">55,56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="510138936078408482" datatype="html">
+        <source>Want to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>become<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>member<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> of DD-IX too or information about our <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>points of presences<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="28467023014692598" datatype="html">
+        <source>Joining DD-IX</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5080775557941296581" datatype="html">
+        <source>Pricing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4455085222981699428" datatype="html">
+        <source>We offer <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ports for <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1949200948009782593" datatype="html">
+        <source>Peer Now!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4922240388842059899" datatype="html">
+        <source>Prices for Supporting Members</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8586899462233958188" datatype="html">
+        <source>If you support us with more than <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month, we reduce the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Peering-Port price to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> per month. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8186890443927526673" datatype="html">
+        <source>Become Supporting Member!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1218117410111627434" datatype="html">
+        <source>Point of Presence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4780105976579156644" datatype="html">
+        <source>We are present at the following locations:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="430033625834671529" datatype="html">
+        <source>CityCenter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="653233766607926428" datatype="html">
+        <source> SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">47,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7821232108445276080" datatype="html">
+        <source>Coschütz 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4014413284740153649" datatype="html">
+        <source> IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01189 Dresden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">55,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="558795374232821675" datatype="html">
+        <source>Peering Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4058575476871566236" datatype="html">
         <source>Published</source>
         <context-group purpose="location">
@@ -652,144 +784,53 @@
           <context context-type="linenumber">3,4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5080775557941296581" datatype="html">
-        <source>Pricing</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">10,11</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4455085222981699428" datatype="html">
-        <source>We offer <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ports for <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">12,13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1949200948009782593" datatype="html">
-        <source>Peer Now!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4922240388842059899" datatype="html">
-        <source>Prices for Supporting Members</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">21,22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="221685666774570733" datatype="html">
-        <source>If you support us with more than <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month, we reduce the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Peering-Port price to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> per month.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">23,24</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8186890443927526673" datatype="html">
-        <source>Become Supporting Member!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">25</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1218117410111627434" datatype="html">
-        <source>Point of Presence</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">39,40</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4780105976579156644" datatype="html">
-        <source>We are present at the following locations:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">40,41</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="430033625834671529" datatype="html">
-        <source>CityCenter</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">43,44</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="653233766607926428" datatype="html">
-        <source> SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">45,48</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7821232108445276080" datatype="html">
-        <source>Coschütz 2</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">51,52</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4014413284740153649" datatype="html">
-        <source> IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01189 Dresden </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">53,56</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2880910185905378639" datatype="html">
         <source>What is peering?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5578823162355992891" datatype="html">
         <source> Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators to easily exchange data with each other. This data transfer between peering partners is free of charge and offers numerous advantages. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">68,70</context>
+          <context context-type="linenumber">12,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2185195021427384331" datatype="html">
         <source>Why should I peer?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">80,81</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2761952393360315538" datatype="html">
         <source> The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">82,84</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4723636160472220804" datatype="html">
         <source> Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering with an IXP allows access to content and services provided by other network operators or ISPs without the need to establish many direct peerings among each other. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">87,89</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8043843054156476312" datatype="html">
         <source> An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network fails, as long as there are routes through alternative peering partners. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">100,101</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4407640932304119141" datatype="html">
         <source> Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only the connection are paid for and not the data volume used. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">104,105</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="558795374232821675" datatype="html">
-        <source>Peering Policy</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">113,114</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3194475020281589259" datatype="html">

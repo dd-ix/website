@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 @Component({
-  selector: 'app-icon-pop-map',
+  selector: 'app-icon-pops-map',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './icon-pop-map.component.svg',

@@ -6,6 +6,10 @@ import {CardComponent} from "../../core/card/card.component";
 import {IconCheckmarkComponent} from "../../icons/icon-checkmark/icon-checkmark.component";
 import {Speed} from "../../api/peer.domain";
 import {IconCloseComponent} from "../../icons/icon-close/icon-close.component";
+import {ButtonComponent} from "@feel/form";
+import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
+import {RouterLink} from "@angular/router";
+import {IconPopMapComponent} from "../../icons/icon-pop-map/icon-pop-map.component";
 
 @Component({
   selector: 'app-network',
@@ -16,7 +20,11 @@ import {IconCloseComponent} from "../../icons/icon-close/icon-close.component";
     NgIf,
     CardComponent,
     IconCheckmarkComponent,
-    IconCloseComponent
+    IconCloseComponent,
+    ButtonComponent,
+    IconSendComponent,
+    RouterLink,
+    IconPopMapComponent
   ],
   templateUrl: './network.component.html',
   styleUrl: './network.component.scss'
