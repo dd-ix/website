@@ -678,14 +678,6 @@
           <context context-type="linenumber">41,42</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1218117410111627434" datatype="html" xml:space="preserve">
-        <source>Point of Presence</source>
-        <target state="translated">Point of Presence</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">89,90</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="4780105976579156644" datatype="html" xml:space="preserve">
         <source>We are present at the following locations:</source>
         <target state="translated">We are present at the following locations:</target>
