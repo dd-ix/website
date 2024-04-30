@@ -1,4 +1,4 @@
-FROM node:21-alpine as builder
+FROM node:22-alpine as builder
 RUN npm i -g pnpm@8.6.9
 
 WORKDIR /src
@@ -11,7 +11,7 @@ COPY . .
 
 RUN pnpm run build:ci
 
-FROM node:21-alpine
+FROM node:22-alpine
 ENV APP_DIR=/app
 
 COPY --from=builder /src/dist /app
