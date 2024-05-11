@@ -1,1 +1,39 @@
-<p>as112 works!</p>
+<div class="typography header">
+  <h1 i18n>AS112 Statistics</h1>
+  <feel-button label="Traffic" link=".."></feel-button>
+</div>
+
+<ng-container *ngIf="stats | async as stats">
+  <app-card>
+    <div class="typography">
+      <h2 i18n>DNS Queries over the last two days</h2>
+      <app-chart
+        [series]="wrapStats(stats.two_days)"
+        [xMax]="stats.two_days.end"
+        [xMin]="stats.two_days.start"
+        unit="q"
+      />
+    </div>
+  </app-card>
+  <app-card>
+    <div class="typography">
+      <h2 i18n>DNS Queries over the last seven days</h2>
+      <app-chart
+        [series]="wrapStats(stats.seven_days)"
+        [xMax]="stats.seven_days.end"
+        [xMin]="stats.seven_days.start"
+        unit="q"
+      />
+    </div>
+  </app-card>
+  <app-card>
+    <div class="typography">
+      <h2 i18n>DNS Queries over the last 30 days</h2>
+      <app-chart
+        [series]="wrapStats(stats.month)"
+        [xMax]="stats.month.end"
+        [xMin]="stats.month.start"
+        unit="q"
+      />
+    </div>
+  </app-card>

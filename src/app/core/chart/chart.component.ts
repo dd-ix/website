@@ -1,4 +1,4 @@
-import {Component, Inject, Input, LOCALE_ID} from '@angular/core';
+import { Component, Inject, Input, LOCALE_ID } from '@angular/core';
 import {
   ApexAxisChartSeries,
   ApexChart,
@@ -11,8 +11,8 @@ import {
   ApexYAxis,
   NgApexchartsModule
 } from "ng-apexcharts-lazy";
-import {Language} from "../../api/api.domain";
-import {NgIf} from "@angular/common";
+import { Language } from "../../api/api.domain";
+import { NgIf } from "@angular/common";
 
 const ENGLISH_TRANSLATIONS: ApexLocale = {
   name: Language.ENGLISH,
@@ -70,15 +70,18 @@ export class ChartComponent {
   @Input()
   public series: ApexAxisChartSeries | undefined;
 
+  @Input()
+  public unit: string | undefined;
+
   protected chart: ApexChart = {
     foreColor: 'var(--f-color)',
     type: "area",
     height: 350,
     defaultLocale: this.locale,
     locales: this.locale === Language.GERMAN ? [GERMAN_TRANSLATION] : [ENGLISH_TRANSLATIONS],
-    zoom: {enabled: false,},
-    toolbar: {show: false},
-    animations: {enabled: false},
+    zoom: { enabled: false, },
+    toolbar: { show: false },
+    animations: { enabled: false },
     fontFamily: 'unset',
   };
 
@@ -92,7 +95,7 @@ export class ChartComponent {
 
   protected yaxis: ApexYAxis = {
     labels: {
-      formatter: this.yAxisTickFormatting,
+      formatter: this.yAxisTickFormatting(),
     },
     min: 0,
   };
@@ -118,17 +121,29 @@ export class ChartComponent {
     };
   }
 
-  protected yAxisTickFormatting(bits: number): string {
-    if (!Number.isFinite(bits) || bits < 1) {
-      return '0 b/s';
-    }
+  private yAxisTickFormatting(): (bits: number) => string {
+    return (bits: number) => {
+      if (!Number.isFinite(bits) || bits < 1) {
+        return `0 ${this.unit}/s`;
+      }
 
-    const k = 1000;
-    const sizes = ['b/s', 'Kb/s', 'Mb/s', 'Gb/s', 'Tb/s', 'Pb/s', 'Eb/s', 'Zb/s', 'Yb/s']
+      const k = 1000;
+      const sizes = [
+        this.unit + '/s',
+        `K${this.unit}/s`,
+        `M${this.unit}/s`,
+        `G${this.unit}/s`,
+        `T${this.unit}/s`,
+        `P${this.unit}/s`,
+        `E${this.unit}/s`,
+        `Z${this.unit}/s`,
+        `Y${this.unit}/s`
+      ];
 
-    const i = Math.floor(Math.log(bits) / Math.log(k))
+      const i = Math.floor(Math.log(bits) / Math.log(k))
 
-    return `${parseFloat((bits / Math.pow(k, i)).toFixed(2))} ${sizes[i]}`
+      return `${parseFloat((bits / Math.pow(k, i)).toFixed(2))} ${sizes[i]}`
+    };
   }
 }
 

@@ -1,5 +1,6 @@
-<div class="typography">
+<div class="typography header">
   <h1 i18n>Statistics</h1>
+  <feel-button label="AS112" link="as112"></feel-button>
 </div>
 
 <ng-container *ngIf="stats | async as stats">
@@ -10,6 +11,7 @@
         [series]="wrapStats(stats.two_days)"
         [xMax]="stats.two_days.end"
         [xMin]="stats.two_days.start"
+        unit="b"
       />
     </div>
   </app-card>
@@ -20,6 +22,7 @@
         [series]="wrapStats(stats.seven_days)"
         [xMax]="stats.seven_days.end"
         [xMin]="stats.seven_days.start"
+        unit="b"
       />
     </div>
   </app-card>
@@ -30,6 +33,7 @@
         [series]="wrapStats(stats.month)"
         [xMax]="stats.month.end"
         [xMin]="stats.month.start"
+        unit="b"
       />
     </div>
   </app-card>

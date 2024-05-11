@@ -14,7 +14,11 @@ export class StatsService {
   ) {
   }
 
-  public getStats(): Observable<Stats> {
-    return this.http.get<Stats>(`${API_URL}/stats`);
+  public getTrafficStats(): Observable<Stats> {
+    return this.http.get<Stats>(`${API_URL}/stats/traffic`);
+  }
+
+  public getAs112Stats(): Observable<Stats> {
+    return this.http.get<Stats>(`${API_URL}/stats/as112`);
   }
 }
