@@ -569,6 +569,108 @@
           <context context-type="linenumber">101,102</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="28467023014692598" datatype="html">
+        <source>Joining DD-IX</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5080775557941296581" datatype="html">
+        <source>Pricing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4455085222981699428" datatype="html">
+        <source>We offer <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ports for <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1949200948009782593" datatype="html">
+        <source>Peer Now!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4922240388842059899" datatype="html">
+        <source>Prices for Supporting Members</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8586899462233958188" datatype="html">
+        <source>If you support us with more than <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month, we reduce the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Peering-Port price to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> per month. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">23,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3850005299600696147" datatype="html">
+        <source>Become a Supporting Member!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="567227929395837623" datatype="html">
+        <source>Points of Presence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4780105976579156644" datatype="html">
+        <source>We are present at the following locations:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="430033625834671529" datatype="html">
+        <source>CityCenter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="653233766607926428" datatype="html">
+        <source> SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01069 Dresden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">47,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7821232108445276080" datatype="html">
+        <source>Coschütz 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4014413284740153649" datatype="html">
+        <source> IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br /&gt;"/> 01189 Dresden </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">55,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="558795374232821675" datatype="html">
+        <source>Peering Policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/join/join.component.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5654260572566435634" datatype="html">
         <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information.</source>
         <context-group purpose="location">
@@ -638,108 +740,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">66,67</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="28467023014692598" datatype="html">
-        <source>Joining DD-IX</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5080775557941296581" datatype="html">
-        <source>Pricing</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4455085222981699428" datatype="html">
-        <source>We offer <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> ports for <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>150€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">11,12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1949200948009782593" datatype="html">
-        <source>Peer Now!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">13,14</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4922240388842059899" datatype="html">
-        <source>Prices for Supporting Members</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">21,22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8586899462233958188" datatype="html">
-        <source>If you support us with more than <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>200€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> a month, we reduce the <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>10G<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Peering-Port price to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>100€<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> per month. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">23,26</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3850005299600696147" datatype="html">
-        <source>Become a Supporting Member!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="567227929395837623" datatype="html">
-        <source>Points of Presence</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">41,42</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4780105976579156644" datatype="html">
-        <source>We are present at the following locations:</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">42,43</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="430033625834671529" datatype="html">
-        <source>CityCenter</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">45,46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="653233766607926428" datatype="html">
-        <source> SachsenGigaBit GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01069 Dresden </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">47,50</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7821232108445276080" datatype="html">
-        <source>Coschütz 2</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">53,54</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4014413284740153649" datatype="html">
-        <source> IBH IT-Service GmbH<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> Heilbronner Str. 20<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/> 01189 Dresden </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">55,58</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="558795374232821675" datatype="html">
-        <source>Peering Policy</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/pops/join.component.html</context>
-          <context context-type="linenumber">67,68</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">75,76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4058575476871566236" datatype="html">
@@ -833,39 +833,71 @@
           <context context-type="linenumber">48,49</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6554512525540716587" datatype="html">
+        <source>AS112 Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.routes.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7461309473308391434" datatype="html">
+        <source>DNS Queries over the last two days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7232816670125105716" datatype="html">
+        <source>DNS Queries over the last seven days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="272589703095505617" datatype="html">
+        <source>DNS Queries over the last 30 days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6922994998696471598" datatype="html">
+        <source>Queries</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3194475020281589259" datatype="html">
         <source>Traffic over the last two days</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5807227020049171274" datatype="html">
         <source>Traffic over the last seven days</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">18,19</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5221997905867887062" datatype="html">
         <source>Traffic over the last 30 days</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">28,29</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="369679454877964077" datatype="html">
         <source>Traffic</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.ts</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6554512525540716587" datatype="html">
-        <source>AS112 Statistics</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/stats.routes.ts</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3909398260718721910" datatype="html">

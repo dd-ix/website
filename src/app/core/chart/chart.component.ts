@@ -123,7 +123,7 @@ export class ChartComponent {
 
   private yAxisTickFormatting(): (bits: number) => string {
     return (bits: number) => {
-      if (!Number.isFinite(bits) || bits < 1) {
+      if (!Number.isFinite(bits)) {
         return `0 ${this.unit}/s`;
       }
 
@@ -140,7 +140,7 @@ export class ChartComponent {
         `Y${this.unit}/s`
       ];
 
-      const i = Math.floor(Math.log(bits) / Math.log(k))
+      const i = Math.max(0, Math.floor(Math.log(bits) / Math.log(k)));
 
       return `${parseFloat((bits / Math.pow(k, i)).toFixed(2))} ${sizes[i]}`
     };

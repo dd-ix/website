@@ -27,7 +27,6 @@ export class TeamMemberComponent {
   }
 
   protected buildMastodonLink(mastodon: string): string {
-    console.log(mastodon);
     const match = /(@.+)@(.+)/.exec(mastodon);
     if (!match) {
       throw new Error("Invalid mastodon name: " + mastodon);
