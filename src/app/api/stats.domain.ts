@@ -5,9 +5,9 @@ export type Series = {
 }
 
 export enum TimeSelection {
-  LastTwoDays = "last_two_days",
-  LastWeek = "last_week",
-  LastMonth = "last_month",
-  LastThreeMonths = "last_three_months",
-  LastYear = "last_year",
+  LastTwoDays = "two_days",
+  LastWeek = "week",
+  LastMonth = "month",
+  LastThreeMonths = "three_months",
+  LastYear = "year",
 }
