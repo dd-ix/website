@@ -1,20 +1,10 @@
-import { Component, Inject, Input, LOCALE_ID } from '@angular/core';
-import {
-  ApexAxisChartSeries,
-  ApexChart,
-  ApexDataLabels,
-  ApexGrid,
-  ApexLegend,
-  ApexLocale,
-  ApexStroke,
-  ApexXAxis,
-  ApexYAxis,
-  NgApexchartsModule
-} from "ng-apexcharts-lazy";
+import { Component, Inject, Input, LOCALE_ID, ElementRef, OnDestroy, afterNextRender, OnChanges, SimpleChanges, OnInit, Injector, runInInjectionContext } from '@angular/core';
 import { Language } from "../../api/api.domain";
 import { NgIf } from "@angular/common";
+import type ApexCharts from "apexcharts";
+import type { ApexOptions } from 'apexcharts';
 
-const ENGLISH_TRANSLATIONS: ApexLocale = {
+const ENGLISH_TRANSLATIONS = {
   name: Language.ENGLISH,
   options: {
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
@@ -55,11 +45,11 @@ const GERMAN_TRANSLATION: ApexLocale = {
 @Component({
   selector: 'app-chart',
   standalone: true,
-  imports: [NgApexchartsModule, NgIf],
+  imports: [NgIf],
   templateUrl: './chart.component.html',
   styleUrl: './chart.component.scss'
 })
-export class ChartComponent {
+export class ChartComponent implements OnInit, OnChanges, OnDestroy {
 
   @Input()
   public xMin: string | undefined;
@@ -73,52 +63,64 @@ export class ChartComponent {
   @Input()
   public unit: string | undefined;
 
-  protected chart: ApexChart = {
-    foreColor: 'var(--f-color)',
-    type: "area",
-    height: 350,
-    defaultLocale: this.locale,
-    locales: this.locale === Language.GERMAN ? [GERMAN_TRANSLATION] : [ENGLISH_TRANSLATIONS],
-    zoom: { enabled: false, },
-    toolbar: { show: false },
-    animations: { enabled: false },
-    fontFamily: 'unset',
-  };
-
-  protected dataLabels: ApexDataLabels = {
-    enabled: false
-  };
-
-  protected stroke: ApexStroke = {
-    width: 2,
-  }
-
-  protected yaxis: ApexYAxis = {
-    labels: {
-      formatter: this.yAxisTickFormatting(),
-    },
-    min: 0,
-  };
-
-  protected legend: ApexLegend = {
-    horizontalAlign: "left"
-  }
-
-  protected grid: ApexGrid = {
-    borderColor: "#535A6C",
-  }
+  private chart: ApexCharts | undefined;
 
   constructor(
+    private readonly host: ElementRef<HTMLElement>,
+    private readonly injector: Injector,
     @Inject(LOCALE_ID) private locale: Language
   ) {
   }
 
-  protected wrapXAxis(min: string, max: string): ApexXAxis {
-    return {
-      type: "datetime",
-      min: new Date(min).getTime(),
-      max: new Date(max).getTime(),
-    };
+  ngOnInit(): void {
+    this.updateChart();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.updateChart();
+  }
+
+  private updateChart(): void {
+    runInInjectionContext(this.injector, () => afterNextRender(() => import("apexcharts").then(({ default: ApexCharts }) => {
+      const options: ApexOptions = {
+        chart: {
+          foreColor: 'var(--f-color)',
+          type: "area",
+          height: 350,
+          defaultLocale: this.locale,
+          locales: this.locale === Language.GERMAN ? [GERMAN_TRANSLATION] : [ENGLISH_TRANSLATIONS],
+          zoom: { enabled: false, },
+          toolbar: { show: false },
+          animations: { enabled: false },
+          fontFamily: 'unset',
+        },
+        dataLabels: { enabled: false },
+        grid: { borderColor: "#535A6C" },
+        legend: { horizontalAlign: "left" },
+        series: this.series,
+        stroke: { width: 2 },
+        xaxis: {
+          type: "datetime",
+          min: new Date(this.xMin!).getTime(),
+          max: new Date(this.xMax!).getTime(),
+        },
+        yaxis: {
+          labels: {
+            formatter: this.yAxisTickFormatting(),
+          },
+          min: 0,
+        },
+      };
+
+      this.chart?.destroy();
+      this.chart = new ApexCharts(this.host.nativeElement, options);
+
+      this.chart.render();
+    })));
+  }
+
+  public ngOnDestroy(): void {
+    this.chart?.destroy();
   }
 
   private yAxisTickFormatting(): (bits: number) => string {

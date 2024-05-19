@@ -1,38 +1,17 @@
 <div class="typography header">
   <h1 i18n>Statistics</h1>
+  <app-stats-time-selection (timeChange)="changeTimeSelection($event)"/>
   <feel-button label="AS112" link="as112"></feel-button>
 </div>
 
-<ng-container *ngIf="stats | async as stats">
+<ng-container *ngIf="series | async as series">
   <app-card>
     <div class="typography">
-      <h2 i18n>Traffic over the last two days</h2>
+      <h2 i18n>Traffic</h2>
       <app-chart
-        [series]="wrapStats(stats.two_days)"
-        [xMax]="stats.two_days.end"
-        [xMin]="stats.two_days.start"
-        unit="b"
-      />
-    </div>
-  </app-card>
-  <app-card>
-    <div class="typography">
-      <h2 i18n>Traffic over the last seven days</h2>
-      <app-chart
-        [series]="wrapStats(stats.seven_days)"
-        [xMax]="stats.seven_days.end"
-        [xMin]="stats.seven_days.start"
-        unit="b"
-      />
-    </div>
-  </app-card>
-  <app-card>
-    <div class="typography">
-      <h2 i18n>Traffic over the last 30 days</h2>
-      <app-chart
-        [series]="wrapStats(stats.month)"
-        [xMax]="stats.month.end"
-        [xMin]="stats.month.start"
+        [series]="wrapStats(series)"
+        [xMax]="series.end"
+        [xMin]="series.start"
         unit="b"
       />
     </div>
