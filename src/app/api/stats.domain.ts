@@ -1,7 +1,7 @@
-export type Series = {
+export type Series<T> = {
   start: string;
   end: string;
-  data: [number, number][]
+  data: T;
 }
 
 export enum TimeSelection {

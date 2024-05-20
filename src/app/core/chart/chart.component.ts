@@ -110,6 +110,8 @@ export class ChartComponent implements OnInit, OnChanges, OnDestroy {
           },
           min: 0,
         },
+        tooltip: { shared: true, hideEmptySeries: true },
+        colors: ['#209680', '#cf0'],
       };
 
       this.chart?.destroy();

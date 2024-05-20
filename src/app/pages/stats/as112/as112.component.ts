@@ -37,11 +37,12 @@ export class As112Component {
     this.timeSelection.next(selection);
   }
 
-  protected wrapStats(series: Series): ApexAxisChartSeries {
-    return [{
-      name: $localize`Queries`,
-      data: series.data.map(([time, value]) => [time * 1000, value]),
-      color: '#209680'
-    }];
+  protected wrapStats(series: Series<Record<string, [number, number][]>>): ApexAxisChartSeries {
+    return Object.entries(series.data).map(([type, data]) => {
+      return {
+        name: type + ' ' + $localize`Queries`,
+        data: data.map(([time, value]) => [time * 1000, value]),
+      };
+    })
   }
 }

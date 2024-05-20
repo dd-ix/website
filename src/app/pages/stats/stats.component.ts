@@ -37,11 +37,10 @@ export class StatsComponent {
     this.timeSelection.next(selection);
   }
 
-  protected wrapStats(series: Series): ApexAxisChartSeries {
+  protected wrapStats(series: Series<[number, number][]>): ApexAxisChartSeries {
     return [{
       name: $localize`Traffic`,
       data: series.data.map(([time, value]) => [time * 1000, value]),
-      color: '#209680'
     }]
   }
 }

@@ -14,11 +14,11 @@ export class StatsService {
   ) {
   }
 
-  public getTrafficStats(selection: TimeSelection): Observable<Series> {
-    return this.http.get<Series>(`${API_URL}/stats/traffic/${selection}`);
+  public getTrafficStats(selection: TimeSelection): Observable<Series<[number, number][]>> {
+    return this.http.get<Series<[number, number][]>>(`${API_URL}/stats/traffic/${selection}`);
   }
 
-  public getAs112Stats(selection: TimeSelection): Observable<Series> {
-    return this.http.get<Series>(`${API_URL}/stats/as112/${selection}`);
+  public getAs112Stats(selection: TimeSelection): Observable<Series<Record<string, [number, number][]>>> {
+    return this.http.get<Series<Record<string, [number, number][]>>>(`${API_URL}/stats/as112/${selection}`);
   }
 }
