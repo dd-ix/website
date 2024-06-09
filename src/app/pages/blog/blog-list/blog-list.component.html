@@ -1,5 +1,5 @@
 <div class="typography">
-  <h1 i18n>News</h1>
+  <h1 i18n>Blog</h1>
   <div *ngIf="(keywords | async) as keywords" class="keywords">
     <button (click)="toggleKeyword(keyword)" *ngFor="let keyword of keywords"
             [class.selected]="isSelected(keyword) | async"
@@ -10,12 +10,12 @@
 
 <ul class="not news">
   <li *ngFor="let post of posts | async">
-    <app-news-card [post]="post"/>
+    <app-blog-card [post]="post"/>
   </li>
 </ul>
 
 <app-card>
   <div class="mailing-list">
-    <app-mailing-list [listId]="3" [listName]="'News'"/>
+    <app-mailing-list [listId]="3" [listName]="'Blog'"/>
   </div>
 </app-card>

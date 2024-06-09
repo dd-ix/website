@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-import {NewsService} from "../../api/news.service";
+import {BlogService} from "../../api/blog.service";
 import {RouterLink} from "@angular/router";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
 import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
@@ -10,7 +10,7 @@ import {IconIbhComponent} from "../../icons/icon-ibh/icon-ibh.component";
 import {IconBcixComponent} from "../../icons/icon-bcix/icon-bcix.component";
 import {IconTudComponent} from "../../icons/icon-tud/icon-tud.component";
 import {CardComponent} from "../../core/card/card.component";
-import {NewsCardComponent} from "../../core/news-card/news-card.component";
+import {BlogCardComponent} from "../../core/blog-card/blog-card.component";
 import {TextBlockComponent} from "../../core/text-block/text-block.component";
 import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {IconInternetComponent} from "../../icons/icon-internet/icon-internet.component";
@@ -22,17 +22,17 @@ import {IconDsiComponent} from "../../icons/icon-dsi/icon-dsi.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent],
+  imports: [CommonModule, RouterLink, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
 
-  protected readonly posts = this.newsService.getPosts()
+  protected readonly posts = this.blogService.getPosts()
     .pipe(map(posts => posts.slice(0, 3)));
 
   constructor(
-    private readonly newsService: NewsService,
+    private readonly blogService: BlogService,
   ) {
   }
 }

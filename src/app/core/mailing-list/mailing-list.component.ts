@@ -5,7 +5,6 @@ import {CommonModule} from "@angular/common";
 import {MailingListService} from "../../api/mailing-list.service";
 import {ButtonComponent, FormErrorComponent, TextFieldComponent} from "@feel/form";
 import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
-import {IconNewsComponent} from "../../icons/icon-news/icon-news.component";
 import {NotificationService} from "@feel/notification";
 
 @Component({
@@ -20,7 +19,6 @@ import {NotificationService} from "@feel/notification";
     ButtonComponent,
     FormErrorComponent,
     IconSendComponent,
-    IconNewsComponent,
   ],
   standalone: true
 })

@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, SecurityContext} from '@angular/core';
-import {NewsService} from "../../../api/news.service";
+import {BlogService} from "../../../api/blog.service";
 import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
 import {DomSanitizer, Meta} from "@angular/platform-browser";
@@ -8,9 +8,9 @@ import {CardComponent} from "../../../core/card/card.component";
 import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
 
 @Component({
-  selector: 'app-news-post',
-  templateUrl: './news-post.component.html',
-  styleUrls: ['./news-post.component.scss'],
+  selector: 'app-blog-post',
+  templateUrl: './blog-post.component.html',
+  styleUrls: ['./blog-post.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
@@ -20,10 +20,10 @@ import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
     DatePipe
   ]
 })
-export class NewsPostComponent {
+export class BlogPostComponent {
 
   protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({slug}) => this.newsService.getPost(slug)),
+    switchMap(({slug}) => this.blogService.getPost(slug)),
     tap(post => {
       this.meta.updateTag({property: 'og:title', content: post.title});
       this.meta.updateTag({name: 'twitter:title', content: post.title});
@@ -37,7 +37,7 @@ export class NewsPostComponent {
       });
 
       if (post.image) {
-        const image = this.buildNewsImageUrl(post.image);
+        const image = this.buildBlogImageUrl(post.image);
         this.meta.updateTag({property: 'og:image', content: image});
         this.meta.updateTag({name: 'twitter:image', content: image});
       }
@@ -45,7 +45,7 @@ export class NewsPostComponent {
   );
 
   constructor(
-    private readonly newsService: NewsService,
+    private readonly blogService: BlogService,
     private readonly activatedRoute: ActivatedRoute,
     private readonly meta: Meta,
     private readonly sanitizer: DomSanitizer
@@ -57,12 +57,12 @@ export class NewsPostComponent {
   }
 
   protected safeHtml(html: string): string | null {
-    html = html.replaceAll(/src="([^"]+)"/g, `src="${this.buildNewsImageUrl("$1")}"`);
+    html = html.replaceAll(/src="([^"]+)"/g, `src="${this.buildBlogImageUrl("$1")}"`);
 
     return this.sanitizer.sanitize(SecurityContext.HTML, html);
   }
 
-  protected buildNewsImageUrl(image: string): string {
-    return new URL(`${API_URL}/news/assets/${image}`).toString();
+  protected buildBlogImageUrl(image: string): string {
+    return new URL(`${API_URL}/blog/assets/${image}`).toString();
   }
 }

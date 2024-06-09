@@ -1,34 +1,34 @@
 import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {NewsService} from "../../../api/news.service";
+import {BlogService} from "../../../api/blog.service";
 import {BehaviorSubject, map, Observable, switchMap} from "rxjs";
 import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
-import {NewsCardComponent} from "../../../core/news-card/news-card.component";
+import {BlogCardComponent} from "../../../core/blog-card/blog-card.component";
 import {CardComponent} from "../../../core/card/card.component";
 import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
 
 @Component({
-  selector: 'app-news-list',
-  templateUrl: './news-list.component.html',
-  styleUrls: ['./news-list.component.scss'],
+  selector: 'app-blog-list',
+  templateUrl: './blog-list.component.html',
+  styleUrls: ['./blog-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
   imports: [
     AsyncPipe,
     NgIf,
     NgForOf,
-    NewsCardComponent,
+    BlogCardComponent,
     CardComponent,
     MailingListComponent
   ]
 })
-export class NewsListComponent {
+export class BlogListComponent {
 
   protected readonly selectedKeywords = new BehaviorSubject<string[]>([]);
-  protected readonly posts = this.selectedKeywords.pipe(switchMap(keywords => this.newsService.getPosts(keywords)));
-  protected readonly keywords = this.newsService.getKeywords();
+  protected readonly posts = this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getPosts(keywords)));
+  protected readonly keywords = this.blogService.getKeywords();
 
   constructor(
-    private readonly newsService: NewsService,
+    private readonly blogService: BlogService,
   ) {
   }
 
