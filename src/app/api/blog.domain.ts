@@ -1,6 +1,6 @@
 import {Language} from "./api.domain";
 
-export interface SmallPost {
+export interface SmallBlogPost {
   slug: string;
   lang: Language,
   idx: number;
@@ -13,6 +13,6 @@ export interface SmallPost {
   image: string | null;
 }
 
-export interface Post extends SmallPost {
+export interface Post extends SmallBlogPost {
   body: string;
 }

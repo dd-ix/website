@@ -1,16 +1,16 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {NewsSubscribeComponent} from './news-subscribe.component';
+import {BlogSubscribeComponent} from './blog-subscribe.component';
 
 describe('NewsSubscribeComponent', () => {
-  let component: NewsSubscribeComponent;
-  let fixture: ComponentFixture<NewsSubscribeComponent>;
+  let component: BlogSubscribeComponent;
+  let fixture: ComponentFixture<BlogSubscribeComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NewsSubscribeComponent]
+      declarations: [BlogSubscribeComponent]
     });
-    fixture = TestBed.createComponent(NewsSubscribeComponent);
+    fixture = TestBed.createComponent(BlogSubscribeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

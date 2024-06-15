@@ -10,7 +10,7 @@
         <b>{{ formatAuthors(post.authors) }}</b>
       </p>
 
-      <img *ngIf="post.image" [src]="buildNewsImageUrl(post.image)" alt="">
+      <img *ngIf="post.image" [src]="buildBlogImageUrl(post.image)" alt="">
 
       <div [innerHtml]="safeHtml(post.body)">
       </div>
