@@ -17,11 +17,12 @@ import {IconInternetComponent} from "../../icons/icon-internet/icon-internet.com
 import {IconSocialComponent} from "../../icons/icon-social/icon-social.component";
 import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
 import {ButtonComponent} from "@feel/form";
+import {IconDsiComponent} from "../../icons/icon-dsi/icon-dsi.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent],
+  imports: [CommonModule, RouterLink, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, NewsCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
