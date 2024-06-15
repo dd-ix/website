@@ -1,5 +1,5 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
-import {HttpClient, HttpParams} from "@angular/common/http";
+import { HttpClient, HttpParams } from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Post, SmallPost} from "./news.domain";
 import {API_URL, Language} from "./api.domain";

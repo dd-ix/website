@@ -1,7 +1,7 @@
 import {Injectable} from "@angular/core";
 import {BehaviorSubject, Observable, switchMap, tap} from "rxjs";
 import {Peer} from "./peer.domain";
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import {API_URL} from "./api.domain";
 
 const MAX_AGE = 1000 * 60 * 60 * 24;

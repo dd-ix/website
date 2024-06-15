@@ -1,7 +1,7 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import {BehaviorSubject, Observable, of, switchMap, tap} from "rxjs";
 import {Post} from "./news.domain";
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import {API_URL, Language, MAX_CACHE_AGE} from "./api.domain";
 import {TextBlock} from "./text-blocks.domain";
 
