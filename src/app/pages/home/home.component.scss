@@ -23,7 +23,7 @@
     padding: 4rem 0;
   }
 
-  > h1 {
+  >h1 {
     margin: 0;
   }
 
@@ -58,15 +58,41 @@
     }
   }
 
-  .news, .socials, .sponsors {
+  .news,
+  .socials,
+  .sponsors {
     display: grid;
     gap: 1rem;
     list-style-type: none;
   }
 
-  .news, .sponsors {
-    grid-template-columns: 1fr 1fr 1fr;
+  .sponsors {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
+    .sponsor-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 5rem;
+
+      &.netd {
+        display: flex;
+        gap: 1rem;
+
+        img {
+          max-height: 100%;
+        }
+
+        .tud {
+          flex-grow: 1;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+
+  .sponsors,
+  .news {
     @media screen and (max-width: 1250px) {
       grid-template-columns: 1fr;
     }
@@ -74,7 +100,9 @@
 
   .news {
     .card ::ng-deep a {
-      &, div {
+
+      &,
+      div {
         justify-content: center;
         height: 100%;
       }
@@ -85,7 +113,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
-    .card ::ng-deep > a {
+    .card ::ng-deep>a {
       height: 100%;
       align-items: center;
     }
@@ -100,28 +128,5 @@
     margin-top: 20px;
     align-self: flex-start;
     margin-bottom: 0;
-  }
-}
-
-.sponsors {
-  .sponsor-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5rem;
-
-    &.netd {
-      display: flex;
-      gap: 1rem;
-
-      img {
-        max-height: 100%;
-      }
-
-      .tud {
-        flex-grow: 1;
-        max-height: 100%;
-      }
-    }
   }
 }
