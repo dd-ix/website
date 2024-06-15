@@ -91,6 +91,10 @@
     }
   }
 
+  .news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .sponsors,
   .news {
     @media screen and (max-width: 1250px) {
