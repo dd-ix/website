@@ -24,7 +24,11 @@ export class RelativeTimePipe implements PipeTransform {
    * @returns {string} The formatted string.
    * @memberof RelativeTimePipe
    */
-  public transform(value: string | number | Date): string {
+  public transform(value: string | number | Date | null | undefined): string | undefined | null {
+    if (value === null || typeof value === "undefined") {
+      return value;
+    }
+
     let date: number;
     if (typeof value === 'number') {
       date = value;

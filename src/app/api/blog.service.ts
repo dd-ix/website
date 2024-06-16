@@ -1,7 +1,7 @@
 import {Inject, Injectable, LOCALE_ID} from '@angular/core';
 import { HttpClient, HttpParams } from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Post, SmallBlogPost, SmallEvent} from "./blog.domain";
+import {Post, SmallBlogPost, SmallEvent, EventPost} from "./blog.domain";
 import {API_URL, Language} from "./api.domain";
 
 @Injectable({
@@ -38,5 +38,10 @@ export class BlogService {
 
   public getUpComingEvents(): Observable<SmallEvent[]> {
     return this.http.get<SmallEvent[]>(`${API_URL}/event/${this.lang}/upcoming`);
+  }
+
+
+  public getEvent(slug: string): Observable<EventPost> {
+    return this.http.get<EventPost>(`${API_URL}/event/${this.lang}/${slug}`);
   }
 }
