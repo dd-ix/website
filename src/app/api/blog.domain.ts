@@ -32,7 +32,7 @@ export interface SmallEvent {
   location: string
 }
 
-export interface Event extends SmallEvent {
+export interface EventPost extends SmallEvent {
   body: string;
 }
 
