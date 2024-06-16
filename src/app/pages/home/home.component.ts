@@ -33,7 +33,7 @@ export class HomeComponent {
     .pipe(map(events => events.slice(0, 3)), share());
 
   protected readonly posts = this.events
-    .pipe(switchMap(events => this.blogService.getPosts()
+    .pipe(switchMap(events => this.blogService.getBlogPosts()
         .pipe(map(posts => posts.slice(0, 3 - events.length)))
       )
     )

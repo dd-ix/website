@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  max-width: 40rem;
+}
+
+.typography ::ng-deep img {
+  margin: 2rem 0;
+}

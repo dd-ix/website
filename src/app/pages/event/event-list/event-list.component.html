@@ -1,0 +1,15 @@
+<div class="typography">
+  <h1 i18n>Events</h1>
+</div>
+
+<ul class="not news">
+  <li *ngFor="let event of events | async">
+    <app-event-card [event]="event"/>
+  </li>
+</ul>
+
+<app-card>
+  <div class="mailing-list">
+    <app-mailing-list [listId]="3" [listName]="'News'"/>
+  </div>
+</app-card>

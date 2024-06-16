@@ -24,8 +24,8 @@ import {MailingListComponent} from "../../../core/mailing-list/mailing-list.comp
 export class BlogListComponent {
 
   protected readonly selectedKeywords = new BehaviorSubject<string[]>([]);
-  protected readonly posts = this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getPosts(keywords)));
-  protected readonly keywords = this.blogService.getKeywords();
+  protected readonly posts = this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)));
+  protected readonly keywords = this.blogService.getBlogKeywords();
 
   constructor(
     private readonly blogService: BlogService,

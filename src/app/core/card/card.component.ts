@@ -24,6 +24,9 @@ export class CardComponent {
   @HostBinding("class.light-shadow")
   public lightShadow: boolean = false;
 
+  @Input()
+  public highlight: boolean = false;
+
   protected isExternal(): boolean {
     if (!this.link) {
       return false;
