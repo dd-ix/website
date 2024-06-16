@@ -65,6 +65,9 @@
   <h1 i18n>Blog</h1>
 </div>
 <ul class="not news">
+  <li *ngFor="let event of events | async">
+    <app-event-card [event]="event" class="card"/>
+  </li>
   <li *ngFor="let post of posts | async">
     <app-blog-card [post]="post" class="card"/>
   </li>
