@@ -3,7 +3,7 @@
     <app-card *ngIf="(post | async) as post" class="typography">
       <h1>{{ post.title }}</h1>
 
-      <p><b>Time: {{post.start_time | date: 'dd/MM/yyyy HH:mm' }}</b> until <b>{{post.end_time | date: 'dd/MM/yyyy HH:mm'}}</b></p>
+      <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
       <p><b>Location: {{post.location}}</b> </p>
       <img *ngIf="post.image" [src]="buildEventImageUrl(post.image)" alt="">
 
