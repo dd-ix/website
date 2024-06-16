@@ -28,7 +28,7 @@ export class EventPostComponent {
   protected readonly post = this.activatedRoute.params.pipe(
     switchMap(({slug}) => this.blogService.getEvent(slug)),
     tap(post => {
-      this.title.setTitle(`${post} | Dresden Internet Exchange`);
+      this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
       this.meta.updateTag({property: 'og:title', content: post.title});
       this.meta.updateTag({name: 'twitter:title', content: post.title});
       this.meta.updateTag({property: 'og:type', content: 'article'});
