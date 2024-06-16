@@ -17,6 +17,13 @@ export class EventCardComponent {
   @Input()
   public event: SmallEvent | undefined;
 
+  protected currentTime: number = Date.now();
+
+  protected parseDate(date: string): number {
+    return Date.parse(date);
+  }
+
+
   protected buildEventLink(slug: string): string {
     return `/event/${slug}`;
   }
@@ -28,4 +35,6 @@ export class EventCardComponent {
 
     return new URL(`${API_URL}/event/assets/${image}`).toString();
   }
+
+  protected readonly Date = Date;
 }

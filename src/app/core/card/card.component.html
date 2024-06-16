@@ -19,6 +19,7 @@
 <div *ngIf="!link; else withLink"
      [class.inverse-shadow]="inverseShadow"
      [class.shadow]="backgroundImage"
+     [class.highlighted]="highlight"
      [style.background-image]="buildBackgroundImageUrl(backgroundImage)">
   <ng-container *ngTemplateOutlet="wrapper"></ng-container>
 </div>
@@ -27,6 +28,7 @@
   <a *ngIf="!isExternal(); else external"
      [class.inverse-shadow]="inverseShadow"
      [class.shadow]="backgroundImage"
+     [class.highlighted]="highlight"
      [routerLink]="link"
      [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
      class="not">
@@ -36,6 +38,7 @@
   <ng-template #external>
     <a [class.inverse-shadow]="inverseShadow"
        [class.shadow]="backgroundImage"
+       [class.highlighted]="highlight"
        [href]="link"
        [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
        class="not"

@@ -1,6 +1,7 @@
 <app-card *ngIf="event"
           [backgroundImage]="buildEventImageUrl(event.image)"
-          [link]="buildEventLink(event.slug)">
+          [link]="buildEventLink(event.slug)"
+          [highlight] = "parseDate(event.start_time) > currentTime">
   <h1>{{ event.title }}</h1>
   <span><b>{{ event.start_time | relativeTime  }}</b> - {{event.description}}</span>
 </app-card>

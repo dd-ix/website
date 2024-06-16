@@ -8,6 +8,10 @@
       border-radius: 0.5rem;
       overflow: hidden;
 
+      &.highlighted {
+        border-color: $c-primary-l;
+      }
+
       &.shadow {
         display: block;
         background-position: center;
