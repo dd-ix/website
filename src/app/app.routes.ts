@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { routes as associationRoutes } from "./pages/association/association.routes";
-import { routes as blogRoutes } from "./pages/post/blog.routes";
+import { routes as blogRoutes } from "./pages/blog/blog.routes";
 import { routes as contactRoutes } from "./pages/contact/contact.routes";
 import { routes as privacyPolicyRoutes } from "./pages/privacy-policy/privacy-policy.routes";
 import { routes as teamRoutes } from "./pages/team/team.routes";
