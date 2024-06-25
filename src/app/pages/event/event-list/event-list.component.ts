@@ -6,6 +6,8 @@ import {BlogCardComponent} from "../../../core/blog-card/blog-card.component";
 import {CardComponent} from "../../../core/card/card.component";
 import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
 import {EventCardComponent} from "../../../core/event-card/event-card.component";
+import {ButtonComponent} from "@feel/form";
+import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
 
 @Component({
   selector: 'app-blog-list',
@@ -13,15 +15,17 @@ import {EventCardComponent} from "../../../core/event-card/event-card.component"
   styleUrls: ['./event-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: true,
-  imports: [
-    AsyncPipe,
-    NgIf,
-    NgForOf,
-    BlogCardComponent,
-    CardComponent,
-    MailingListComponent,
-    EventCardComponent
-  ]
+    imports: [
+        AsyncPipe,
+        NgIf,
+        NgForOf,
+        BlogCardComponent,
+        CardComponent,
+        MailingListComponent,
+        EventCardComponent,
+        ButtonComponent,
+        IconSendComponent
+    ]
 })
 export class EventListComponent {
 

@@ -5,6 +5,8 @@ import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
 import {BlogCardComponent} from "../../../core/blog-card/blog-card.component";
 import {CardComponent} from "../../../core/card/card.component";
 import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
+import {ButtonComponent} from "@feel/form";
+import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
 
 @Component({
   selector: 'app-blog-list',
@@ -18,7 +20,9 @@ import {MailingListComponent} from "../../../core/mailing-list/mailing-list.comp
     NgForOf,
     BlogCardComponent,
     CardComponent,
-    MailingListComponent
+    MailingListComponent,
+    ButtonComponent,
+    IconSendComponent
   ]
 })
 export class BlogListComponent {
