@@ -8,7 +8,7 @@
   <app-card>
     <div class="typography">
       <h2 i18n>DNS Queries</h2>
-      <app-chart [series]="wrapStats(series)" [xMax]="series.end" [xMin]="series.start" unit="q" />
+      <app-chart [series]="wrapStats(series)" [xMax]="series.end" [xMin]="series.start" unit="q" seriesName="Queries" />
     </div>
   </app-card>
 </ng-container>

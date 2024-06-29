@@ -63,6 +63,9 @@ export class ChartComponent implements OnInit, OnChanges, OnDestroy {
   @Input()
   public unit: string | undefined;
 
+  @Input()
+  public seriesName: string | undefined;
+
   private chart: ApexCharts | undefined;
 
   constructor(
@@ -103,12 +106,14 @@ export class ChartComponent implements OnInit, OnChanges, OnDestroy {
           type: "datetime",
           min: new Date(this.xMin!).getTime(),
           max: new Date(this.xMax!).getTime(),
+          title: { text: "Time" },
         },
         yaxis: {
           labels: {
             formatter: this.yAxisTickFormatting(),
           },
           min: 0,
+          title: { text: this.seriesName },
         },
         tooltip: { shared: true, hideEmptySeries: true },
         colors: ['#209680', '#cf0'],
