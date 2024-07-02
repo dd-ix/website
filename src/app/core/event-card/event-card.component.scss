@@ -1,0 +1,25 @@
+@import "vars";
+
+:host {
+  position: relative;
+  display: block;
+
+  .event-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: $f-size-small;
+    color: $c-secondary;
+    font-weight: $f-weight-bold;
+    background-color: $c-primary-l;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    transition: 150ms background-color ease-in-out;
+    padding: 0 0.2rem;
+    text-transform: uppercase;
+  }
+
+  &:hover .event-label {
+    background-color: $c-primary;
+  }
+}
