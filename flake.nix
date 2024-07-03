@@ -23,6 +23,11 @@
               domain = "dd-ix.net";
               mkPnpmPackage = pnpm2nix.packages."${system}".mkPnpmPackage;
             };
+            website-static = pkgs.callPackage ./derivation.nix {
+              domain = "dd-ix.net";
+              static = true;
+              mkPnpmPackage = pnpm2nix.packages."${system}".mkPnpmPackage;
+            };
             default = website;
           };
         }
