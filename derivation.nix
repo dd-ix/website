@@ -1,4 +1,4 @@
-{ domain, mkPnpmPackage }:
+{ domain, mkPnpmPackage, static ? false }:
 
 mkPnpmPackage {
   src = ./.;
@@ -10,7 +10,7 @@ mkPnpmPackage {
       --replace 'http://127.0.0.1:8080' 'https://content.${domain}'
   '';
 
-  script = "build:ci";
+  script = if static then "build:static" else "build:ci";
 
   installPhase = ''
     mkdir -p $out

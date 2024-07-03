@@ -7,6 +7,7 @@
     "start": "ng serve",
     "build": "ng build --output-path ./dist",
     "build:ci": "ng build --output-path ./dist --localize && rollup -c rollup.config.mjs",
+    "build:static": "ng build --output-path ./dist --localize --ssr=false",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadless",

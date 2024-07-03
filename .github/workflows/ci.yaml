@@ -3,76 +3,62 @@ name: CI
 on:
   push:
     branches: [ master ]
-    tags: [ 'v*' ]
   pull_request:
+
+permissions:
+  deployments: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4.0.0
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'pnpm'
+      - name: Install Nix
+        uses: cachix/install-nix-action@V27
 
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm run build:ci
+      - name: Build
+        run: nix build -L
 
       - uses: actions/upload-artifact@v4
         with:
-          name: presence
-          path: dist
+          name: website
+          path: result
 
-
-  docker:
-    needs: [ build ]
+  deploy:
     runs-on: ubuntu-latest
-
-    permissions:
-      packages: write
+    needs: build
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - uses: actions/download-artifact@v4
+      - name: Install Nix
+        uses: cachix/install-nix-action@V27
+
+      - name: Build Static
+        run: nix build -L .#website-static
+
+      - uses: actions/upload-artifact@v4
         with:
-          name: presence
-          path: dist
+          name: website-static
+          path: result
 
-      - name: Docker meta
-        id: meta
-        uses: docker/metadata-action@v5
+      - name: Patch
+        run: |
+          mv result result-old
+          mkdir result
+          cp -r result-old/* result
+          chmod +w -R result
+          echo "User-agent: *\nDisallow: /" > result/browser/robots.txt
+
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
-          images: |
-            ghcr.io/${{ github.repository }}
-          tags: |
-            type=edge
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-
-      - uses: docker/setup-qemu-action@v3
-      - uses: docker/setup-buildx-action@v3
-
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3
-        if: github.event_name != 'pull_request'
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ github.token }}
-
-      - name: Build
-        uses: docker/build-push-action@v5
-        with:
-          file: Dockerfile.github-actions
-          context: .
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 2a09613716e511a8fe8ca74abc084762
+          projectName: dd-ix
+          directory: result/browser
+          gitHubToken: ${{ github.token }}
