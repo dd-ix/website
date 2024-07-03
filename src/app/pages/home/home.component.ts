@@ -5,7 +5,7 @@ import {RouterLink} from "@angular/router";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
 import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
 import {IconLinkedinComponent} from "../../icons/icon-linkedin/icon-linkedin.component";
-import {map, Observable, share, switchMap} from "rxjs";
+import {map, share, switchMap} from "rxjs";
 import {IconIbhComponent} from "../../icons/icon-ibh/icon-ibh.component";
 import {IconBcixComponent} from "../../icons/icon-bcix/icon-bcix.component";
 import {IconTudComponent} from "../../icons/icon-tud/icon-tud.component";
@@ -18,7 +18,6 @@ import {IconSocialComponent} from "../../icons/icon-social/icon-social.component
 import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
 import {ButtonComponent} from "@feel/form";
 import {IconDsiComponent} from "../../icons/icon-dsi/icon-dsi.component";
-import {PostOrEvent, SmallEvent} from "../../api/blog.domain";
 import {EventCardComponent} from "../../core/event-card/event-card.component";
 
 @Component({

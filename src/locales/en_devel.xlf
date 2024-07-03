@@ -100,10 +100,6 @@
           <context context-type="sourcefile">src/app/pages/blog/blog-list/blog-list.component.html</context>
           <context context-type="linenumber">3,4</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">65,66</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6718726533481404495" datatype="html">
         <source>Peering</source>
@@ -631,6 +627,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5390240553289554839" datatype="html">
+        <source>Events &amp; News</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3670532182581004841" datatype="html">
