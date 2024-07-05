@@ -2,25 +2,26 @@
   <div class="header">
     <h1 i18n>Blog</h1>
     <feel-button class="event-button" i18n-label label="Events!" link="/event">
-      <app-icon-send/>
+      <app-icon-send />
     </feel-button>
   </div>
   <div *ngIf="(keywords | async) as keywords" class="keywords">
     <button (click)="toggleKeyword(keyword)" *ngFor="let keyword of keywords"
-            [class.selected]="isSelected(keyword) | async"
-            class="keyword">{{ keyword }}
+      [class.selected]="isSelected(keyword) | async" class="keyword">
+      {{ keyword }}
     </button>
   </div>
 </div>
 
 <ul class="not news">
-  <li *ngFor="let post of posts | async">
-    <app-blog-card [post]="post"/>
+  <li *ngFor="let entry of entries | async">
+    <app-blog-card *ngIf="!isEvent(entry)" [post]="castPost(entry)" />
+    <app-event-card *ngIf="isEvent(entry)" [event]="castEvent(entry)" />
   </li>
 </ul>
 
 <app-card>
   <div class="mailing-list">
-    <app-mailing-list [listId]="3" [listName]="'News'"/>
+    <app-mailing-list [listId]="3" [listName]="'News'" />
   </div>
 </app-card>

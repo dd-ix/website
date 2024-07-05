@@ -1,12 +1,14 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {BlogService} from "../../../api/blog.service";
-import {BehaviorSubject, map, Observable, switchMap} from "rxjs";
-import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
-import {BlogCardComponent} from "../../../core/blog-card/blog-card.component";
-import {CardComponent} from "../../../core/card/card.component";
-import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
-import {ButtonComponent} from "@feel/form";
-import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { BlogService } from "../../../api/blog.service";
+import { BehaviorSubject, combineLatest, map, Observable, switchMap } from "rxjs";
+import { AsyncPipe, NgForOf, NgIf } from "@angular/common";
+import { BlogCardComponent } from "../../../core/blog-card/blog-card.component";
+import { CardComponent } from "../../../core/card/card.component";
+import { MailingListComponent } from "../../../core/mailing-list/mailing-list.component";
+import { ButtonComponent } from "@feel/form";
+import { IconSendComponent } from "../../../icons/icon-send/icon-send.component";
+import { EventCardComponent } from "../../../core/event-card/event-card.component";
+import { SmallBlogPost, SmallEvent } from '../../../api/blog.domain';
 
 @Component({
   selector: 'app-blog-list',
@@ -22,13 +24,20 @@ import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
     CardComponent,
     MailingListComponent,
     ButtonComponent,
-    IconSendComponent
+    IconSendComponent,
+    EventCardComponent
   ]
 })
 export class BlogListComponent {
 
   protected readonly selectedKeywords = new BehaviorSubject<string[]>([]);
-  protected readonly posts = this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)));
+  protected readonly entries = combineLatest({
+    events: this.blogService.getEventPosts(),
+    posts: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)))
+  })
+    .pipe(map(({ events, posts }) =>
+      ([...events, ...posts].sort(eventOrPost => Date.parse(eventOrPost.published)))
+    ));
   protected readonly keywords = this.blogService.getBlogKeywords();
 
   constructor(
@@ -46,5 +55,17 @@ export class BlogListComponent {
     } else {
       this.selectedKeywords.next(this.selectedKeywords.value.filter(existing => existing !== keyword));
     }
+  }
+
+  protected isEvent(eventOrPost: SmallEvent | SmallBlogPost): boolean {
+    return 'start_time' in eventOrPost;
+  }
+
+  protected castEvent(eventOrPost: SmallEvent | SmallBlogPost): SmallEvent {
+    return eventOrPost as SmallEvent;
+  }
+
+  protected castPost(eventOrPost: SmallEvent | SmallBlogPost): SmallBlogPost {
+    return eventOrPost as SmallBlogPost;
   }
 }
