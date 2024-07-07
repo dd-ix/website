@@ -1,9 +1,9 @@
 <div class="typography">
   <div class="header">
-    <h1 i18n>Blog</h1>
-    <feel-button class="event-button" i18n-label label="Events!" link="/event">
-      <app-icon-send />
-    </feel-button>
+    <h1 i18n>News &amp; Events</h1>
+  <!-- <feel-button class="event-button" i18n-label label="Events!" link="/event"> -->
+  <!--     <app-icon-send /> -->
+  <!--   </feel-button> -->
   </div>
   <div *ngIf="(keywords | async) as keywords" class="keywords">
     <button (click)="toggleKeyword(keyword)" *ngFor="let keyword of keywords"
