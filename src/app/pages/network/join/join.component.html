@@ -10,6 +10,7 @@
         <ul>
           <li i18n>We offer <b>10G</b> ports for <b>150€</b> a month.</li>
         </ul>
+        Simply send us an e-mail to start the ordering process.
         <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!"
           link="mailto:peering@dd-ix.net">
           <app-icon-send />
@@ -66,3 +67,8 @@
 <app-card [lightShadow]="true" backgroundImage="/assets/images/peering-policy.webp" link="/peering/policy">
   <h1 i18n>Peering Policy</h1>
 </app-card>
+<app-card [backgroundImage]="buildBackgroundImageTermsofService()" [lightShadow]="true"
+          [link]="buildDownloadLinkTermsOfService()">
+  <h1>DD-IX Terms of Service</h1>
+</app-card>
+
