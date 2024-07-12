@@ -116,23 +116,24 @@ img {
   max-width: 500px;
 }
 
+.further-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-button {
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+
 .row {
   display: flex;
   gap: 1rem;
 
   .datacenter {
     max-width: 500px;
-  }
-
-  .further-information {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .section-button {
-    align-self: flex-start;
-    margin-bottom: 0;
   }
 
   @media screen and (max-width: #{$bp-mobile}) {

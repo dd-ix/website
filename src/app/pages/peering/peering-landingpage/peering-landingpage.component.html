@@ -2,6 +2,22 @@
   <h1 i18n>Peering</h1>
 </div>
 
+  <!--<app-card class="datacenter">
+    <a routerLink="/network/join">
+      <app-icon-pop-map class="pop-map"/>
+    </a>
+  </app-card>-->
+
+  <app-card>
+    <div class="further-information">
+      <h1 i18n>Join DD-IX!</h1>
+      <p i18n><b>Become</b> a <b>member</b> or <b>customer</b> of DD-IX! See port prices and PoP locations here:</p>
+      <feel-button class="section-button" flavor="accent" i18n-label label="Join Now!" link="/network/join">
+        <app-icon-send/>
+      </feel-button>
+    </div>
+  </app-card>
+
 <div class="blocks">
   <div class="block">
     <app-icon-switch class="icon"/>
@@ -51,24 +67,6 @@
       </div>
     </app-card>
   </div>
-</div>
-
-<div class="row">
-  <app-card class="datacenter">
-    <a routerLink="/network/join">
-      <app-icon-pop-map class="pop-map"/>
-    </a>
-  </app-card>
-
-  <app-card>
-    <div class="further-information">
-      <h1 i18n>Join DD-IX!</h1>
-      <p i18n><b>Become</b> a <b>member</b> or <b>customer</b> of DD-IX! See port prices and PoP locations here:</p>
-      <feel-button class="section-button" flavor="accent" i18n-label label="More Information" link="/network/join">
-        <app-icon-send/>
-      </feel-button>
-    </div>
-  </app-card>
 </div>
 
 <app-card [lightShadow]="true" backgroundImage="./assets/images/peering-policy.webp" link="policy">
