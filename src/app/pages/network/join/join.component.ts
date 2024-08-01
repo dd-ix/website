@@ -24,10 +24,10 @@ export class JoinComponent {
 
 
   protected buildDownloadLinkTermsOfService(): string {
-    return new URL(`${API_URL}/documents/download/DD-IX TermsofService.pdf`).toString();
+    return new URL(`${API_URL}/documents/download/DD-IX_TermsofService.pdf`).toString();
   }
 
   protected buildBackgroundImageTermsofService(): string {
-    return new URL(`${API_URL}/documents/download/DD-IX TermsofService.webp`).toString();
+    return new URL(`${API_URL}/documents/download/DD-IX_TermsofService.webp`).toString();
   }
 }
