@@ -40,7 +40,7 @@ export class BlogListComponent {
     ([...events, ...posts].sort(eventOrPost => {
       // @ts-expect-error union type
       return Date.parse(eventOrPost.published ?? eventOrPost.start_time);
-    }).reverse())
+    }))
     ));
   protected readonly keywords = this.blogService.getBlogKeywords();
 
