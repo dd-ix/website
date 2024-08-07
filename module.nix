@@ -2,6 +2,9 @@
 
 let
   cfg = config.dd-ix.website;
+  package = cfg.package.override {
+    inherit (cfg) contentApi;
+  };
 in
 {
   options.dd-ix.website = {
@@ -13,6 +16,11 @@ in
       type = lib.types.str;
       description = "The domain the frontend should be served.";
     };
+
+    contentApi = lib.mkOption {
+      type = lib.types.str;
+      description = "The domain the content api is listening.";
+    };
   };
 
   config = lib.mkIf cfg.enable {
@@ -21,11 +29,11 @@ in
       wantedBy = [ "multi-user.target" ];
 
       environment = {
-        APP_DIR = "${pkgs.website}";
+        APP_DIR = package;
       };
 
       serviceConfig = {
-        ExecStart = "${pkgs.nodejs}/bin/node ${cfg.package}/server.mjs";
+        ExecStart = "${pkgs.nodejs}/bin/node ${package}/server.mjs";
         DynamicUser = true;
         Restart = "always";
       };
@@ -36,7 +44,7 @@ in
 
       virtualHosts."${cfg.domain}".locations = {
         "/" = {
-          root = "${cfg.package}/browser";
+          root = "${package}/browser";
           # just something that does not exists
           index = "X6XewZMsmreGIxx1lCdp0Yo1X4qHTivW";
           tryFiles = "$uri @website";
