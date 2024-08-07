@@ -9,6 +9,7 @@ import { ButtonComponent } from "@feel/form";
 import { IconSendComponent } from "../../../icons/icon-send/icon-send.component";
 import { EventCardComponent } from "../../../core/event-card/event-card.component";
 import { SmallBlogPost, SmallEvent } from '../../../api/blog.domain';
+import { eventNames } from 'node:process';
 
 @Component({
   selector: 'app-blog-list',
@@ -36,7 +37,10 @@ export class BlogListComponent {
     posts: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)))
   })
     .pipe(map(({ events, posts }) =>
-      ([...events, ...posts].sort(eventOrPost => Date.parse(eventOrPost.published)))
+    ([...events, ...posts].sort(eventOrPost => {
+      // @ts-expect-error union type
+      return Date.parse(eventOrPost.published ?? eventOrPost.start_time);
+    }).reverse())
     ));
   protected readonly keywords = this.blogService.getBlogKeywords();
 

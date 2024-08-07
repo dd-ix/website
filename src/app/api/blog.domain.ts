@@ -22,7 +22,6 @@ export interface SmallEvent {
   lang: Language,
   idx: number;
   title: string;
-  published: string;
   description: string;
   keywords: string[];
   authors: string[];
