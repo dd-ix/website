@@ -6,38 +6,38 @@
   <app-card>
     <table class="not">
       <thead>
-      <tr>
-        <th i18n>Member</th>
-        <th i18n class="name">Name</th>
-        <th i18n>ASN</th>
-        <th i18n>Connections</th>
-        <th i18n>RSv4</th>
-        <th i18n>RSv6</th>
-      </tr>
+        <tr>
+          <th i18n>Member</th>
+          <th i18n class="name">Name</th>
+          <th i18n>ASN</th>
+          <th i18n>Connections</th>
+          <th i18n>RSv4</th>
+          <th i18n>RSv6</th>
+        </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let peer of peers">
-        <td>
-          <div class="icon">
-            <app-icon-checkmark *ngIf="peer.supporter"/>
-          </div>
-        </td>
-        <td class="name"><a [href]="peer.url" target="_blank">{{ peer.name }}</a></td>
-        <td><a [href]="'https://bgp.tools/as/' + peer.asn" target="_blank">{{ peer.asn }}</a></td>
-        <td>{{ speed(peer.speed) }}</td>
-        <td>
-          <div class="icon" [class.bad]="!peer.rs_v4" *ngIf="peer.rs_v4 || peer.rs_v6">
-            <app-icon-checkmark *ngIf="peer.rs_v4"/>
-            <app-icon-close *ngIf="!peer.rs_v4"/>
-          </div>
-        </td>
-        <td>
-          <div class="icon" [class.bad]="!peer.rs_v6" *ngIf="peer.rs_v4 || peer.rs_v6">
-            <app-icon-checkmark *ngIf="peer.rs_v6"/>
-            <app-icon-close *ngIf="!peer.rs_v6"/>
-          </div>
-        </td>
-      </tr>
+        <tr *ngFor="let peer of peers">
+          <td>
+            <div class="icon">
+              <app-icon-checkmark *ngIf="peer.supporter" />
+            </div>
+          </td>
+          <td class="name"><a [href]="peer.url" target="_blank">{{ peer.name }}</a></td>
+          <td><a [href]="'https://bgp.tools/as/' + peer.asn" target="_blank">{{ peer.asn }}</a></td>
+          <td>{{ speed(peer.speed) }}</td>
+          <td>
+            <div class="icon" [class.bad]="!peer.rs_v4" *ngIf="peer.rs_v4 || peer.rs_v6">
+              <app-icon-checkmark *ngIf="peer.rs_v4" />
+              <app-icon-close *ngIf="!peer.rs_v4" />
+            </div>
+          </td>
+          <td>
+            <div class="icon" [class.bad]="!peer.rs_v6" *ngIf="peer.rs_v4 || peer.rs_v6">
+              <app-icon-checkmark *ngIf="peer.rs_v6" />
+              <app-icon-close *ngIf="!peer.rs_v6" />
+            </div>
+          </td>
+        </tr>
       </tbody>
     </table>
   </app-card>
@@ -46,17 +46,31 @@
 <div class="row">
   <app-card class="datacenter">
     <a routerLink="join">
-      <app-icon-pop-map class="pop-map"/>
+      <app-icon-pop-map class="pop-map" />
     </a>
   </app-card>
 
-  <app-card>
-    <div class="further-information">
-      <h1 i18n>Join DD-IX!</h1>
-      <p i18n><b>Become</b> a <b>member</b> or <b>customer</b> of DD-IX! See port prices and PoP locations here:</p>
-      <feel-button class="section-button" flavor="accent" i18n-label label="Join Now!" link="join">
-        <app-icon-send/>
-      </feel-button>
-    </div>
-  </app-card>
+  <div class="column">
+    <app-card>
+      <div class="further-information">
+        <h1 i18n>Join DD-IX!</h1>
+        <p i18n><b>Become</b> a <b>member</b> or <b>customer</b> of DD-IX! See port prices and PoP locations here:</p>
+        <feel-button class="section-button" flavor="accent" i18n-label label="Join Now!" link="join">
+          <app-icon-send />
+        </feel-button>
+      </div>
+    </app-card>
+
+    <app-card>
+      <div class="further-information">
+        <h1 i18n>Join DDNOG!</h1>
+        <p i18n>Participate in the Dresden Network Operators Group:</p>
+        <feel-button class="section-button" flavor="accent" i18n-label label="Subscribe Now!"
+          link="https://lists.dd-ix.net/postorius/lists/ddnog.lists.dd-ix.net/">
+          <app-icon-send />
+        </feel-button>
+      </div>
+    </app-card>
+  </div>
+
 </div>

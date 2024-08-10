@@ -59,6 +59,12 @@
   ul.services {
     grid-template-columns: 1fr 1fr;
   }
+
+  .row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 img {
