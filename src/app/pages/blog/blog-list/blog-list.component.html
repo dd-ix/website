@@ -14,7 +14,7 @@
 </div>
 
 <ul class="not news">
-  <li *ngFor="let entry of entries | async">
+  <li *ngFor="let entry of entries | async; trackBy trackBy">
     <app-blog-card *ngIf="!isEvent(entry)" [post]="castPost(entry)" />
     <app-event-card *ngIf="isEvent(entry)" [event]="castEvent(entry)" />
   </li>

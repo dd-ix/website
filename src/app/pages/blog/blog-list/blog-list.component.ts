@@ -36,12 +36,13 @@ export class BlogListComponent {
     events: this.blogService.getEventPosts(),
     posts: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)))
   })
-    .pipe(map(({ events, posts }) =>
-    ([...events, ...posts].sort(eventOrPost => {
+    .pipe(map(({ events, posts }) => ([...events, ...posts].sort((a, b) => {
       // @ts-expect-error union type
-      return Date.parse(eventOrPost.published ?? eventOrPost.start_time);
-    }))
-    ));
+      const aDate = Date.parse(a.published ?? a.start_time);
+      // @ts-expect-error union type
+      const bDate = Date.parse(b.published ?? b.start_time);
+      return bDate - aDate;
+    }))));
   protected readonly keywords = this.blogService.getBlogKeywords();
 
   constructor(
@@ -71,5 +72,9 @@ export class BlogListComponent {
 
   protected castPost(eventOrPost: SmallEvent | SmallBlogPost): SmallBlogPost {
     return eventOrPost as SmallBlogPost;
+  }
+
+  protected trackBy(_idx: number, post: SmallEvent | SmallBlogPost): string {
+    return post.slug;
   }
 }
