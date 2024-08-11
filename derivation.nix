@@ -7,7 +7,7 @@ mkPnpmPackage {
 
   postPatch = ''
     substituteInPlace src/app/api/api.domain.ts \
-      --replace 'http://127.0.0.1:8080' '${contentApi}'
+      --replace-fail 'https://content.dd-ix.net' '${contentApi}'
   '';
 
   script = if static then "build:static" else "build:ci";
