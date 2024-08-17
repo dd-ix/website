@@ -1,7 +1,14 @@
 @import "vars", "bp";
 
+.scroll-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  max-width: 100%;
+  height: min-content;
+}
+
 table {
-  width: 100%;
+  min-width: 100%;
   text-align: center;
 
   .icon {
@@ -16,6 +23,11 @@ table {
 
   .name {
     text-align: left;
+  }
+
+  th,
+  td {
+    white-space: nowrap;
   }
 }
 
