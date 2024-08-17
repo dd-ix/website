@@ -2,6 +2,7 @@
 
 :host {
   display: flex;
+  flex-direction: column;
 
   svg {
     max-height: 100%;
