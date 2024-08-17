@@ -3,53 +3,54 @@
     <a class="not icon" routerLink="/">
       <app-icon-logo></app-icon-logo>
     </a>
+    <div class="nav-wrapper">
+      <nav class="nav">
+        <a class="not" routerLink="/blog" routerLinkActive="selected">
+          <!--        <app-icon-s class="nav-icon"/>-->
+          <span class="label" i18n>News &amp; Events</span>
+        </a>
+        <a class="not" routerLink="/network" routerLinkActive="selected">
+          <span class="label" i18n>Network</span>
+        </a>
+        <a class="not" routerLink="/peering" routerLinkActive="selected">
+          <!--        <app-icon-hub class="nav-icon"/>-->
+          <span class="label" i18n>Peering</span>
+        </a>
+        <a class="not" routerLink="/association" routerLinkActive="selected">
+          <!--        <app-icon-group class="nav-icon"/>-->
+          <span class="label" i18n>Association</span>
+        </a>
+        <a class="not" routerLink="/team" routerLinkActive="selected">
+          <!--        <app-icon-face class="nav-icon"/>-->
+          <span class="label" i18n>Team</span>
+        </a>
+        <a class="not" routerLink="/contact" routerLinkActive="selected">
+          <!--        <app-icon-phone class="nav-icon"/>-->
+          <span class="label" i18n>Contact</span>
+        </a>
 
-    <nav class="nav">
-      <a class="not" routerLink="/blog" routerLinkActive="selected">
-        <!--        <app-icon-s class="nav-icon"/>-->
-        <span class="label" i18n>News &amp; Events</span>
-      </a>
-      <a class="not" routerLink="/network" routerLinkActive="selected">
-        <span class="label" i18n>Network</span>
-      </a>
-      <a class="not" routerLink="/peering" routerLinkActive="selected">
-        <!--        <app-icon-hub class="nav-icon"/>-->
-        <span class="label" i18n>Peering</span>
-      </a>
-      <a class="not" routerLink="/association" routerLinkActive="selected">
-        <!--        <app-icon-group class="nav-icon"/>-->
-        <span class="label" i18n>Association</span>
-      </a>
-      <a class="not" routerLink="/team" routerLinkActive="selected">
-        <!--        <app-icon-face class="nav-icon"/>-->
-        <span class="label" i18n>Team</span>
-      </a>
-      <a class="not" routerLink="/contact" routerLinkActive="selected">
-        <!--        <app-icon-phone class="nav-icon"/>-->
-        <span class="label" i18n>Contact</span>
-      </a>
-
-      <!--      <b i18n>Quick Links</b>-->
-      <!--      <ul>-->
-      <!--        <li><a href="https://ixp.dd-ix.net" i18n target="_blank">IXP Manager</a></li>-->
-      <!--        <li><a href="https://lg.dd-ix.net" i18n target="_blank">Looking Glass</a></li>-->
-      <!--        <li><a href="https://www.peeringdb.com" i18n target="_blank">PeeringDB</a></li>-->
-      <!--      </ul>-->
-    </nav>
-    <nav class="nav">
-      <a class="not" routerLink="/stats" routerLinkActive="selected">
-        <span class="label" i18n>Statistics</span>
-      </a>
-      <a class="not" href="https://lg.dd-ix.net" target="_blank">
-        <span class="label" i18n>Looking Glass</span>
-      </a>
-       <a class="not" href="https://portal.dd-ix.net" target="_blank">
-        <span class="label" i18n>IXP Manager</span>
-      </a>
-      <a class="not" href="https://lists.dd-ix.net" target="_blank">
-        <span class="label" i18n>Mailing Lists</span>
-      </a>
-    </nav>
+        <!--      <b i18n>Quick Links</b>-->
+        <!--      <ul>-->
+        <!--        <li><a href="https://ixp.dd-ix.net" i18n target="_blank">IXP Manager</a></li>-->
+        <!--        <li><a href="https://lg.dd-ix.net" i18n target="_blank">Looking Glass</a></li>-->
+        <!--        <li><a href="https://www.peeringdb.com" i18n target="_blank">PeeringDB</a></li>-->
+        <!--      </ul>-->
+      </nav>
+      <nav class="nav">
+        <a class="not" routerLink="/stats" routerLinkActive="selected">
+          <span class="label" i18n>Statistics</span>
+        </a>
+        <a class="not" href="https://lg.dd-ix.net" target="_blank">
+          <span class="label" i18n>Looking Glass</span>
+        </a>
+        <a class="not" href="https://portal.dd-ix.net" target="_blank">
+          <span class="label" i18n>IXP Manager</span>
+        </a>
+        <a class="not" href="https://lists.dd-ix.net" target="_blank">
+          <span class="label" i18n>Mailing Lists</span>
+        </a>
+      </nav>
+    </div>
   </div>
 
   <div class="aside-footer">
@@ -78,7 +79,8 @@
 
     <footer>
       <span i18n style="text-align: center">
-        &copy; {{ currentYear() }} <b>DD-IX Dresden Internet Exchange e.V.</b> <span class="slogan"> | Keep Local Traffic Local</span>
+        &copy; {{ currentYear() }} <b>DD-IX Dresden Internet Exchange e.V.</b> <span class="slogan"> | Keep Local
+          Traffic Local</span>
       </span>
       <nav class="typography">
         <a i18n routerLink="/privacy-policy">Privacy Policy</a>
@@ -88,4 +90,4 @@
   </div>
 </main>
 
-<feel-notification-list/>
+<feel-notification-list />
