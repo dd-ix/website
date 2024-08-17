@@ -1,20 +1,16 @@
 <div class="typography header">
   <h1 i18n>Statistics</h1>
-  <app-stats-time-selection (timeChange)="changeTimeSelection($event)"/>
   <feel-button label="AS112" link="as112"></feel-button>
 </div>
 
 <ng-container *ngIf="series | async as series">
   <app-card>
     <div class="typography">
-      <h2 i18n>Traffic</h2>
-      <app-chart
-        [series]="wrapStats(series)"
-        [xMax]="series.end"
-        [xMin]="series.start"
-        unit="b"
-        seriesName="Traffic"
-      />
+      <div class="header">
+        <h2 i18n>Traffic</h2>
+        <app-stats-time-selection (timeChange)="changeTimeSelection($event)" />
+      </div>
+      <app-chart [series]="wrapStats(series)" [xMax]="series.end" [xMin]="series.start" unit="b" seriesName="Traffic" />
     </div>
   </app-card>
 </ng-container>
