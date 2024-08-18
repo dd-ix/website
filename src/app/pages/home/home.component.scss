@@ -60,20 +60,24 @@
 
   .news,
   .socials,
-  .sponsors {
+  .sponsors,
+  .trinity {
     display: grid;
     gap: 1rem;
     list-style-type: none;
   }
 
-  .sponsors {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
+  .sponsors,
+  .trinity {
     .sponsor-icon {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 5rem;
+
+      &.sachsen-gigabit {
+        max-height: 100%
+      }
 
       &.netd {
         display: flex;
@@ -90,12 +94,20 @@
       }
     }
   }
+  .sponsors {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .trinity {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   .news {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .sponsors,
+  .trinity,
   .news {
     @media screen and (max-width: 1250px) {
       grid-template-columns: 1fr;
