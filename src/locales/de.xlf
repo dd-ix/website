@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
-    <body>
+  <body>
+      <trans-unit id="9011408879965086386" datatype="html">
+        <source>Our Patrons</source>
+        <target state="translated">Unsere Unterstützer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">131,132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1796207335100151791" datatype="html">
+        <source>Our Sustaining Members</source>
+        <target state="translated">Unsere Fördermitglieder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="841934696444961534" datatype="html" xml:space="preserve">
         <source>News</source>
         <target state="translated">Neuigkeiten</target>

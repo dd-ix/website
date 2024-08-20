@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
-    <body>
+  <body>
       <trans-unit id="841934696444961534" datatype="html" xml:space="preserve">
         <source>News</source>
         <target state="translated">News</target>
