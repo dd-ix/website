@@ -34,7 +34,7 @@ export class BlogService {
       params = params.set("keywords", keywords.join(","));
     }
 
-    return this.http.get<SmallBlogPost[]>(`${API_URL}/news/${this.lang}`, {params});
+    return this.http.get<SmallBlogPost[]>(`${API_URL}/blog/${this.lang}`, {params});
   }
 
   public getBlogPost(slug: string): Observable<Post> {
@@ -42,7 +42,7 @@ export class BlogService {
   }
 
   public getNewsPost(slug: string): Observable<Post> {
-    return this.http.get<Post>(`${API_URL}/news/${this.lang}/${slug}`);
+    return this.http.get<Post>(`${API_URL}/blog/${this.lang}/${slug}`);
   }
 
   public getEventPosts(): Observable<SmallEvent[]> {
