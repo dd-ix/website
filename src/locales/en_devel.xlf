@@ -584,11 +584,18 @@
           <context context-type="linenumber">77,78</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6219797586886333076" datatype="html">
-        <source>Sponsors &amp; Supporters</source>
+      <trans-unit id="355662626407069442" datatype="html">
+        <source>Our Supporting Members</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9011408879965086386" datatype="html">
+        <source>Our Patrons</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">131,132</context>
         </context-group>
       </trans-unit>
       <trans-unit id="28467023014692598" datatype="html">
