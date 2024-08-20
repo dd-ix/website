@@ -23,7 +23,7 @@ import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
 export class BlogPostComponent {
 
   protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({slug}) => this.blogService.getPost(slug)),
+    switchMap(({slug}) => this.blogService.getBlogPost(slug)),
     tap(post => {
       this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
       this.meta.updateTag({property: 'og:title', content: post.title});

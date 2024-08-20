@@ -68,7 +68,16 @@
   <li *ngFor="let event of events | async">
     <app-event-card [event]="event" class="card"/>
   </li>
-  <li *ngFor="let post of posts | async">
+  <li *ngFor="let post of news_and_event_posts | async">
+    <app-blog-card [post]="post" class="card"/>
+  </li>
+</ul>
+
+<div class="typography">
+  <h1 i18n>Blog</h1>
+</div>
+<ul class="not news">
+  <li *ngFor="let post of blog_posts | async">
     <app-blog-card [post]="post" class="card"/>
   </li>
 </ul>
@@ -125,35 +134,6 @@
       </div>
     </app-card>
   </li>-->
-</ul>
-
-<div class="typography">
-  <h1 i18n>Our Patrons</h1>
-</div>
-
-<ul class="not sponsors">
-  <li>
-    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/bcix-bg.webp"
-              link="https://www.bcix.de/">
-      <app-icon-bcix class="sponsor-icon"></app-icon-bcix>
-    </app-card>
-  </li>
-  <li>
-    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/ipb-bg.webp"
-               link="https://www.ipb.de">
-      <div class="sponsor-icon netd">
-        <img class="sachsen-gigabit" src="./assets/images/sponsors/ipb-fg.webp">
-      </div>
-    </app-card>
-  </li>
-  <li>
-    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/sachsen-gigabit-bg.webp"
-              link="https://www.sachsen-gigabit.de">
-      <div class="sponsor-icon netd">
-        <img class="sachsen-gigabit" src="./assets/images/sponsors/sachsen-gigabit-fg.webp">
-      </div>
-    </app-card>
-  </li>
 </ul>
 
 <div class="typography">

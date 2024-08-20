@@ -16,7 +16,7 @@ export class BlogService {
   }
 
   public getBlogKeywords(): Observable<string[]> {
-    return this.http.get<string[]>(`${API_URL}/blog/keywords`);
+    return this.http.get<string[]>(`${API_URL}/news/keywords`);
   }
 
   public getBlogPosts(keywords?: string[]): Observable<SmallBlogPost[]> {
@@ -28,8 +28,21 @@ export class BlogService {
     return this.http.get<SmallBlogPost[]>(`${API_URL}/blog/${this.lang}`, {params});
   }
 
-  public getPost(slug: string): Observable<Post> {
+  public getNewsPosts(keywords?: string[]): Observable<SmallBlogPost[]> {
+    let params = new HttpParams()
+    if (keywords?.length) {
+      params = params.set("keywords", keywords.join(","));
+    }
+
+    return this.http.get<SmallBlogPost[]>(`${API_URL}/news/${this.lang}`, {params});
+  }
+
+  public getBlogPost(slug: string): Observable<Post> {
     return this.http.get<Post>(`${API_URL}/blog/${this.lang}/${slug}`);
+  }
+
+  public getNewsPost(slug: string): Observable<Post> {
+    return this.http.get<Post>(`${API_URL}/news/${this.lang}/${slug}`);
   }
 
   public getEventPosts(): Observable<SmallEvent[]> {
@@ -39,7 +52,6 @@ export class BlogService {
   public getUpComingEvents(): Observable<SmallEvent[]> {
     return this.http.get<SmallEvent[]>(`${API_URL}/event/${this.lang}/upcoming`);
   }
-
 
   public getEvent(slug: string): Observable<EventPost> {
     return this.http.get<EventPost>(`${API_URL}/event/${this.lang}/${slug}`);

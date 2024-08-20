@@ -31,11 +31,13 @@ export class HomeComponent {
   protected readonly events = this.blogService.getUpComingEvents()
     .pipe(map(events => events.slice(0, 3)), share());
 
-  protected readonly posts = this.events
-    .pipe(switchMap(events => this.blogService.getBlogPosts()
+  protected readonly news_and_event_posts = this.events
+    .pipe(switchMap(events => this.blogService.getNewsPosts()
         .pipe(map(posts => posts.slice(0, 3 - events.length)))
       )
     )
+
+  protected readonly blog_posts = this.blogService.getBlogPosts();
 
   constructor(
     private readonly blogService: BlogService,
