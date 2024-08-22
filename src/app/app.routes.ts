@@ -17,9 +17,7 @@ export const routes: Routes = [
   {
     path: 'news',
     children: [
-      { path: '', redirectTo: "/blog", pathMatch: 'full' },
-      { path: 'open-tech-meeting-2024-05', redirectTo: '/event/open-tech-meeting-2024-05', pathMatch: 'full' },
-      { path: ':id', redirectTo: ({ params }) => `/blog/${params['id']}` },
+     { path: ':id', redirectTo: ({ params }) => `/blog/${params['id']}` },
     ],
   },
   { path: 'association', data: { title: $localize`Association` }, children: associationRoutes },

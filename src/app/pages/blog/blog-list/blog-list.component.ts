@@ -34,8 +34,8 @@ export class BlogListComponent {
   protected readonly selectedKeywords = new BehaviorSubject<string[]>([]);
   protected readonly entries = combineLatest({
     events: this.blogService.getEventPosts(),
-    blog: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords))),
-    news: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getNewsPosts(keywords))),
+    blog: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)), map(posts => posts.map(post => ({ ...post, blog: true } as SmallBlogPost)))),
+    news: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getNewsPosts(keywords)), map(posts => posts.map(post => ({ ...post, news: true } as SmallBlogPost)))),
   })
     .pipe(map(({ events, blog, news }) => ([...events, ...blog, ...news].sort((a, b) => {
       // @ts-expect-error union type

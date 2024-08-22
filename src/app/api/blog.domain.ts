@@ -1,4 +1,4 @@
-import {Language} from "./api.domain";
+import { Language } from "./api.domain";
 
 export interface SmallBlogPost {
   slug: string;
@@ -11,6 +11,10 @@ export interface SmallBlogPost {
   keywords: string[];
   authors: string[];
   image: string | null;
+
+  // manually added in frontend
+  blog: boolean | undefined;
+  news: boolean | undefined;
 }
 
 export interface Post extends SmallBlogPost {
