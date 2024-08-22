@@ -9,17 +9,13 @@ import { routes as imprintRoutes } from "./pages/imprint/imprint.routes";
 import { routes as peeringRoutes } from "./pages/peering/peering.routes";
 import { routes as statsRoutes } from "./pages/stats/stats.routes";
 import { routes as networkRoutes } from "./pages/network/network.routes";
+import {routes as newsRoutes} from "./pages/news/news.routes";
 
 export const routes: Routes = [
   { path: '', loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent) },
   { path: 'blog', data: { title: $localize`Blog` }, children: blogRoutes },
   { path: 'event', data: { title: $localize`Event` }, children: eventRoutes },
-  {
-    path: 'news',
-    children: [
-     { path: ':id', redirectTo: ({ params }) => `/blog/${params['id']}` },
-    ],
-  },
+  { path: 'news', data: { title: $localize`News` }, children: newsRoutes },
   { path: 'association', data: { title: $localize`Association` }, children: associationRoutes },
   { path: 'contact', data: { title: $localize`Contact` }, children: contactRoutes },
   { path: 'privacy-policy', data: { title: $localize`Privacy Policy` }, children: privacyPolicyRoutes },
