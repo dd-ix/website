@@ -1,8 +1,8 @@
-import {Component, Input} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {CardComponent} from "../card/card.component";
-import {SmallBlogPost} from "../../api/blog.domain";
-import {API_URL} from "../../api/api.domain";
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CardComponent } from "../card/card.component";
+import { SmallBlogPost } from "../../api/blog.domain";
+import { API_URL } from "../../api/api.domain";
 
 @Component({
   selector: 'app-blog-card',
@@ -16,15 +16,15 @@ export class BlogCardComponent {
   @Input()
   public post: SmallBlogPost | undefined;
 
-  protected buildPostLink(slug: string): string {
-    return `/blog/${slug}`;
+  protected buildPostLink(blog: boolean | undefined, slug: string): string {
+    return blog ? `/blog/${slug}` : `/news/${slug}`;
   }
 
-  protected buildBlogImageUrl(image: string | null): string | null {
+  protected buildBlogImageUrl(blog: boolean | undefined, image: string | null): string | null {
     if (!image) {
       return null;
     }
 
-    return new URL(`${API_URL}/blog/assets/${image}`).toString();
+    return new URL(`${API_URL}/${blog ? 'blog' : 'news'}/assets/${image}`).toString();
   }
 }
