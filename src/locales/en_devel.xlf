@@ -48,10 +48,6 @@
           <context context-type="sourcefile">src/app/api/team.domain.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/event/event-list/event-list.component.html</context>
-          <context context-type="linenumber">3,4</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="76537845515412840" datatype="html">
         <source>Finance and Legal</source>
@@ -300,39 +296,11 @@
           <context context-type="linenumber">2,3</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8115083664628466958" datatype="html">
-        <source>E-Mail</source>
+      <trans-unit id="1144407473317535723" datatype="html">
+        <source>Subscribe</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6856821060067506866" datatype="html">
-        <source>A valid e-mail is required! </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">6,7</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="935187492052582731" datatype="html">
-        <source>Submit</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5632099839746836994" datatype="html">
-        <source>Successfully subscribed to mailing list.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
-          <context context-type="linenumber">57</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6451157462027879592" datatype="html">
-        <source>Failed to subscribe to mailing list.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6052766076365105714" datatype="html">
@@ -461,20 +429,6 @@
           <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9158112486914865946" datatype="html">
-        <source>Mailing List</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/blog/blog-subscribe/blog-subscribe.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4786405675269305220" datatype="html">
-        <source> Always stay updated by subscribing to our news mailing-list. </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/blog/blog-subscribe/blog-subscribe.component.html</context>
-          <context context-type="linenumber">4,6</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6439365426343089851" datatype="html">
         <source>General</source>
         <context-group purpose="location">
@@ -501,13 +455,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
           <context context-type="linenumber">60,61</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5671081150775766327" datatype="html">
-        <source>Blog!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/event/event-list/event-list.component.html</context>
-          <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8510289285271281479" datatype="html">
@@ -581,21 +528,21 @@
         <source>Socials</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">77,78</context>
+          <context context-type="linenumber">86,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1796207335100151791" datatype="html">
         <source>Our Sustaining Members</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">104,105</context>
+          <context context-type="linenumber">113,114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9011408879965086386" datatype="html">
         <source>Our Patrons</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">131,132</context>
+          <context context-type="linenumber">140,141</context>
         </context-group>
       </trans-unit>
       <trans-unit id="28467023014692598" datatype="html">
