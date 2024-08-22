@@ -1,11 +1,8 @@
-import {Component, Input} from '@angular/core';
-import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms'
-import {CardComponent} from "../card/card.component";
-import {CommonModule} from "@angular/common";
-import {MailingListService} from "../../api/mailing-list.service";
-import {ButtonComponent, FormErrorComponent, TextFieldComponent} from "@feel/form";
-import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
-import {NotificationService} from "@feel/notification";
+import { Component, Input } from '@angular/core';
+import { CardComponent } from "../card/card.component";
+import { CommonModule } from "@angular/common";
+import { ButtonComponent } from "@feel/form";
+import { IconSendComponent } from "../../icons/icon-send/icon-send.component";
 
 @Component({
   selector: 'app-mailing-list',
@@ -13,11 +10,8 @@ import {NotificationService} from "@feel/notification";
   styleUrls: ['./mailing-list.component.scss'],
   imports: [
     CommonModule,
-    ReactiveFormsModule,
     CardComponent,
-    TextFieldComponent,
     ButtonComponent,
-    FormErrorComponent,
     IconSendComponent,
   ],
   standalone: true
@@ -27,40 +21,9 @@ export class MailingListComponent {
   @Input()
   public listName: string | null = null;
   @Input()
-  public listId: number | null = null;
-  protected form = new FormGroup({
-    email: new FormControl(null, [Validators.required, Validators.email]),
-  });
-  protected working = false;
+  public listId: string | null = null;
 
-  constructor(
-    private readonly mailingListService: MailingListService,
-    private readonly notificationService: NotificationService,
-  ) {
-  }
-
-  protected submit(): void {
-    if (!Number.isFinite(this.listId)) {
-      throw new Error("Mailing list not defined");
-    }
-
-    if (this.working || !this.form.valid) {
-      return;
-    }
-
-    const value = this.form.value;
-
-    this.working = true;
-    this.mailingListService.subscribe(this.listId!, value.email!)
-      .subscribe({
-        next: () => {
-          this.notificationService.success($localize`Successfully subscribed to mailing list.`);
-        },
-        error: err => {
-          console.error(err);
-          this.notificationService.error($localize`Failed to subscribe to mailing list.`);
-        },
-        complete: () => this.working = false,
-      });
+  protected buildLink(listId: string): string {
+    return `https://lists.dd-ix.net/postorius/lists/${listId}.lists.dd-ix.net/`;
   }
 }

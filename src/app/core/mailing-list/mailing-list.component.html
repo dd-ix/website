@@ -1,15 +1,6 @@
 <div class="typography">
   <h2 i18n>Subscribe to the {{ listName }} mailing list</h2>
-  <form (submit)="$event.preventDefault();submit()" [formGroup]="form" class="form">
-    <feel-text-field formControlName="email" i18n-label label="E-Mail" type="text">
-      <feel-form-error *ngIf="form.controls?.['email']?.touched && !form.controls?.['email']?.valid" i18n>A valid
-        e-mail
-        is required!
-      </feel-form-error>
-    </feel-text-field>
-
-    <feel-button [disabled]="working || !form.valid" class="button" i18n-label label="Submit">
-      <app-icon-send/>
-    </feel-button>
-  </form>
+  <feel-button *ngIf="listId" class="button" i18n-label label="Subscribe" [link]='buildLink(listId)'>
+    <app-icon-send />
+  </feel-button>
 </div>
