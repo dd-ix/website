@@ -19,6 +19,10 @@ export class BlogService {
     return this.http.get<string[]>(`${API_URL}/blog/keywords`);
   }
 
+  public getNewsKeywords(): Observable<string[]> {
+    return this.http.get<string[]>(`${API_URL}/news/keywords`);
+  }
+
   public getBlogPosts(keywords?: string[]): Observable<SmallBlogPost[]> {
     let params = new HttpParams()
     if (keywords?.length) {
