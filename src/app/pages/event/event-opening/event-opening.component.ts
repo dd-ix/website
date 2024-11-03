@@ -1,4 +1,4 @@
-import { Component, SecurityContext } from '@angular/core';
+import { Component, OnInit, SecurityContext } from '@angular/core';
 import { tap } from 'rxjs';
 import { BlogService } from '../../../api/blog.service';
 import { DomSanitizer, Meta, Title } from '@angular/platform-browser';
@@ -6,6 +6,7 @@ import { AsyncPipe, DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
 import { API_URL } from '../../../api/api.domain';
 import { CardComponent } from "../../../core/card/card.component";
 import { ButtonComponent } from '@feel/form';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-event-opening',
@@ -14,7 +15,7 @@ import { ButtonComponent } from '@feel/form';
   templateUrl: './event-opening.component.html',
   styleUrl: './event-opening.component.scss'
 })
-export class EventOpeningComponent {
+export class EventOpeningComponent implements OnInit {
 
   protected readonly post = this.blogService.getEvent("opening").pipe(
     tap(post => {
@@ -42,7 +43,22 @@ export class EventOpeningComponent {
     private readonly meta: Meta,
     private readonly title: Title,
     private readonly sanitizer: DomSanitizer,
+    private readonly router: Router,
   ) {
+  }
+
+  public ngOnInit(): void {
+    this.router.events.subscribe(event => {
+      if (!("url" in event)) {
+        return;
+      }
+
+      const tree = this.router.parseUrl(event.url);
+      if (tree.fragment) {
+        const element = document.querySelector("#" + tree.fragment);
+        if (element) { element.scrollIntoView(); }
+      }
+    });
   }
 
   protected formatAuthors(authors: string[]): string {
