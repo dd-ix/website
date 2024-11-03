@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, SecurityContext} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Inject, SecurityContext} from '@angular/core';
 import {BlogService} from "../../../api/blog.service";
 import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
@@ -7,6 +7,7 @@ import {API_URL} from "../../../api/api.domain";
 import {CardComponent} from "../../../core/card/card.component";
 import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
 import {RelativeTimePipe} from "../../../core/pipes/relative-time.pipe";
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-event-post',
@@ -39,21 +40,24 @@ export class EventPostComponent {
         name: "keywords",
         content: 'Dresden Internet Exchange, Dresden, Internet Exchange, DD-IX, ddix, DD-IX Dresden Internet Exchange e.V., ' + post.keywords.join(", ")
       });
-
+      if (post.link != null) {
+        this.document.location.href = post.link;
+      }
       if (post.image) {
         const image = this.buildEventImageUrl(post.image);
         this.meta.updateTag({property: 'og:image', content: image});
         this.meta.updateTag({name: 'twitter:image', content: image});
       }
+
     }),
   );
-
   constructor(
     private readonly blogService: BlogService,
     private readonly activatedRoute: ActivatedRoute,
     private readonly meta: Meta,
     private readonly title: Title,
-    private readonly sanitizer: DomSanitizer
+    private readonly sanitizer: DomSanitizer,
+    @Inject(DOCUMENT) private document: Document
   ) {
   }
 

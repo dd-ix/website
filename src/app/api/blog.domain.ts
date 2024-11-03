@@ -32,27 +32,10 @@ export interface SmallEvent {
   image: string | null;
   start_time: string,
   end_time: string,
-  location: string
+  location: string,
+  link: string | null
 }
 
 export interface EventPost extends SmallEvent {
   body: string;
 }
-
-enum Type {
-  Blog,
-  Event
-}
-
-export interface PostOrEvent {
-  type: Type
-  slug: string;
-  lang: Language,
-  idx: number;
-  title: string;
-  description: string;
-  start_time: string,
-  end_time: string,
-  location: string
-}
-
