@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.post {
+  max-width: 40rem;
+}
+
+.typography ::ng-deep img {
+  height: auto;
+
+  &:not(.not) {
+    margin: 2rem 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  .text {
+    flex-grow: 1;
+  }
+
+  .image {
+    max-width: 50%;
+  }
+}
