@@ -2,14 +2,9 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     flake-utils.url = "github:numtide/flake-utils";
-
-    pnpm2nix = {
-      url = "github:nzbr/pnpm2nix-nzbr";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, pnpm2nix, flake-utils, ... }:
+  outputs = { self, nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem
       (system:
         let
@@ -21,12 +16,10 @@
           packages = rec {
             website = pkgs.callPackage ./derivation.nix {
               contentApi = "https://content.dd-ix.net";
-              mkPnpmPackage = pnpm2nix.packages."${system}".mkPnpmPackage;
             };
             website-static = pkgs.callPackage ./derivation.nix {
               contentApi = "https://content.dd-ix.net";
               static = true;
-              mkPnpmPackage = pnpm2nix.packages."${system}".mkPnpmPackage;
             };
             default = website;
           };
