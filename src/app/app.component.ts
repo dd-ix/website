@@ -29,6 +29,7 @@ import { NotificationListComponent } from "@feel/notification";
 })
 export class AppComponent {
 
+  protected disableNav = new BehaviorSubject(false);
   protected asideSown = new BehaviorSubject(false);
   protected enableAnimation = new BehaviorSubject(false);
 
@@ -60,6 +61,8 @@ export class AppComponent {
         this.meta.updateTag({ name: 'twitter:title', content: $localize`Dresden Internet Exchange` });
       }
 
+      const path =new URL("https://example.com" + event.url).pathname;
+      this.disableNav.next(path === '/event/opening');
     }),
     map(() => this.location.path() || '/'),
   );

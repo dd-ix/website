@@ -1,4 +1,4 @@
-<aside (click)="closeAside()" [class.open]="asideSown | async">
+<aside (click)="closeAside()" [class.open]="asideSown | async" [class.hidden]="disableNav | async">
   <div class="aside-container">
     <a class="not icon" routerLink="/">
       <app-icon-logo></app-icon-logo>
