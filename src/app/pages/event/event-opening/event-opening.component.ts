@@ -7,11 +7,13 @@ import { API_URL } from '../../../api/api.domain';
 import { CardComponent } from "../../../core/card/card.component";
 import { ButtonComponent } from '@feel/form';
 import { NavigationEnd, Router } from '@angular/router';
+import {IconFrauenkircheComponent} from "../../../icons/icon-frauenkirche/icon-frauenkirche.component";
+import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
 
 @Component({
   selector: 'app-event-opening',
   standalone: true,
-  imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage],
+    imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconFrauenkircheComponent, IconSendComponent],
   templateUrl: './event-opening.component.html',
   styleUrl: './event-opening.component.scss'
 })

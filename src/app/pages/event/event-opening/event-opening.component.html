@@ -1,40 +1,87 @@
 <div class="wrapper">
-  <div class="post">
-    <app-card *ngIf="(post | async) as post" class="typography">
-      <h1>{{ post.title }}</h1>
+  <div *ngIf="(post | async) as post">
+    <div  class="typography">
+      <app-card [lightShadow]="true" *ngIf="post.image" backgroundImage="{{buildEventImageUrl(post.image)}}">
+        <div class="hero">
+          <h1 class="dd-ix" i18n>{{post.title}}</h1>
+          <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
+          <p><b>Location: {{post.location}}</b> </p>
+        </div>
+      </app-card>
 
-      <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
-      <img *ngIf="post.image" [src]="buildEventImageUrl(post.image)" alt="">
+        <div class="row">
+          <app-card>
+            <div class="spacer">
+            <div class="typography">
+              <h2>After a year of work, we want to celebrate!</h2>
+              <p>
+                We cordially invite you to the opening of DD-IX, the first public Internet Exchange in Dresden, Saxony. Join
+                us
+                for a recap of the last year, community talks, food and drinks. Participation is free but we kindly ask you to
+                register. Let’s celebrate together!
+              </p>
+            </div>
+            </div>
+            <div class="spacer">
+            <div class="buttons">
+              <feel-button flavor="accent" link="https://tickets.dd-ix.net/opening/">
+                Registration
+              </feel-button>
+              <feel-button flavor="accent" link="." fragment="agenda">
+                Agenda
+              </feel-button>
+            </div>
+            </div>
 
-      <h2>After a year of work, we want to celebrate!</h2>
-      <p>
-        We cordially invite you to the opening of DD-IX, the first public Internet Exchange in Dresden, Saxony. Join
-        us
-        for a recap of the last year, community talks, food and drinks. Participation is free but we kindly ask you to
-        register. Let’s celebrate together!
-      </p>
+          </app-card>
+          <div class="image">
+            <img ngSrc="/assets/images/opening/cheering.webp" width="2048" height="1536" class="not">
+          </div>
+        </div>
 
-      <div class="buttons">
-        <feel-button link="https://tickets.dd-ix.net/opening/">
-          Registration
-        </feel-button>
-        <feel-button link="." fragment="agenda">
-          Agenda
-        </feel-button>
-      </div>
+
+      <app-card>
+        <h2 id="agenda">Agenda</h2>
+        <h4>[Welcome]</h4>
+        <ul>
+          <li><b>17:00</b>: Doors Open</li>
+          <li><b>17:40</b>: Welcome from DD-IX</li>
+          <li><b>17:55</b>: Welcome SachsenGigaBit</li>
+          <li><b>18:05</b>: Opening Message from Vint Cerf, Father of the Internet and Chief Internet Evangelist for
+            Google</li>
+        </ul>
+        <h4>[Community Talks]</h4>
+        <ul>
+          <li><b>18:10</b>: Christian Dieckhoff, Board of Directors BCIX</li>
+          <li><b>18:25</b>: Markus Ziehe, Chair of Board AGDSN, the Dresden Student Network association</li>
+          <li><b>18:40</b>: Mirijam Kühne, Chair of the RIPE community</li>
+          </ul>
+        <h4>[Socializing]</h4>
+        <ul>
+          <li><b>19:00</b>: Food and Drinks</li>
+          <li><b>23:00</b>: EoE</li>
+        </ul>
+      </app-card>
 
       <div class="row">
-        <div class="text">
-          <h2>Date</h2>
-          <p>{{ post.start_time | date: 'short' }}</p>
+        <app-card>
+          <div class="text">
+            <h2>Date</h2>
+            <p>{{ post.start_time | date: 'short' }}</p>
 
-          <h2>Location</h2>
-          <p>
-            SachsenEnergie Center<br>
-            Friedrich-List-Platz 2<br>
-            01069 Dresden, Deutschland<br>
-          </p>
-        </div>
+            <h2>Location</h2>
+            <p>
+              SachsenEnergie Center<br>
+              Friedrich-List-Platz 2<br>
+              01069 Dresden, Deutschland<br>
+            </p>
+            <h2>Traveling</h2>
+            <ul>
+              <li><b>Train:</b> Venue accessible via <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a> and <a href="https://maps.app.goo.gl/BPVxKKcnafR1sbDo8">Dresden Hbf Nord</a></li>
+              <li><b>Plane:</b> You can fly to <a href="https://g.co/kgs/EtH1f6M">DRS Dresden Airport</a> and then take <b>S2</b> until <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a></li>
+            </ul>
+          </div>
+        </app-card>
         <div class="image">
           <a href="https://www.openstreetmap.org/way/10368038" target="_blank">
             <img ngSrc="/assets/images/opening/map.webp" width="1495" height="868" class="not">
@@ -46,28 +93,6 @@
           </span>
         </div>
       </div>
-
-      <h2 id="agenda">Agenda</h2>
-
-      <h4>[Welcome]</h4>
-      <ul>
-        <li><b>17:00</b>: Doors Open</li>
-        <li><b>17:40</b>: Welcome from DD-IX</li>
-        <li><b>17:55</b>: Welcome SachsenGigaBit</li>
-        <li><b>18:05</b>: Opening Message from Vint Cerf, Father of the Internet and Chief Internet Evangelist for
-          Google</li>
-      </ul>
-      <h4>[Community Talks]</h4>
-      <ul>
-        <li><b>18:10</b>: Christian Dieckhoff, Board of Directors BCIX</li>
-        <li><b>18:25</b>: Markus Ziehe, Chair of Board AGDSN, the Dresden Student Network association</li>
-        <li><b>18:40</b>: Mirijam Kühne, Chair of the RIPE community</li>
-        </ul>
-      <h4>[Socializing]</h4>
-      <ul>
-        <li><b>19:00</b>: Food and Drinks</li>
-        <li><b>23:00</b>: EoE</li>
-      </ul>
-    </app-card>
+    </div>
   </div>
 </div>
