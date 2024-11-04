@@ -14,10 +14,10 @@
         in
         {
           packages = rec {
-            website = pkgs.callPackage ./derivation.nix {
+            website = pkgs.callPackage ./package.nix {
               contentApi = "https://content.dd-ix.net";
             };
-            website-static = pkgs.callPackage ./derivation.nix {
+            website-static = pkgs.callPackage ./package.nix {
               contentApi = "https://content.dd-ix.net";
               static = true;
             };
@@ -26,7 +26,7 @@
         }
       ) // {
       overlays.default = _: prev: {
-        website = self.packages."${prev.system}".website;
+        inherit (self.packages."${prev.system}") website;
       };
 
       nixosModules = rec {
