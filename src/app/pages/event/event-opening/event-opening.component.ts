@@ -9,11 +9,12 @@ import { ButtonComponent } from '@feel/form';
 import { NavigationEnd, Router } from '@angular/router';
 import {IconFrauenkircheComponent} from "../../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
+import { IconPartyComponent } from "../../../icons/icon-party/icon-party.component";
 
 @Component({
   selector: 'app-event-opening',
   standalone: true,
-    imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconFrauenkircheComponent, IconSendComponent],
+    imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconFrauenkircheComponent, IconSendComponent, IconPartyComponent],
   templateUrl: './event-opening.component.html',
   styleUrl: './event-opening.component.scss'
 })

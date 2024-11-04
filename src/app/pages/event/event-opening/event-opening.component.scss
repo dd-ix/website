@@ -1,4 +1,4 @@
-@import "bp";
+@import "bp", "vars";
 
 .wrapper {
   display: flex;
@@ -28,6 +28,7 @@
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
+  align-items: center;
 
   @media screen and (max-width: $bp-mobile) {
     flex-direction: column;
@@ -39,7 +40,7 @@
 
   @media screen and (min-width: #{$bp-mobile + 1}) {
     .image {
-      max-width: 50%;
+      max-width: 40%;
     }
   }
 }
@@ -74,3 +75,11 @@
   background-color: rgba(0, 0, 0, 0.75) !important;
 }
 
+.icon {
+  $padding: 2rem;
+  min-height: 6rem;
+  max-height: 6rem;
+  min-width: #{6rem + 2 * $padding};
+  padding: 0 $padding;
+  --f-color: #{$c-primary};
+}

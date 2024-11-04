@@ -1,7 +1,8 @@
 <div class="wrapper">
   <div *ngIf="(post | async) as post">
     <div class="typography">
-      <app-card [lightShadow]="true" *ngIf="post.image" backgroundImage="{{buildEventImageUrl(post.image)}}" class="hero-card">
+      <app-card [lightShadow]="true" *ngIf="post.image" backgroundImage="{{buildEventImageUrl(post.image)}}"
+        class="hero-card">
         <div class="hero">
           <h1 class="dd-ix" i18n>{{post.title}}</h1>
           <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
@@ -31,34 +32,37 @@
             </feel-button>
           </div>
         </app-card>
+        <app-icon-party class="icon"></app-icon-party>
+      </div>
+
+      <div class="row">
         <div class="image">
           <img ngSrc="/assets/images/opening/cheering.webp" width="2048" height="1536" class="not">
         </div>
+
+        <app-card>
+          <h2 id="agenda">Agenda</h2>
+          <h4>[Welcome]</h4>
+          <ul>
+            <li><b>17:00</b>: Doors Open</li>
+            <li><b>17:40</b>: Welcome from DD-IX</li>
+            <li><b>17:55</b>: Welcome SachsenGigaBit</li>
+            <li><b>18:05</b>: Opening Message from Vint Cerf, Father of the Internet and Chief Internet Evangelist for
+              Google</li>
+          </ul>
+          <h4>[Community Talks]</h4>
+          <ul>
+            <li><b>18:10</b>: Christian Dieckhoff, Board of Directors BCIX</li>
+            <li><b>18:25</b>: Markus Ziehe, Chair of Board AGDSN, the Dresden Student Network association</li>
+            <li><b>18:40</b>: Mirijam Kühne, Chair of the RIPE community</li>
+          </ul>
+          <h4>[Socializing]</h4>
+          <ul>
+            <li><b>19:00</b>: Food and Drinks</li>
+            <li><b>23:00</b>: EoE</li>
+          </ul>
+        </app-card>
       </div>
-
-
-      <app-card>
-        <h2 id="agenda">Agenda</h2>
-        <h4>[Welcome]</h4>
-        <ul>
-          <li><b>17:00</b>: Doors Open</li>
-          <li><b>17:40</b>: Welcome from DD-IX</li>
-          <li><b>17:55</b>: Welcome SachsenGigaBit</li>
-          <li><b>18:05</b>: Opening Message from Vint Cerf, Father of the Internet and Chief Internet Evangelist for
-            Google</li>
-        </ul>
-        <h4>[Community Talks]</h4>
-        <ul>
-          <li><b>18:10</b>: Christian Dieckhoff, Board of Directors BCIX</li>
-          <li><b>18:25</b>: Markus Ziehe, Chair of Board AGDSN, the Dresden Student Network association</li>
-          <li><b>18:40</b>: Mirijam Kühne, Chair of the RIPE community</li>
-        </ul>
-        <h4>[Socializing]</h4>
-        <ul>
-          <li><b>19:00</b>: Food and Drinks</li>
-          <li><b>23:00</b>: EoE</li>
-        </ul>
-      </app-card>
 
       <div class="row">
         <app-card>
