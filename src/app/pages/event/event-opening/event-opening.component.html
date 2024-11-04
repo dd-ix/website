@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div *ngIf="(post | async) as post">
-    <div  class="typography">
-      <app-card [lightShadow]="true" *ngIf="post.image" backgroundImage="{{buildEventImageUrl(post.image)}}">
+    <div class="typography">
+      <app-card [lightShadow]="true" *ngIf="post.image" backgroundImage="{{buildEventImageUrl(post.image)}}" class="hero-card">
         <div class="hero">
           <h1 class="dd-ix" i18n>{{post.title}}</h1>
           <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
@@ -9,35 +9,32 @@
         </div>
       </app-card>
 
-        <div class="row">
-          <app-card>
-            <div class="spacer">
-            <div class="typography">
-              <h2>After a year of work, we want to celebrate!</h2>
-              <p>
-                We cordially invite you to the opening of DD-IX, the first public Internet Exchange in Dresden, Saxony. Join
-                us
-                for a recap of the last year, community talks, food and drinks. Participation is free but we kindly ask you to
-                register. Let’s celebrate together!
-              </p>
-            </div>
-            </div>
-            <div class="spacer">
-            <div class="buttons">
-              <feel-button flavor="accent" link="https://tickets.dd-ix.net/opening/">
-                Registration
-              </feel-button>
-              <feel-button flavor="accent" link="." fragment="agenda">
-                Agenda
-              </feel-button>
-            </div>
-            </div>
-
-          </app-card>
-          <div class="image">
-            <img ngSrc="/assets/images/opening/cheering.webp" width="2048" height="1536" class="not">
+      <div class="row">
+        <app-card>
+          <div class="typography">
+            <h2>After a year of work, we want to celebrate!</h2>
+            <p>
+              We cordially invite you to the opening of DD-IX, the first public Internet Exchange in Dresden, Saxony.
+              Join
+              us
+              for a recap of the last year, community talks, food and drinks. Participation is free but we kindly ask
+              you to
+              register. Let’s celebrate together!
+            </p>
           </div>
+          <div class="buttons">
+            <feel-button flavor="accent" link="https://tickets.dd-ix.net/opening/">
+              Registration
+            </feel-button>
+            <feel-button flavor="accent" link="." fragment="agenda">
+              Agenda
+            </feel-button>
+          </div>
+        </app-card>
+        <div class="image">
+          <img ngSrc="/assets/images/opening/cheering.webp" width="2048" height="1536" class="not">
         </div>
+      </div>
 
 
       <app-card>
@@ -55,7 +52,7 @@
           <li><b>18:10</b>: Christian Dieckhoff, Board of Directors BCIX</li>
           <li><b>18:25</b>: Markus Ziehe, Chair of Board AGDSN, the Dresden Student Network association</li>
           <li><b>18:40</b>: Mirijam Kühne, Chair of the RIPE community</li>
-          </ul>
+        </ul>
         <h4>[Socializing]</h4>
         <ul>
           <li><b>19:00</b>: Food and Drinks</li>
@@ -77,8 +74,11 @@
             </p>
             <h2>Traveling</h2>
             <ul>
-              <li><b>Train:</b> Venue accessible via <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a> and <a href="https://maps.app.goo.gl/BPVxKKcnafR1sbDo8">Dresden Hbf Nord</a></li>
-              <li><b>Plane:</b> You can fly to <a href="https://g.co/kgs/EtH1f6M">DRS Dresden Airport</a> and then take <b>S2</b> until <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a></li>
+              <li><b>Train:</b> Venue accessible via <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a>
+                and <a href="https://maps.app.goo.gl/BPVxKKcnafR1sbDo8">Dresden Hbf Nord</a></li>
+              <li><b>Plane:</b> You can fly to <a href="https://g.co/kgs/EtH1f6M">DRS Dresden Airport</a> and then take
+                <b>S2</b> until <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a>
+              </li>
             </ul>
           </div>
         </app-card>
