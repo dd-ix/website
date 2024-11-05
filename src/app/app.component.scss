@@ -9,6 +9,10 @@
     grid-template-columns: 1fr;
   }
 
+  .progress-bar {
+    position: absolute;
+  }
+
   aside {
     height: 100dvh;
     padding: $s-padding;

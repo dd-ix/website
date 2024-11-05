@@ -1,3 +1,7 @@
+@defer (when isBrowser) {
+  <app-progress-bar class="progress-bar" />
+}
+
 <aside (click)="closeAside()" [class.open]="asideSown | async" [class.hidden]="disableNav | async">
   <div class="aside-container">
     <a class="not icon" routerLink="/">

@@ -1,13 +1,14 @@
-import { ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID, PLATFORM_ID, inject } from '@angular/core';
 import { routingAnimation } from "./animation/routing.animation";
 import { ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
-import { AsyncPipe, DOCUMENT, Location, NgIf, PlatformLocation } from "@angular/common";
+import { AsyncPipe, DOCUMENT, Location, NgIf, PlatformLocation, isPlatformBrowser } from "@angular/common";
 import { BehaviorSubject, delay, filter, map, take, tap } from "rxjs";
 import { Meta, Title } from "@angular/platform-browser";
 import { Language } from "./api/api.domain";
 import { IconLogoComponent } from "./icons/icon-logo/icon-logo.component";
 import { IconMenuComponent } from "./icons/icon-menu/icon-menu.component";
 import { NotificationListComponent } from "@feel/notification";
+import { ProgressBarComponent } from "./core/progress-bar/progress-bar.component";
 
 @Component({
   selector: 'app-root',
@@ -24,7 +25,8 @@ import { NotificationListComponent } from "@feel/notification";
     IconMenuComponent,
     RouterOutlet,
     NotificationListComponent,
-    NgIf
+    NgIf,
+    ProgressBarComponent,
   ]
 })
 export class AppComponent {
@@ -32,6 +34,8 @@ export class AppComponent {
   protected disableNav = new BehaviorSubject(false);
   protected asideSown = new BehaviorSubject(false);
   protected enableAnimation = new BehaviorSubject(false);
+
+  protected isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
   protected readonly path = this.router.events.pipe(
     tap(event => {
@@ -61,7 +65,7 @@ export class AppComponent {
         this.meta.updateTag({ name: 'twitter:title', content: $localize`Dresden Internet Exchange` });
       }
 
-      const path =new URL("https://example.com" + event.url).pathname;
+      const path = new URL("https://example.com" + event.url).pathname;
       this.disableNav.next(path === '/event/opening');
     }),
     map(() => this.location.path() || '/'),
