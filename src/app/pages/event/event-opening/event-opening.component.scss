@@ -83,3 +83,11 @@
   padding: 0 $padding;
   --f-color: #{$c-primary};
 }
+
+td {
+  padding: 0.2rem;
+
+  &:last-child {
+    width: 100%;
+  }
+}
