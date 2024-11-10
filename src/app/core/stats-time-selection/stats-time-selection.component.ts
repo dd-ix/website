@@ -2,11 +2,12 @@ import { Component, EventEmitter, OnDestroy, OnInit, Output } from '@angular/cor
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { TimeSelection } from '../../api/stats.domain';
+import { DropdownComponent } from '@feel/form';
 
 @Component({
   selector: 'app-stats-time-selection',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, DropdownComponent],
   templateUrl: './stats-time-selection.component.html',
   styleUrl: './stats-time-selection.component.scss'
 })
