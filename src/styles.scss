@@ -32,7 +32,8 @@ html {
 @import "theme";
 @import "vars";
 
-@include theme($c-primary: #209680,
+@include theme(
+  $c-primary: #209680,
   $c-primary-l: #cf0,
   $c-accent: #ad0,
   $c-accent-l: #cf0,
@@ -40,8 +41,8 @@ html {
   $c-primary-d: #16705f,
   $c-gray: #696969,
   $s-padding: calc(1.5 * $s-unit),
-  $c-secondary: #060f11,
-  $c-secondary-l: #0e1618,
+  $c-secondary: #182a2b,
+  $c-secondary-l: #1e3334,
   $c-secondary-ll: #1a2225,
 );
 
