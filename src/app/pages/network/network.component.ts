@@ -12,22 +12,21 @@ import {RouterLink} from "@angular/router";
 import {IconPopMapComponent} from "../../icons/icon-pop-map/icon-pop-map.component";
 
 @Component({
-  selector: 'app-network',
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    NgForOf,
-    NgIf,
-    CardComponent,
-    IconCheckmarkComponent,
-    IconCloseComponent,
-    ButtonComponent,
-    IconSendComponent,
-    RouterLink,
-    IconPopMapComponent
-  ],
-  templateUrl: './network.component.html',
-  styleUrl: './network.component.scss'
+    selector: 'app-network',
+    imports: [
+        AsyncPipe,
+        NgForOf,
+        NgIf,
+        CardComponent,
+        IconCheckmarkComponent,
+        IconCloseComponent,
+        ButtonComponent,
+        IconSendComponent,
+        RouterLink,
+        IconPopMapComponent
+    ],
+    templateUrl: './network.component.html',
+    styleUrl: './network.component.scss'
 })
 export class NetworkComponent {
 

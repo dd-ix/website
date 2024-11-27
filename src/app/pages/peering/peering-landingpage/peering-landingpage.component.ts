@@ -9,10 +9,9 @@ import {IconPopMapComponent} from "../../../icons/icon-pop-map/icon-pop-map.comp
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-peering-landingpage',
-  templateUrl: './peering-landingpage.component.html',
-  styleUrls: ['./peering-landingpage.component.scss'],
-  standalone: true,
+    selector: 'app-peering-landingpage',
+    templateUrl: './peering-landingpage.component.html',
+    styleUrls: ['./peering-landingpage.component.scss'],
     imports: [
         IconSwitchComponent,
         CardComponent,

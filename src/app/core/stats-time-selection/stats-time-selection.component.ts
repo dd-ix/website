@@ -5,11 +5,10 @@ import { TimeSelection } from '../../api/stats.domain';
 import { DropdownComponent } from '@feel/form';
 
 @Component({
-  selector: 'app-stats-time-selection',
-  standalone: true,
-  imports: [ReactiveFormsModule, DropdownComponent],
-  templateUrl: './stats-time-selection.component.html',
-  styleUrl: './stats-time-selection.component.scss'
+    selector: 'app-stats-time-selection',
+    imports: [ReactiveFormsModule, DropdownComponent],
+    templateUrl: './stats-time-selection.component.html',
+    styleUrl: './stats-time-selection.component.scss'
 })
 export class StatsTimeSelectionComponent implements OnInit, OnDestroy {
 

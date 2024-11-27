@@ -12,22 +12,21 @@ import { SmallBlogPost, SmallEvent } from '../../../api/blog.domain';
 import { eventNames } from 'node:process';
 
 @Component({
-  selector: 'app-blog-list',
-  templateUrl: './blog-list.component.html',
-  styleUrls: ['./blog-list.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    NgIf,
-    NgForOf,
-    BlogCardComponent,
-    CardComponent,
-    MailingListComponent,
-    ButtonComponent,
-    IconSendComponent,
-    EventCardComponent
-  ]
+    selector: 'app-blog-list',
+    templateUrl: './blog-list.component.html',
+    styleUrls: ['./blog-list.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        AsyncPipe,
+        NgIf,
+        NgForOf,
+        BlogCardComponent,
+        CardComponent,
+        MailingListComponent,
+        ButtonComponent,
+        IconSendComponent,
+        EventCardComponent
+    ]
 })
 export class BlogListComponent {
 

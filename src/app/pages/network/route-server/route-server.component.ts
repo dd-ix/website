@@ -4,14 +4,13 @@ import {AsyncPipe} from "@angular/common";
 import {CardComponent} from "../../../core/card/card.component";
 
 @Component({
-  selector: 'app-route-server',
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    CardComponent
-  ],
-  templateUrl: './route-server.component.html',
-  styleUrl: './route-server.component.scss'
+    selector: 'app-route-server',
+    imports: [
+        AsyncPipe,
+        CardComponent
+    ],
+    templateUrl: './route-server.component.html',
+    styleUrl: './route-server.component.scss'
 })
 export class RouteServerComponent {
 

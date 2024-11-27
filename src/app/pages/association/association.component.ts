@@ -12,21 +12,20 @@ import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frau
 import {AsyncPipe, NgForOf} from "@angular/common";
 
 @Component({
-  selector: 'app-association',
-  templateUrl: './association.component.html',
-  styleUrls: ['./association.component.scss'],
-  standalone: true,
-  imports: [
-    CardComponent,
-    IconSwitchComponent,
-    IconTalkingComponent,
-    IconSocialComponent,
-    IconMoneyComponent,
-    IconHubComponent,
-    IconFrauenkircheComponent,
-    AsyncPipe,
-    NgForOf
-  ]
+    selector: 'app-association',
+    templateUrl: './association.component.html',
+    styleUrls: ['./association.component.scss'],
+    imports: [
+        CardComponent,
+        IconSwitchComponent,
+        IconTalkingComponent,
+        IconSocialComponent,
+        IconMoneyComponent,
+        IconHubComponent,
+        IconFrauenkircheComponent,
+        AsyncPipe,
+        NgForOf
+    ]
 })
 export class AssociationComponent {
 

@@ -5,11 +5,10 @@ import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 import {BehaviorSubject, filter, switchMap} from "rxjs";
 
 @Component({
-  selector: 'app-text-block',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './text-block.component.html',
-  styleUrls: ['./text-block.component.scss']
+    selector: 'app-text-block',
+    imports: [CommonModule],
+    templateUrl: './text-block.component.html',
+    styleUrls: ['./text-block.component.scss']
 })
 export class TextBlockComponent {
 

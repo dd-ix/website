@@ -9,19 +9,18 @@ import { BehaviorSubject, switchMap } from 'rxjs';
 import { StatsTimeSelectionComponent } from "../../../core/stats-time-selection/stats-time-selection.component";
 
 @Component({
-  selector: 'app-as112',
-  standalone: true,
-  templateUrl: './as112.component.html',
-  styleUrl: './as112.component.scss',
-  imports: [
-    AsyncPipe,
-    NgIf,
-    ChartComponent,
-    CardComponent,
-    JsonPipe,
-    ButtonComponent,
-    StatsTimeSelectionComponent
-  ]
+    selector: 'app-as112',
+    templateUrl: './as112.component.html',
+    styleUrl: './as112.component.scss',
+    imports: [
+        AsyncPipe,
+        NgIf,
+        ChartComponent,
+        CardComponent,
+        JsonPipe,
+        ButtonComponent,
+        StatsTimeSelectionComponent
+    ]
 })
 export class As112Component {
 

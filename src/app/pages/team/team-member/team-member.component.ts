@@ -12,11 +12,10 @@ import {API_URL} from "../../../api/api.domain";
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-team-member',
-  standalone: true,
-  imports: [CommonModule, CardComponent, IconGithubComponent, IconGlobeComponent, IconLinkedinComponent, IconMailComponent, IconMastodonComponent, IconRipeComponent, NgOptimizedImage, RouterLink],
-  templateUrl: './team-member.component.html',
-  styleUrls: ['./team-member.component.scss']
+    selector: 'app-team-member',
+    imports: [CommonModule, CardComponent, IconGithubComponent, IconGlobeComponent, IconLinkedinComponent, IconMailComponent, IconMastodonComponent, IconRipeComponent, NgOptimizedImage, RouterLink],
+    templateUrl: './team-member.component.html',
+    styleUrls: ['./team-member.component.scss']
 })
 export class TeamMemberComponent {
   @Input()

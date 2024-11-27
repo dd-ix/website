@@ -8,17 +8,16 @@ import { CardComponent } from "../../../core/card/card.component";
 import { AsyncPipe, DatePipe, NgIf } from "@angular/common";
 
 @Component({
-  selector: 'app-blog-post',
-  templateUrl: './blog-post.component.html',
-  styleUrls: ['./blog-post.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [
-    CardComponent,
-    AsyncPipe,
-    NgIf,
-    DatePipe
-  ]
+    selector: 'app-blog-post',
+    templateUrl: './blog-post.component.html',
+    styleUrls: ['./blog-post.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CardComponent,
+        AsyncPipe,
+        NgIf,
+        DatePipe
+    ]
 })
 export class BlogPostComponent {
 

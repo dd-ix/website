@@ -9,19 +9,18 @@ import { BehaviorSubject, Subject, switchMap } from 'rxjs';
 import { ChartComponent } from '../../core/chart/chart.component';
 
 @Component({
-  selector: 'app-stats',
-  standalone: true,
-  templateUrl: './stats.component.html',
-  styleUrl: './stats.component.scss',
-  imports: [
-    AsyncPipe,
-    NgIf,
-    CardComponent,
-    JsonPipe,
-    ButtonComponent,
-    StatsTimeSelectionComponent,
-    ChartComponent,
-  ]
+    selector: 'app-stats',
+    templateUrl: './stats.component.html',
+    styleUrl: './stats.component.scss',
+    imports: [
+        AsyncPipe,
+        NgIf,
+        CardComponent,
+        JsonPipe,
+        ButtonComponent,
+        StatsTimeSelectionComponent,
+        ChartComponent,
+    ]
 })
 export class StatsComponent {
 

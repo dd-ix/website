@@ -5,11 +5,10 @@ import { SmallBlogPost } from "../../api/blog.domain";
 import { API_URL } from "../../api/api.domain";
 
 @Component({
-  selector: 'app-blog-card',
-  standalone: true,
-  imports: [CommonModule, CardComponent],
-  templateUrl: './blog-card.component.html',
-  styleUrls: ['./blog-card.component.scss']
+    selector: 'app-blog-card',
+    imports: [CommonModule, CardComponent],
+    templateUrl: './blog-card.component.html',
+    styleUrls: ['./blog-card.component.scss']
 })
 export class BlogCardComponent {
 

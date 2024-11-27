@@ -10,19 +10,18 @@ import {RelativeTimePipe} from "../../../core/pipes/relative-time.pipe";
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-  selector: 'app-event-post',
-  templateUrl: './event-post.component.html',
-  styleUrls: ['./event-post.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  standalone: true,
-  imports: [
-    CardComponent,
-    AsyncPipe,
-    NgIf,
-    DatePipe,
-    RelativeTimePipe,
-    DatePipe
-  ]
+    selector: 'app-event-post',
+    templateUrl: './event-post.component.html',
+    styleUrls: ['./event-post.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    imports: [
+        CardComponent,
+        AsyncPipe,
+        NgIf,
+        DatePipe,
+        RelativeTimePipe,
+        DatePipe
+    ]
 })
 export class EventPostComponent {
 

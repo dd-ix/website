@@ -12,11 +12,10 @@ import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
 import { IconPartyComponent } from "../../../icons/icon-party/icon-party.component";
 
 @Component({
-  selector: 'app-event-opening',
-  standalone: true,
+    selector: 'app-event-opening',
     imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconFrauenkircheComponent, IconSendComponent, IconPartyComponent],
-  templateUrl: './event-opening.component.html',
-  styleUrl: './event-opening.component.scss'
+    templateUrl: './event-opening.component.html',
+    styleUrl: './event-opening.component.scss'
 })
 export class EventOpeningComponent implements OnInit {
 

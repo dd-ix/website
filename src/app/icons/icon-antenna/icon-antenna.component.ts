@@ -3,11 +3,10 @@ import {CommonModule} from '@angular/common';
 import {TooltipDirective} from "../../core/tooltip/tooltip.directive";
 
 @Component({
-  selector: 'app-icon-antenna',
-  standalone: true,
-  imports: [CommonModule, TooltipDirective],
-  templateUrl: './icon-antenna.component.svg',
-  styleUrls: ['../style.scss']
+    selector: 'app-icon-antenna',
+    imports: [CommonModule, TooltipDirective],
+    templateUrl: './icon-antenna.component.svg',
+    styleUrls: ['../style.scss']
 })
 export class IconAntennaComponent {
 

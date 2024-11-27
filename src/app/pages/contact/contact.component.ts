@@ -6,11 +6,10 @@ import {IconMailComponent} from "../../icons/icon-mail/icon-mail.component";
 import {IconPhoneComponent} from "../../icons/icon-phone/icon-phone.component";
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [CommonModule, CardComponent, TextBlockComponent, IconMailComponent, IconPhoneComponent, NgOptimizedImage],
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+    selector: 'app-contact',
+    imports: [CommonModule, CardComponent, TextBlockComponent, IconMailComponent, IconPhoneComponent, NgOptimizedImage],
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
 }

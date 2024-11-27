@@ -12,11 +12,10 @@ import {TeamMemberComponent} from "./team-member/team-member.component";
 import {TeamMember} from "../../api/team.domain";
 
 @Component({
-  selector: 'app-team',
-  standalone: true,
-  imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent, NgOptimizedImage, IconLinkedinComponent, IconRipeComponent, TeamMemberComponent],
-  templateUrl: './team.component.html',
-  styleUrls: ['./team.component.scss']
+    selector: 'app-team',
+    imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent, NgOptimizedImage, IconLinkedinComponent, IconRipeComponent, TeamMemberComponent],
+    templateUrl: './team.component.html',
+    styleUrls: ['./team.component.scss']
 })
 export class TeamComponent {
 

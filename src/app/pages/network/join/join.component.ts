@@ -7,16 +7,15 @@ import {API_URL} from "../../../api/api.domain";
 import {Document} from "../../../api/documents.domain";
 
 @Component({
-  selector: 'app-join',
-  standalone: true,
-  imports: [
-    ButtonComponent,
-    CardComponent,
-    IconSendComponent,
-    IconPopMapComponent
-  ],
-  templateUrl: './join.component.html',
-  styleUrl: './join.component.scss'
+    selector: 'app-join',
+    imports: [
+        ButtonComponent,
+        CardComponent,
+        IconSendComponent,
+        IconPopMapComponent
+    ],
+    templateUrl: './join.component.html',
+    styleUrl: './join.component.scss'
 })
 export class JoinComponent {
 

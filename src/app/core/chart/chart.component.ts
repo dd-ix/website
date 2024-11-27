@@ -43,11 +43,10 @@ const GERMAN_TRANSLATION: ApexLocale = {
 };
 
 @Component({
-  selector: 'app-chart',
-  standalone: true,
-  imports: [NgIf],
-  templateUrl: './chart.component.html',
-  styleUrl: './chart.component.scss'
+    selector: 'app-chart',
+    imports: [NgIf],
+    templateUrl: './chart.component.html',
+    styleUrl: './chart.component.scss'
 })
 export class ChartComponent implements OnInit, OnChanges, OnDestroy {
 

@@ -11,23 +11,22 @@ import { NotificationListComponent } from "@feel/notification";
 import { ProgressBarComponent } from "./core/progress-bar/progress-bar.component";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [routingAnimation],
-  standalone: true,
-  imports: [
-    AsyncPipe,
-    RouterLink,
-    IconLogoComponent,
-    RouterLinkActive,
-    IconMenuComponent,
-    RouterOutlet,
-    NotificationListComponent,
-    NgIf,
-    ProgressBarComponent,
-  ]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    animations: [routingAnimation],
+    imports: [
+        AsyncPipe,
+        RouterLink,
+        IconLogoComponent,
+        RouterLinkActive,
+        IconMenuComponent,
+        RouterOutlet,
+        NotificationListComponent,
+        NgIf,
+        ProgressBarComponent,
+    ]
 })
 export class AppComponent {
 
