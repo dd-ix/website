@@ -1,28 +1,28 @@
 import { ChangeDetectionStrategy, Component, SecurityContext } from '@angular/core';
-import { BlogService } from "../../../api/blog.service";
+import { PostService } from "../../../api/post.service";
 import { ActivatedRoute, Router } from "@angular/router";
-import { catchError, of, switchMap, tap, throwError } from "rxjs";
+import { catchError, switchMap, tap, throwError } from "rxjs";
 import { DomSanitizer, Meta, Title } from "@angular/platform-browser";
 import { API_URL } from "../../../api/api.domain";
 import { CardComponent } from "../../../core/card/card.component";
 import { AsyncPipe, DatePipe, NgIf } from "@angular/common";
 
 @Component({
-    selector: 'app-blog-post',
-    templateUrl: './blog-post.component.html',
-    styleUrls: ['./blog-post.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [
-        CardComponent,
-        AsyncPipe,
-        NgIf,
-        DatePipe
-    ]
+  selector: 'app-blog-post',
+  templateUrl: './blog-post.component.html',
+  styleUrls: ['./blog-post.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    CardComponent,
+    AsyncPipe,
+    NgIf,
+    DatePipe
+  ]
 })
 export class BlogPostComponent {
 
   protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({ slug }) => this.blogService.getBlogPost(slug)),
+    switchMap(({ slug }) => this.postService.getBlogPost(slug)),
     tap(post => {
       this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
       this.meta.updateTag({ property: 'og:title', content: post.title });
@@ -52,7 +52,7 @@ export class BlogPostComponent {
   );
 
   constructor(
-    private readonly blogService: BlogService,
+    private readonly postService: PostService,
     private readonly activatedRoute: ActivatedRoute,
     private readonly meta: Meta,
     private readonly title: Title,

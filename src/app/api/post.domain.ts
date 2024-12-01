@@ -1,6 +1,11 @@
 import { Language } from "./api.domain";
 
-export interface SmallBlogPost {
+export enum PostKind {
+  News,
+  Blog,
+}
+
+export interface SmallPost {
   slug: string;
   lang: Language,
   idx: number;
@@ -13,11 +18,10 @@ export interface SmallBlogPost {
   image: string | null;
 
   // manually added in frontend
-  blog: boolean | undefined;
-  news: boolean | undefined;
+  kind: PostKind | undefined;
 }
 
-export interface Post extends SmallBlogPost {
+export interface Post extends SmallPost {
   body: string;
 }
 

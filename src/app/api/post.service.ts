@@ -1,13 +1,13 @@
-import {Inject, Injectable, LOCALE_ID} from '@angular/core';
+import { Inject, Injectable, LOCALE_ID } from '@angular/core';
 import { HttpClient, HttpParams } from "@angular/common/http";
-import {Observable} from "rxjs";
-import {Post, SmallBlogPost, SmallEvent, EventPost} from "./blog.domain";
-import {API_URL, Language} from "./api.domain";
+import { Observable, map } from "rxjs";
+import { Post, SmallPost, SmallEvent, EventPost, PostKind } from "./post.domain";
+import { API_URL, Language } from "./api.domain";
 
 @Injectable({
   providedIn: 'root'
 })
-export class BlogService {
+export class PostService {
 
   constructor(
     private readonly http: HttpClient,
@@ -23,30 +23,42 @@ export class BlogService {
     return this.http.get<string[]>(`${API_URL}/news/keywords`);
   }
 
-  public getBlogPosts(keywords?: string[]): Observable<SmallBlogPost[]> {
+  public getBlogPosts(keywords?: string[]): Observable<SmallPost[]> {
     let params = new HttpParams()
     if (keywords?.length) {
       params = params.set("keywords", keywords.join(","));
     }
 
-    return this.http.get<SmallBlogPost[]>(`${API_URL}/blog/${this.lang}`, {params});
+    return this.http.get<SmallPost[]>(`${API_URL}/blog/${this.lang}`, { params })
+      .pipe(map(posts => {
+        return posts.map(post => ({ ...post, kind: PostKind.Blog }))
+      }));
   }
 
-  public getNewsPosts(keywords?: string[]): Observable<SmallBlogPost[]> {
+  public getNewsPosts(keywords?: string[]): Observable<SmallPost[]> {
     let params = new HttpParams()
     if (keywords?.length) {
       params = params.set("keywords", keywords.join(","));
     }
 
-    return this.http.get<SmallBlogPost[]>(`${API_URL}/news/${this.lang}`, {params});
+    return this.http.get<SmallPost[]>(`${API_URL}/news/${this.lang}`, { params })
+      .pipe(map(posts => {
+        return posts.map(post => ({ ...post, kind: PostKind.News }))
+      }));
   }
 
   public getBlogPost(slug: string): Observable<Post> {
-    return this.http.get<Post>(`${API_URL}/blog/${this.lang}/${slug}`);
+    return this.http.get<Post>(`${API_URL}/blog/${this.lang}/${slug}`)
+      .pipe(map(post => {
+        return { ...post, kind: PostKind.Blog };
+      }));
   }
 
   public getNewsPost(slug: string): Observable<Post> {
-    return this.http.get<Post>(`${API_URL}/news/${this.lang}/${slug}`);
+    return this.http.get<Post>(`${API_URL}/news/${this.lang}/${slug}`)
+      .pipe(map(post => {
+        return { ...post, news: PostKind.News };
+      }));
   }
 
   public getEventPosts(): Observable<SmallEvent[]> {

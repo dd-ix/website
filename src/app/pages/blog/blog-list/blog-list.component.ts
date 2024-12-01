@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BlogService } from "../../../api/blog.service";
+import { PostService } from "../../../api/post.service";
 import { BehaviorSubject, combineLatest, map, Observable, switchMap } from "rxjs";
 import { AsyncPipe, NgForOf, NgIf } from "@angular/common";
 import { BlogCardComponent } from "../../../core/blog-card/blog-card.component";
@@ -8,33 +8,32 @@ import { MailingListComponent } from "../../../core/mailing-list/mailing-list.co
 import { ButtonComponent } from "@feel/form";
 import { IconSendComponent } from "../../../icons/icon-send/icon-send.component";
 import { EventCardComponent } from "../../../core/event-card/event-card.component";
-import { SmallBlogPost, SmallEvent } from '../../../api/blog.domain';
-import { eventNames } from 'node:process';
+import { SmallEvent, SmallPost } from '../../../api/post.domain';
 
 @Component({
-    selector: 'app-blog-list',
-    templateUrl: './blog-list.component.html',
-    styleUrls: ['./blog-list.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [
-        AsyncPipe,
-        NgIf,
-        NgForOf,
-        BlogCardComponent,
-        CardComponent,
-        MailingListComponent,
-        ButtonComponent,
-        IconSendComponent,
-        EventCardComponent
-    ]
+  selector: 'app-blog-list',
+  templateUrl: './blog-list.component.html',
+  styleUrls: ['./blog-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    AsyncPipe,
+    NgIf,
+    NgForOf,
+    BlogCardComponent,
+    CardComponent,
+    MailingListComponent,
+    ButtonComponent,
+    IconSendComponent,
+    EventCardComponent
+  ]
 })
 export class BlogListComponent {
 
   protected readonly selectedKeywords = new BehaviorSubject<string[]>([]);
   protected readonly entries = combineLatest({
-    events: this.blogService.getEventPosts(),
-    blog: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getBlogPosts(keywords)), map(posts => posts.map(post => ({ ...post, blog: true } as SmallBlogPost)))),
-    news: this.selectedKeywords.pipe(switchMap(keywords => this.blogService.getNewsPosts(keywords)), map(posts => posts.map(post => ({ ...post, news: true } as SmallBlogPost)))),
+    events: this.postService.getEventPosts(),
+    blog: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getBlogPosts(keywords))),
+    news: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getNewsPosts(keywords))),
   })
     .pipe(map(({ events, blog, news }) => ([...events, ...blog, ...news].sort((a, b) => {
       // @ts-expect-error union type
@@ -43,13 +42,13 @@ export class BlogListComponent {
       const bDate = Date.parse(b.published ?? b.start_time);
       return bDate - aDate;
     }))));
-  protected readonly keywords = combineLatest({ blog: this.blogService.getBlogKeywords(), news: this.blogService.getNewsKeywords() })
+  protected readonly keywords = combineLatest({ blog: this.postService.getBlogKeywords(), news: this.postService.getNewsKeywords() })
     .pipe(map(({ blog, news }) => {
       return [...blog, ...news];
     }));
 
   constructor(
-    private readonly blogService: BlogService,
+    private readonly postService: PostService,
   ) {
   }
 
@@ -65,19 +64,19 @@ export class BlogListComponent {
     }
   }
 
-  protected isEvent(eventOrPost: SmallEvent | SmallBlogPost): boolean {
+  protected isEvent(eventOrPost: SmallEvent | SmallPost): boolean {
     return 'start_time' in eventOrPost;
   }
 
-  protected castEvent(eventOrPost: SmallEvent | SmallBlogPost): SmallEvent {
+  protected castEvent(eventOrPost: SmallEvent | SmallPost): SmallEvent {
     return eventOrPost as SmallEvent;
   }
 
-  protected castPost(eventOrPost: SmallEvent | SmallBlogPost): SmallBlogPost {
-    return eventOrPost as SmallBlogPost;
+  protected castPost(eventOrPost: SmallEvent | SmallPost): SmallPost {
+    return eventOrPost as SmallPost;
   }
 
-  protected trackBy(_idx: number, post: SmallEvent | SmallBlogPost): string {
+  protected trackBy(_idx: number, post: SmallEvent | SmallPost): string {
     return post.slug;
   }
 }

@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, Inject, SecurityContext} from '@angular/core';
-import {BlogService} from "../../../api/blog.service";
+import {PostService} from "../../../api/post.service";
 import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
 import {DomSanitizer, Meta, Title} from "@angular/platform-browser";
@@ -26,7 +26,7 @@ import { DOCUMENT } from '@angular/common';
 export class EventPostComponent {
 
   protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({slug}) => this.blogService.getEvent(slug)),
+    switchMap(({slug}) => this.postService.getEvent(slug)),
     tap(post => {
       this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
       this.meta.updateTag({property: 'og:title', content: post.title});
@@ -51,7 +51,7 @@ export class EventPostComponent {
     }),
   );
   constructor(
-    private readonly blogService: BlogService,
+    private readonly postService: PostService,
     private readonly activatedRoute: ActivatedRoute,
     private readonly meta: Meta,
     private readonly title: Title,

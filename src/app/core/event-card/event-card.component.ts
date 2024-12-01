@@ -1,15 +1,15 @@
-import {Component, Input} from '@angular/core';
-import {CommonModule, DatePipe} from '@angular/common';
-import {CardComponent} from "../card/card.component";
-import {SmallEvent} from "../../api/blog.domain";
-import {API_URL} from "../../api/api.domain";
-import {RelativeTimePipe} from "../pipes/relative-time.pipe";
+import { Component, Input } from '@angular/core';
+import { CommonModule, DatePipe } from '@angular/common';
+import { CardComponent } from "../card/card.component";
+import { SmallEvent } from "../../api/post.domain";
+import { API_URL } from "../../api/api.domain";
+import { RelativeTimePipe } from "../pipes/relative-time.pipe";
 
 @Component({
-    selector: 'app-event-card',
-    imports: [CommonModule, CardComponent, DatePipe, RelativeTimePipe],
-    templateUrl: './event-card.component.html',
-    styleUrls: ['./event-card.component.scss']
+  selector: 'app-event-card',
+  imports: [CommonModule, CardComponent, DatePipe, RelativeTimePipe],
+  templateUrl: './event-card.component.html',
+  styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent {
 

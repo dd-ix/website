@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AsyncPipe, CommonModule, NgOptimizedImage } from '@angular/common';
-import { BlogService } from "../../api/blog.service";
+import { PostService } from "../../api/post.service";
 import { RouterLink } from "@angular/router";
 import { IconGithubComponent } from "../../icons/icon-github/icon-github.component";
 import { IconMastodonComponent } from "../../icons/icon-mastodon/icon-mastodon.component";
@@ -29,14 +29,14 @@ import { IconInterLinkComponent } from "../../icons/icon-inter-link/icon-inter-l
 })
 export class HomeComponent {
 
-  protected readonly events = this.blogService.getUpComingEvents()
+  protected readonly events = this.postService.getUpComingEvents()
     .pipe(map(events => events.slice(0, 3)), share());
 
-  protected readonly news_and_event_posts = this.events
+  protected readonly newsAndEventPosts = this.events
     .pipe(
       switchMap(events => combineLatest({
-        news: this.blogService.getNewsPosts(),
-        blog: this.blogService.getBlogPosts().pipe(map(posts => posts.map(post => ({ ...post, blog: true }))))
+        news: this.postService.getNewsPosts(),
+        blog: this.postService.getBlogPosts(),
       })
         .pipe(map(({ news, blog }) => {
           const posts = [...news, ...blog];
@@ -47,10 +47,10 @@ export class HomeComponent {
       )
     );
 
-  protected readonly blog_posts = this.blogService.getBlogPosts();
+  protected readonly blogPosts = this.postService.getBlogPosts();
 
   constructor(
-    private readonly blogService: BlogService,
+    private readonly postService: PostService,
   ) {
   }
 }

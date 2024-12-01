@@ -1,25 +1,25 @@
 import { Component, OnInit, SecurityContext } from '@angular/core';
 import { tap } from 'rxjs';
-import { BlogService } from '../../../api/blog.service';
+import { PostService } from '../../../api/post.service';
 import { DomSanitizer, Meta, Title } from '@angular/platform-browser';
 import { AsyncPipe, DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
 import { API_URL } from '../../../api/api.domain';
 import { CardComponent } from "../../../core/card/card.component";
 import { ButtonComponent } from '@feel/form';
-import { NavigationEnd, Router } from '@angular/router';
-import {IconFrauenkircheComponent} from "../../../icons/icon-frauenkirche/icon-frauenkirche.component";
-import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
+import { Router } from '@angular/router';
+import { IconFrauenkircheComponent } from "../../../icons/icon-frauenkirche/icon-frauenkirche.component";
+import { IconSendComponent } from "../../../icons/icon-send/icon-send.component";
 import { IconPartyComponent } from "../../../icons/icon-party/icon-party.component";
 
 @Component({
-    selector: 'app-event-opening',
-    imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconFrauenkircheComponent, IconSendComponent, IconPartyComponent],
-    templateUrl: './event-opening.component.html',
-    styleUrl: './event-opening.component.scss'
+  selector: 'app-event-opening',
+  imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconFrauenkircheComponent, IconSendComponent, IconPartyComponent],
+  templateUrl: './event-opening.component.html',
+  styleUrl: './event-opening.component.scss'
 })
 export class EventOpeningComponent implements OnInit {
 
-  protected readonly post = this.blogService.getEvent("opening").pipe(
+  protected readonly post = this.postService.getEvent("opening").pipe(
     tap(post => {
       this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
       this.meta.updateTag({ property: 'og:title', content: post.title });
@@ -41,7 +41,7 @@ export class EventOpeningComponent implements OnInit {
   );
 
   constructor(
-    private readonly blogService: BlogService,
+    private readonly postService: PostService,
     private readonly meta: Meta,
     private readonly title: Title,
     private readonly sanitizer: DomSanitizer,

@@ -68,7 +68,7 @@
   <li *ngFor="let event of events | async">
     <app-event-card [event]="event" class="card"/>
   </li>
-  <li *ngFor="let post of news_and_event_posts | async">
+  <li *ngFor="let post of newsAndEventPosts | async">
     <app-blog-card [post]="post" class="card"/>
   </li>
 </ul>
