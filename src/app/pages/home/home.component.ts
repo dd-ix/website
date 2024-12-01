@@ -34,7 +34,10 @@ export class HomeComponent {
 
   protected readonly news_and_event_posts = this.events
     .pipe(
-      switchMap(events => combineLatest({ news: this.blogService.getNewsPosts(), blog: this.blogService.getBlogPosts() })
+      switchMap(events => combineLatest({
+        news: this.blogService.getNewsPosts(),
+        blog: this.blogService.getBlogPosts().pipe(map(posts => posts.map(post => ({ ...post, blog: true }))))
+      })
         .pipe(map(({ news, blog }) => {
           const posts = [...news, ...blog];
           posts.sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
