@@ -1,93 +1,82 @@
 <div class="typography">
-  <h1 i18n>Peering</h1>
-</div>
-
-<!--<app-card class="datacenter">
-    <a routerLink="/network/join">
-      <app-icon-pop-map class="pop-map"/>
-    </a>
-  </app-card>-->
-
-<div class="row">
-  <app-card>
-    <div class="further-information">
-      <h1 i18n>Join DD-IX!</h1>
-      <p i18n><b>Become</b> a <b>member</b> or <b>customer</b> of DD-IX! See port prices and PoP locations here:</p>
-      <feel-button class="section-button" flavor="accent" i18n-label label="Join Now!" link="/network/join">
-        <app-icon-send />
-      </feel-button>
-    </div>
-  </app-card>
-
-  <app-card>
-    <div class="further-information">
-      <h1 i18n>Join DDNOG!</h1>
-      <p i18n>Participate in the Dresden Network Operators Group:</p>
-      <div class="row">
-        <feel-button class="section-button" flavor="accent" i18n-label label="Subscribe Now!"
-          link="https://lists.dd-ix.net/postorius/lists/ddnog.lists.dd-ix.net/">
-          <app-icon-send />
-        </feel-button>
-        <feel-button class="section-button" flavor="accent" i18n-label label="Join Matrix Room!"
-          link="https://matrix.to/#/#ddnog:envs.net">
-          <app-icon-send />
-        </feel-button>
-      </div>
-    </div>
-  </app-card>
+  <h1 i18n>Peering at DD-IX</h1>
 </div>
 
 <div class="blocks">
-  <div class="block">
-    <app-icon-switch class="icon" />
+  <div class="cc-block">
     <app-card>
       <div class="typography">
-        <h2 i18n>What is peering?</h2>
-        <p i18n>
-          Peering is a term from network technology. It enables ISPs (Internet Service Providers) or network operators
-          to easily exchange data with each other. This data transfer between peering partners is free of charge and
-          offers numerous advantages.
-        </p>
+        <h2 i18n id="pricing_10g">Pricing</h2>
+        <table>
+          <tr>
+            <th>Port Size</th>
+            <th>10G</th>
+            <th>100G</th>
+          </tr>
+          <tr>
+            <td>Setup Fee</td>
+            <td>50€</td>
+            <td>500€</td>
+          </tr>
+          <tr>
+            <td>Monthly Fee</td>
+            <td>150€</td>
+            <td>630€</td>
+          </tr>
+          <tr>
+            <td>Monthly Fee for Members</td>
+            <td>100€</td>
+            <td>500€</td>
+          </tr>
+        </table>
+        Simply send us an e-mail to start the ordering process.
+        <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!"
+                     link="mailto:peering@dd-ix.net">
+          <app-icon-send />
+        </feel-button>
       </div>
     </app-card>
-  </div>
-
-  <div class="block">
-    <app-icon-antenna class="icon" />
-    <app-card>
-      <div class="typography">
-        <h2 i18n>Why should I peer?</h2>
-        <p i18n>
-          The aim of peering is to route traffic between the participating networks more efficiently and to avoid
-          bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network
-          packets among each other shorter and faster.
-        </p>
-        <p i18n>
-          Optimal network packet forwarding is an important aspect of building a robust and efficient Internet. Peering
-          with an IXP allows access to content and services provided by other network operators or ISPs without the need
-          to establish many direct peerings among each other.
-        </p>
-      </div>
+    <app-card class="map">
+      <app-icon-pop-map class="pop-map" />
     </app-card>
   </div>
-
-  <div class="block">
-    <app-icon-directions class="icon" />
+  <app-card [lightShadow]="true" backgroundImage="/assets/images/learn-peering.webp" link="/peering/explained">
+    <h1 i18n>Learn about Peering!</h1>
+  </app-card>
+  <div class="cc2-block">
     <app-card>
       <div class="typography">
-        <p i18n>
-          An IXP also enables better resilience, as traffic can be transmitted even if a link to a particular network
-          fails, as long as there are routes through alternative peering partners.
-        </p>
-        <p i18n>
-          Peering through an IXP like the DD-IX reduces the need for expensive Internet transit services. Because only
-          the connection are paid for and not the data volume used.
-        </p>
+        <h2 i18n>Points of Presence</h2>
+        <p i18n>We are present at the following locations:</p>
+        <div class="locations-list">
+          <div>
+            <h4 i18n>CityCenter</h4>
+            <p i18n>
+              SachsenGigaBit GmbH<br />
+              Friedrich-List-Platz 2<br />
+              01069 Dresden
+            </p>
+            <a href="https://www.peeringdb.com/fac/15106" target="_blank" i18n>PeeringDB</a>
+          </div>
+          <div>
+            <h4 i18n>Coschütz 2</h4>
+            <p i18n>
+              IBH IT-Service GmbH<br />
+              Heilbronner Str. 20<br />
+              01189 Dresden
+            </p>
+            <a href="https://www.peeringdb.com/fac/14039" target="_blank" i18n>PeeringDB</a>
+          </div>
+        </div>
       </div>
     </app-card>
   </div>
 </div>
 
-<app-card [lightShadow]="true" backgroundImage="./assets/images/peering-policy.webp" link="policy">
+<app-card [lightShadow]="true" backgroundImage="/assets/images/peering-policy.webp" link="/peering/policy">
   <h1 i18n>Peering Policy</h1>
+</app-card>
+<app-card [backgroundImage]="buildBackgroundImageTermsofService()" [lightShadow]="true"
+          [link]="buildDownloadLinkTermsOfService()">
+  <h1>DD-IX Terms of Service</h1>
 </app-card>

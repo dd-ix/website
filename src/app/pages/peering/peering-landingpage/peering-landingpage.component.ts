@@ -7,6 +7,7 @@ import {ButtonComponent} from "@feel/form";
 import {IconSendComponent} from "../../../icons/icon-send/icon-send.component";
 import {IconPopMapComponent} from "../../../icons/icon-pop-map/icon-pop-map.component";
 import {RouterLink} from "@angular/router";
+import {API_URL} from "../../../api/api.domain";
 
 @Component({
     selector: 'app-peering-landingpage',
@@ -24,4 +25,14 @@ import {RouterLink} from "@angular/router";
     ]
 })
 export class PeeringLandingpageComponent {
+  protected readonly API_URL = API_URL;
+
+
+  protected buildDownloadLinkTermsOfService(): string {
+    return new URL(`${API_URL}/documents/download/DD-IX_TermsofService.pdf`).toString();
+  }
+
+  protected buildBackgroundImageTermsofService(): string {
+    return new URL(`${API_URL}/documents/download/DD-IX_TermsofService.webp`).toString();
+  }
 }
