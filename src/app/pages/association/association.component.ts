@@ -6,9 +6,6 @@ import {CardComponent} from "../../core/card/card.component";
 import {IconSwitchComponent} from "../../icons/icon-switch/icon-switch.component";
 import {IconTalkingComponent} from "../../icons/icon-talking/icon-talking.component";
 import {IconSocialComponent} from "../../icons/icon-social/icon-social.component";
-import {IconMoneyComponent} from "../../icons/icon-money/icon-money.component";
-import {IconHubComponent} from "../../icons/icon-hub/icon-hub.component";
-import {IconFrauenkircheComponent} from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import {AsyncPipe, NgForOf} from "@angular/common";
 
 @Component({
@@ -20,9 +17,6 @@ import {AsyncPipe, NgForOf} from "@angular/common";
         IconSwitchComponent,
         IconTalkingComponent,
         IconSocialComponent,
-        IconMoneyComponent,
-        IconHubComponent,
-        IconFrauenkircheComponent,
         AsyncPipe,
         NgForOf
     ]

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { StatsService } from '../../../api/stats.service';
 import { Series, TimeSelection } from '../../../api/stats.domain';
-import { AsyncPipe, JsonPipe, NgIf } from '@angular/common';
+import { AsyncPipe, NgIf } from '@angular/common';
 import { CardComponent } from '../../../core/card/card.component';
 import { ChartComponent } from '../../../core/chart/chart.component';
 import { ButtonComponent } from '@feel/form';
@@ -17,7 +17,6 @@ import { StatsTimeSelectionComponent } from "../../../core/stats-time-selection/
         NgIf,
         ChartComponent,
         CardComponent,
-        JsonPipe,
         ButtonComponent,
         StatsTimeSelectionComponent
     ]
