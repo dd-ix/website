@@ -5,8 +5,6 @@ import { AsyncPipe, NgForOf, NgIf } from "@angular/common";
 import { BlogCardComponent } from "../../../core/blog-card/blog-card.component";
 import { CardComponent } from "../../../core/card/card.component";
 import { MailingListComponent } from "../../../core/mailing-list/mailing-list.component";
-import { ButtonComponent } from "@feel/form";
-import { IconSendComponent } from "../../../icons/icon-send/icon-send.component";
 import { EventCardComponent } from "../../../core/event-card/event-card.component";
 import { SmallEvent, SmallPost } from '../../../api/post.domain';
 
@@ -22,8 +20,6 @@ import { SmallEvent, SmallPost } from '../../../api/post.domain';
     BlogCardComponent,
     CardComponent,
     MailingListComponent,
-    ButtonComponent,
-    IconSendComponent,
     EventCardComponent
   ]
 })

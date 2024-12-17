@@ -13,7 +13,7 @@ import {TeamMember} from "../../api/team.domain";
 
 @Component({
     selector: 'app-team',
-    imports: [CommonModule, CardComponent, IconGithubComponent, IconMastodonComponent, IconGlobeComponent, IconMailComponent, NgOptimizedImage, IconLinkedinComponent, IconRipeComponent, TeamMemberComponent],
+    imports: [CommonModule, TeamMemberComponent],
     templateUrl: './team.component.html',
     styleUrls: ['./team.component.scss']
 })

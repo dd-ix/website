@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { CardComponent } from "../card/card.component";
 import { CommonModule } from "@angular/common";
 import { ButtonComponent } from "@feel/form";
 import { IconSendComponent } from "../../icons/icon-send/icon-send.component";
@@ -10,7 +9,6 @@ import { IconSendComponent } from "../../icons/icon-send/icon-send.component";
     styleUrls: ['./mailing-list.component.scss'],
     imports: [
         CommonModule,
-        CardComponent,
         ButtonComponent,
         IconSendComponent,
     ]

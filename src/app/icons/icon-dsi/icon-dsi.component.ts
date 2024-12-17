@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TooltipDirective} from "../../core/tooltip/tooltip.directive";
 
 @Component({
     selector: 'app-icon-dsi',
-    imports: [CommonModule, TooltipDirective],
+    imports: [CommonModule],
     templateUrl: './icon-dsi.component.svg',
     styleUrls: ['../style.scss']
 })

@@ -67,6 +67,10 @@
   }
 }
 
+tr {
+  text-align: left;
+}
+
 img {
   height: auto;
   margin-bottom: 0.5rem;
@@ -131,18 +135,4 @@ img {
 .section-button {
   align-self: flex-start;
   margin-bottom: 0;
-}
-
-
-.row {
-  display: flex;
-  gap: 1rem;
-
-  .datacenter {
-    max-width: 500px;
-  }
-
-  @media screen and (max-width: #{$bp-mobile}) {
-    flex-direction: column;
-  }
 }

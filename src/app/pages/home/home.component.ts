@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { AsyncPipe, CommonModule, NgOptimizedImage } from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import { PostService } from "../../api/post.service";
-import { RouterLink } from "@angular/router";
 import { IconGithubComponent } from "../../icons/icon-github/icon-github.component";
 import { IconMastodonComponent } from "../../icons/icon-mastodon/icon-mastodon.component";
 import { IconLinkedinComponent } from "../../icons/icon-linkedin/icon-linkedin.component";
@@ -11,7 +10,6 @@ import { IconBcixComponent } from "../../icons/icon-bcix/icon-bcix.component";
 import { IconTudComponent } from "../../icons/icon-tud/icon-tud.component";
 import { CardComponent } from "../../core/card/card.component";
 import { BlogCardComponent } from "../../core/blog-card/blog-card.component";
-import { TextBlockComponent } from "../../core/text-block/text-block.component";
 import { IconFrauenkircheComponent } from "../../icons/icon-frauenkirche/icon-frauenkirche.component";
 import { IconInternetComponent } from "../../icons/icon-internet/icon-internet.component";
 import { IconSocialComponent } from "../../icons/icon-social/icon-social.component";
@@ -23,7 +21,7 @@ import { IconInterLinkComponent } from "../../icons/icon-inter-link/icon-inter-l
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, RouterLink, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, TextBlockComponent, NgOptimizedImage, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent, AsyncPipe, EventCardComponent, IconInterLinkComponent],
+  imports: [CommonModule, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent, AsyncPipe, EventCardComponent, IconInterLinkComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

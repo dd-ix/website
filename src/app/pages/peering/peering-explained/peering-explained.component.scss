@@ -59,6 +59,12 @@
   ul.services {
     grid-template-columns: 1fr 1fr;
   }
+
+  .row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 img {
@@ -88,6 +94,11 @@ img {
   }
 }
 
+.cc2-block {
+  display: flex;
+  flex-direction: column;
+}
+
 .locations-list {
   display: flex;
   justify-content: space-around;
@@ -109,7 +120,29 @@ img {
   }
 
   max-width: 500px;
-  flex-direction: column;
-  justify-content: center;
 }
 
+.further-information {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-button {
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+
+.row {
+  display: flex;
+  gap: 1rem;
+
+  .datacenter {
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: #{$bp-mobile}) {
+    flex-direction: column;
+  }
+}

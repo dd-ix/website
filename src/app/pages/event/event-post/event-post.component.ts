@@ -6,7 +6,6 @@ import {DomSanitizer, Meta, Title} from "@angular/platform-browser";
 import {API_URL} from "../../../api/api.domain";
 import {CardComponent} from "../../../core/card/card.component";
 import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
-import {RelativeTimePipe} from "../../../core/pipes/relative-time.pipe";
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -19,7 +18,6 @@ import { DOCUMENT } from '@angular/common';
         AsyncPipe,
         NgIf,
         DatePipe,
-        RelativeTimePipe,
         DatePipe
     ]
 })
