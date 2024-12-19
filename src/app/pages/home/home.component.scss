@@ -82,17 +82,12 @@
       &.netd {
         display: flex;
         gap: 0.25rem;
-
         img {
           max-height: 85%;
         }
-
         .tud {
           flex-grow: 1;
-          max-height: 90%;
-        }
-        h3 {
-          color: #002A55;
+          max-height: 95%;
         }
       }
     }
