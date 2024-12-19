@@ -18,10 +18,11 @@ import { ButtonComponent } from "@feel/form";
 import { IconDsiComponent } from "../../icons/icon-dsi/icon-dsi.component";
 import { EventCardComponent } from "../../core/event-card/event-card.component";
 import { IconInterLinkComponent } from "../../icons/icon-inter-link/icon-inter-link.component";
+import {IconNetdComponent} from "../../icons/icon-netd/icon-netd.component";
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent, AsyncPipe, EventCardComponent, IconInterLinkComponent],
+  imports: [CommonModule, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent, AsyncPipe, EventCardComponent, IconInterLinkComponent, IconNetdComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
