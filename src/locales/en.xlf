@@ -1106,6 +1106,102 @@
           <context context-type="linenumber">87,88</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8730670576338507930" datatype="html">
+        <source>last year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6989409377744310404" datatype="html">
+        <source>last month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6052766076365105714" datatype="html">
+        <source>now</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/pipes/relative-time.pipe.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7751010942038334793" datatype="html">
+        <source>Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3304972143698843178" datatype="html">
+        <source>Event</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/event-card/event-card.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4900796010431190714" datatype="html">
+        <source>invalid data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/pipes/relative-time.pipe.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1720241427578495443" datatype="html">
+        <source>last thee months</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3067905955375432321" datatype="html">
+        <source>last two days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2329598843423950672" datatype="html">
+        <source>last week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1144407473317535723" datatype="html">
+        <source>Subscribe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5948442423891185229" datatype="html">
+        <source>News &amp; Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blog/blog-list/blog-list.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8076796480639054100" datatype="html">
+        <source>Mailing Lists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
