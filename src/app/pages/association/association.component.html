@@ -16,7 +16,7 @@
   </div>
 
   <div class="block">
-    <app-icon-switch class="icon"/>
+    <app-icon-switch class="icon" />
     <app-card>
       <div class="typography">
         <h2 i18n>Operation of the DD-IX</h2>
@@ -33,7 +33,7 @@
   </div>
 
   <div class="block">
-    <app-icon-talking class="icon"/>
+    <app-icon-talking class="icon" />
     <app-card>
       <div class="typography">
         <h2 i18n>Networking and Sharing Experiences</h2>
@@ -60,15 +60,17 @@
   </div>
 
   <div class="block">
-    <app-icon-social class="icon"/>
+    <app-icon-social class="icon" />
     <app-card>
       <div class="typography">
         <h1 i18n>Participation & Joining</h1>
         <p i18n>Are you interested in working for the association? We are looking forward to you!</p>
         <p i18n>
-          You do not have to be a member of the association to participate. But as a full member you have your own
-          voting rights in the corresponding boards of the association. All legal documents of the association are
-          linked at the bottom of this page.
+          Become a part of DD-IX! You as a natural person can actively participate and have a say in the daily life of
+          IX as a regular member. Companies and legal entities can become supporting members, support our mission on a
+          monthly basis, can present themselves at events and receive regular updates. Sponsors, such as an
+          organisation, company or individual, can support us with one-time donations and receive visibility on our
+          website in the sponsors tab. Join now and support our mission!
         </p>
       </div>
     </app-card>
@@ -81,7 +83,7 @@
 <ul class="not documents">
   <li *ngFor="let document of documents | async">
     <app-card [backgroundImage]="buildBackgroundImage(document)" [lightShadow]="true"
-              [link]="buildDownloadLink(document)">
+      [link]="buildDownloadLink(document)">
       <h1>{{ document.name }}</h1>
       <p>{{ document.description }}</p>
     </app-card>

@@ -8,44 +8,42 @@
 <!--<img ngSrc="/assets/images/dresden.webp" alt="Dresden's Skyline" height="3191" width="5672" class="hero-image">-->
 <div class="blocks">
   <div class="block">
-    <app-icon-frauenkirche class="icon"/>
+    <app-icon-frauenkirche class="icon" />
     <app-card>
       <div class="typography">
         <h1 i18n>Internet Exchange</h1>
         <p i18n>
-          The DD-IX is an Internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to
-          all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from
-          the geographic center of Saxony, the DD-IX locations in Dresden offer the perfect fundament to peer with
-          participants in the Saxony region over short distances.
+          The DD-IX is an Internet exchange for Dresden. As a non-commercial platform, we are open to all Internet
+          stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic
+          center of Saxony, the DD-IX location in Dresden offer the perfect fundament to peer with participants in the
+          Saxony region over short distances.
         </p>
       </div>
       <feel-button class="section-button" flavor="accent" i18n-label label="More Information" link="/peering">
-        <app-icon-send/>
+        <app-icon-send />
       </feel-button>
     </app-card>
   </div>
 
   <div class="block">
-    <app-icon-internet class="icon"/>
+    <app-icon-internet class="icon" />
     <app-card>
       <div class="typography">
         <h1 i18n>Association</h1>
         <p i18n>
-          The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden
-          Internet Exchange e.V. is a registered
-          association under German law. Our mission is the economical, ecological, and robust exchange of data over the
-          Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of
-          an Internet Exchage Point (IXP).
+          The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. Our mission is the
+          economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between
+          source and destination, we leverage the unique advantages of an Internet Exchange Point (IXP).
         </p>
       </div>
       <feel-button class="section-button" flavor="accent" i18n-label label="More Information" link="/association">
-        <app-icon-send/>
+        <app-icon-send />
       </feel-button>
     </app-card>
   </div>
 
   <div class="block">
-    <app-icon-social class="icon"/>
+    <app-icon-social class="icon" />
     <app-card>
       <div class="typography">
         <h1 i18n>Support</h1>
@@ -55,7 +53,7 @@
         </p>
       </div>
       <feel-button class="section-button" flavor="accent" i18n-label label="Join Us!" link="/association">
-        <app-icon-send/>
+        <app-icon-send />
       </feel-button>
     </app-card>
   </div>
@@ -66,10 +64,10 @@
 </div>
 <ul class="not news">
   <li *ngFor="let event of events | async">
-    <app-event-card [event]="event" class="card"/>
+    <app-event-card [event]="event" class="card" />
   </li>
   <li *ngFor="let post of newsAndEventPosts | async">
-    <app-blog-card [post]="post" class="card"/>
+    <app-blog-card [post]="post" class="card" />
   </li>
 </ul>
 
@@ -117,7 +115,7 @@
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/dsi-bg.webp" link="https://www.dsi.net">
       <div class="sponsor-icon">
-      <app-icon-dsi class="sponsor-icon"></app-icon-dsi>
+        <app-icon-dsi class="sponsor-icon"></app-icon-dsi>
       </div>
     </app-card>
   </li>
@@ -128,7 +126,7 @@
   </li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/sachsen-gigabit-bg.webp"
-              link="https://www.sachsen-gigabit.de">
+      link="https://www.sachsen-gigabit.de">
       <div class="sponsor-icon netd">
         <img class="sachsen-gigabit" src="./assets/images/sponsors/sachsen-gigabit-fg.webp">
       </div>
@@ -137,7 +135,7 @@
   <li></li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/cids-bg.webp"
-              link="https://tu-dresden.de/">
+      link="https://tu-dresden.de/">
       <div class="sponsor-icon">
         <app-icon-tud class="tud"></app-icon-tud>
       </div>
@@ -152,13 +150,12 @@
 <ul class="not sponsors">
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/bcix-bg.webp"
-              link="https://www.bcix.de/">
+      link="https://www.bcix.de/">
       <app-icon-bcix class="sponsor-icon"></app-icon-bcix>
     </app-card>
   </li>
   <li>
-    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/ipb-bg.webp"
-               link="https://www.ipb.de">
+    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/ipb-bg.webp" link="https://www.ipb.de">
       <div class="sponsor-icon netd">
         <img class="sachsen-gigabit" src="./assets/images/sponsors/ipb-fg.webp">
       </div>
@@ -166,14 +163,14 @@
   </li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/inter-link-bg.webp"
-              link="https://inter.link/">
+      link="https://inter.link/">
       <app-icon-inter-link class="sponsor-icon"></app-icon-inter-link>
     </app-card>
   </li>
   <li></li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/netd-bg.webp"
-              link="https://netd.cs.tu-dresden.de">
+      link="https://netd.cs.tu-dresden.de">
       <div class="sponsor-icon netd">
         <img class="netd" alt="NETD-TUD Logo" src="./assets/images/sponsors/netd-fg.webp">
         <h3 class="netd"><b>Chair of Distributed and Networked Systems &#64; TUD</b></h3>
