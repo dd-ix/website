@@ -730,6 +730,178 @@
           <context context-type="linenumber">16,19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8076796480639054100" datatype="html" xml:space="preserve">
+        <source>Mailing Lists</source>
+        <target state="translated">Mailinglisten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1144407473317535723" datatype="html" xml:space="preserve">
+        <source>Subscribe</source>
+        <target state="translated">Abonieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6052766076365105714" datatype="html" xml:space="preserve">
+        <source>now</source>
+        <target state="translated">jetzt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/pipes/relative-time.pipe.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6536918097634800785" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Time: <x id="INTERPOLATION" equiv-text="{{post.start_time | date: 'short' }}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> until <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION_1" equiv-text="{{post.end_time | date: 'short'}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="needs-translation"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Time: <x id="INTERPOLATION" equiv-text="{{post.start_time | date: 'short' }}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> until <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION_1" equiv-text="{{post.end_time | date: 'short'}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8116784831890255321" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Location: <x id="INTERPOLATION" equiv-text="{{post.location}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="needs-translation"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Location: <x id="INTERPOLATION" equiv-text="{{post.location}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7289935362583146010" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Registration is mandatory!<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Die Anmeldung ist erforderlich!<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="457763919401259967" datatype="html" xml:space="preserve">
+        <source>Registration</source>
+        <target state="translated">Anmeldung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1073415230881908800" datatype="html" xml:space="preserve">
+        <source>After a year of work, we want to celebrate!</source>
+        <target state="translated">Nach einem Jahr Arbeit wollen wir feiern!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8730670576338507930" datatype="html" xml:space="preserve">
+        <source>last year</source>
+        <target state="translated">letztes Jahr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1744447689214641829" datatype="html" xml:space="preserve">
+        <source>Agenda</source>
+        <target state="needs-translation">Agenda</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3067905955375432321" datatype="html" xml:space="preserve">
+        <source>last two days</source>
+        <target state="translated">letzten zwei Tage</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2329598843423950672" datatype="html" xml:space="preserve">
+        <source>last week</source>
+        <target state="translated">letzte Woche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1823622090354308039" datatype="html" xml:space="preserve">
+        <source>Agenda</source>
+        <target state="needs-translation">Agenda</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6989409377744310404" datatype="html" xml:space="preserve">
+        <source>last month</source>
+        <target state="translated">letzten Monat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3304972143698843178" datatype="html" xml:space="preserve">
+        <source>Event</source>
+        <target state="translated">Veranstalltung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/event-card/event-card.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6519488125689709257" datatype="html" xml:space="preserve">
+        <source>Blog &amp; News</source>
+        <target state="translated">Blog &amp; Neuigkeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4900796010431190714" datatype="html" xml:space="preserve">
+        <source>invalid data</source>
+        <target state="translated">invalide daten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/pipes/relative-time.pipe.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5948442423891185229" datatype="html" xml:space="preserve">
+        <source>News &amp; Events</source>
+        <target state="translated">Neuigkeiten &amp; Veranstaltungen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blog/blog-list/blog-list.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9060449196024126017" datatype="html" xml:space="preserve">
+        <source>We cordially invite you to the opening of DD-IX, the first public Internet Exchange in Dresden, Saxony. Join us for a recap of the last year, community talks, food and drinks. Participation is free but we kindly ask you to register. Let’s celebrate together!</source>
+        <target state="translated">Wir laden herzlich zur Eröffnung von DD-IX ein, dem ersten öffentlichen Internet Exchange in Dresden, Sachsen. Freuen Sie sich mit uns auf einen Rückblick auf das vergangene Jahr, Gespräche mit der Community, Essen und Trinken. Die Teilnahme ist kostenlos, aber wir bitten um eine Anmeldung. Lasst uns gemeinsam feiern!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">18,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7751010942038334793" datatype="html" xml:space="preserve">
+        <source>Blog</source>
+        <target state="translated">Blog</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1720241427578495443" datatype="html" xml:space="preserve">
+        <source>last thee months</source>
+        <target state="translated">letzten drei Monate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
