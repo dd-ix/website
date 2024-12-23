@@ -756,7 +756,7 @@
       </trans-unit>
       <trans-unit id="6536918097634800785" datatype="html" xml:space="preserve">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Time: <x id="INTERPOLATION" equiv-text="{{post.start_time | date: 'short' }}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> until <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION_1" equiv-text="{{post.end_time | date: 'short'}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
-        <target state="needs-translation"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Time: <x id="INTERPOLATION" equiv-text="{{post.start_time | date: 'short' }}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> until <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION_1" equiv-text="{{post.end_time | date: 'short'}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Zeit: <x id="INTERPOLATION" equiv-text="{{post.start_time | date: 'short' }}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> bis <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION_1" equiv-text="{{post.end_time | date: 'short'}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -764,7 +764,7 @@
       </trans-unit>
       <trans-unit id="8116784831890255321" datatype="html" xml:space="preserve">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Location: <x id="INTERPOLATION" equiv-text="{{post.location}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
-        <target state="needs-translation"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Location: <x id="INTERPOLATION" equiv-text="{{post.location}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Ort: <x id="INTERPOLATION" equiv-text="{{post.location}}"/><x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">9,10</context>
@@ -900,6 +900,358 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>
           <context context-type="linenumber">6,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3062390468340796308" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Opening Message from Vint Cerf<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, Father of the Internet and Chief Internet Evangelist for Google </source>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Nachricht von Vint Cerf<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, Vater, des Internets und Chief Internet Evangelist for Google </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6770292696299276022" datatype="html" xml:space="preserve">
+        <source>Marc Korthaus, Co-CEO Inter.link</source>
+        <target state="translated">Marc Korthaus, Co-CEO Inter.link</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">87,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="443558028646887310" datatype="html" xml:space="preserve">
+        <source>SachsenEnergie Center<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 01069 Dresden, Deutschland </source>
+        <target state="translated">SachsenEnergie Center<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Friedrich-List-Platz 2<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> 01069 Dresden, Deutschland </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">118,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7074716985535397195" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Train:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Venue accessible via <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5&quot;&gt;"/>Dresden Hbf<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://maps.app.goo.gl/BPVxKKcnafR1sbDo8&quot;&gt;"/>Dresden Hbf Nord<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Zug:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Der Veranstaltungsort liegt in der nähe von: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5&quot;&gt;"/>Dresden Hbf<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> und <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://maps.app.goo.gl/BPVxKKcnafR1sbDo8&quot;&gt;"/>Dresden Hbf Nord<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">124,126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="510855525735166171" datatype="html" xml:space="preserve">
+        <source>Welcome from SachsenGigaBit</source>
+        <target state="translated">Begrüßung von der SachsenGigaBit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14095387651429251" datatype="html" xml:space="preserve">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Plane:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> You can fly to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://g.co/kgs/EtH1f6M&quot;&gt;"/>DRS Dresden Airport<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and then take <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>S2<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> until <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5&quot;&gt;"/>Dresden Hbf<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Flugzeug:<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> Der nächste Flughafen ist <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://g.co/kgs/EtH1f6M&quot;&gt;"/>DRS Dresden Airport<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> von dort aus kann die S-Bahn Linie<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>S2<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> bis<x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5&quot;&gt;"/>Dresden Hbf<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> genommen werden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">126,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="871083282822526760" datatype="html" xml:space="preserve">
+        <source>[Welcome and Opening Messages]</source>
+        <target state="translated">[Gegrüßungs-Reden]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5147033134837872761" datatype="html" xml:space="preserve">
+        <source>Christian Dieckhoff, Board of Directors BCIX</source>
+        <target state="translated">Christian Dieckhoff, Vorstand BCIX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="471816275243265264" datatype="html" xml:space="preserve">
+        <source>Location</source>
+        <target state="translated">Ort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4536522904483225925" datatype="html" xml:space="preserve">
+        <source>Participate in the Dresden Network Operators Group:</source>
+        <target state="translated">Werde ein Teil der Dresden Netzbetreiber Gruppe (DDNOG):</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4006428476674322077" datatype="html" xml:space="preserve">
+        <source>Peering at DD-IX</source>
+        <target state="translated">Werde Peer am DD-IX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3817433633194883084" datatype="html" xml:space="preserve">
+        <source>Prof. Dr. Matthias Wählisch, Chair of Distributed and Networked Systems, TU Dresden and DD-IX</source>
+        <target state="translated">Prof. Dr. Matthias Wählisch, Chair of Distributed and Networked Systems, TU Dresden und DD-IX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5780357306129323559" datatype="html" xml:space="preserve">
+        <source>19:20 Food and Drinks</source>
+        <target state="translated">19:20 Buffet und Getränke</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3973931101896534797" datatype="html" xml:space="preserve">
+        <source>Date</source>
+        <target state="translated">Datum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="51829552895106930" datatype="html" xml:space="preserve">
+        <source>Join DDNOG!</source>
+        <target state="translated">Werde Teil der DDNOG!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5449136821545383423" datatype="html" xml:space="preserve">
+        <source>PeeringDB</source>
+        <target state="translated">PeeringDB</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3990616167764507258" datatype="html" xml:space="preserve">
+        <source>Welcome from DD-IX</source>
+        <target state="translated">Begrüßung vom DD-IX Team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1891560006523396855" datatype="html" xml:space="preserve">
+        <source>Prof. Thomas Popp, State Secretary for Digital Administration and Modernisation of Administration</source>
+        <target state="translated">Prof. Thomas Popp, Staatssekretär für digitale Verwaltung und Modernisierung der Verwaltung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4059468572857176781" datatype="html" xml:space="preserve">
+        <source>Community matters - establishing a healthy and resilient peering ecosystem</source>
+        <target state="translated">Community matters - establishing a healthy and resilient peering ecosystem</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6723721862564110585" datatype="html" xml:space="preserve">
+        <source>23:00 End of Event</source>
+        <target state="translated">23:00 Ende der Veranstaltung</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="567227929395837623" datatype="html" xml:space="preserve">
+        <source>Points of Presence</source>
+        <target state="translated">Points of Presence</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8359208311703336093" datatype="html" xml:space="preserve">
+        <source>Thomas Eibeck, CEO SachsenGigabit</source>
+        <target state="translated">Thomas Eibeck, CEO SachsenGigabit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3855570929753023147" datatype="html" xml:space="preserve">
+        <source>18:30</source>
+        <target state="translated">18:30</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8313236013476334960" datatype="html" xml:space="preserve">
+        <source>How to automate large transit networks?</source>
+        <target state="translated">How to automate large transit networks?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7947488512497642125" datatype="html" xml:space="preserve">
+        <source>AG DSN: Highspeed-Internet for Students by Students</source>
+        <target state="translated">AG DSN: Highspeed-Internet for Students by Students</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7380565865067687704" datatype="html" xml:space="preserve">
+        <source>Mirjam Kühne, Chair of the RIPE Community</source>
+        <target state="translated">Mirjam Kühne, Vorsitzende RIPE Community</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2855398354574127875" datatype="html" xml:space="preserve">
+        <source>Traveling</source>
+        <target state="translated">Anreise</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5390240553289554839" datatype="html" xml:space="preserve">
+        <source>Events &amp; News</source>
+        <target state="translated">Veranstaltungen &amp; News</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="593501664249082599" datatype="html" xml:space="preserve">
+        <source>Join Now!</source>
+        <target state="translated">Werden Teil des Projekts!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6098815194581640235" datatype="html" xml:space="preserve">
+        <source>Subscribe Now!</source>
+        <target state="translated">Jetzt Abonnieren!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7940794227719922764" datatype="html" xml:space="preserve">
+        <source>17:00 Begin</source>
+        <target state="translated">17:00 Start</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8366329099502754941" datatype="html" xml:space="preserve">
+        <source>17:30</source>
+        <target state="translated">17:30</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2047716821519775213" datatype="html" xml:space="preserve">
+        <source>Join Matrix Room!</source>
+        <target state="translated">Tritt unserem Matrix-Raum bei!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="154046423184698489" datatype="html" xml:space="preserve">
+        <source>DNS Queries</source>
+        <target state="translated">DNS Anfragen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8126550714285699188" datatype="html" xml:space="preserve">
+        <source>[Doors Open]</source>
+        <target state="translated">[Einlass]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5496579787195013213" datatype="html" xml:space="preserve">
+        <source>The Importance of Community-Driven Networking</source>
+        <target state="translated">The Importance of Community-Driven Networking</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7353447004519860417" datatype="html" xml:space="preserve">
+        <source>[Socializing]</source>
+        <target state="translated">[Getränke und Buffet]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6306175515437894164" datatype="html" xml:space="preserve">
+        <source>Learn about Peering!</source>
+        <target state="translated">Was ist denn Peering?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-explained/peering-explained.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6922994998696471598" datatype="html" xml:space="preserve">
+        <source>Queries</source>
+        <target state="translated">Anfragen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4981781158671679384" datatype="html" xml:space="preserve">
+        <source>Welcome from the Saxonian Government</source>
+        <target state="translated">Begrüßung von der Sächsischen Staatskanzlei</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8306979232224368737" datatype="html" xml:space="preserve">
+        <source>[Community Talks]</source>
+        <target state="translated">[Community Vorträge]</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="221655716700481627" datatype="html" xml:space="preserve">
+        <source>© <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;abcd&quot; href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;"/>OpenStreetMap<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> contributors. </source>
+        <target state="translated">© <x id="START_LINK" ctype="x-a" equiv-text="&lt;a class=&quot;abcd&quot; href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;"/>OpenStreetMap<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> contributors. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">137,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="78947029704859260" datatype="html" xml:space="preserve">
+        <source>Markus Ziehe, Chair of Board AG DSN</source>
+        <target state="translated">Markus Ziehe, Vorstandsvorsitzender AG DSN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
+          <context context-type="linenumber">93,94</context>
         </context-group>
       </trans-unit>
     </body>
