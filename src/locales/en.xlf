@@ -34,14 +34,6 @@
           <context context-type="linenumber">104</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="765262536264103542" datatype="html" xml:space="preserve">
-        <source>You do not have to be a member of the association to participate. But as a full member you have your own voting rights in the corresponding boards of the association. All legal documents of the association are linked at the bottom of this page.</source>
-        <target state="needs-translation">Become a part of DD-IX! You as a natural person can actively participate and have a say in the daily life of IX as a regular member. Companies and legal entities can become supporting members, support our mission on a monthly basis, can present themselves at events and receive regular updates. Sponsors, such as an organisation, company or individual, can support us with one-time donations and receive visibility on our website in the sponsors tab. Join now and support our mission!</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">105,109</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="813505822962920168" datatype="html" xml:space="preserve">
         <source>Association Work</source>
         <target state="translated">Association Work</target>
@@ -64,14 +56,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">26,30</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5950592880769644231" datatype="html" xml:space="preserve">
-        <source>The work in the association is organized in different boards and working groups:</source>
-        <target state="translated">The work in the association is organized in different boards and working groups:</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">59,61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="576533027619297585" datatype="html" xml:space="preserve">
@@ -120,30 +104,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
           <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8115083664628466958" datatype="html" xml:space="preserve">
-        <source>E-Mail</source>
-        <target state="translated">E-Mail</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6856821060067506866" datatype="html" xml:space="preserve">
-        <source>A valid e-mail is required!</source>
-        <target state="translated">A valid e-mail is required!</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">5,8</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="935187492052582731" datatype="html" xml:space="preserve">
-        <source>Submit</source>
-        <target state="translated">Submit</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.html</context>
-          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1631914994548716663" datatype="html" xml:space="preserve">
@@ -282,30 +242,6 @@
           <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8436144186639366635" datatype="html" xml:space="preserve">
-        <source>Sponsors</source>
-        <target state="translated">Sponsors</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">86</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9158112486914865946" datatype="html" xml:space="preserve">
-        <source>Mailing List</source>
-        <target state="translated">Mailing List</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/news/news-subscribe/news-subscribe.component.html</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4786405675269305220" datatype="html" xml:space="preserve">
-        <source>Always stay updated by subscribing to our news mailing-list.</source>
-        <target state="translated">Always stay updated by subscribing to our news mailing-list.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/news/news-subscribe/news-subscribe.component.html</context>
-          <context context-type="linenumber">3,5</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2649252321173430744" datatype="html" xml:space="preserve">
         <source>Not Found</source>
         <target state="translated">Not Found</target>
@@ -414,14 +350,6 @@
           <context context-type="linenumber">23,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7998502735917753353" datatype="html" xml:space="preserve">
-        <source>The DD-IX is an Internet exchange for Dresden and whole Saxony. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX locations in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</source>
-        <target state="translated">The DD-IX is an Internet exchange for Dresden. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX location in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">15,20</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6204250090696732874" datatype="html" xml:space="preserve">
         <source>Join us for an exciting journey. As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</source>
         <target state="translated">As peer, sponsor, or member of the association you will be part of the development of the DD-IX - the catalyst for the digital future in Saxony!</target>
@@ -430,52 +358,12 @@
           <context context-type="linenumber">51,54</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8359441997292951163" datatype="html" xml:space="preserve">
-        <source>Technical</source>
-        <target state="translated">Technical</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">69</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7457179823984196306" datatype="html" xml:space="preserve">
-        <source>Operations</source>
-        <target state="translated">Operations</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">72</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="251888304112963480" datatype="html" xml:space="preserve">
-        <source>IX</source>
-        <target state="translated">IX</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">73</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="7607104788059971606" datatype="html" xml:space="preserve">
         <source>DevOps</source>
         <target state="translated">DevOps</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
           <context context-type="linenumber">74</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2242216542139696336" datatype="html" xml:space="preserve">
-        <source>Finance &amp; Legal</source>
-        <target state="translated">Finance &amp; Legal</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">88</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1153569197500858167" datatype="html" xml:space="preserve">
-        <source>Clients &amp; Sponsors</source>
-        <target state="translated">Clients &amp; Sponsors</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
-          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5729418620241283277" datatype="html" xml:space="preserve">
@@ -542,36 +430,12 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4437840582457353541" datatype="html" xml:space="preserve">
-        <source>The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. The DD-IX Dresden Internet Exchange e.V. is a registered association under German law. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</source>
-        <target state="translated">The DD-IX is operated by committed people of the DD-IX Dresden Internet Exchange e.V. Our mission is the economical, ecological, and robust exchange of data over the Internet. To enable direct data delivery between source and destination, we leverage the unique advantages of an Internet Exchage Point (IXP).</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">33,38</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="7468240890677477871" datatype="html" xml:space="preserve">
         <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <target state="needs-translation">© <x id="INTERPOLATION" equiv-text="{{currentYear()}}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">63,66</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5632099839746836994" datatype="html" xml:space="preserve">
-        <source>Successfully subscribed to mailing list.</source>
-        <target state="translated">Successfully subscribed to mailing list.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
-          <context context-type="linenumber">62</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6451157462027879592" datatype="html" xml:space="preserve">
-        <source>Failed to subscribe to mailing list.</source>
-        <target state="translated">Failed to subscribe to mailing list.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/mailing-list/mailing-list.component.ts</context>
-          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6750491512886369381" datatype="html" xml:space="preserve">
@@ -700,30 +564,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">103,106</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3194475020281589259" datatype="html" xml:space="preserve">
-        <source>Traffic over the last two days</source>
-        <target state="translated">Traffic over the last two days</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">8,9</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5807227020049171274" datatype="html" xml:space="preserve">
-        <source>Traffic over the last seven days</source>
-        <target state="translated">Traffic over the last seven days</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">18,19</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5221997905867887062" datatype="html" xml:space="preserve">
-        <source>Traffic over the last 30 days</source>
-        <target state="translated">Traffic over the last 30 days</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">28,29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="369679454877964077" datatype="html" xml:space="preserve">
