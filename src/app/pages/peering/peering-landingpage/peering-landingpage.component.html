@@ -9,7 +9,12 @@
         <h2 i18n>Pricing</h2>
         <table>
           <tr>
-            <th i18n>Port Size</th>
+            <th></th>
+            <th i18n colspan="2" align="center">Bandwidth</th>
+          </tr>
+          <tr>
+            <!--<th i18n>Bandwidth</th>-->
+            <th></th>
             <th>10G</th>
             <th>100G</th>
           </tr>
@@ -24,14 +29,18 @@
             <td>630€</td>
           </tr>
           <tr>
-            <td i18n>Monthly Fee for Members</td>
+            <td i18n>Monthly Fee for Members*</td>
             <td>100€</td>
             <td>500€</td>
           </tr>
         </table>
-        <span i18n>Simply send us an e-mail to start the ordering process.</span>
-        <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!" i18n-label
-          link="mailto:peering@dd-ix.net">
+        <p i18n>
+          <b>Simply send us an E-Mail to start the ordering process.</b>
+          <br>
+          <span>*Offer for sustaining members of DD-IX who already contribute more then 200€ per month.</span>
+        </p>
+        <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!"
+                     link="mailto:peering@dd-ix.net">
           <app-icon-send />
         </feel-button>
       </div>
