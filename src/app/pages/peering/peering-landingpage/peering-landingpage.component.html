@@ -9,29 +9,29 @@
         <h2 i18n>Pricing</h2>
         <table>
           <tr>
-            <th>Port Size</th>
+            <th i18n>Port Size</th>
             <th>10G</th>
             <th>100G</th>
           </tr>
           <tr>
-            <td>Setup Fee</td>
+            <td i18n>Setup Fee</td>
             <td>50€</td>
             <td>500€</td>
           </tr>
           <tr>
-            <td>Monthly Fee</td>
+            <td i18n>Monthly Fee</td>
             <td>150€</td>
             <td>630€</td>
           </tr>
           <tr>
-            <td>Monthly Fee for Members</td>
+            <td i18n>Monthly Fee for Members</td>
             <td>100€</td>
             <td>500€</td>
           </tr>
         </table>
-        Simply send us an e-mail to start the ordering process.
-        <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!"
-                     link="mailto:peering@dd-ix.net">
+        <span i18n>Simply send us an e-mail to start the ordering process.</span>
+        <feel-button class="section-button" flavor="accent" i18n-label label="Peer Now!" i18n-label
+          link="mailto:peering@dd-ix.net">
           <app-icon-send />
         </feel-button>
       </div>
@@ -77,6 +77,6 @@
   <h1 i18n>Peering Policy</h1>
 </app-card>
 <app-card [backgroundImage]="buildBackgroundImageTermsofService()" [lightShadow]="true"
-          [link]="buildDownloadLinkTermsOfService()">
-  <h1>DD-IX Terms of Service</h1>
+  [link]="buildDownloadLinkTermsOfService()">
+  <h1 i18n>DD-IX Terms of Service</h1>
 </app-card>
