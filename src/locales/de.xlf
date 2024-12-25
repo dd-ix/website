@@ -1202,18 +1202,6 @@
           <context context-type="linenumber">103,104</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6306175515437894164" datatype="html" xml:space="preserve">
-        <source>Learn about Peering!</source>
-        <target state="translated">Was ist denn Peering?</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-explained/peering-explained.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">44,45</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6922994998696471598" datatype="html" xml:space="preserve">
         <source>Queries</source>
         <target state="translated">Anfragen</target>
@@ -1270,36 +1258,12 @@
           <context context-type="linenumber">22,23</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3982174946590591477" datatype="html" xml:space="preserve">
-        <source>Monthly Fee for Members</source>
-        <target state="translated">Monatliche Kosten für Fördermitflieder</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">27,28</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1911043503794596957" datatype="html" xml:space="preserve">
-        <source>Simply send us an e-mail to start the ordering process.</source>
-        <target state="translated">Sende uns eine E-Mail, um den Bestellvorgang zu starten.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">32,33</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="5634508459229239553" datatype="html" xml:space="preserve">
         <source>DD-IX Terms of Service</source>
         <target state="translated">DD-IX Nutzungsbedingungen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">81,82</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1481233402063991729" datatype="html" xml:space="preserve">
-        <source>Port Size</source>
-        <target state="translated">Port Typ</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">12,13</context>
         </context-group>
       </trans-unit>
     </body>
