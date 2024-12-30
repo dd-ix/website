@@ -828,7 +828,7 @@
       </trans-unit>
       <trans-unit id="1823622090354308039" datatype="html" xml:space="preserve">
         <source>Agenda</source>
-        <target state="needs-translation">Agenda</target>
+        <target state="translated">Agenda</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">31</context>
