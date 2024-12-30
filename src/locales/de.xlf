@@ -772,7 +772,7 @@
       </trans-unit>
       <trans-unit id="7289935362583146010" datatype="html" xml:space="preserve">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Registration is mandatory!<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
-        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Die Anmeldung ist erforderlich!<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Eine Anmeldung ist erforderlich!<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">45,46</context>
@@ -928,7 +928,7 @@
       </trans-unit>
       <trans-unit id="510855525735166171" datatype="html" xml:space="preserve">
         <source>Welcome from SachsenGigaBit</source>
-        <target state="translated">Begrüßung von der SachsenGigaBit</target>
+        <target state="translated">Grußwort von der SachsenGigaBit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">65,66</context>
@@ -944,7 +944,7 @@
       </trans-unit>
       <trans-unit id="871083282822526760" datatype="html" xml:space="preserve">
         <source>[Welcome and Opening Messages]</source>
-        <target state="translated">[Gegrüßungs-Reden]</target>
+        <target state="translated"><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;post.authors.length &gt; 1&quot;&gt;"/>[Begrüßung]</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">48,49</context>
@@ -992,7 +992,7 @@
       </trans-unit>
       <trans-unit id="5780357306129323559" datatype="html" xml:space="preserve">
         <source>19:20 Food and Drinks</source>
-        <target state="translated">19:20 Buffet und Getränke</target>
+        <target state="translated">19:20 Eröffnung Buffet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">104,106</context>
@@ -1028,7 +1028,7 @@
       </trans-unit>
       <trans-unit id="3990616167764507258" datatype="html" xml:space="preserve">
         <source>Welcome from DD-IX</source>
-        <target state="translated">Begrüßung vom DD-IX Team</target>
+        <target state="translated">Begrüßung durch das DD-IX Team</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">53,54</context>
@@ -1180,7 +1180,7 @@
       </trans-unit>
       <trans-unit id="7353447004519860417" datatype="html" xml:space="preserve">
         <source>[Socializing]</source>
-        <target state="translated">[Getränke und Buffet]</target>
+        <target state="translated">[Geselliges Miteinander]</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">103,104</context>
@@ -1196,7 +1196,7 @@
       </trans-unit>
       <trans-unit id="4981781158671679384" datatype="html" xml:space="preserve">
         <source>Welcome from the Saxonian Government</source>
-        <target state="translated">Begrüßung von der Sächsischen Staatskanzlei</target>
+        <target state="translated">Grußwort von der Sächsischen Staatskanzlei</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">59,60</context>
@@ -1204,7 +1204,7 @@
       </trans-unit>
       <trans-unit id="8306979232224368737" datatype="html" xml:space="preserve">
         <source>[Community Talks]</source>
-        <target state="translated">[Community Vorträge]</target>
+        <target state="translated">[Community-Vorträge]</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">75,76</context>
