@@ -60,7 +60,7 @@
 </div>
 
 <div class="typography">
-  <h1 i18n>Events &amp; News</h1>
+  <h1 i18n>News &amp; Events</h1>
 </div>
 <ul class="not news">
   <li *ngFor="let event of events | async">
@@ -70,15 +70,6 @@
     <app-blog-card [post]="post" class="card" />
   </li>
 </ul>
-
-<!--<div class="typography">
-  <h1 i18n>Blog</h1>
-</div>
-<ul class="not news">
-  <li *ngFor="let post of blog_posts | async">
-    <app-blog-card [post]="post" class="card"/>
-  </li>
-</ul>-->
 
 <div class="typography">
   <h1 i18n>Socials</h1>
