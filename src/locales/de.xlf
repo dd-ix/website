@@ -1122,14 +1122,6 @@
           <context context-type="linenumber">122,123</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5390240553289554839" datatype="html" xml:space="preserve">
-        <source>Events &amp; News</source>
-        <target state="translated">Veranstaltungen &amp; News</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">63,64</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="593501664249082599" datatype="html" xml:space="preserve">
         <source>Join Now!</source>
         <target state="translated">Werden Teil des Projekts!</target>
