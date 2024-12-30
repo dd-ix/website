@@ -854,14 +854,6 @@
           <context context-type="linenumber">5,6</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6519488125689709257" datatype="html" xml:space="preserve">
-        <source>Blog &amp; News</source>
-        <target state="translated">Neuigkeiten &amp; Veranstaltungen</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="4900796010431190714" datatype="html" xml:space="preserve">
         <source>invalid data</source>
         <target state="translated">invalide daten</target>
