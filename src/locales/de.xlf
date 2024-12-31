@@ -864,7 +864,7 @@
       </trans-unit>
       <trans-unit id="5948442423891185229" datatype="html" xml:space="preserve">
         <source>News &amp; Events</source>
-        <target state="translated">Neuigkeiten &amp; Veranstaltungen</target>
+        <target state="translated">Neuigkeiten</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/blog/blog-list/blog-list.component.html</context>
           <context context-type="linenumber">3,4</context>
