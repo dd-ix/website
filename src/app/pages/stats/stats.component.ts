@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AsyncPipe, JsonPipe, NgIf } from "@angular/common";
+import { AsyncPipe, NgIf } from "@angular/common";
 import { CardComponent } from "../../core/card/card.component";
 import { StatsService } from "../../api/stats.service";
 import { Series, TimeSelection } from "../../api/stats.domain";
@@ -13,14 +13,13 @@ import { ChartComponent } from '../../core/chart/chart.component';
     templateUrl: './stats.component.html',
     styleUrl: './stats.component.scss',
     imports: [
-        AsyncPipe,
-        NgIf,
-        CardComponent,
-        JsonPipe,
-        ButtonComponent,
-        StatsTimeSelectionComponent,
-        ChartComponent,
-    ]
+    AsyncPipe,
+    NgIf,
+    CardComponent,
+    ButtonComponent,
+    StatsTimeSelectionComponent,
+    ChartComponent
+]
 })
 export class StatsComponent {
 

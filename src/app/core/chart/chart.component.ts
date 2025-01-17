@@ -1,6 +1,6 @@
 import { Component, Inject, Input, LOCALE_ID, ElementRef, OnDestroy, afterNextRender, OnChanges, SimpleChanges, OnInit, Injector, runInInjectionContext } from '@angular/core';
 import { Language } from "../../api/api.domain";
-import { NgIf } from "@angular/common";
+
 import type ApexCharts from "apexcharts";
 import type { ApexOptions } from 'apexcharts';
 
@@ -44,7 +44,7 @@ const GERMAN_TRANSLATION: ApexLocale = {
 
 @Component({
   selector: 'app-chart',
-  imports: [NgIf],
+  imports: [],
   templateUrl: './chart.component.html',
   styleUrl: './chart.component.scss'
 })

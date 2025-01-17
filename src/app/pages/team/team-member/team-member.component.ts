@@ -9,11 +9,11 @@ import {IconMastodonComponent} from "../../../icons/icon-mastodon/icon-mastodon.
 import {IconRipeComponent} from "../../../icons/icon-ripe/icon-ripe.component";
 import {TeamMember, WorkingGroup, workingGroupDisplayName} from "../../../api/team.domain";
 import {API_URL} from "../../../api/api.domain";
-import {RouterLink} from "@angular/router";
+
 
 @Component({
     selector: 'app-team-member',
-    imports: [CommonModule, CardComponent, IconGithubComponent, IconGlobeComponent, IconLinkedinComponent, IconMailComponent, IconMastodonComponent, IconRipeComponent, NgOptimizedImage, RouterLink],
+    imports: [CommonModule, CardComponent, IconGithubComponent, IconGlobeComponent, IconLinkedinComponent, IconMailComponent, IconMastodonComponent, IconRipeComponent, NgOptimizedImage],
     templateUrl: './team-member.component.html',
     styleUrls: ['./team-member.component.scss']
 })
