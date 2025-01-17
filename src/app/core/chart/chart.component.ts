@@ -43,10 +43,10 @@ const GERMAN_TRANSLATION: ApexLocale = {
 };
 
 @Component({
-    selector: 'app-chart',
-    imports: [NgIf],
-    templateUrl: './chart.component.html',
-    styleUrl: './chart.component.scss'
+  selector: 'app-chart',
+  imports: [NgIf],
+  templateUrl: './chart.component.html',
+  styleUrl: './chart.component.scss'
 })
 export class ChartComponent implements OnInit, OnChanges, OnDestroy {
 
@@ -83,52 +83,56 @@ export class ChartComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   private updateChart(): void {
-    runInInjectionContext(this.injector, () => afterNextRender(() => import("apexcharts").then(({ default: ApexCharts }) => {
-      const options: ApexOptions = {
-        chart: {
-          foreColor: 'var(--f-color)',
-          type: "area",
-          height: 350,
-          defaultLocale: this.locale,
-          locales: this.locale === Language.GERMAN ? [GERMAN_TRANSLATION] : [ENGLISH_TRANSLATIONS],
-          zoom: { enabled: false, },
-          toolbar: { show: false },
-          animations: { enabled: false },
-          fontFamily: 'unset',
-        },
-        dataLabels: { enabled: false },
-        grid: { borderColor: "#535A6C" },
-        legend: { horizontalAlign: "left" },
-        series: this.series,
-        stroke: { width: 2 },
-        xaxis: {
-          type: "datetime",
-          min: new Date(this.xMin!).getTime(),
-          max: new Date(this.xMax!).getTime(),
-          title: { text: "Time" },
-        },
-        yaxis: {
-          labels: {
-            formatter: this.yAxisTickFormatting(),
-          },
-          min: 0,
-          title: { text: this.seriesName },
-        },
-        tooltip: {
-          shared: true,
-          hideEmptySeries: true ,
-          x: {
-            format: "dd MMM yyyy HH:mm"
-          },
-        },
-        colors: ['#209680', '#cf0'],
-      };
+    runInInjectionContext(this.injector, () => afterNextRender(() =>
+      // @ts-expect-error
+      import("apexcharts/dist/apexcharts.esm.js")
+        .then(({ default: ApexCharts }) => {
+          const options: ApexOptions = {
+            chart: {
+              foreColor: 'var(--f-color)',
+              type: "area",
+              height: 350,
+              defaultLocale: this.locale,
+              locales: this.locale === Language.GERMAN ? [GERMAN_TRANSLATION] : [ENGLISH_TRANSLATIONS],
+              zoom: { enabled: false, },
+              toolbar: { show: false },
+              animations: { enabled: false },
+              fontFamily: 'unset',
+            },
+            dataLabels: { enabled: false },
+            grid: { borderColor: "#535A6C" },
+            legend: { horizontalAlign: "left" },
+            series: this.series,
+            stroke: { width: 2 },
+            xaxis: {
+              type: "datetime",
+              min: new Date(this.xMin!).getTime(),
+              max: new Date(this.xMax!).getTime(),
+              title: { text: "Time" },
+            },
+            yaxis: {
+              labels: {
+                formatter: this.yAxisTickFormatting(),
+              },
+              min: 0,
+              title: { text: this.seriesName },
+            },
+            tooltip: {
+              shared: true,
+              hideEmptySeries: true,
+              x: {
+                format: "dd MMM yyyy HH:mm"
+              },
+            },
+            colors: ['#209680', '#cf0'],
+          };
 
-      this.chart?.destroy();
-      this.chart = new ApexCharts(this.host.nativeElement, options);
+          this.chart?.destroy();
+          const chart = new ApexCharts(this.host.nativeElement, options);
 
-      this.chart.render();
-    })));
+          this.chart = chart as ApexCharts;
+          this.chart.render();
+        })));
   }
 
   public ngOnDestroy(): void {
