@@ -78,7 +78,6 @@
       &.sachsen-gigabit {
         max-height: 100%
       }
-
       &.netd {
         display: flex;
         gap: 0.25rem;
@@ -88,6 +87,9 @@
         .tud {
           flex-grow: 1;
           max-height: 95%;
+        }
+        .stutt-ix {
+          max-height: 70%;
         }
       }
     }
