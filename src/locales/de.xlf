@@ -1244,7 +1244,7 @@
       </trans-unit>
       <trans-unit id="5634508459229239553" datatype="html" xml:space="preserve">
         <source>DD-IX Terms of Service</source>
-        <target state="translated">DD-IX Nutzungsbedingungen</target>
+        <target state="translated">DD-IX Allgemeine Geschäftsbedingungen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">81,82</context>
