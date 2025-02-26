@@ -896,7 +896,7 @@
       </trans-unit>
       <trans-unit id="3062390468340796308" datatype="html" xml:space="preserve">
         <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Opening Message from Vint Cerf<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, Father of the Internet and Chief Internet Evangelist for Google </source>
-        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Grußbotschaft von Vint Cerf<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>,  einer der Väter des Internets und Chief Internet Evangelist bei Google </target>
+        <target state="translated"><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Grußbotschaft von Vint Cerf<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, einer der Väter des Internets und Chief Internet Evangelist bei Google </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/event/event-opening/event-opening.component.html</context>
           <context context-type="linenumber">71,72</context>
