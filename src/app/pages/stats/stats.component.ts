@@ -38,7 +38,7 @@ export class StatsComponent {
   protected wrapStats(series: Series<[number, number][]>): ApexAxisChartSeries {
     return [{
       name: $localize`Traffic`,
-      data: series.data.map(([time, value]) => [time * 1000, value]),
+      data: series.data.map(([time, value]) => [time * 1000, value * -1]),
     }]
   }
 }
