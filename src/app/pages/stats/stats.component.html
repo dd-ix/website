@@ -3,14 +3,24 @@
   <feel-button label="AS112" link="as112"></feel-button>
 </div>
 
-<ng-container *ngIf="series | async as series">
   <app-card>
     <div class="typography">
       <div class="header">
         <h2 i18n>Traffic</h2>
         <app-stats-time-selection (timeChange)="changeTimeSelection($event)" />
       </div>
-      <app-chart [series]="wrapStats(series)" [xMax]="series.end" [xMin]="series.start" unit="b" seriesName="Traffic" />
+      <app-chart
+        *ngIf="series | async as series; else loading"
+        [series]="wrapStats(series)"
+        [xMax]="series.end"
+        [xMin]="series.start"
+        unit="b"
+        seriesName="Traffic"
+      />
+      <ng-template #loading>
+        <div class="loading-wrapper">
+          <app-loading-indicator/>
+        </div>
+      </ng-template>
     </div>
   </app-card>
-</ng-container>

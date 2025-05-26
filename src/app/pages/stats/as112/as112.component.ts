@@ -5,26 +5,28 @@ import { AsyncPipe, NgIf } from '@angular/common';
 import { CardComponent } from '../../../core/card/card.component';
 import { ChartComponent } from '../../../core/chart/chart.component';
 import { ButtonComponent } from '@feel/form';
-import { BehaviorSubject, switchMap } from 'rxjs';
+import { BehaviorSubject, merge, of, switchMap } from 'rxjs';
 import { StatsTimeSelectionComponent } from "../../../core/stats-time-selection/stats-time-selection.component";
+import { LoadingIndicatorComponent } from "../../../core/loading-indicator/loading-indicator.component";
 
 @Component({
-    selector: 'app-as112',
-    templateUrl: './as112.component.html',
-    styleUrl: './as112.component.scss',
-    imports: [
-        AsyncPipe,
-        NgIf,
-        ChartComponent,
-        CardComponent,
-        ButtonComponent,
-        StatsTimeSelectionComponent
-    ]
+  selector: 'app-as112',
+  templateUrl: './as112.component.html',
+  styleUrl: './as112.component.scss',
+  imports: [
+    AsyncPipe,
+    NgIf,
+    ChartComponent,
+    CardComponent,
+    ButtonComponent,
+    StatsTimeSelectionComponent,
+    LoadingIndicatorComponent
+  ]
 })
 export class As112Component {
 
   private readonly timeSelection = new BehaviorSubject<TimeSelection>(TimeSelection.LastWeek);
-  protected readonly series = this.timeSelection.pipe(switchMap(selection => this.statsService.getAs112Stats(selection)));
+  protected readonly series = this.timeSelection.pipe(switchMap(selection => merge(of(null), this.statsService.getAs112Stats(selection))));
 
   constructor(
     private readonly statsService: StatsService,
