@@ -2,7 +2,7 @@ import { Component, OnInit, SecurityContext } from '@angular/core';
 import { tap } from 'rxjs';
 import { PostService } from '../../../api/post.service';
 import { DomSanitizer, Meta, Title } from '@angular/platform-browser';
-import { AsyncPipe, DatePipe, NgIf, NgOptimizedImage } from '@angular/common';
+import { AsyncPipe, DatePipe, NgOptimizedImage } from '@angular/common';
 import { API_URL } from '../../../api/api.domain';
 import { CardComponent } from "../../../core/card/card.component";
 import { ButtonComponent } from '@feel/form';
@@ -11,7 +11,7 @@ import { IconPartyComponent } from "../../../icons/icon-party/icon-party.compone
 
 @Component({
   selector: 'app-event-opening',
-  imports: [NgIf, AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconPartyComponent],
+  imports: [AsyncPipe, DatePipe, CardComponent, ButtonComponent, NgOptimizedImage, IconPartyComponent],
   templateUrl: './event-opening.component.html',
   styleUrl: './event-opening.component.scss'
 })

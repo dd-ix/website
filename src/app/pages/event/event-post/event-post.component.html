@@ -1,14 +1,16 @@
 <div class="wrapper">
   <div class="post">
-    <app-card *ngIf="(post | async) as post" class="typography">
-      <h1>{{ post.title }}</h1>
-
-      <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
-      <p><b>Location: {{post.location}}</b> </p>
-      <img *ngIf="post.image" [src]="buildEventImageUrl(post.image)" alt="">
-
-      <div [innerHtml]="safeHtml(post.body)">
-      </div>
-    </app-card>
+    @if ((post | async); as post) {
+      <app-card class="typography">
+        <h1>{{ post.title }}</h1>
+        <p><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
+        <p><b>Location: {{post.location}}</b> </p>
+        @if (post.image) {
+          <img [src]="buildEventImageUrl(post.image)" alt="">
+        }
+        <div [innerHtml]="safeHtml(post.body)">
+        </div>
+      </app-card>
+    }
   </div>
 </div>

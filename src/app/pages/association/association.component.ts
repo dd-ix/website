@@ -6,20 +6,19 @@ import {CardComponent} from "../../core/card/card.component";
 import {IconSwitchComponent} from "../../icons/icon-switch/icon-switch.component";
 import {IconTalkingComponent} from "../../icons/icon-talking/icon-talking.component";
 import {IconSocialComponent} from "../../icons/icon-social/icon-social.component";
-import {AsyncPipe, NgForOf} from "@angular/common";
+import { AsyncPipe } from "@angular/common";
 
 @Component({
     selector: 'app-association',
     templateUrl: './association.component.html',
     styleUrls: ['./association.component.scss'],
     imports: [
-        CardComponent,
-        IconSwitchComponent,
-        IconTalkingComponent,
-        IconSocialComponent,
-        AsyncPipe,
-        NgForOf
-    ]
+    CardComponent,
+    IconSwitchComponent,
+    IconTalkingComponent,
+    IconSocialComponent,
+    AsyncPipe
+]
 })
 export class AssociationComponent {
 

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 import {PeerService} from "../../api/peer.service";
-import {AsyncPipe, NgForOf, NgIf} from "@angular/common";
+import { AsyncPipe } from "@angular/common";
 import {CardComponent} from "../../core/card/card.component";
 import {IconCheckmarkComponent} from "../../icons/icon-checkmark/icon-checkmark.component";
 import {Speed} from "../../api/peer.domain";
@@ -14,17 +14,15 @@ import {IconPopMapComponent} from "../../icons/icon-pop-map/icon-pop-map.compone
 @Component({
     selector: 'app-network',
     imports: [
-        AsyncPipe,
-        NgForOf,
-        NgIf,
-        CardComponent,
-        IconCheckmarkComponent,
-        IconCloseComponent,
-        ButtonComponent,
-        IconSendComponent,
-        RouterLink,
-        IconPopMapComponent
-    ],
+    AsyncPipe,
+    CardComponent,
+    IconCheckmarkComponent,
+    IconCloseComponent,
+    ButtonComponent,
+    IconSendComponent,
+    RouterLink,
+    IconPopMapComponent
+],
     templateUrl: './network.component.html',
     styleUrl: './network.component.scss'
 })

@@ -1,6 +1,8 @@
 <div class="typography">
   <h2 i18n>Subscribe to the {{ listName }} mailing list</h2>
-  <feel-button *ngIf="listId" class="button" i18n-label label="Subscribe" [link]='buildLink(listId)'>
-    <app-icon-send />
-  </feel-button>
+  @if (listId) {
+    <feel-button class="button" i18n-label label="Subscribe" [link]='buildLink(listId)'>
+      <app-icon-send />
+    </feel-button>
+  }
 </div>

@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import {CardComponent} from "../../../core/card/card.component";
 import {IconGithubComponent} from "../../../icons/icon-github/icon-github.component";
 import {IconGlobeComponent} from "../../../icons/icon-globe/icon-globe.component";
@@ -13,7 +13,7 @@ import {API_URL} from "../../../api/api.domain";
 
 @Component({
     selector: 'app-team-member',
-    imports: [CommonModule, CardComponent, IconGithubComponent, IconGlobeComponent, IconLinkedinComponent, IconMailComponent, IconMastodonComponent, IconRipeComponent, NgOptimizedImage],
+    imports: [CardComponent, IconGithubComponent, IconGlobeComponent, IconLinkedinComponent, IconMailComponent, IconMastodonComponent, IconRipeComponent, NgOptimizedImage],
     templateUrl: './team-member.component.html',
     styleUrls: ['./team-member.component.scss']
 })

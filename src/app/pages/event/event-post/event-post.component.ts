@@ -1,12 +1,12 @@
-import {ChangeDetectionStrategy, Component, Inject, SecurityContext} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Inject, SecurityContext, DOCUMENT} from '@angular/core';
 import {PostService} from "../../../api/post.service";
 import {ActivatedRoute} from "@angular/router";
 import {switchMap, tap} from "rxjs";
 import {DomSanitizer, Meta, Title} from "@angular/platform-browser";
 import {API_URL} from "../../../api/api.domain";
 import {CardComponent} from "../../../core/card/card.component";
-import {AsyncPipe, DatePipe, NgIf} from "@angular/common";
-import { DOCUMENT } from '@angular/common';
+import { AsyncPipe, DatePipe } from "@angular/common";
+
 
 @Component({
     selector: 'app-event-post',
@@ -14,12 +14,11 @@ import { DOCUMENT } from '@angular/common';
     styleUrls: ['./event-post.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
-        CardComponent,
-        AsyncPipe,
-        NgIf,
-        DatePipe,
-        DatePipe
-    ]
+    CardComponent,
+    AsyncPipe,
+    DatePipe,
+    DatePipe
+]
 })
 export class EventPostComponent {
 

@@ -1,20 +1,22 @@
 <div class="wrapper">
-  <div *ngIf="(post | async) as post">
-    <div class="typography">
-      <app-card [lightShadow]="true" *ngIf="post.image" backgroundImage="{{buildEventImageUrl(post.image)}}"
-        class="hero-card">
-        <div class="hero">
-          <h1 class="dd-ix">{{post.title}}</h1>
-          <p i18n><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
-          <p i18n><b>Location: {{post.location}}</b> </p>
-        </div>
-      </app-card>
-
-      <div class="row">
-        <app-card>
-          <div class="typography">
-            <h2 i18n>After a year of work, we want to celebrate!</h2>
-            <p i18n>
+  @if ((post | async); as post) {
+    <div>
+      <div class="typography">
+        @if (post.image) {
+          <app-card [lightShadow]="true" backgroundImage="{{buildEventImageUrl(post.image)}}"
+            class="hero-card">
+            <div class="hero">
+              <h1 class="dd-ix">{{post.title}}</h1>
+              <p i18n><b>Time: {{post.start_time | date: 'short' }}</b> until <b>{{post.end_time | date: 'short'}}</b></p>
+              <p i18n><b>Location: {{post.location}}</b> </p>
+            </div>
+          </app-card>
+        }
+        <div class="row">
+          <app-card>
+            <div class="typography">
+              <h2 i18n>After a year of work, we want to celebrate!</h2>
+              <p i18n>
               We cordially invite you to the opening of DD-IX, the first public Internet Exchange in Dresden, Saxony.
               Join
               us
@@ -22,108 +24,103 @@
               you to
               register. Let’s celebrate together!
             </p>
-          </div>
-          <div class="buttons">
-            <feel-button flavor="accent" link="https://tickets.dd-ix.net/opening/" i18n>
+            </div>
+            <div class="buttons">
+              <feel-button flavor="accent" link="https://tickets.dd-ix.net/opening/" i18n>
               Registration
             </feel-button>
-            <feel-button flavor="accent" link="." fragment="agenda" i18n>
+              <feel-button flavor="accent" link="." fragment="agenda" i18n>
               Agenda
             </feel-button>
-          </div>
-        </app-card>
-        <app-icon-party class="icon"></app-icon-party>
-      </div>
-
-      <div class="row">
-        <div class="image">
-          <img ngSrc="/assets/images/opening/cheering.webp" width="2048" height="1536" class="not">
+            </div>
+          </app-card>
+          <app-icon-party class="icon"></app-icon-party>
         </div>
-
-        <app-card>
-          <h2 id="agenda" i18n>Agenda</h2>
-          <p i18n><b>Registration is mandatory!</b></p>
-          <h4 i18n>[Doors Open]</h4>
-          <b class="time-margin" i18n>17:00 Begin</b>
-          <h4 i18n>[Welcome and Opening Messages]</h4>
-          <b class="time-margin" i18n>17:30</b>
-          <table class="not">
-            <tr> <!--17:40 - 17:55-->
-              <td>
-                <b i18n>Welcome from DD-IX</b>
-                <p i18n>Prof. Dr. Matthias Wählisch, Chair of Distributed and Networked Systems, TU Dresden and DD-IX</p>
-              </td>
-            </tr>
-            <tr> <!--17:55 - 18:05 -->
-              <td>
-                <b i18n>Welcome from the Saxonian Government</b>
-                <p i18n>Prof. Thomas Popp, State Secretary for Digital Administration and Modernisation of Administration</p>
-              </td>
-            </tr>
-            <tr> <!--18:05 - 18:15 -->
-              <td>
-                <b i18n>Welcome from SachsenGigaBit</b>
-                <p i18n>Thomas Eibeck, CEO SachsenGigabit</p>
-              </td>
-            </tr>
-            <tr> <!--18:15 - 18:25-->
-              <td i18n>
+        <div class="row">
+          <div class="image">
+            <img ngSrc="/assets/images/opening/cheering.webp" width="2048" height="1536" class="not">
+          </div>
+          <app-card>
+            <h2 id="agenda" i18n>Agenda</h2>
+            <p i18n><b>Registration is mandatory!</b></p>
+            <h4 i18n>[Doors Open]</h4>
+            <b class="time-margin" i18n>17:00 Begin</b>
+            <h4 i18n>[Welcome and Opening Messages]</h4>
+            <b class="time-margin" i18n>17:30</b>
+            <table class="not">
+              <tr> <!--17:40 - 17:55-->
+                <td>
+                  <b i18n>Welcome from DD-IX</b>
+                  <p i18n>Prof. Dr. Matthias Wählisch, Chair of Distributed and Networked Systems, TU Dresden and DD-IX</p>
+                </td>
+              </tr>
+              <tr> <!--17:55 - 18:05 -->
+                <td>
+                  <b i18n>Welcome from the Saxonian Government</b>
+                  <p i18n>Prof. Thomas Popp, State Secretary for Digital Administration and Modernisation of Administration</p>
+                </td>
+              </tr>
+              <tr> <!--18:05 - 18:15 -->
+                <td>
+                  <b i18n>Welcome from SachsenGigaBit</b>
+                  <p i18n>Thomas Eibeck, CEO SachsenGigabit</p>
+                </td>
+              </tr>
+              <tr> <!--18:15 - 18:25-->
+                <td i18n>
                 <b>Opening Message from Vint Cerf</b>, Father of the Internet and Chief Internet Evangelist for Google
               </td>
-            </tr>
-          </table>
-          <h4 i18n>[Community Talks]</h4>
-          <b class="time-margin" i18n>18:30</b>
-          <table class="not">
-            <tr> <!--18:30 - 18:40-->
-              <td>
-                <b i18n>Community matters - establishing a healthy and resilient peering ecosystem</b>
-                <p i18n>Christian Dieckhoff, Board of Directors BCIX</p>
-              </td>
-            </tr>
-            <tr> <!--18:40 - 18:50-->
-              <td>
-                <b i18n>How to automate large transit networks?</b>
-                <p i18n>Marc Korthaus, Co-CEO Inter.link</p>
-              </td>
-            </tr>
-            <tr> <!--18:50 - 19:05-->
-              <td>
-                <b i18n>AG DSN: Highspeed-Internet for Students by Students</b>
-                <p i18n>Markus Ziehe, Chair of Board AG DSN</p>
-              </td>
-            </tr>
-            <tr> <!--19:05 - 19:10-->
-              <td>
-                <b i18n>The Importance of Community-Driven Networking</b>
-                <p i18n>Mirjam Kühne, Chair of the RIPE Community</p>
-              </td>
-            </tr>
-          </table>
-          <h4 i18n>[Socializing]</h4>
-          <b i18n>19:20 Food and Drinks</b>
-
-          <b i18n>23:00 End of Event</b>
-        </app-card>
-      </div>
-
-      <div class="row">
-        <app-card>
-          <div class="text">
-            <h2 i18n>Date</h2>
-            <p>{{ post.start_time | date: 'short' }}</p>
-
-            <h2 i18n>Location</h2>
-            <p i18n>
+              </tr>
+            </table>
+            <h4 i18n>[Community Talks]</h4>
+            <b class="time-margin" i18n>18:30</b>
+            <table class="not">
+              <tr> <!--18:30 - 18:40-->
+                <td>
+                  <b i18n>Community matters - establishing a healthy and resilient peering ecosystem</b>
+                  <p i18n>Christian Dieckhoff, Board of Directors BCIX</p>
+                </td>
+              </tr>
+              <tr> <!--18:40 - 18:50-->
+                <td>
+                  <b i18n>How to automate large transit networks?</b>
+                  <p i18n>Marc Korthaus, Co-CEO Inter.link</p>
+                </td>
+              </tr>
+              <tr> <!--18:50 - 19:05-->
+                <td>
+                  <b i18n>AG DSN: Highspeed-Internet for Students by Students</b>
+                  <p i18n>Markus Ziehe, Chair of Board AG DSN</p>
+                </td>
+              </tr>
+              <tr> <!--19:05 - 19:10-->
+                <td>
+                  <b i18n>The Importance of Community-Driven Networking</b>
+                  <p i18n>Mirjam Kühne, Chair of the RIPE Community</p>
+                </td>
+              </tr>
+            </table>
+            <h4 i18n>[Socializing]</h4>
+            <b i18n>19:20 Food and Drinks</b>
+            <b i18n>23:00 End of Event</b>
+          </app-card>
+        </div>
+        <div class="row">
+          <app-card>
+            <div class="text">
+              <h2 i18n>Date</h2>
+              <p>{{ post.start_time | date: 'short' }}</p>
+              <h2 i18n>Location</h2>
+              <p i18n>
               SachsenEnergie Center<br>
               Friedrich-List-Platz 2<br>
               01069 Dresden, Deutschland
             </p>
-            <h2 i18n>Traveling</h2>
-            <ul>
-              <li i18n><b>Train:</b> Venue accessible via <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a>
+              <h2 i18n>Traveling</h2>
+              <ul>
+                <li i18n><b>Train:</b> Venue accessible via <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a>
                 and <a href="https://maps.app.goo.gl/BPVxKKcnafR1sbDo8">Dresden Hbf Nord</a></li>
-              <li i18n><b>Plane:</b> You can fly to <a href="https://g.co/kgs/EtH1f6M">DRS Dresden Airport</a> and then take
+                <li i18n><b>Plane:</b> You can fly to <a href="https://g.co/kgs/EtH1f6M">DRS Dresden Airport</a> and then take
                 <b>S2</b> until <a href="https://maps.app.goo.gl/GPtKv5pwh2CPKJZz5">Dresden Hbf</a>
               </li>
             </ul>
@@ -142,4 +139,5 @@
       </div>
     </div>
   </div>
+}
 </div>

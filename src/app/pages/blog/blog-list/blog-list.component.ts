@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PostService } from "../../../api/post.service";
 import { BehaviorSubject, combineLatest, map, Observable, switchMap } from "rxjs";
-import { AsyncPipe, NgForOf, NgIf } from "@angular/common";
+import { AsyncPipe } from "@angular/common";
 import { BlogCardComponent } from "../../../core/blog-card/blog-card.component";
 import { CardComponent } from "../../../core/card/card.component";
 import { MailingListComponent } from "../../../core/mailing-list/mailing-list.component";
@@ -15,13 +15,11 @@ import { SmallEvent, SmallPost } from '../../../api/post.domain';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     AsyncPipe,
-    NgIf,
-    NgForOf,
     BlogCardComponent,
     CardComponent,
     MailingListComponent,
     EventCardComponent
-  ]
+]
 })
 export class BlogListComponent {
 

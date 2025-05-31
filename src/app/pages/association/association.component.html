@@ -81,11 +81,13 @@
   <h1 i18n>Documents</h1>
 </div>
 <ul class="not documents">
-  <li *ngFor="let document of documents | async">
-    <app-card [backgroundImage]="buildBackgroundImage(document)" [lightShadow]="true"
-      [link]="buildDownloadLink(document)">
-      <h1>{{ document.name }}</h1>
-      <p>{{ document.description }}</p>
-    </app-card>
-  </li>
+  @for (document of documents | async; track document) {
+    <li>
+      <app-card [backgroundImage]="buildBackgroundImage(document)" [lightShadow]="true"
+        [link]="buildDownloadLink(document)">
+        <h1>{{ document.name }}</h1>
+        <p>{{ document.description }}</p>
+      </app-card>
+    </li>
+  }
 </ul>

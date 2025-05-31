@@ -8,43 +8,45 @@
 </ng-template>
 
 <ng-template #wrapper>
-  <div *ngIf="backgroundImage; else raw" class="container">
+  @if (backgroundImage) {
+    <div class="container">
+      <ng-container *ngTemplateOutlet="body"></ng-container>
+    </div>
+  } @else {
     <ng-container *ngTemplateOutlet="body"></ng-container>
-  </div>
-  <ng-template #raw>
-    <ng-container *ngTemplateOutlet="body"></ng-container>
-  </ng-template>
+  }
 </ng-template>
 
-<div *ngIf="!link; else withLink"
-     [class.inverse-shadow]="inverseShadow"
-     [class.shadow]="backgroundImage"
-     [class.highlighted]="highlight"
-     [style.background-image]="buildBackgroundImageUrl(backgroundImage)">
-  <ng-container *ngTemplateOutlet="wrapper"></ng-container>
-</div>
-
-<ng-template #withLink>
-  <a *ngIf="!isExternal(); else external"
-     [class.inverse-shadow]="inverseShadow"
-     [class.shadow]="backgroundImage"
-     [class.highlighted]="highlight"
-     [routerLink]="link"
-     [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
-     class="not">
+@if (!link) {
+  <div
+    [class.inverse-shadow]="inverseShadow"
+    [class.shadow]="backgroundImage"
+    [class.highlighted]="highlight"
+    [style.background-image]="buildBackgroundImageUrl(backgroundImage)">
     <ng-container *ngTemplateOutlet="wrapper"></ng-container>
-  </a>
-
-  <ng-template #external>
-    <a [class.inverse-shadow]="inverseShadow"
-       [class.shadow]="backgroundImage"
-       [class.highlighted]="highlight"
-       [href]="link"
-       [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
-       class="not"
-       rel="me"
-       target="_blank">
+  </div>
+} @else {
+  @if (!isExternal()) {
+    <a
+      [class.inverse-shadow]="inverseShadow"
+      [class.shadow]="backgroundImage"
+      [class.highlighted]="highlight"
+      [routerLink]="link"
+      [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
+      class="not">
       <ng-container *ngTemplateOutlet="wrapper"></ng-container>
     </a>
-  </ng-template>
-</ng-template>
+  } @else {
+    <a [class.inverse-shadow]="inverseShadow"
+      [class.shadow]="backgroundImage"
+      [class.highlighted]="highlight"
+      [href]="link"
+      [style.background-image]="buildBackgroundImageUrl(backgroundImage)"
+      class="not"
+      rel="me"
+      target="_blank">
+      <ng-container *ngTemplateOutlet="wrapper"></ng-container>
+    </a>
+  }
+}
+

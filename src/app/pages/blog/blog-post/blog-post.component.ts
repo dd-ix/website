@@ -5,7 +5,7 @@ import { catchError, switchMap, tap, throwError } from "rxjs";
 import { DomSanitizer, Meta, Title } from "@angular/platform-browser";
 import { API_URL } from "../../../api/api.domain";
 import { CardComponent } from "../../../core/card/card.component";
-import { AsyncPipe, DatePipe, NgIf } from "@angular/common";
+import { AsyncPipe, DatePipe } from "@angular/common";
 
 @Component({
   selector: 'app-blog-post',
@@ -15,9 +15,8 @@ import { AsyncPipe, DatePipe, NgIf } from "@angular/common";
   imports: [
     CardComponent,
     AsyncPipe,
-    NgIf,
     DatePipe
-  ]
+]
 })
 export class BlogPostComponent {
 

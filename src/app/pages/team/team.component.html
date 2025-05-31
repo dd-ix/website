@@ -4,9 +4,11 @@
 </div>
 
 <ul class="not team">
-  <li *ngFor="let member of filter(team | async, true)">
-    <app-team-member [member]="member"/>
-  </li>
+  @for (member of filter(team | async, true); track member) {
+    <li>
+      <app-team-member [member]="member"/>
+    </li>
+  }
 </ul>
 
 <div class="typography" style="margin-top: 1rem">
@@ -14,7 +16,9 @@
 </div>
 
 <ul class="not team">
-  <li *ngFor="let member of filter(team | async, false)">
-    <app-team-member [member]="member"/>
-  </li>
+  @for (member of filter(team | async, false); track member) {
+    <li>
+      <app-team-member [member]="member"/>
+    </li>
+  }
 </ul>

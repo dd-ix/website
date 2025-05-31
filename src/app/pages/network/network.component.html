@@ -1,8 +1,8 @@
-<div *ngIf="(peers | async) as peers" class="typography">
-  <h1 i18n>Network</h1>
-  <p i18n>Currently there are <b>{{ peers.length }} participants</b>. Have a look at the list below for more
+@if ((peers | async); as peers) {
+  <div class="typography">
+    <h1 i18n>Network</h1>
+    <p i18n>Currently there are <b>{{ peers.length }} participants</b>. Have a look at the list below for more
     information.</p>
-
   <app-card>
     <div class="scroll-container">
       <table class="not">
@@ -17,33 +17,50 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let peer of peers">
-            <td>
-              <div class="icon">
-                <app-icon-checkmark *ngIf="peer.supporter" />
-              </div>
-            </td>
-            <td class="name"><a [href]="peer.url" target="_blank">{{ peer.name }}</a></td>
-            <td><a [href]="'https://bgp.tools/as/' + peer.asn" target="_blank">{{ peer.asn }}</a></td>
-            <td>{{ speed(peer.speed) }}</td>
-            <td>
-              <div class="icon" [class.bad]="!peer.rs_v4" *ngIf="peer.rs_v4 || peer.rs_v6">
-                <app-icon-checkmark *ngIf="peer.rs_v4" />
-                <app-icon-close *ngIf="!peer.rs_v4" />
-              </div>
-            </td>
-            <td>
-              <div class="icon" [class.bad]="!peer.rs_v6" *ngIf="peer.rs_v4 || peer.rs_v6">
-                <app-icon-checkmark *ngIf="peer.rs_v6" />
-                <app-icon-close *ngIf="!peer.rs_v6" />
-              </div>
-            </td>
-          </tr>
+          @for (peer of peers; track peer) {
+            <tr>
+              <td>
+                <div class="icon">
+                  @if (peer.supporter) {
+                    <app-icon-checkmark />
+                  }
+                </div>
+              </td>
+              <td class="name"><a [href]="peer.url" target="_blank">{{ peer.name }}</a></td>
+              <td><a [href]="'https://bgp.tools/as/' + peer.asn" target="_blank">{{ peer.asn }}</a></td>
+              <td>{{ speed(peer.speed) }}</td>
+              <td>
+                @if (peer.rs_v4 || peer.rs_v6) {
+                  <div class="icon" [class.bad]="!peer.rs_v4">
+                    @if (peer.rs_v4) {
+                      <app-icon-checkmark />
+                    }
+                    @if (!peer.rs_v4) {
+                      <app-icon-close />
+                    }
+                  </div>
+                }
+              </td>
+              <td>
+                @if (peer.rs_v4 || peer.rs_v6) {
+                  <div class="icon" [class.bad]="!peer.rs_v6">
+                    @if (peer.rs_v6) {
+                      <app-icon-checkmark />
+                    }
+                    @if (!peer.rs_v6) {
+                      <app-icon-close />
+                    }
+                  </div>
+                }
+              </td>
+            </tr>
+          }
         </tbody>
       </table>
     </div>
   </app-card>
 </div>
+}
 
 <div class="row">
   <app-card class="datacenter">

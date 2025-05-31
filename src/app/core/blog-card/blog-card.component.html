@@ -1,6 +1,8 @@
-<app-card *ngIf="post"
-          [backgroundImage]="buildBlogImageUrl(post.kind, post.image)"
-          [link]="buildPostLink(post.kind, post.slug)">
-  <h1>{{ post.title }}</h1>
-  <span><b>{{ post.published | date }}</b> - {{ post.description }}</span>
-</app-card>
+@if (post) {
+  <app-card
+    [backgroundImage]="buildBlogImageUrl(post.kind, post.image)"
+    [link]="buildPostLink(post.kind, post.slug)">
+    <h1>{{ post.title }}</h1>
+    <span><b>{{ post.published | date }}</b> - {{ post.description }}</span>
+  </app-card>
+}

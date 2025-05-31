@@ -1,5 +1,5 @@
 @defer (when isBrowser) {
-  <app-progress-bar class="progress-bar" />
+<app-progress-bar class="progress-bar" />
 }
 
 <aside (click)="closeAside()" [class.open]="asideSown | async" [class.hidden]="disableNav | async">
@@ -50,11 +50,13 @@
   </div>
 
   <div class="aside-footer">
-    <span *ngIf="path | async as path" class="lang typography">
-      <a [href]="'/de' + path">DE</a>
-      |
-      <a [href]="'/en' + path">EN</a>
-    </span>
+    @if (path | async; as path) {
+      <span class="lang typography">
+        <a [href]="'/de' + path">DE</a>
+        |
+        <a [href]="'/en' + path">EN</a>
+      </span>
+    }
 
     <nav class="typography">
       <a i18n routerLink="/privacy-policy">Privacy Policy</a>
@@ -78,14 +80,16 @@
         &copy; {{ currentYear() }} <b>DD-IX Dresden Internet Exchange e.V.</b> <span class="slogan"> | Keep Local
           Traffic Local</span>
       </span>
-      <nav class="typography">
-        <a i18n routerLink="/privacy-policy">Privacy Policy</a>
-        <a i18n routerLink="/imprint">Imprint</a>
-      </nav>
-    </footer>
-  </div>
+    <nav class="typography">
+      <a i18n routerLink="/privacy-policy">Privacy Policy</a>
+      <a i18n routerLink="/imprint">Imprint</a>
+    </nav>
+  </footer>
+</div>
 
-  <div class="bottom-bar" *ngIf="disableNav | async"></div>
+@if (disableNav | async) {
+  <div class="bottom-bar"></div>
+}
 </main>
 
 <feel-notification-list />
