@@ -55,10 +55,9 @@ jobs:
           echo "User-agent: *\nDisallow: /" > result/browser/robots.txt
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 2a09613716e511a8fe8ca74abc084762
-          projectName: dd-ix
-          directory: result/browser
+          command: pages deploy result/browser --project-name=dd-ix
           gitHubToken: ${{ github.token }}
