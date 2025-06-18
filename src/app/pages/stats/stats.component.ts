@@ -20,7 +20,7 @@ import { LoadingIndicatorComponent } from '../../core/loading-indicator/loading-
     StatsTimeSelectionComponent,
     ChartComponent,
     LoadingIndicatorComponent
-]
+  ]
 })
 export class StatsComponent {
 
@@ -30,6 +30,10 @@ export class StatsComponent {
   constructor(
     private readonly statsService: StatsService,
   ) {
+  }
+
+  get now(): string {
+    return new Date().toString();
   }
 
   protected changeTimeSelection(selection: TimeSelection): void {

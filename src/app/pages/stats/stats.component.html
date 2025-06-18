@@ -10,16 +10,17 @@
       <app-stats-time-selection (timeChange)="changeTimeSelection($event)" />
     </div>
     @if (series | async; as series) {
+      <!-- NOTE: using now to show it in the frontend if the update is not working anymore. -->
       <app-chart
         [series]="wrapStats(series)"
-        [xMax]="series.end"
+        [xMax]="now"
         [xMin]="series.start"
         unit="b"
         seriesName="Traffic"
-        />
+      />
     } @else {
       <div class="loading-wrapper">
-        <app-loading-indicator/>
+      <app-loading-indicator/>
       </div>
     }
   </div>

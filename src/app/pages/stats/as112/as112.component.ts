@@ -20,7 +20,7 @@ import { LoadingIndicatorComponent } from "../../../core/loading-indicator/loadi
     ButtonComponent,
     StatsTimeSelectionComponent,
     LoadingIndicatorComponent
-]
+  ]
 })
 export class As112Component {
 
@@ -30,6 +30,10 @@ export class As112Component {
   constructor(
     private readonly statsService: StatsService,
   ) {
+  }
+
+  get now(): string {
+    return new Date().toString();
   }
 
   protected changeTimeSelection(selection: TimeSelection): void {
