@@ -14,7 +14,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   pnpmDeps = pnpm.fetchDeps {
     inherit (finalAttrs) pname version src;
-    hash = "sha256-fbhvY+mB7D4c75vxcSuDXp8wMDBHFt4bwhDMFaAMkLM=";
+    hash = "sha256-dsQ2VJR8GPXqATxqmmJcE6t5Qx7wCEizdavJ6OMREWI=";
   };
 
   nativeBuildInputs = [ nodejs pnpm.configHook ];
@@ -22,6 +22,9 @@ stdenv.mkDerivation (finalAttrs: {
   postPatch = ''
     substituteInPlace src/app/api/api.domain.ts \
       --replace-fail 'https://content.dd-ix.net' '${contentApi}'
+  '' + lib.optionalString static ''
+    substituteInPlace src/app/app.routes.server.ts \
+      --replace-fail 'RenderMode.Server' 'RenderMode.Client'
   '';
 
   buildPhase = ''

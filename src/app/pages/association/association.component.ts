@@ -6,27 +6,28 @@ import {CardComponent} from "../../core/card/card.component";
 import {IconSwitchComponent} from "../../icons/icon-switch/icon-switch.component";
 import {IconTalkingComponent} from "../../icons/icon-talking/icon-talking.component";
 import {IconSocialComponent} from "../../icons/icon-social/icon-social.component";
-import { AsyncPipe } from "@angular/common";
+import {AsyncPipe} from "@angular/common";
 
 @Component({
-    selector: 'app-association',
-    templateUrl: './association.component.html',
-    styleUrls: ['./association.component.scss'],
-    imports: [
+  selector: 'app-association',
+  templateUrl: './association.component.html',
+  styleUrls: ['./association.component.scss'],
+  imports: [
     CardComponent,
     IconSwitchComponent,
     IconTalkingComponent,
     IconSocialComponent,
     AsyncPipe
-]
+  ]
 })
 export class AssociationComponent {
 
-  protected readonly documents = this.documentsService.getDocuments();
+  protected readonly documents;
 
   constructor(
     private readonly documentsService: DocumentsService,
   ) {
+    this.documents = this.documentsService.getDocuments();
   }
 
   protected buildDownloadLink(document: Document): string {

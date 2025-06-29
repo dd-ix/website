@@ -1,16 +1,26 @@
 {
-  "name": "presence",
+  "name": "website",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-path ./dist",
-    "build:ci": "ng build --output-path ./dist --localize && rollup -c rollup.config.mjs",
-    "build:static": "ng build --output-path ./dist --localize --ssr=false",
+    "build:ci": "ng build --output-path ./dist --localize",
+    "build:static": "ng build --output-path ./dist --localize --ssr=false --output-mode=static",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+    "serve:ssr:website": "node dist/website/server/server.mjs",
     "extract-i18n": "ng extract-i18n --out-file src/locales/en_devel.xlf --format xlif"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
   },
   "private": true,
   "dependencies": {
@@ -20,7 +30,6 @@
     "@angular/core": "^20.0.5",
     "@angular/forms": "^20.0.5",
     "@angular/platform-browser": "^20.0.5",
-    "@angular/platform-browser-dynamic": "^20.0.5",
     "@angular/platform-server": "^20.0.5",
     "@angular/router": "^20.0.5",
     "@angular/ssr": "^20.0.4",
@@ -28,6 +37,7 @@
     "@feel/notification": "^0.1.1",
     "@feel/style": "^0.1.1",
     "@fontsource/dm-sans": "^5.2.6",
+    "apexcharts": "^4.7.0",
     "express": "^5.1.0",
     "ngx-progressbar": "^14.0.0",
     "rxjs": "~7.8.2",
@@ -38,23 +48,16 @@
     "@angular/build": "^20.0.4",
     "@angular/cli": "^20.0.4",
     "@angular/compiler-cli": "^20.0.5",
-    "@angular/language-service": "^20.0.5",
     "@angular/localize": "20.0.5",
-    "@rollup/plugin-commonjs": "^28.0.6",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.3.1",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/express": "^5.0.3",
     "@types/jasmine": "~5.1.8",
-    "@types/node": "^24.0.7",
-    "apexcharts": "^4.7.0",
+    "@types/node": "^22.15.34",
     "jasmine-core": "~5.8.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "rollup": "^4.44.1",
     "typescript": "~5.8.3"
   }
 }

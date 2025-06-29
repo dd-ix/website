@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PostService } from "../../../api/post.service";
-import { BehaviorSubject, combineLatest, map, Observable, switchMap } from "rxjs";
-import { AsyncPipe } from "@angular/common";
-import { BlogCardComponent } from "../../../core/blog-card/blog-card.component";
-import { CardComponent } from "../../../core/card/card.component";
-import { MailingListComponent } from "../../../core/mailing-list/mailing-list.component";
-import { EventCardComponent } from "../../../core/event-card/event-card.component";
-import { SmallEvent, SmallPost } from '../../../api/post.domain';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {PostService} from "../../../api/post.service";
+import {BehaviorSubject, combineLatest, map, Observable, switchMap} from "rxjs";
+import {AsyncPipe} from "@angular/common";
+import {BlogCardComponent} from "../../../core/blog-card/blog-card.component";
+import {CardComponent} from "../../../core/card/card.component";
+import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
+import {EventCardComponent} from "../../../core/event-card/event-card.component";
+import {SmallEvent, SmallPost} from '../../../api/post.domain';
 
 @Component({
   selector: 'app-blog-list',
@@ -19,31 +19,33 @@ import { SmallEvent, SmallPost } from '../../../api/post.domain';
     CardComponent,
     MailingListComponent,
     EventCardComponent
-]
+  ]
 })
 export class BlogListComponent {
 
   protected readonly selectedKeywords = new BehaviorSubject<string[]>([]);
-  protected readonly entries = combineLatest({
-    events: this.postService.getEventPosts(),
-    blog: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getBlogPosts(keywords))),
-    news: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getNewsPosts(keywords))),
-  })
-    .pipe(map(({ events, blog, news }) => ([...events, ...blog, ...news].sort((a, b) => {
-      // @ts-expect-error union type
-      const aDate = Date.parse(a.published ?? a.start_time);
-      // @ts-expect-error union type
-      const bDate = Date.parse(b.published ?? b.start_time);
-      return bDate - aDate;
-    }))));
-  protected readonly keywords = combineLatest({ blog: this.postService.getBlogKeywords(), news: this.postService.getNewsKeywords() })
-    .pipe(map(({ blog, news }) => {
-      return [...blog, ...news];
-    }));
+  protected readonly entries;
+  protected readonly keywords;
 
   constructor(
     private readonly postService: PostService,
   ) {
+    this.entries = combineLatest({
+      events: this.postService.getEventPosts(),
+      blog: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getBlogPosts(keywords))),
+      news: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getNewsPosts(keywords))),
+    })
+      .pipe(map(({events, blog, news}) => ([...events, ...blog, ...news].sort((a, b) => {
+        // @ts-expect-error union type
+        const aDate = Date.parse(a.published ?? a.start_time);
+        // @ts-expect-error union type
+        const bDate = Date.parse(b.published ?? b.start_time);
+        return bDate - aDate;
+      }))));
+    this.keywords = combineLatest({blog: this.postService.getBlogKeywords(), news: this.postService.getNewsKeywords()})
+      .pipe(map(({blog, news}) => {
+        return [...blog, ...news];
+      }));
   }
 
   protected isSelected(keyword: string): Observable<boolean> {

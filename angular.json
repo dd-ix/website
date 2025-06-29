@@ -1,9 +1,13 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
+  "cli": {
+    "analytics": false,
+    "packageManager": "pnpm"
+  },
   "newProjectRoot": "projects",
   "projects": {
-    "presence": {
+    "website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -29,8 +33,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/presence",
-            "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js",
@@ -39,8 +41,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "node_modules/@fontsource/dm-sans/400.css",
@@ -50,7 +54,6 @@
               "node_modules/@feel/style/main.scss",
               "src/styles.scss"
             ],
-            "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "node_modules/@feel/style/global",
@@ -58,23 +61,23 @@
               ]
             },
             "server": "src/main.server.ts",
+            "outputMode": "server",
             "ssr": {
-              "entry": "src/main.ssr.ts"
-            },
-            "prerender": false
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
@@ -91,19 +94,16 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "presence:build:production"
+              "buildTarget": "website:build:production"
             },
             "development": {
-              "buildTarget": "presence:build:development"
+              "buildTarget": "website:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular/build:extract-i18n",
-          "options": {
-            "buildTarget": "presence:build"
-          }
+          "builder": "@angular/build:extract-i18n"
         },
         "test": {
           "builder": "@angular/build:karma",
@@ -116,8 +116,10 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
             ],
             "styles": [
               "node_modules/@fontsource/dm-sans/400.css",
@@ -127,7 +129,6 @@
               "node_modules/@feel/style/main.scss",
               "src/styles.scss"
             ],
-            "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
                 "node_modules/@feel/style/global",
@@ -137,36 +138,6 @@
           }
         }
       }
-    }
-  },
-  "cli": {
-    "analytics": false,
-    "packageManager": "pnpm"
-  },
-  "schematics": {
-    "@schematics/angular:component": {
-      "type": "component"
-    },
-    "@schematics/angular:directive": {
-      "type": "directive"
-    },
-    "@schematics/angular:service": {
-      "type": "service"
-    },
-    "@schematics/angular:guard": {
-      "typeSeparator": "."
-    },
-    "@schematics/angular:interceptor": {
-      "typeSeparator": "."
-    },
-    "@schematics/angular:module": {
-      "typeSeparator": "."
-    },
-    "@schematics/angular:pipe": {
-      "typeSeparator": "."
-    },
-    "@schematics/angular:resolver": {
-      "typeSeparator": "."
     }
   }
 }

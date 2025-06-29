@@ -20,35 +20,7 @@ import { AsyncPipe, DatePipe } from "@angular/common";
 })
 export class BlogPostComponent {
 
-  protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({ slug }) => this.postService.getBlogPost(slug)),
-    tap(post => {
-      this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
-      this.meta.updateTag({ property: 'og:title', content: post.title });
-      this.meta.updateTag({ name: 'twitter:title', content: post.title });
-      this.meta.updateTag({ property: 'og:type', content: 'article' });
-      this.meta.updateTag({ name: "description", content: post.description });
-      this.meta.updateTag({ property: "og:description", content: post.description });
-      this.meta.updateTag({ name: "twitter:description", content: post.description });
-      this.meta.updateTag({
-        name: "keywords",
-        content: 'Dresden Internet Exchange, Dresden, Internet Exchange, DD-IX, ddix, DD-IX Dresden Internet Exchange e.V., ' + post.keywords.join(", ")
-      });
-
-      if (post.image) {
-        const image = this.buildBlogImageUrl(post.image);
-        this.meta.updateTag({ property: 'og:image', content: image });
-        this.meta.updateTag({ name: 'twitter:image', content: image });
-      }
-    }),
-    catchError(error => {
-      if ("status" in error && error.status === 404) {
-        this.router.navigateByUrl(`/news/${error["url"].split("/").at(-1)}`);
-      }
-
-      return throwError(() => error);
-    })
-  );
+  protected readonly post ;
 
   constructor(
     private readonly postService: PostService,
@@ -58,6 +30,35 @@ export class BlogPostComponent {
     private readonly sanitizer: DomSanitizer,
     private readonly router: Router,
   ) {
+    this.post = this.activatedRoute.params.pipe(
+      switchMap(({ slug }) => this.postService.getBlogPost(slug)),
+      tap(post => {
+        this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
+        this.meta.updateTag({ property: 'og:title', content: post.title });
+        this.meta.updateTag({ name: 'twitter:title', content: post.title });
+        this.meta.updateTag({ property: 'og:type', content: 'article' });
+        this.meta.updateTag({ name: "description", content: post.description });
+        this.meta.updateTag({ property: "og:description", content: post.description });
+        this.meta.updateTag({ name: "twitter:description", content: post.description });
+        this.meta.updateTag({
+          name: "keywords",
+          content: 'Dresden Internet Exchange, Dresden, Internet Exchange, DD-IX, ddix, DD-IX Dresden Internet Exchange e.V., ' + post.keywords.join(", ")
+        });
+
+        if (post.image) {
+          const image = this.buildBlogImageUrl(post.image);
+          this.meta.updateTag({ property: 'og:image', content: image });
+          this.meta.updateTag({ name: 'twitter:image', content: image });
+        }
+      }),
+      catchError(error => {
+        if ("status" in error && error.status === 404) {
+          this.router.navigateByUrl(`/news/${error["url"].split("/").at(-1)}`);
+        }
+
+        return throwError(() => error);
+      })
+    );
   }
 
   protected formatAuthors(authors: string[]): string {

@@ -28,11 +28,12 @@ import {IconPopMapComponent} from "../../icons/icon-pop-map/icon-pop-map.compone
 })
 export class NetworkComponent {
 
-  protected readonly peers = this.peerService.getPeers();
+  protected readonly peers ;
 
   constructor(
     private readonly peerService: PeerService,
   ) {
+    this.peers = this.peerService.getPeers();
   }
 
   protected speed(speed: Speed[]): string {

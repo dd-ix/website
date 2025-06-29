@@ -1,11 +1,11 @@
-import { ChangeDetectionStrategy, Component, SecurityContext } from '@angular/core';
-import { PostService } from "../../../api/post.service";
-import { ActivatedRoute } from "@angular/router";
-import { switchMap, tap } from "rxjs";
-import { DomSanitizer, Meta, Title } from "@angular/platform-browser";
-import { API_URL } from "../../../api/api.domain";
-import { CardComponent } from "../../../core/card/card.component";
-import { AsyncPipe, DatePipe } from "@angular/common";
+import {ChangeDetectionStrategy, Component, SecurityContext} from '@angular/core';
+import {PostService} from "../../../api/post.service";
+import {ActivatedRoute} from "@angular/router";
+import {switchMap, tap} from "rxjs";
+import {DomSanitizer, Meta, Title} from "@angular/platform-browser";
+import {API_URL} from "../../../api/api.domain";
+import {CardComponent} from "../../../core/card/card.component";
+import {AsyncPipe, DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-news-post',
@@ -16,32 +16,11 @@ import { AsyncPipe, DatePipe } from "@angular/common";
     CardComponent,
     AsyncPipe,
     DatePipe
-]
+  ]
 })
 export class NewsPostComponent {
 
-  protected readonly post = this.activatedRoute.params.pipe(
-    switchMap(({ slug }) => this.postService.getNewsPost(slug)),
-    tap(post => {
-      this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
-      this.meta.updateTag({ property: 'og:title', content: post.title });
-      this.meta.updateTag({ name: 'twitter:title', content: post.title });
-      this.meta.updateTag({ property: 'og:type', content: 'article' });
-      this.meta.updateTag({ name: "description", content: post.description });
-      this.meta.updateTag({ property: "og:description", content: post.description });
-      this.meta.updateTag({ name: "twitter:description", content: post.description });
-      this.meta.updateTag({
-        name: "keywords",
-        content: 'Dresden Internet Exchange, Dresden, Internet Exchange, DD-IX, ddix, DD-IX Dresden Internet Exchange e.V., ' + post.keywords.join(", ")
-      });
-
-      if (post.image) {
-        const image = this.buildBlogImageUrl(post.image);
-        this.meta.updateTag({ property: 'og:image', content: image });
-        this.meta.updateTag({ name: 'twitter:image', content: image });
-      }
-    }),
-  );
+  protected readonly post;
 
   constructor(
     private readonly postService: PostService,
@@ -50,6 +29,28 @@ export class NewsPostComponent {
     private readonly title: Title,
     private readonly sanitizer: DomSanitizer
   ) {
+    this.post = this.activatedRoute.params.pipe(
+      switchMap(({slug}) => this.postService.getNewsPost(slug)),
+      tap(post => {
+        this.title.setTitle(`${post.title} | Dresden Internet Exchange`);
+        this.meta.updateTag({property: 'og:title', content: post.title});
+        this.meta.updateTag({name: 'twitter:title', content: post.title});
+        this.meta.updateTag({property: 'og:type', content: 'article'});
+        this.meta.updateTag({name: "description", content: post.description});
+        this.meta.updateTag({property: "og:description", content: post.description});
+        this.meta.updateTag({name: "twitter:description", content: post.description});
+        this.meta.updateTag({
+          name: "keywords",
+          content: 'Dresden Internet Exchange, Dresden, Internet Exchange, DD-IX, ddix, DD-IX Dresden Internet Exchange e.V., ' + post.keywords.join(", ")
+        });
+
+        if (post.image) {
+          const image = this.buildBlogImageUrl(post.image);
+          this.meta.updateTag({property: 'og:image', content: image});
+          this.meta.updateTag({name: 'twitter:image', content: image});
+        }
+      }),
+    );
   }
 
   protected formatAuthors(authors: string[]): string {

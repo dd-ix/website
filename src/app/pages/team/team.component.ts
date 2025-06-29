@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {TeamService} from "../../api/team.service";
 import {CardComponent} from "../../core/card/card.component";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
@@ -12,18 +12,19 @@ import {TeamMemberComponent} from "./team-member/team-member.component";
 import {TeamMember} from "../../api/team.domain";
 
 @Component({
-    selector: 'app-team',
-    imports: [CommonModule, TeamMemberComponent],
-    templateUrl: './team.component.html',
-    styleUrls: ['./team.component.scss']
+  selector: 'app-team',
+  imports: [CommonModule, TeamMemberComponent],
+  templateUrl: './team.component.html',
+  styleUrls: ['./team.component.scss']
 })
 export class TeamComponent {
 
-  protected readonly team = this.teamService.getTeam();
+  protected readonly team;
 
   constructor(
-    private teamService: TeamService,
+    private readonly teamService: TeamService,
   ) {
+    this.team = this.teamService.getTeam();
   }
 
   protected filter(members: TeamMember[] | null, vorstand: boolean): TeamMember[] | null {

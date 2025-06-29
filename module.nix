@@ -28,12 +28,8 @@ in
       enable = true;
       wantedBy = [ "multi-user.target" ];
 
-      environment = {
-        APP_DIR = package;
-      };
-
       serviceConfig = {
-        ExecStart = "${pkgs.nodejs}/bin/node ${package}/server.mjs";
+        ExecStart = "${pkgs.nodejs}/bin/node ${package}/server/server.mjs";
         DynamicUser = true;
         Restart = "always";
       };
