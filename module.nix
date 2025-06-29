@@ -37,21 +37,32 @@ in
 
     services.nginx = {
       enable = true;
+      commonHttpConfig = ''
+        map $http_accept_language $accept_language {
+          ~*^de de;
+          default en;
+        }
+      '';
 
-      virtualHosts."${cfg.domain}".locations = {
-        "/" = {
-          root = "${package}/browser";
-          # just something that does not exists
-          index = "X6XewZMsmreGIxx1lCdp0Yo1X4qHTivW";
-          tryFiles = "$uri @website";
-          extraConfig = ''
-            expires max;
-            access_log off;
-          '';
-        };
-        "@website" = {
-          recommendedProxySettings = true;
-          proxyPass = "http://127.0.0.1:4000";
+      virtualHosts."${cfg.domain}" = {
+        extraConfig = ''
+          rewrite ^/(?!de(?:/|$)|en(?:/|$))(.*)$ /$accept_language/$1 redirect;
+        '';
+        locations = {
+          "/" = {
+            root = "${package}/browser";
+            # just something that does not exists
+            index = "X6XewZMsmreGIxx1lCdp0Yo1X4qHTivW";
+            tryFiles = "$uri @website";
+            extraConfig = ''
+              expires max;
+              access_log off;
+            '';
+          };
+          "@website" = {
+            recommendedProxySettings = true;
+            proxyPass = "http://127.0.0.1:4000";
+          };
         };
       };
     };
