@@ -52,9 +52,9 @@
   <div class="aside-footer">
     @if (path | async; as path) {
       <span class="lang typography">
-        <a [href]="'/de' + path">DE</a>
+        <a [href]="'/de' + path" lang="de" hreflang="de">DE</a>
         |
-        <a [href]="'/en' + path">EN</a>
+        <a [href]="'/en' + path" lang="en" hreflang="en">EN</a>
       </span>
     }
 

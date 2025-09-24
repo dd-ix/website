@@ -29,7 +29,7 @@ in
       wantedBy = [ "multi-user.target" ];
 
       serviceConfig = {
-        ExecStart = "${pkgs.nodejs}/bin/node ${package}/server/server.mjs";
+        ExecStart = "${lib.getExe pkgs.nodejs} ${package}/server/server.mjs";
         DynamicUser = true;
         Restart = "always";
       };
