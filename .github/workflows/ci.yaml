@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: nix build -L
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: website
           path: result
@@ -41,7 +41,7 @@ jobs:
       - name: Build Static
         run: nix build -L .#website-static
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: website-static
           path: result
