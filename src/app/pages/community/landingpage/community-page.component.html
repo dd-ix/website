@@ -12,6 +12,19 @@
     </app-card>
   </li>
   <li>
+    <app-card class="tile-card">
+      <div class="resource">
+        <h3>Locally Connected?</h3>
+        @if ((connected | async); as connected) {
+        @if (connected == "connected") { <app-icon-checkmark class="connected-icon"/> <p>Your ISP is connected to DD-IX!</p>}
+        @if (connected == "not_connected") { <app-icon-close class="connected-icon"/> <p>Your ISP is not connected to DD-IX :(</p> }
+        @if (connected == "error") { <p>Failed to determinate if your ISP is connected to DD-IX. Please try again later!</p> }
+        @if (connected == "unknown") { <app-loading-indicator /> }
+        }
+      </div>
+    </app-card>
+  </li>
+  <li>
     <app-card class="tile-card" link="./">
       <div class="resource">
         <app-icon-linux class="tile-logo"></app-icon-linux>
