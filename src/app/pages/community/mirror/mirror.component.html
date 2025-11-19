@@ -1,0 +1,37 @@
+@if ((mirrors | async); as mirrors) {
+<div class="typography">
+  <h1 i18n="@@mirrorHeading">Mirrors</h1>
+  <p i18n="@@mirrorDescription">
+    This is an aggregated list of mirrors that are hosted at networks whichs are (in the process to be) connected to
+    DD-IX.
+  </p>
+  <app-card>
+    <div class="scroll-container">
+      <table class="not">
+        <thead>
+          <tr>
+            <th i18n="@@mirrorName">Name</th>
+            <th i18n="@@mirrorUrl">URL</th>
+            <th i18n="@@mirrorOperator">Operator</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (mirror of mirrors; track mirror.url) {
+          <tr>
+            <td>
+              {{mirror.name}}
+            </td>
+            <td>
+              <a [href]="mirror.url" target="_blank">{{mirror.url}}</a>
+            </td>
+            <td>
+              {{mirror.operator}}
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </app-card>
+</div>
+}
