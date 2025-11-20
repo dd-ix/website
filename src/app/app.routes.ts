@@ -10,6 +10,7 @@ import { routes as peeringRoutes } from "./pages/peering/peering.routes";
 import { routes as statsRoutes } from "./pages/stats/stats.routes";
 import { routes as networkRoutes } from "./pages/network/network.routes";
 import {routes as newsRoutes} from "./pages/news/news.routes";
+import {routes as communityRoutes} from "./pages/community/community.routes";
 
 export const routes: Routes = [
   { path: '', loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent) },
@@ -24,6 +25,7 @@ export const routes: Routes = [
   { path: 'peering', data: { title: $localize`Peering` }, children: peeringRoutes },
   { path: 'stats', data: { title: $localize`Statistics` }, children: statsRoutes },
   { path: 'network', data: { title: $localize`Network` }, children: networkRoutes },
+  { path: 'community', data: { title: $localize`Community` }, children: communityRoutes },
   {
     path: '**',
     data: { title: $localize`Not Found` },
