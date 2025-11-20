@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import {TeamService} from "../../api/team.service";
 import {CardComponent} from "../../core/card/card.component";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";

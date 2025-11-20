@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {AsyncPipe, CommonModule} from '@angular/common';
+import { AsyncPipe, CommonModule } from '@angular/common';
 import {PostService} from "../../api/post.service";
 import {IconGithubComponent} from "../../icons/icon-github/icon-github.component";
 import {IconMastodonComponent} from "../../icons/icon-mastodon/icon-mastodon.component";
