@@ -4,7 +4,7 @@ let
   manifest = lib.importJSON ./package.json;
 in
 stdenv.mkDerivation (finalAttrs: {
-  pname = "website";
+  pname = "ddix-website";
   inherit (manifest) version;
 
   src = lib.cleanSourceWith {
@@ -14,7 +14,8 @@ stdenv.mkDerivation (finalAttrs: {
 
   pnpmDeps = pnpm.fetchDeps {
     inherit (finalAttrs) pname version src;
-    hash = "sha256-mtH1mzCd1fZSKuR3nFbTGK6qCI6p9hXvZyXBjghmGgA=";
+    fetcherVersion = 2;
+    hash = "sha256-iwHBwzIT23a6wTTItUIUc4r3dHFPa2qcfD6dXKMXMdo=";
   };
 
   nativeBuildInputs = [ nodejs pnpm.configHook ];

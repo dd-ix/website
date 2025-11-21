@@ -8,9 +8,9 @@ let
 in
 {
   options.dd-ix.website = {
-    enable = lib.mkEnableOption "website";
+    enable = lib.mkEnableOption "DD-IX Website";
 
-    package = lib.mkPackageOption pkgs "website" { };
+    package = lib.mkPackageOption pkgs "ddix-website" { };
 
     domain = lib.mkOption {
       type = lib.types.str;
@@ -24,8 +24,8 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    systemd.services.website = {
-      enable = true;
+    systemd.services.ddix-website = {
+      description = "DD-IX Website";
       wantedBy = [ "multi-user.target" ];
 
       serviceConfig = {
@@ -49,14 +49,14 @@ in
           root = "${package}/browser";
           # just something that does not exists
           index = "X6XewZMsmreGIxx1lCdp0Yo1X4qHTivW";
-          tryFiles = "$uri @website";
+          tryFiles = "$uri @ddix-website";
           extraConfig = ''
             expires max;
             access_log off;
             rewrite ^/(?!de(?:/|$)|en(?:/|$))(.*)$ /$accept_language/$1 redirect;
           '';
         };
-        "@website" = {
+        "@ddix-website" = {
           recommendedProxySettings = true;
           proxyPass = "http://127.0.0.1:4000";
         };

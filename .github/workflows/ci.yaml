@@ -39,7 +39,7 @@ jobs:
         uses: cachix/install-nix-action@v31
 
       - name: Build Static
-        run: nix build -L .#website-static
+        run: nix build -L .#ddix-website-static
 
       - uses: actions/upload-artifact@v5
         with:

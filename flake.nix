@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NuschtOS/nuschtpkgs/backports-25.11";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -14,24 +14,24 @@
         in
         {
           packages = rec {
-            website = pkgs.callPackage ./package.nix {
+            ddix-website = pkgs.callPackage ./package.nix {
               contentApi = "https://content.dd-ix.net";
             };
-            website-static = pkgs.callPackage ./package.nix {
+            ddix-website-static = pkgs.callPackage ./package.nix {
               contentApi = "https://content.dd-ix.net";
               static = true;
             };
-            default = website;
+            default = ddix-website;
           };
         }
       ) // {
       overlays.default = _: prev: {
-        inherit (self.packages."${prev.system}") website;
+        inherit (self.packages."${prev.system}") ddix-website;
       };
 
       nixosModules = rec {
-        website = import ./module.nix;
-        default = website;
+        ddix-website = import ./module.nix;
+        default = ddix-website;
       };
     };
 }
