@@ -54,6 +54,8 @@ jobs:
           chmod +w -R result
           echo "User-agent: *\nDisallow: /" > result/browser/robots.txt
 
+      - uses: nicknovitski/nix-develop@v1
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
@@ -61,4 +63,4 @@ jobs:
           accountId: 2a09613716e511a8fe8ca74abc084762
           command: pages deploy result/browser --project-name=dd-ix
           gitHubToken: ${{ github.token }}
-          packageManager: npm
+          packageManager: pnpm
