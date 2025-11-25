@@ -6,10 +6,12 @@ import { IconGitComponent } from "../../../icons/icon-git/icon-git.component";
 import { IconFediComponent } from "../../../icons/icon-fedi/icon-fedi.component";
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, map } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
+import {AsyncPipe, NgOptimizedImage} from '@angular/common';
 import { LoadingIndicatorComponent } from "../../../core/loading-indicator/loading-indicator.component";
 import { IconCheckmarkComponent } from "../../../icons/icon-checkmark/icon-checkmark.component";
 import { IconCloseComponent } from "../../../icons/icon-close/icon-close.component";
+import {IconMailComponent} from '../../../icons/icon-mail/icon-mail.component';
+import {IconGlobeComponent} from '../../../icons/icon-globe/icon-globe.component';
 
 @Component({
   selector: 'app-landingpage',
@@ -23,8 +25,11 @@ import { IconCloseComponent } from "../../../icons/icon-close/icon-close.compone
     AsyncPipe,
     LoadingIndicatorComponent,
     IconCheckmarkComponent,
-    IconCloseComponent
-]
+    IconCloseComponent,
+    IconMailComponent,
+    NgOptimizedImage,
+    IconGlobeComponent
+  ]
 })
 export class CommunityPageComponent {
 

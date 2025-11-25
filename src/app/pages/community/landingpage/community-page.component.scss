@@ -17,6 +17,27 @@ ul {
   list-style-type: none;
 }
 
+.icon {
+  width: 1.5rem;
+}
+
+.intro-text {
+  margin: 2rem;
+}
+.typography ::ng-deep img {
+  height: auto;
+
+  &:not(.not) {
+    padding: 2rem;
+    margin: 5rem 0;
+  }
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+}
+
 .resource {
   display: flex;
   text-align: center;
