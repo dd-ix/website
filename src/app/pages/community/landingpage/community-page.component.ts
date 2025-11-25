@@ -12,6 +12,7 @@ import { IconCheckmarkComponent } from "../../../icons/icon-checkmark/icon-check
 import { IconCloseComponent } from "../../../icons/icon-close/icon-close.component";
 import {IconMailComponent} from '../../../icons/icon-mail/icon-mail.component';
 import {IconGlobeComponent} from '../../../icons/icon-globe/icon-globe.component';
+import { IconAtlasComponent } from '../../../icons/icon-atlas/icon-atlas.component';
 
 @Component({
   selector: 'app-landingpage',
@@ -28,7 +29,9 @@ import {IconGlobeComponent} from '../../../icons/icon-globe/icon-globe.component
     IconCloseComponent,
     IconMailComponent,
     NgOptimizedImage,
-    IconGlobeComponent
+    IconGlobeComponent,
+    IconAtlasComponent,
+    IconAtlasComponent,
   ]
 })
 export class CommunityPageComponent {
