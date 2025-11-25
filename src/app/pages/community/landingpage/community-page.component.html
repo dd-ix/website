@@ -24,8 +24,8 @@
       <div class="resource">
         <h3 i18n>Locally Connected?</h3>
         @if ((connected | async); as connected) {
-        @if (connected == "connected") { <app-icon-checkmark class="connected-icon"/> <p>Your ISP is connected to DD-IX!</p>}
-        @if (connected == "not_connected") { <app-icon-close class="connected-icon"/> <p>Your ISP is not connected to DD-IX :(</p> }
+        @if (connected == "connected") { <p>Your ISP is connected<br/>to DD-IX!</p><app-icon-checkmark class="connected-icon"/> }
+        @if (connected == "not_connected") { <p>Your ISP is not connected<br/>to DD-IX :(</p><app-icon-close class="connected-icon bad"/> }
         @if (connected == "error") { <p>Failed to determinate if your ISP is connected to DD-IX. Please try again later!</p> }
         @if (connected == "unknown") { <app-loading-indicator /> }
         }
@@ -45,6 +45,7 @@
         <div class="resource">
           <app-icon-globe class="tile-logo"></app-icon-globe>
           <h3 i18n>DNS</h3>
+        <p class="wip">Work in Progress</p>
         </div>
     </app-card>
   </li>
@@ -53,6 +54,7 @@
       <div class="resource">
         <app-icon-git class="tile-logo"></app-icon-git>
         <h3 i18n>Git</h3>
+        <p class="wip">Work in Progress</p>
       </div>
     </app-card>
   </li>
@@ -61,6 +63,7 @@
       <div class="resource">
         <app-icon-fedi class="tile-logo"></app-icon-fedi>
         <h3 i18n>Federated Services</h3>
+        <p class="wip">Work in Progress</p>
       </div>
     </app-card>
   </li>
