@@ -1,7 +1,7 @@
 <div class="typography">
   <h1 i18n>Community around DD-IX</h1>
       <p i18n class="typography">
-        To this end, this website lists those resources such as mirrors, open resolvers, and local hosted services.
+        DD-IX promotes local community projects in order to <b>Keep Local Traffic Local</b>. This website lists those resources such as mirrors, open resolvers, and local hosted services.
       </p>
 </div>
 
@@ -9,21 +9,8 @@
   <li>
     <app-card class="tile-card" link="./mirror">
       <div class="resource">
-        <app-icon-linux class="tile-logo"></app-icon-linux>
+        <app-icon-linux class="tile-logo linux"></app-icon-linux>
         <h3>Mirrors</h3>
-      </div>
-    </app-card>
-  </li>
-  <li>
-    <app-card class="tile-card">
-      <div class="resource">
-        <h3 i18n>Locally Connected?</h3>
-        @if ((connected | async); as connected) {
-        @if (connected == "connected") { <p>Your ISP is connected<br/>to DD-IX!</p><app-icon-checkmark class="connected-icon"/> }
-        @if (connected == "not_connected") { <p>Your ISP is not connected<br/>to DD-IX :(</p><app-icon-close class="connected-icon bad"/> }
-        @if (connected == "error") { <p>Failed to determinate if your ISP is connected to DD-IX. Please try again later!</p> }
-        @if (connected == "unknown") { <app-loading-indicator /> }
-        }
       </div>
     </app-card>
   </li>
@@ -71,5 +58,22 @@
       </div>
     </app-card>
   </li>
+        @if ((connected | async); as connected) {
+        @if (connected != "error") {
+  <li>
+    <app-card class="tile-card">
+      <div class="resource">
+        <h3 i18n>Locally Connected?</h3>
+        @if (connected == "connected") { <p>Your ISP is connected<br/>to DD-IX!</p><app-icon-checkmark class="connected-icon"/> }
+        @if (connected == "not_connected") { <p>Your ISP is not connected<br/>to DD-IX :(</p><app-icon-close class="connected-icon bad"/> }
+        @if (connected == "unknown") { <app-loading-indicator /> }
+      </div>
+    </app-card>
+
+  </li>
+}
+
+}
+
 
 </ul>

@@ -72,6 +72,11 @@ ul {
     width: 70%;
     height: 70%;
     border-radius: 0.5rem;
+
+    &.linux {
+      width: 50%;
+      height: 50%;
+    }
   }
 
   .ripe-icon {
