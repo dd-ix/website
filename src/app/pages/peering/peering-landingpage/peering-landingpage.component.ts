@@ -9,7 +9,7 @@ import {IconDirectionsComponent} from "../../../icons/icon-directions/icon-direc
 import {IconSwitchComponent} from "../../../icons/icon-switch/icon-switch.component";
 
 @Component({
-    selector: 'app-peering-landingpage',
+    selector: 'app-landingpage',
     templateUrl: './peering-landingpage.component.html',
     styleUrls: ['./peering-landingpage.component.scss'],
   imports: [

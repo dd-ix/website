@@ -1,0 +1,10 @@
+table {
+  min-width: 100%;
+  text-align: center;
+
+  th,
+  td {
+    white-space: nowrap;
+    padding: 0.4rem 0;
+  }
+}
