@@ -1348,7 +1348,7 @@
       </trans-unit>
       <trans-unit id="iconLogoTitle" datatype="html" xml:space="preserve">
         <source>DD-IX</source>
-        <target state="needs-translation">DD-IX</target>
+        <target state="translated">DD-IX</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/icons/icon-logo/icon-logo.component.svg</context>
           <context context-type="linenumber">8,9</context>
@@ -1480,7 +1480,7 @@
       </trans-unit>
       <trans-unit id="8389420377417263313" datatype="html" xml:space="preserve">
         <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="START_TAG_PRE" ctype="x-pre" equiv-text="&lt;pre&gt;"/> <x id="CLOSE_TAG_PRE" ctype="x-pre" equiv-text="&lt;/pre&gt;"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information.</source>
-        <target state="translated">Aktuell sind <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="START_TAG_PRE" ctype="x-pre" equiv-text="&lt;pre&gt;"/> <x id="CLOSE_TAG_PRE" ctype="x-pre" equiv-text="&lt;/pre&gt;"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> angeschlossen. Werde einen Blick auf die Liste unten.</target>
+        <target state="translated">Derzeit gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="START_TAG_PRE" ctype="x-pre" equiv-text="&lt;pre&gt;"/> <x id="CLOSE_TAG_PRE" ctype="x-pre" equiv-text="&lt;/pre&gt;"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Weitere Informationen finden Sie in der nachstehenden Liste.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">65,67</context>
@@ -1552,6 +1552,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
           <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNetworkDesc" datatype="html" xml:space="preserve">
+        <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information. </source>
+        <target state="translated">Derzeit gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Weitere Informationen finden Sie in der nachstehenden Liste. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">5,8</context>
         </context-group>
       </trans-unit>
     </body>
