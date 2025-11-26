@@ -1318,6 +1318,17 @@
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="pageStatisticsTraffic" datatype="html">
+        <source>Traffic Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="chartQueriesTitle" datatype="html">
         <source>DNS Queries</source>
         <context-group purpose="location">
@@ -1337,13 +1348,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.ts</context>
           <context context-type="linenumber">46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="pageTrafficStatistics" datatype="html">
-        <source>Traffic Statistics</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">2,3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="chartTrafficTitle" datatype="html">
