@@ -200,7 +200,7 @@
       </trans-unit>
       <trans-unit id="2761952393360315538" datatype="html" xml:space="preserve">
         <source>The aim of peering is to route traffic between the participating networks more efficiently and to avoid bottlenecks. Through peering connections provided by DD-IX, we enable all participants to route network packets among each other shorter and faster.</source>
-        <target state="translated">Das Ziel von Peering ist es, den Internet-Verkehr zwischen den beteiligten Netzen möglichst direkt zu verteilen. Das ist kostengünstiger, reduziert Verzögerungen und erhöht die Robustheit. Die von DD-IX bereitgestellte Peering-Infrastruktur stellt hierfür das Rückgrat dar.</target>
+        <target state="translated">Das Ziel von Peering ist es, den Internet-Datenverkehr zwischen den beteiligten Netzen möglichst direkt zu verteilen. Das ist kostengünstiger, reduziert Verzögerungen und erhöht die Robustheit. Die von DD-IX bereitgestellte Peering-Infrastruktur stellt hierfür das Rückgrat dar.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">26,30</context>
@@ -548,7 +548,7 @@
       </trans-unit>
       <trans-unit id="369679454877964077" datatype="html" xml:space="preserve">
         <source>Traffic</source>
-        <target state="translated">Traffic</target>
+        <target state="translated">Datenverkehr</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.component.ts</context>
           <context context-type="linenumber">33</context>
@@ -668,7 +668,7 @@
       </trans-unit>
       <trans-unit id="8592941937836578036" datatype="html" xml:space="preserve">
         <source>The DD-IX is an Internet exchange for Dresden. As a non-commercial platform, we are open to all Internet stakeholders that are interested in multilateral exchange of Internet traffic. Only 20 km from the geographic center of Saxony, the DD-IX location in Dresden offer the perfect fundament to peer with participants in the Saxony region over short distances.</source>
-        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden. Als nicht-kommerzielle Plattform stehen wir allen Interessierten zum multilateralen Austausch von Internet-Verkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bietet der DD-IX Standort in Dresden die idealen Voraussetzungen, um sich mit den Teilnehmern in der Region Sachsen auf kurzen Wegen zu vernetzen.</target>
+        <target state="translated">Der DD-IX ist der Internet-Knoten für Dresden. Als nicht-kommerzielle Plattform stehen wir allen Interessierten zum multilateralen Austausch von Internet-Datenverkehr offen. Nur 20 km vom geografischen Mittelpunkt Sachsens entfernt, bietet der DD-IX Standort in Dresden die idealen Voraussetzungen, um sich mit den Teilnehmern in der Region Sachsen auf kurzen Wegen zu vernetzen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">16,19</context>
