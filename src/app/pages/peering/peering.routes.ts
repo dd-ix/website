@@ -1,9 +1,9 @@
-import {Routes} from '@angular/router';
+import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import("./peering-landingpage/peering-landingpage.component").then(c => c.PeeringLandingpageComponent)
+    loadComponent: () => import("./peering.component").then(c => c.PeeringComponent)
   },
   {
     path: 'policy',

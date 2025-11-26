@@ -1,12 +1,12 @@
 <div class="typography header">
-  <h1 i18n>AS112 Statistics</h1>
-  <feel-button label="Traffic" link=".."></feel-button>
+  <h1 i18n="@@pageStatisticsAS112">AS112 Statistics</h1>
+  <feel-button label="Traffic Statistics" link=".." i18n="@@pageStatisticsTraffic"></feel-button>
 </div>
 
 <app-card>
   <div class="typography">
     <div class="header">
-      <h2 i18n>DNS Queries</h2>
+      <h2 i18n="@@chartQueriesTitle">DNS Queries</h2>
       <app-stats-time-selection (timeChange)="changeTimeSelection($event)" />
     </div>
     @if (series | async; as series) {
@@ -17,6 +17,7 @@
         [xMin]="series.start"
         unit="q"
         seriesName="Queries"
+        i18n-seriesName="@@chartQueriesSeries"
         />
     } @else {
       <div class="loading-wrapper">

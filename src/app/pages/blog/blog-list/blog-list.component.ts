@@ -1,12 +1,13 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {PostService} from "../../../api/post.service";
-import {BehaviorSubject, combineLatest, map, Observable, switchMap} from "rxjs";
-import {AsyncPipe} from "@angular/common";
-import {BlogCardComponent} from "../../../core/blog-card/blog-card.component";
-import {CardComponent} from "../../../core/card/card.component";
-import {MailingListComponent} from "../../../core/mailing-list/mailing-list.component";
-import {EventCardComponent} from "../../../core/event-card/event-card.component";
-import {SmallEvent, SmallPost} from '../../../api/post.domain';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { PostService } from "../../../api/post.service";
+import { BehaviorSubject, combineLatest, map, Observable, switchMap } from "rxjs";
+import { AsyncPipe } from "@angular/common";
+import { BlogCardComponent } from "../../../core/blog-card/blog-card.component";
+import { CardComponent } from "../../../core/card/card.component";
+import { MailingListComponent } from "../../../core/mailing-list/mailing-list.component";
+import { EventCardComponent } from "../../../core/event-card/event-card.component";
+import { SmallEvent, SmallPost } from '../../../api/post.domain';
+import { LoadingIndicatorComponent } from '../../../core/loading-indicator/loading-indicator.component';
 
 @Component({
   selector: 'app-blog-list',
@@ -18,7 +19,8 @@ import {SmallEvent, SmallPost} from '../../../api/post.domain';
     BlogCardComponent,
     CardComponent,
     MailingListComponent,
-    EventCardComponent
+    EventCardComponent,
+    LoadingIndicatorComponent,
   ]
 })
 export class BlogListComponent {
@@ -35,15 +37,15 @@ export class BlogListComponent {
       blog: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getBlogPosts(keywords))),
       news: this.selectedKeywords.pipe(switchMap(keywords => this.postService.getNewsPosts(keywords))),
     })
-      .pipe(map(({events, blog, news}) => ([...events, ...blog, ...news].sort((a, b) => {
+      .pipe(map(({ events, blog, news }) => ([...events, ...blog, ...news].sort((a, b) => {
         // @ts-expect-error union type
         const aDate = Date.parse(a.published ?? a.start_time);
         // @ts-expect-error union type
         const bDate = Date.parse(b.published ?? b.start_time);
         return bDate - aDate;
       }))));
-    this.keywords = combineLatest({blog: this.postService.getBlogKeywords(), news: this.postService.getNewsKeywords()})
-      .pipe(map(({blog, news}) => {
+    this.keywords = combineLatest({ blog: this.postService.getBlogKeywords(), news: this.postService.getNewsKeywords() })
+      .pipe(map(({ blog, news }) => {
         return [...blog, ...news];
       }));
   }

@@ -4,50 +4,45 @@
 
 <aside (click)="closeAside()" [class.open]="asideSown | async" [class.hidden]="disableNav | async">
   <div class="aside-container">
-    <a class="not icon" routerLink="/" title="Homepage">
+    <a class="not icon" routerLink="/" title="Homepage" i18n-title="@@pageHomepage">
       <app-icon-logo></app-icon-logo>
     </a>
     <div class="nav-wrapper">
       <nav class="nav">
         <a class="not" routerLink="/blog" routerLinkActive="selected">
-          <span class="label" i18n>News &amp; Events</span>
+          <span class="label" i18n="@@pageNewsAndEvents">News &amp; Events</span>
         </a>
         <a class="not" routerLink="/network" routerLinkActive="selected">
-          <span class="label" i18n>Network</span>
+          <span class="label" i18n="@@pageNetwork">Network</span>
         </a>
         <a class="not" routerLink="/peering" routerLinkActive="selected">
-          <!--        <app-icon-hub class="nav-icon"/>-->
-          <span class="label" i18n>Peering</span>
+          <span class="label" i18n="@@pagePeering">Peering</span>
         </a>
         <a class="not" routerLink="/community" routerLinkActive="selected">
-          <!--        <app-icon-hub class="nav-icon"/>-->
-          <span class="label" i18n>Community</span>
+          <span class="label" i18n="@@pageCommunity">Community</span>
         </a>
         <a class="not" routerLink="/association" routerLinkActive="selected">
-          <!--        <app-icon-group class="nav-icon"/>-->
-          <span class="label" i18n>Association</span>
+          <span class="label" i18n="@@pageAssociation">Association</span>
         </a>
         <a class="not" routerLink="/team" routerLinkActive="selected">
-          <!--        <app-icon-face class="nav-icon"/>-->
-          <span class="label" i18n>Team</span>
+          <span class="label" i18n="@@pageTeam">Team</span>
         </a>
         <a class="not" routerLink="/contact" routerLinkActive="selected">
-          <!--        <app-icon-phone class="nav-icon"/>-->
-          <span class="label" i18n>Contact</span>
+          <span class="label" i18n="@@pageContact">Contact</span>
         </a>
       </nav>
       <nav class="nav">
         <a class="not" routerLink="/stats" routerLinkActive="selected">
-          <span class="label" i18n>Statistics</span>
+          <span class="label" i18n="@@pageStatistics">Statistics</span>
         </a>
         <a class="not" href="https://lg.dd-ix.net" target="_blank">
-          <span class="label" i18n>Looking Glass</span>
+          <span class="label" i18n="@@pageLookingGlass">Looking Glass</span>
         </a>
         <a class="not" href="https://portal.dd-ix.net" target="_blank">
-          <span class="label" i18n>IXP Manager</span>
+          <span class="label" i18n="@@pageIxpManager">IXP Manager</span>
         </a>
         <a class="not" href="https://lists.dd-ix.net" target="_blank">
-          <span class="label" i18n>Mailing Lists</span>
+          <span class="label" i18n="@@pageMailaingLists">Mailing Lists</span>
         </a>
       </nav>
     </div>
@@ -63,8 +58,8 @@
     }
 
     <nav class="typography">
-      <a i18n routerLink="/privacy-policy">Privacy Policy</a>
-      <a i18n routerLink="/imprint">Imprint</a>
+      <a i18n routerLink="/privacy-policy" i18n="@@pagePrivacyPolicy">Privacy Policy</a>
+      <a i18n routerLink="/imprint" i18n="@@pageImprint">Imprint</a>
     </nav>
   </div>
 </aside>
@@ -80,13 +75,15 @@
     </div>
 
     <footer>
-      <span i18n style="text-align: center">
-        &copy; {{ currentYear() }} <b>DD-IX Dresden Internet Exchange e.V.</b> <span class="slogan"> | Keep Local
-          Traffic Local</span>
+      <span style="text-align: center">
+        &copy;&nbsp;{{ currentYear() }} <b i18n="@@footerAssociationName">DD-IX Dresden Internet Exchange e.V.</b>
+        <span class="slogan">
+          | <span i18n="@@footerSlogan">Keep Local Traffic Local</span>
+        </span>
       </span>
     <nav class="typography">
-      <a i18n routerLink="/privacy-policy">Privacy Policy</a>
-      <a i18n routerLink="/imprint">Imprint</a>
+      <a i18n routerLink="/privacy-policy" i18n="@@pagePrivacyPolicy">Privacy Policy</a>
+      <a i18n routerLink="/imprint" i18n="@@pageImprint">Imprint</a>
     </nav>
   </footer>
 </div>

@@ -1,7 +1,5 @@
 <div class="typography">
-  <div class="header">
-    <h1 i18n>News &amp; Events</h1>
-  </div>
+  <h1 i18n="@@pageNewsAndEvents">News &amp; Events</h1>
   @if ((keywords | async); as keywords) {
     <div class="keywords">
       @for (keyword of keywords; track keyword) {
@@ -14,18 +12,24 @@
   }
 </div>
 
-<ul class="not news">
-  @for (entry of entries | async; track entry) {
-    <li>
-      @if (!isEvent(entry)) {
-        <app-blog-card [post]="castPost(entry)" />
-      }
-      @if (isEvent(entry)) {
-        <app-event-card [event]="castEvent(entry)" />
-      }
-    </li>
-  }
-</ul>
+@if ((entries | async); as entries) {
+  <ul class="not news">
+    @for (entry of entries; track entry) {
+      <li>
+        @if (!isEvent(entry)) {
+          <app-blog-card [post]="castPost(entry)" />
+        }
+        @if (isEvent(entry)) {
+          <app-event-card [event]="castEvent(entry)" />
+        }
+      </li>
+    }
+  </ul>
+} @else {
+  <div class="loading-wrapper">
+    <app-loading-indicator></app-loading-indicator>
+  </div>
+}
 
 <app-card>
   <div class="mailing-list">

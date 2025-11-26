@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import("./landingpage/community-page.component").then(c => c.CommunityPageComponent)
+    loadComponent: () => import("./community.component").then(c => c.CommunityComponent)
   },
   {
     path: 'mirror',

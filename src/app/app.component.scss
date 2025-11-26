@@ -202,6 +202,15 @@
           }
         }
 
+        nav {
+          width: min-content;
+
+          a {
+            white-space: nowrap;
+            height: min-content;
+          }
+        }
+
         .slogan {
           @media screen and (max-width: $bp-mobile) {
             display: none;
