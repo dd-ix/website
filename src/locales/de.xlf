@@ -1202,6 +1202,358 @@
           <context context-type="linenumber">38,40</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="pageHomepage" datatype="html" xml:space="preserve">
+        <source>Homepage</source>
+        <target state="translated">Startseite</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNewsAndEvents" datatype="html" xml:space="preserve">
+        <source>News &amp; Events</source>
+        <target state="translated">Neuigkeiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blog/blog-list/blog-list.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNetwork" datatype="html" xml:space="preserve">
+        <source>Network</source>
+        <target state="translated">Netzwerk</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pagePeering" datatype="html" xml:space="preserve">
+        <source>Peering</source>
+        <target state="translated">Peering</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/peering/peering.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageCommunity" datatype="html" xml:space="preserve">
+        <source>Community</source>
+        <target state="translated">Community</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageAssociation" datatype="html" xml:space="preserve">
+        <source>Association</source>
+        <target state="translated">Verein</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/association/association.component.html</context>
+          <context context-type="linenumber">2,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTeam" datatype="html" xml:space="preserve">
+        <source>Team</source>
+        <target state="translated">Team</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/team/team.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageContact" datatype="html" xml:space="preserve">
+        <source>Contact</source>
+        <target state="translated">Kontakt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">31,33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">3,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageStatistics" datatype="html" xml:space="preserve">
+        <source>Statistics</source>
+        <target state="translated">Statistiken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">36,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageLookingGlass" datatype="html" xml:space="preserve">
+        <source>Looking Glass</source>
+        <target state="translated">Looking Glass</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageIxpManager" datatype="html" xml:space="preserve">
+        <source>IXP Manager</source>
+        <target state="translated">IXP Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageMailaingLists" datatype="html" xml:space="preserve">
+        <source>Mailing Lists</source>
+        <target state="translated">Mailinglisten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerAssociationName" datatype="html" xml:space="preserve">
+        <source>DD-IX Dresden Internet Exchange e.V.</source>
+        <target state="translated">DD-IX Dresden Internet Exchange e.V.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">79,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footerSlogan" datatype="html" xml:space="preserve">
+        <source>Keep Local Traffic Local</source>
+        <target state="translated">Keep Local Traffic Local</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1274247756500564795" datatype="html" xml:space="preserve">
+        <source>Community</source>
+        <target state="translated">Community</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.routes.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="iconLogoTitle" datatype="html" xml:space="preserve">
+        <source>DD-IX</source>
+        <target state="needs-translation">DD-IX</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/icons/icon-logo/icon-logo.component.svg</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="iconLogoDesc" datatype="html" xml:space="preserve">
+        <source>The Logo of DD-IX.</source>
+        <target state="translated">Das Logo von DD-IX.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/icons/icon-logo/icon-logo.component.svg</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1645921999817710149" datatype="html" xml:space="preserve">
+        <source>Author<x id="START_BLOCK_IF" equiv-text="@if (post.authors.length &gt; 1) {"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>s<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_BLOCK_IF" equiv-text="}"/></source>
+        <target state="translated">Autor<x id="START_BLOCK_IF" equiv-text="@if (post.authors.length &gt; 1) {"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>s<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="CLOSE_BLOCK_IF" equiv-text="}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/blog/blog-post/blog-post.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/news/news-post/news-post.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageCommunityDesc" datatype="html" xml:space="preserve">
+        <source>DD-IX promotes local community projects in order to <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Keep Local Traffic Local<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. This website lists those resources such as mirrors, open resolvers, and local hosted services. </source>
+        <target state="translated">Ganz im Sinne von <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Keep Local Traffic Local<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, fördert DD-IX lokale Communityprojekte. Diese Website listet Ressourcen wie Mirror, offene Resolver und lokal gehostete Dienste auf. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">4,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4950570585941126725" datatype="html" xml:space="preserve">
+        <source>Git</source>
+        <target state="translated">Git</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="937370708845350361" datatype="html" xml:space="preserve">
+        <source>Federated Services</source>
+        <target state="translated">Föderierte Dienste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8409934458169695171" datatype="html" xml:space="preserve">
+        <source>Did we forget something?</source>
+        <target state="translated">Haben wir etwas vergessen?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4259334690226050882" datatype="html" xml:space="preserve">
+        <source>Did we forget a project? Send an email to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:contact@dd-ix.net&quot;&gt;"/>contact@dd-ix.net<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or <x id="START_LINK_1" equiv-text="&lt;a             href=&quot;https://github.com/dd-ix/website-content&quot;&gt;"/>submit a PR<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </source>
+        <target state="translated">Haben wir ein Projekt vergessen? Schreibe uns eine E-Mail an <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;mailto:contact@dd-ix.net&quot;&gt;"/>contact@dd-ix.net<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> oder <x id="START_LINK_1" equiv-text="&lt;a             href=&quot;https://github.com/dd-ix/website-content&quot;&gt;"/>erstelle einen Pull Request<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">58,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2803826398874863893" datatype="html" xml:space="preserve">
+        <source>Locally Connected?</source>
+        <target state="translated">Lokal zusammengeschaltet?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/community.component.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageCommunityMirror" datatype="html" xml:space="preserve">
+        <source>Mirrors</source>
+        <target state="translated">Mirrors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/mirror/mirror.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageCommunityMirrorDesc" datatype="html" xml:space="preserve">
+        <source>This is an aggregated list of mirrors that are hosted at networks whichs are (in the process to be) connected to DD-IX.</source>
+        <target state="translated">Dies ist eine aggregierte Liste von Mirrors, die in Netzwerken gehostet werden, die mit DD-IX verbunden sind (oder gerade verbunden werden).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/mirror/mirror.component.html</context>
+          <context context-type="linenumber">5,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mirrorName" datatype="html" xml:space="preserve">
+        <source>Name</source>
+        <target state="translated">Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/mirror/mirror.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mirrorUrl" datatype="html" xml:space="preserve">
+        <source>URL</source>
+        <target state="translated">URL</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/mirror/mirror.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="mirrorOperator" datatype="html" xml:space="preserve">
+        <source>Operator</source>
+        <target state="translated">Betreiber</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/community/mirror/mirror.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageHomeTitle" datatype="html" xml:space="preserve">
+        <source>Dresden Internet Exchange</source>
+        <target state="translated">Dresden Internet Exchange</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageHomeSlogan" datatype="html" xml:space="preserve">
+        <source>Keep Local Traffic Local</source>
+        <target state="translated">Keep Local Traffic Local</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">4,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8389420377417263313" datatype="html" xml:space="preserve">
+        <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="START_TAG_PRE" ctype="x-pre" equiv-text="&lt;pre&gt;"/> <x id="CLOSE_TAG_PRE" ctype="x-pre" equiv-text="&lt;/pre&gt;"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information.</source>
+        <target state="translated">Aktuell sind <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="START_TAG_PRE" ctype="x-pre" equiv-text="&lt;pre&gt;"/> <x id="CLOSE_TAG_PRE" ctype="x-pre" equiv-text="&lt;/pre&gt;"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> angeschlossen. Werde einen Blick auf die Liste unten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNotFound" datatype="html" xml:space="preserve">
+        <source>Not Found</source>
+        <target state="translated">Nicht gefunden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageNotFoundDesc" datatype="html" xml:space="preserve">
+        <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</source>
+        <target state="translated">Wie wäre es, wenn du von der <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> neu anfängst?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageStatisticsAS112" datatype="html" xml:space="preserve">
+        <source>AS112 Statistics</source>
+        <target state="translated">AS112 Statistiken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="chartQueriesTitle" datatype="html" xml:space="preserve">
+        <source>DNS Queries</source>
+        <target state="translated">DNS Abfragen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="chartQueriesSeries" datatype="html" xml:space="preserve">
+        <source>Queries</source>
+        <target state="translated">Abfragen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pageTrafficStatistics" datatype="html" xml:space="preserve">
+        <source>Traffic Statistics</source>
+        <target state="translated">Datenverkehr Statistiken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="chartTrafficTitle" datatype="html" xml:space="preserve">
+        <source>Traffic</source>
+        <target state="translated">Datenverkehr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="chartTitleTraffic" datatype="html" xml:space="preserve">
+        <source>Traffic</source>
+        <target state="translated">Datenverkehr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
