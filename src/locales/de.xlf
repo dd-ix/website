@@ -1530,14 +1530,6 @@
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="pageTrafficStatistics" datatype="html" xml:space="preserve">
-        <source>Traffic Statistics</source>
-        <target state="translated">Datenverkehr Statistiken</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/stats.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="chartTrafficTitle" datatype="html" xml:space="preserve">
         <source>Traffic</source>
         <target state="translated">Datenverkehr</target>
