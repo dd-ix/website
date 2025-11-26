@@ -106,14 +106,6 @@
         </context-group>
         <target state="translated">Nicht gefunden</target>
       </trans-unit>
-      <trans-unit id="7353139189504330359" datatype="html" xml:space="preserve">
-        <source>How about jumping back to the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>home<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> page?</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/not-found/not-found.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-        <target state="translated">Wollen Sie zur <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/&quot;&gt;"/>Startseite<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> zurückspringen?</target>
-      </trans-unit>
       <trans-unit id="6718726533481404495" datatype="html" xml:space="preserve">
         <source>Peering</source>
         <target state="translated">Peering</target>
@@ -180,14 +172,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
           <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8510289285271281479" datatype="html" xml:space="preserve">
-        <source>Keep Local Traffic Local</source>
-        <target state="translated">Keep Local Traffic Local</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
-          <context context-type="linenumber">4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5578823162355992891" datatype="html" xml:space="preserve">
@@ -434,14 +418,6 @@
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="7468240890677477871" datatype="html" xml:space="preserve">
-        <source>© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
-        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{ currentYear() }}"/> <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>DD-IX Dresden Internet Exchange e.V.<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;slogan&quot;&gt;"/> | Keep Local Traffic Local<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">63,66</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6750491512886369381" datatype="html" xml:space="preserve">
         <source><x id="PH" equiv-text="title"/> | Dresden Internet Exchange</source>
         <target state="translated"><x id="PH" equiv-text="title"/> | Dresden Internet Exchange</target>
@@ -562,22 +538,6 @@
           <context context-type="linenumber">103,106</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3161711202916701013" datatype="html" xml:space="preserve">
-        <source>Looking Glass</source>
-        <target state="translated">Looking Glass</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">41,42</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8694717738425750979" datatype="html" xml:space="preserve">
-        <source>IXP Manager</source>
-        <target state="translated">IXP Manager</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">44,45</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="7821232108445276080" datatype="html" xml:space="preserve">
         <source>Coschütz 2</source>
         <target state="translated">Coschütz 2</target>
@@ -600,14 +560,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/stats/stats.routes.ts</context>
           <context context-type="linenumber">10</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5654260572566435634" datatype="html" xml:space="preserve">
-        <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information.</source>
-        <target state="translated">Derzeit gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Weitere Informationen finden Sie in der nachstehenden Liste.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
-          <context context-type="linenumber">3,6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6297950127540572260" datatype="html" xml:space="preserve">
@@ -720,14 +672,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
           <context context-type="linenumber">16,19</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8076796480639054100" datatype="html" xml:space="preserve">
-        <source>Mailing Lists</source>
-        <target state="translated">Mailinglisten</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">54,55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1144407473317535723" datatype="html" xml:space="preserve">
@@ -966,14 +910,6 @@
           <context context-type="linenumber">69,70</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4006428476674322077" datatype="html" xml:space="preserve">
-        <source>Peering at DD-IX</source>
-        <target state="translated">Werde Peer am DD-IX</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/peering/peering-landingpage/peering-landingpage.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="3817433633194883084" datatype="html" xml:space="preserve">
         <source>Prof. Dr. Matthias Wählisch, Chair of Distributed and Networked Systems, TU Dresden and DD-IX</source>
         <target state="translated">Prof. Dr. Matthias Wählisch, Chair of Distributed and Networked Systems, TU Dresden und DD-IX</target>
@@ -1144,14 +1080,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">75,76</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="154046423184698489" datatype="html" xml:space="preserve">
-        <source>DNS Queries</source>
-        <target state="translated">DNS Anfragen</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pages/stats/as112/as112.component.html</context>
-          <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8126550714285699188" datatype="html" xml:space="preserve">
