@@ -1,6 +1,6 @@
-@if ((peers | async); as peers) {
   <div class="typography">
     <h1 i18n>Network</h1>
+@if ((peers | async); as peers) {
     <p i18n>Currently there are <b>{{ peers.length }} participants</b>. Have a look at the list below for more
     information.</p>
   <app-card>
@@ -59,8 +59,16 @@
       </table>
     </div>
   </app-card>
-</div>
+} @else {
+    <p i18n>Currently there are <b><pre>  </pre> participants</b>. Have a look at the list below for more
+    information.</p>
+ <app-card>
+  <div class="loading-wrapper">
+    <app-loading-indicator/>
+  </div>
+  </app-card>
 }
+</div>
 
 <div class="row">
   <app-card class="datacenter">

@@ -794,7 +794,7 @@
           <context context-type="linenumber">16,17</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8730670576338507930" datatype="html" xml:space="preserve">
+      <trans-unit id="statsLastYear" datatype="html" xml:space="preserve">
         <source>last year</source>
         <target state="translated">letztes Jahr</target>
         <context-group purpose="location">
@@ -810,7 +810,7 @@
           <context context-type="linenumber">44,45</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3067905955375432321" datatype="html" xml:space="preserve">
+      <trans-unit id="statsLastTwoDays" datatype="html" xml:space="preserve">
         <source>last two days</source>
         <target state="translated">letzten zwei Tage</target>
         <context-group purpose="location">
@@ -818,7 +818,7 @@
           <context context-type="linenumber">3,4</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2329598843423950672" datatype="html" xml:space="preserve">
+      <trans-unit id="statsLastWeek" datatype="html" xml:space="preserve">
         <source>last week</source>
         <target state="translated">letzte Woche</target>
         <context-group purpose="location">
@@ -834,7 +834,7 @@
           <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6989409377744310404" datatype="html" xml:space="preserve">
+      <trans-unit id="statsLastMonth" datatype="html" xml:space="preserve">
         <source>last month</source>
         <target state="translated">letzter Monat</target>
         <context-group purpose="location">
@@ -886,8 +886,8 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1720241427578495443" datatype="html" xml:space="preserve">
-        <source>last thee months</source>
+      <trans-unit id="statsLastThreeMonths" datatype="html" xml:space="preserve">
+        <source>last three months</source>
         <target state="translated">letzten drei Monate</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/stats-time-selection/stats-time-selection.component.html</context>

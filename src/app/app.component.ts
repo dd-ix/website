@@ -15,7 +15,6 @@ import {Meta, Title} from "@angular/platform-browser";
 import {Language} from "./api/api.domain";
 import {IconLogoComponent} from "./icons/icon-logo/icon-logo.component";
 import {IconMenuComponent} from "./icons/icon-menu/icon-menu.component";
-import {NotificationListComponent} from "@feel/notification";
 import {ProgressBarComponent} from "./core/progress-bar/progress-bar.component";
 
 @Component({
@@ -30,7 +29,6 @@ import {ProgressBarComponent} from "./core/progress-bar/progress-bar.component";
     RouterLinkActive,
     IconMenuComponent,
     RouterOutlet,
-    NotificationListComponent,
     ProgressBarComponent
   ]
 })
