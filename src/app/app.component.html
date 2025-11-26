@@ -75,8 +75,8 @@
       <app-icon-menu></app-icon-menu>
     </button>
 
-    <div [@routing]="outlet.isActivated && (enableAnimation | async) ? outlet.activatedRoute : ''">
-      <router-outlet #outlet="outlet"></router-outlet>
+    <div>
+      <router-outlet></router-outlet>
     </div>
 
     <footer>

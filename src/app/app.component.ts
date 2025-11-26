@@ -8,7 +8,6 @@ import {
   inject,
   DOCUMENT
 } from '@angular/core';
-import {routingAnimation} from "./animation/routing.animation";
 import {ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {AsyncPipe, Location, PlatformLocation, isPlatformBrowser} from "@angular/common";
 import {BehaviorSubject, delay, filter, map, take, tap} from "rxjs";
@@ -24,7 +23,6 @@ import {ProgressBarComponent} from "./core/progress-bar/progress-bar.component";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [routingAnimation],
   imports: [
     AsyncPipe,
     RouterLink,
