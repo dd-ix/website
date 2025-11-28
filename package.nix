@@ -7,15 +7,12 @@ stdenv.mkDerivation (finalAttrs: {
   pname = manifest.name;
   inherit (manifest) version;
 
-  src = lib.cleanSourceWith {
-    filter = name: type: ((!lib.hasSuffix ".nix" name) && (builtins.dirOf name) != "node_modules");
-    src = lib.cleanSource ./.;
-  };
+  src = lib.cleanSource ./.;
 
   pnpmDeps = pnpm.fetchDeps {
     inherit (finalAttrs) pname version src;
     fetcherVersion = 2;
-    hash = "sha256-nAe4/Xk5sOIydQ0JerABn4QfjgnxnbbamTCms7pBEiQ=";
+    hash = "sha256-CE40fCAN7FsNCmJujojT2jSbEamjxf/iUfQYEMp737Y=";
   };
 
   nativeBuildInputs = [ nodejs pnpm.configHook ];
