@@ -4,7 +4,7 @@ let
   manifest = lib.importJSON ./package.json;
 in
 stdenv.mkDerivation (finalAttrs: {
-  pname = "ddix-website";
+  pname = manifest.name;
   inherit (manifest) version;
 
   src = lib.cleanSourceWith {
