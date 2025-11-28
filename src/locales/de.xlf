@@ -1548,7 +1548,7 @@
       </trans-unit>
       <trans-unit id="pageNetworkDesc" datatype="html" xml:space="preserve">
         <source>Currently there are <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> participants<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Have a look at the list below for more information. </source>
-        <target state="translated">Derzeit gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer <x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Weitere Informationen finden Sie in der nachstehenden Liste. </target>
+        <target state="translated">Derzeit gibt es <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/><x id="INTERPOLATION" equiv-text="{{ peers.length }}"/> Teilnehmer<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>. Weitere Informationen finden Sie in der nachstehenden Liste. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pages/network/network.component.html</context>
           <context context-type="linenumber">5,8</context>
