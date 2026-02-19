@@ -41,7 +41,7 @@ export class NetworkComponent {
   protected speed(speed: Speed[]): string {
     return speed.map(conn => {
       if (conn.amount > 1) {
-        return `${conn.amount}x${conn.speed / 1000}\u2009Gbits`;
+        return `${conn.amount}x${conn.speed / 1000}\u2009Gbit`;
       } else {
         return `${conn.speed / 1000}\u2009Gbit`
       }
