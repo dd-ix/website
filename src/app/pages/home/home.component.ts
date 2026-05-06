@@ -17,13 +17,13 @@ import {IconSendComponent} from "../../icons/icon-send/icon-send.component";
 import {ButtonComponent} from "@feel/form";
 import {IconDsiComponent} from "../../icons/icon-dsi/icon-dsi.component";
 import {EventCardComponent} from "../../core/event-card/event-card.component";
-import {IconInterLinkComponent} from "../../icons/icon-inter-link/icon-inter-link.component";
 import {IconNetdComponent} from "../../icons/icon-netd/icon-netd.component";
 import {IconFlexoptixComponent} from "../../icons/icon-flexoptix/icon-flexoptix.component";
+import { IconWobcomComponent } from '../../icons/icon-wobcom/icon-wobcom.compoennt';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent, AsyncPipe, EventCardComponent, IconInterLinkComponent, IconNetdComponent, IconFlexoptixComponent],
+  imports: [CommonModule, IconGithubComponent, IconLinkedinComponent, IconMastodonComponent, IconIbhComponent, IconBcixComponent, IconTudComponent, CardComponent, BlogCardComponent, IconFrauenkircheComponent, IconInternetComponent, IconSocialComponent, IconSendComponent, ButtonComponent, IconDsiComponent, AsyncPipe, EventCardComponent, IconWobcomComponent, IconNetdComponent, IconFlexoptixComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

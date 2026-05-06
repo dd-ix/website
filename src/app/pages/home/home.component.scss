@@ -75,25 +75,36 @@
       align-items: center;
       height: 5rem;
 
-      &.sachsen-gigabit {
-        max-height: 100%
+      &.bcix {
+        max-height: 80%;
+        margin: auto 0;
       }
-      &.netd {
+
+      &.bcix {
+        max-height: 80%;
+        margin: auto 0;
+      }
+
+      &.img {
         display: flex;
         gap: 0.25rem;
+
         img {
           max-height: 85%;
         }
+
         .tud {
           flex-grow: 1;
           max-height: 95%;
         }
+
         .stutt-ix {
-          max-height: 70%;
+          max-height: 50%;
         }
       }
     }
   }
+
   .sponsors {
     grid-template-columns: 1fr 1fr 1fr;
   }

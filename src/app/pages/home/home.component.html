@@ -64,14 +64,14 @@
 </div>
 <ul class="not news">
   @for (event of events | async; track event) {
-    <li>
-      <app-event-card [event]="event" class="card" />
-    </li>
+  <li>
+    <app-event-card [event]="event" class="card" />
+  </li>
   }
   @for (post of newsAndEventPosts | async; track post) {
-    <li>
-      <app-blog-card [post]="post" class="card" />
-    </li>
+  <li>
+    <app-blog-card [post]="post" class="card" />
+  </li>
   }
 </ul>
 
@@ -122,7 +122,7 @@
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/sachsen-gigabit-bg.webp"
       link="https://www.sachsen-gigabit.de">
-      <div class="sponsor-icon netd">
+      <div class="sponsor-icon img">
         <img class="sachsen-gigabit" src="./assets/images/sponsors/sachsen-gigabit-fg.webp">
       </div>
     </app-card>
@@ -146,45 +146,40 @@
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/bcix-bg.webp"
       link="https://www.bcix.de/">
-      <app-icon-bcix class="sponsor-icon"></app-icon-bcix>
+      <app-icon-bcix class="sponsor-icon bcix"></app-icon-bcix>
     </app-card>
   </li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/netd-bg.webp"
       link="https://netd.cs.tu-dresden.de">
-      <div class="sponsor-icon netd">
-        <app-icon-netd class="tud"></app-icon-netd>
-      </div>
+      <app-icon-netd class="sponsor-icon"></app-icon-netd>
     </app-card>
   </li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/flexoptics-bg.webp"
       link="https://www.flexoptix.net/">
-      <app-icon-flexoptix class="sponsor-icon"></app-icon-flexoptix>
+      <app-icon-flexoptix class="sponsor-icon flex"></app-icon-flexoptix>
     </app-card>
   </li>
-
-
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/ipb-bg.webp" link="https://www.ipb.de">
-      <div class="sponsor-icon netd">
+      <div class="sponsor-icon img">
         <img class="sachsen-gigabit" src="./assets/images/sponsors/ipb-fg.webp">
       </div>
     </app-card>
   </li>
   <li>
-    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/inter-link-bg.webp"
-      link="https://inter.link/">
-      <app-icon-inter-link class="sponsor-icon"></app-icon-inter-link>
+    <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/wobcom-bg.webp"
+      link="https://www.wobcom.de/">
+      <app-icon-wobcom class="sponsor-icon"></app-icon-wobcom>
     </app-card>
   </li>
   <li>
     <app-card [inverseShadow]="true" backgroundImage="./assets/images/sponsors/stutt-ix-bg.webp"
       link="https://stuttgart-ix.de">
-      <div class="sponsor-icon netd">
+      <div class="sponsor-icon img">
         <img class="stutt-ix" src="./assets/images/sponsors/stutt-ix-fg.webp">
       </div>
     </app-card>
   </li>
-
 </ul>
