@@ -57,7 +57,7 @@ jobs:
       - uses: nicknovitski/nix-develop@v1
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 2a09613716e511a8fe8ca74abc084762
